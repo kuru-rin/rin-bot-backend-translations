@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Achievement_Decade10s_1_Description" xml:space="preserve">
+    <value>Vergessen Sie nicht, etwas Dk Pepper zu trinken.</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Title" xml:space="preserve">
+    <value>sabbernd</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Description" xml:space="preserve">
+    <value>Es geht nicht nur um Spaß und Spiel... oder doch?</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Title" xml:space="preserve">
+    <value>Durstig nach mehr</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Description" xml:space="preserve">
+    <value>Habt ihr Lust auf mehr? Ich fürchte, das war das letzte Level... vorerst.</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Title" xml:space="preserve">
+    <value>Pudding stapeln</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
+    <value>Hier ist etwas anderes, was Sie mit Ihrer Zeit machen könnten.</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
+    <value>Daumen hoch</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Description" xml:space="preserve">
+    <value>Du bekommst einen Daumen hoch von Haruhi, aber erinnerst du dich überhaupt an sie?</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror" xml:space="preserve">
+    <value>Genre - Horror</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi" xml:space="preserve">
+    <value>Genre - Ecchi</value>
+  </data>
+  <data name="AchievementCategory_GenreAction" xml:space="preserve">
+    <value>Genre - Action</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror_Description" xml:space="preserve">
+    <value>Das Erraten von Animes aus dem Ecchi-Genre wird für diese Errungenschaft angerechnet.</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi_Description" xml:space="preserve">
+    <value>Das Erraten von Animes aus dem Ecchi-Genre wird für diese Errungenschaft angerechnet.</value>
+  </data>
+  <data name="AchievementCategory_GenreAction_Description" xml:space="preserve">
+    <value>Das Erraten von Animes aus dem Action-Genre wird für diese Errungenschaft angerechnet.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime_Description" xml:space="preserve">
+    <value>Wenn du einen Anime errätst, den du vorher noch nicht erraten hast, zählt das für diese Errungenschaft.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs_Description" xml:space="preserve">
+    <value>Das Erraten jedes Anime-Songs, den ihr noch nicht erraten habt, zählt für diese Leistung. Im Moment zählen nur Lieder aus !sga-Runden.</value>
+  </data>
+  <data name="AchievementCategory_Decade90s_Description" xml:space="preserve">
+    <value>Animes von 1990 bis 2000 zu erraten wird zu dieser Errungenschaft zählen.</value>
+  </data>
+  <data name="AchievementCategory_Decade80s_Description" xml:space="preserve">
+    <value>Animes von 1980 bis 1990 zu erraten wird zu dieser Errungenschaft zählen.</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore_Description" xml:space="preserve">
+    <value>Animes vor dem Jahre 1980 zu erraten wird zu dieser Errungenschaft zählen.</value>
+  </data>
+  <data name="AchievementCategory_Decade10s_Description" xml:space="preserve">
+    <value>Animes von 2010 bis 2020 zu erraten wird zu dieser Errungenschaft zählen.</value>
+  </data>
+  <data name="AchievementCategory_Decade00s_Description" xml:space="preserve">
+    <value>Animes von den Jahren 2000 bis 2010 zu erraten wird zu dieser Errungenschaft zählen.</value>
+  </data>
+  <data name="AchievementCategory_Decade90s" xml:space="preserve">
+    <value>Jahrzente - 90's</value>
+  </data>
+  <data name="AchievementCategory_Decade80s" xml:space="preserve">
+    <value>Jahrzente - 80's</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
+    <value>Jahrzente - 70's und davor</value>
+  </data>
+  <data name="AchievementCategory_Decade10s" xml:space="preserve">
+    <value>Jahrzente - 10's</value>
+  </data>
+  <data name="AchievementCategory_Decade00s" xml:space="preserve">
+    <value>Jahrzente - 00's</value>
+  </data>
+</root>

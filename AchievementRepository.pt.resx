@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Achievement_GenreHorror_1_Title" xml:space="preserve">
+    <value>Hauu~ Omochi kaeri~</value>
+  </data>
+  <data name="Achievement_GenreHorror_1_Description" xml:space="preserve">
+    <value>Queres levar algum para casa contigo?</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Title" xml:space="preserve">
+    <value>Queres fazer um contrato?</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Description" xml:space="preserve">
+    <value>Você pode desejar o que quiser!</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Title" xml:space="preserve">
+    <value>Shimapan</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Description" xml:space="preserve">
+    <value>Hoje você aprendeu a definição de shimapan.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Title" xml:space="preserve">
+    <value>Nele para o Lote</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Description" xml:space="preserve">
+    <value>Descobrir a cor da calça é um desmancha-prazeres para ti.</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Title" xml:space="preserve">
+    <value>Guerreiro de sangue</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Description" xml:space="preserve">
+    <value>Você até usaria o seu próprio sangue para derrotar os seus inimigos.</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Title" xml:space="preserve">
+    <value>O discípulo mais forte</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Description" xml:space="preserve">
+    <value>Você ainda não é um mestre.</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Title" xml:space="preserve">
+    <value>Maníaco de batalha</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Description" xml:space="preserve">
+    <value>Não consegues parar de lutar, pois não?</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Title" xml:space="preserve">
+    <value>Tenho de os adivinhar a todos!</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Description" xml:space="preserve">
+    <value>Você já deve saber o que essa foto significa.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Title" xml:space="preserve">
+    <value>Nem mesmo minha forma final</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Description" xml:space="preserve">
+    <value>O seu nível de poder está muito acima do dos outros. A única maneira é subir.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Title" xml:space="preserve">
+    <value>Muito tempo livre</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Description" xml:space="preserve">
+    <value>Agora pausa, respira um pouco e estica um pouco. Lembre-se de não se sentar muito perto do ecrã.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Title" xml:space="preserve">
+    <value>Direitos de fanfarronice</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Description" xml:space="preserve">
+    <value>Isso é... muito. Podes estar orgulhoso de ti mesmo, isso é certo.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Title" xml:space="preserve">
+    <value>Leitor de mentes</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Description" xml:space="preserve">
+    <value>Você NÃO procurou nenhum deles, certo?</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Title" xml:space="preserve">
+    <value>Adivinhador casual</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Description" xml:space="preserve">
+    <value>Estás habituado a ver os olhos da personagem maiores do que o nariz deles. Se eles tiverem algum nariz.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Title" xml:space="preserve">
+    <value>O primeiro passo</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Description" xml:space="preserve">
+    <value>Parabéns, você quebrou o número mágico. Respira agora, só vai ficar mais difícil.</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Title" xml:space="preserve">
+    <value>Escravo do dragão!!!</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Description" xml:space="preserve">
+    <value>Vocês destruíram todos os dragões que se meteram no vosso caminho!</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Title" xml:space="preserve">
+    <value>Não adormeça ainda</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Description" xml:space="preserve">
+    <value>Há mais um nível a obter!</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Title" xml:space="preserve">
+    <value>Causou uma impressão</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Description" xml:space="preserve">
+    <value>Impressionante... muito impressionante.</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Title" xml:space="preserve">
+    <value>Amando a waifu</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Description" xml:space="preserve">
+    <value>Lembre-se: os noivados são sagrados!</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Title" xml:space="preserve">
+    <value>Dinossauro</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Description" xml:space="preserve">
+    <value>Você pisa na competição!</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Title" xml:space="preserve">
+    <value>Viciado</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Description" xml:space="preserve">
+    <value>O vício não pode ser medido, obviamente.</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Title" xml:space="preserve">
+    <value>Viajante de dimensões</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Description" xml:space="preserve">
+    <value>Tentaste passar os limites, mas falhaste.</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Title" xml:space="preserve">
+    <value>Adora o Dokupe</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Description" xml:space="preserve">
+    <value>Não te esqueças de beber um pouco de Dk Pepper.</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Title" xml:space="preserve">
+    <value>Babando</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Description" xml:space="preserve">
+    <value>Não é só diversão e jogos... ou é?</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Title" xml:space="preserve">
+    <value>Com sede de mais</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Description" xml:space="preserve">
+    <value>Estás com sede de mais? Receio que este tenha sido o último nível... por agora.</value>
+  </data>
+  <data name="AchievementCategory_Decade90s" xml:space="preserve">
+    <value>Décadas - Anos 90</value>
+  </data>
+  <data name="AchievementCategory_Decade10s" xml:space="preserve">
+    <value>Décadas - Anos 10</value>
+  </data>
+  <data name="AchievementCategory_Decade00s" xml:space="preserve">
+    <value>Décadas - Anos 00</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Title" xml:space="preserve">
+    <value>Empilhamento de pudim</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
+    <value>Aqui está outra coisa que podias fazer com o teu tempo.</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
+    <value>Polegares para cima</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Description" xml:space="preserve">
+    <value>Você recebe um polegar de Haruhi, mas você sequer se lembra dela?</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror" xml:space="preserve">
+    <value>Gênero - Horror</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi" xml:space="preserve">
+    <value>Gênero - Ecchi</value>
+  </data>
+  <data name="AchievementCategory_GenreAction" xml:space="preserve">
+    <value>Gênero - Ação</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime" xml:space="preserve">
+    <value>Anime distinto</value>
+  </data>
+  <data name="AchievementCategory_Decade80s" xml:space="preserve">
+    <value>Décadas - Anos 80</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
+    <value>Décadas - Anos 70 e antes</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi_Description" xml:space="preserve">
+    <value>Adivinhar o anime do género ecchi contará para esta conquista.</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror_Description" xml:space="preserve">
+    <value>Adivinhar o anime do género horror contará para esta conquista.</value>
+  </data>
+  <data name="AchievementCategory_GenreAction_Description" xml:space="preserve">
+    <value>Adivinhar o anime do género de acção contará para esta conquista.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime_Description" xml:space="preserve">
+    <value>Adivinhar qualquer anime que não tenha adivinhado antes contará para esta conquista.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs_Description" xml:space="preserve">
+    <value>Adivinhar qualquer canção de anime que não tenha adivinhado antes contará para este feito. Apenas as canções de !sga rounds contarão neste momento.</value>
+  </data>
+  <data name="AchievementCategory_Decade90s_Description" xml:space="preserve">
+    <value>Adivinhar anime entre os anos 1990 e 2000 contará para esta conquista.</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore_Description" xml:space="preserve">
+    <value>Adivinhar anime de antes do ano de 1980 contará para este feito.</value>
+  </data>
+  <data name="AchievementCategory_Decade80s_Description" xml:space="preserve">
+    <value>Adivinhar anime entre os anos 1980 e 1990 contará para esta conquista.</value>
+  </data>
+  <data name="AchievementCategory_Decade10s_Description" xml:space="preserve">
+    <value>Adivinhar anime entre os anos 2010 e 2020 contará para esta conquista.</value>
+  </data>
+  <data name="AchievementCategory_Decade00s_Description" xml:space="preserve">
+    <value>Adivinhar anime entre os anos 2000 e 2010 contará para esta conquista.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Description" xml:space="preserve">
+    <value>Você e a sua lista de reprodução já não podem ser separados. Têm sequer de os verificar neste momento?</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Title" xml:space="preserve">
+    <value>Lista de reprodução infinita</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Description" xml:space="preserve">
+    <value>Já se pode dizer desde a primeira nota, certo?</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Title" xml:space="preserve">
+    <value>Cada nota memorizada</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Description" xml:space="preserve">
+    <value>As canções devem ser apreciadas com os outros, elas ligam-se com a nossa mente e alma.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Title" xml:space="preserve">
+    <value>Ao ritmo da música</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Description" xml:space="preserve">
+    <value>Ara ara, o seu talento melhorou. Faz uma pausa, só vai ficar mais difícil.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Description" xml:space="preserve">
+    <value>O seu nível auditivo já nem sequer pertence a este mundo, continue a esforçar-se por mais!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Title" xml:space="preserve">
+    <value>Oto no sekai (o mundo do som)</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Title" xml:space="preserve">
+    <value>A vida dá-te limão</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Description" xml:space="preserve">
+    <value>Estás a ficar melhor nisto, por isso mexe o teu corpo e abana-o!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Title" xml:space="preserve">
+    <value>Apetece-me dançar</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Description" xml:space="preserve">
+    <value>Feche os olhos e continue a ouvir. Apenas não adormeça.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Title" xml:space="preserve">
+    <value>Combinador de melodias</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Description" xml:space="preserve">
+    <value>Não há tempo para pausas. O ritmo não irá parar em momento algum.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Title" xml:space="preserve">
+    <value>Está a ir muito bem</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs" xml:space="preserve">
+    <value>Diferentes canções de anime</value>
+  </data>
+</root>

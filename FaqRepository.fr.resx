@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Si vous utilisez les commandes slash `/`, cela ne s'applique pas à vous. Les préfixes de commandes slash ne peuvent pas être changés.
+
+Le préfixe de commande est/sont le(s) caractère(s) (de 1 à 5) devant une commande.
+Par exemple, le préfixe de `!sg` est `!`.
+Si vous mettez `!sg` comme préfixe, la commande deviendra `!sgsg`, alors faites attention à ça.
+Vous pouvez même utiliser un émoji comme préfixe... Mais pourquoi faire une chose pareille ?
+
+vous pouvez simplement utiliser la comande `!prefix` pour changer le préfixe depuis Discord.
+Tapez `@RinBot prefix` si vous avez oublié le préfixe.
+
+Vous pouvez aussi changer le préfixe via [le site]({0}/my-servers). Suivez ces étapes :
+- Connectez-vous à Discord en haut à droite de la page
+- Cliquez sur votre nom en haut à droite et sélectionnez "Mes Serveurs"
+- Trouvez votre serveur dans la liste et cliquez sur "Configurer"
+- Changez le préfixe comme bon vous semble
+- Appuyez sur "Sauvegarder les changements" pour finaliser le changement</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Comment puis-je changer le préfixe de commande ?</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>La commande `/lang` peut être utilisée pour changer la langue que parle RinBot.
+
+Vous pouvez aussi changer la langue des titres d'anime devinables et qui apparaissent dans les indices et les posters en fin de partie.
+Pour cela, veuillez vous identifier sur le site.
+
+Pour changer les titres anglais, vous pouvez ajouter une ligne au dessus des préférences de titre principal contenant : AniDB, le titre officiel et anglais.
+
+&gt; Notez que c'est une fonction en développement et qu'elle peut causer des problèmes relatifs au bot dans votre serveur si elle n'est pas configurée correctement.</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Comment puis-je changer la langue ?</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Comment puis-je utiliser RinBot ?</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Vous pouvez commencer une partie en utilisant `/sg`.
+Pour plus de commandes, regardez la [liste de commandes]({0}/commands).
+
+&gt; ⚠️Il est encore possible d'utiliser les anciennes commandes telles que `!sg`, mais ce n'est **pas recommandé**.
+&gt; Ces anciennes commandes sont obsolètes et disparaitrons plus tard.
+&gt; Les nouvelles commandes seront probablement disponibles uniquement avec les commandes slash.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Comment se calculent les points ?</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Comment faire pour que RinBot commence des manches automatiquement ?</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Pourquoi ce nom "RinBot" et qui est cette fille derrière cet avatar ?</value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Les commandes slash ne marchent pas ou marchent seulement pour les administrateurs</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Qu'est-ce que la difficulté et comment la changer ?</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Pourquoi RinBot est hors-ligne sur mon serveur ?</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Comment faire pour que RinBot execute mes commandes dans un seul salon ?</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Qu'est-ce que le mode NSFW et comment l'activer ?</value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Aucune commande marche, comment résoudre cela ?</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Par défaut, Rinbot filtrera un certain nombre d'animes.
+C'est afin d'éviter d'avoir à créer un canal avec une restriction d'âge (anciennement NSFW) et d'ainsi respecter les conditions d'utilisations de Discord.
+
+Les tags AniDB qui sont filtrés :
+- Restreint -18
+- Borderline hentai
+- Nudité (weights &gt;200)
+- Sexe (weights &gt;100)
+
+Tout ce qui est classé PG-13 ou moins sur MAL est toujours inclus.
+
+Vous pouvez simplement configurer votre canal pour qu'il est une restriction d'âge, et Rinbot passera automatiquement en mode NSFW.
+
+Si vous rencontrez une image ou une vidéo NSFW lors d'une partie en mode SFW, veuillez me conctacter avec le nom de l'anime afin que je puisse l'ajouter manuellement au filtre. </value>
+  </data>
+</root>

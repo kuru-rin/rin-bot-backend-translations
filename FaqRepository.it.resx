@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>La difficoltà è basata sulla popolarità dell'anime, si può scegliere tra 5 difficoltà:  
+1. Facile
+2. Normale
+3. Difficile
+4. Estremo
+5. Incubo
+
+&gt; Da Easy(1) a Extreme(4) le vasche conterranno anche gli anime delle difficoltà precedenti. 
+&gt; La difficoltà Nightmare(5) è diversa, contiene solo gli anime meno popolari disponibili nel bot.
+
+Cambiare la difficoltà
+Per cambiare la difficoltà in `Facile` per un singolo round, usare `/sg difficulty:Easy` o `!sg d:1` o `!sg 1`.
+Funziona allo stesso modo per le altre difficoltà all'interno di altri comandi.
+
+La difficoltà aumenta quando si guadagnano più punti, fino a un massimo di Estremo(4).
+Per cambiare questo comportamento si può usare `/mydifficulty` (se il vostro server non ha comandi slash potete anche usarlo in un DM con RinBot)
+ </value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Che cos'è la difficoltà e come si cambia?</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Probabilmente si sta ricollegando, dato che Discord forza la riconnessione degli shard circa _ogni ora__. Sii paziente e riprova tra qualche minuto.
+
+Se non funziona ancora __dopo 15 minuti__, **controlla la domanda 6**.
+
+Se non funziona ancora, chiedete aiuto in #help indicando lo shard e/o il cluster su cui si trova il vostro server.
+È possibile controllare il proprio shard nella [pagina di stato] ({0}/status).
+
+&gt; ⚠️ Si prega di notare che il **sabato tra le 8:00 e le 12:00 UTC** è riservato come finestra di manutenzione, quindi potrebbero esserci dei tempi di inattività non annunciati durante questo periodo.</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Perché RinBot è offline nel mio server?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Al momento esistono due modi per ottenere questo risultato.
+
+a. **Usare i permessi di Discord**
+In pratica, è necessario dare a RinBot solo il permesso __View channel__ sul canale in cui si desidera che ascolti i comandi.
+Questo può essere fatto semplicemente impostando correttamente i permessi in Discord.
+
+Esempi__: 
+Disallow `@everyone` __View channel__ a tutti i canali. Quindi creare un ruolo "Members" che dia alle persone __View channel__ a tutti i canali, mentre dia a RinBot solo __View channel__ al canale in cui dovrebbe ascoltare i comandi.
+
+In alternativa, create un ruolo "Bots" che impedisca l'accesso __View channel__ a tutti i canali. Poi date a RInBot l'accesso specifico a un canale di vostra scelta.
+
+b. **Utilizzare il controllo dell'accesso ai canali**
+La configurazione è disponibile dopo l'accesso al [sito web]({0}).
+
+Passi da seguire
+- Dopo aver effettuato il login, andate in alto a destra e cliccate sul vostro nome, quindi andate su _I miei server__.
+- Fare clic sul server che si desidera configurare (è necessario essere __amministratore__ o avere il ruolo di _gestione del server__).
+- Individuare la scheda __Canali__ e selezionare la casella __Abilita il controllo di accesso ai canali__.
+
+&gt; Con questa sola configurazione, RinBot non ascolterà i comandi su nessun canale, quindi è necessario consentirgli di accedere al canale desiderato.
+
+- Fate clic su __Aggiungi un canale__ e selezionate il canale in cui volete che RinBot ascolti i comandi.
+- Fare clic su __Aggiungi una regola__, per ottenere una regola di accesso che consenta ogni comando in questo canale.
+- Fare clic su _Salva modifiche__ in basso e il gioco è fatto!</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Come si fa a far sì che RinBot ascolti i comandi su un solo canale?</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>I motivi per cui i comandi non funzionano possono essere diversi.
+
+a. **Il vostro prefisso è stato cambiato in qualcos'altro e lo avete dimenticato.  
+Si può semplicemente usare `@RinBot prefix` per controllare il prefisso corrente e cambiarlo.
+
+Se non si può usare `@RinBot prefix` si può accedere a [il sito web]({0}).
+È anche possibile vedere e cambiare il proprio prefisso nella pagina **My Servers** in alto a destra.
+
+b. **Avete modificato i permessi del vostro server in modo tale che RinBot non possa più inviare messaggi o embed**.  
+Assicurarsi che RinBot abbia tutti i permessi necessari.**
+In questo momento sono: `Lettura messaggi`, `Invio messaggi`, `Collegamento link`, `Attacco file` e per i canali vocali `Collegamento` e `Parlare`.
+&gt; È possibile invitarla nuovamente per verificare quali autorizzazioni sono esattamente necessarie.
+
+c. **Si stanno usando comandi __slash__ e i permessi di comando sono stati impostati per negarli**.  
+Vedere la domanda 10.
+
+d. **I controlli di accesso potrebbero essere impostati in modo da non consentire alcun comando**.  
+Una persona con i permessi di gestione del server dovrebbe modificare i controlli di accesso in modo da consentire i comandi se il controllo di accesso è abilitato.
+La configurazione può essere trovata su [il sito web]({0}/my-servers).
+
+e. **Lo shard su cui si trova il vostro server è effettivamente down**  
+Questo accade raramente e dovrebbe essere risolto automaticamente in un paio di minuti.
+Potete controllare lo stato dello shard su cui si trova il vostro server [la pagina di stato]({0}/status).
+In caso di grandi manutenzioni, si può anche controllare [il sito statuspage.io](https://rinbot.statuspage.io/) per gli aggiornamenti.
+ 
+f. **Si sono disabilitati completamente i comandi testuali nella configurazione**  
+Se si desidera utilizzare i comandi testuali, assicurarsi di non aver selezionato la casella "Disabilita i comandi con prefisso legacy" nelle impostazioni del server sul sito web.
+Questa opzione farà sì che funzionino solo i comandi di tipo slash.</value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Nessuno dei comandi funziona, come posso risolvere il problema?</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Per impostazione predefinita, RinBot filtra un certo numero di anime.
+Questo per evitare di dover rendere un canale vietato all'età (ex NSFW) e rispettare così i termini di servizio di Discord.
+
+I tag degli anime di AniDB che vengono filtrati:
+- 18 limitato
+- Al limite dell'hentai
+- Nudità (pesi &gt;200)
+- Sesso (pesi &gt;100)
+
+Tutto ciò che è classificato PG-13 o inferiore su MAL è sempre incluso.
+
+Puoi semplicemente impostare il tuo canale in modo che sia limitato all'età e RinBot passerà automaticamente alla modalità NSFW.
+
+Se si incontra un'immagine o un video NSFW mentre si gioca in modalità SFW, si prega di contattarmi con il nome dell'anime in modo da poterlo aggiungere manualmente al filtro. </value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Cos'è la modalità NSFW e come si attiva?</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Ogni turno di gioco selezionerà un anime casuale da un "pool" di anime che dipende dai filtri utilizzati.
+Più i filtri sono restrittivi, più il pool di anime diventa piccolo.
+I punti sono anche vagamente basati sul numero di anime, con un pool di anime di 3000 che dà il massimo dei punti (normalmente 60).
+
+__Un esempio__
+Supponiamo di avere una lista di anime con 100 anime (che devono avere almeno 1 episodio visto e non essere stati abbandonati).
+Circa 20 di questi 100 anime sono considerati popolari, quindi appartengono alla difficoltà facile.
+Se poi si usa `!sg d:1 mal:username`, si prende un anime a caso tra solo 20 anime.
+
+Ora c'è anche il fatto che RinBot non ripete gli anime per almeno un'ora.
+Tenendo conto di questo, ogni turno giocato nell'arco di un'ora ridurrebbe di 1 unità i 20 anime.
+Quindi, dopo 20 round, ci si ritroverà con un pool di 0. RinBot non potrà continuare e annullerà il round, dicendo **Il round è stato annullato a causa di catture mancanti**.
+
+Il conteggio del pool di anime viene utilizzato anche per la classifica dei tempi. Poiché sarebbe troppo facile per le persone usare `!sg d:1 g:sports` e spammare Haikyuu, ho scelto di consentire solo i round con un minimo di 1000 nel pool anime in quella classifica.</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Cos'è questa cosa della piscina anime di cui continuo a sentire parlare?</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Se si utilizzano i comandi slash `/`, questo non si applica. Il prefisso dei comandi slash non può essere modificato.
+
+Il prefisso del comando è il carattere (o più, da 1 a 5 caratteri al massimo) che precede ogni comando.
+Ad esempio, in `!sg` il prefisso sarebbe `!`. 
+Se si imposta il prefisso a `!sg`, il comando diventerà `!sgsg`, quindi fate attenzione.
+Si possono anche usare le emoji come prefisso... ma perché farlo?
+
+Si può semplicemente usare il comando `!prefix` per cambiare il prefisso da discord.
+Digitate `@RinBot prefix` se avete completamente dimenticato il vostro prefisso.
+
+È anche possibile cambiare il prefisso attraverso [il sito web]({0}/my-servers). Seguire i seguenti passaggi:
+- Effettuare il login utilizzando il proprio account Discord in alto a destra della pagina.
+- Clicca sul tuo nome in alto a destra e seleziona "I miei server".
+- Trovare il proprio server nell'elenco e cliccare su "Configura".
+- Aggiornare il prefisso con quello che si desidera
+- Premere il pulsante "Salva modifiche" per terminare</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Come si cambia il prefisso del comando?</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Il comando `/lang` può essere usato per cambiare la lingua in cui parla RinBot.
+
+È anche possibile cambiare la lingua dei titoli degli anime che sono indovinabili e appaiono nei suggerimenti e nel poster degli anime alla fine dei turni.
+Per questo è necessario effettuare il login sul sito web.
+
+Per impostare i titoli in inglese è possibile aggiungere una riga in cima alle preferenze dei titoli principali con il contenuto: AniDB, Titolo ufficiale e Inglese.
+
+&gt; Si noti che si tratta di una funzione avanzata che potrebbe interrompere RinBot sul server se non configurata correttamente.</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Come si cambia la lingua?</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Come si usa RinBot?</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>È possibile avviare un round utilizzando `/sg` .
+Per altri comandi, consultare [la lista dei comandi]({0}/commands).
+
+&gt; ⚠️ Attualmente è possibile utilizzare i comandi tradizionali, come `!sg`, ma ciò è **sconsigliato**.  
+&gt; Questi comandi con prefisso legacy sono obsoleti e saranno gradualmente eliminati nel tempo. 
+&gt; Inoltre, nuove funzionalità potrebbero essere disponibili solo per i comandi con slash.</value>
+  </data>
+</root>

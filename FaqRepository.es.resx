@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Ninguno de los comandos funciona, ¿cómo puedo solucionarlo?</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>¿Qué es el modo NSFW y cómo se activa?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>¿Cómo puedo cambiar el prefijo del comando?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>¿Cómo puedo cambiar el idioma?</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>¿Cómo se utiliza RinBot?</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>El comando `/lang` puede usarse para cambiar el idioma en el que RinBot habla.
+
+Puedes cambiar también el idioma de los títulos de animes que puedan ser adivinados y que aparecen en las pistas y en los pósteres al final de la ronda.
+Para esto por favor inicia sesión en la página web.
+
+Para establecer títulos en inglés, puedes añadir una fila en la parte superior de las preferencias de títulos principales con contenido: AniDB, Título Oficial e inglés.
+
+&gt; Ten en cuenta que es una característica avanzada que puede averiar RinBot en tu servidor si no está configurado correctamente.</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>El cálculo de puntos depende completamente de la cantidad de anime en el grupo a partir del cual se crea tu ronda y el nivel del ganador.
+  
+En el caso más simple, un grupo de 3000 animes otorga un máximo de 60 puntos, reducidos en `1 / númeroDeCapturas` por cada captura adicional que se muestre.
+  
+El tamaño del grupo depende de tus filtros. Si usas tu propia lista de anime como filtro, que tiene 90 entradas en la sección Completado y 10 en la sección En espera, el tamaño de tu grupo será 100.
+Sin embargo, después de cada ronda que juegues con este mismo filtro, el grupo se reducirá en 1, ya que no hay repeticiones durante al menos una hora para las rondas que comienzas tú mismo o dentro del mismo servidor.
+  
+La fórmula que se está utilizando:
+```
+multiplicadorAnime * numAnime / puntosAnimeMax * puntosMax
+```
+&gt; Por defecto, `puntosMax` es `60` y `puntosAnimeMax` es `3000`.
+  
+La variable `multiplicadorAnime` depende del año en que se lanzó el anime.
+- Antes del año 2010: `2`
+- Antes del año 2000 : `3`
+- Antes del año 1990: `4`
+- Antes del año 1980: `5`
+
+La cantidad mínima de puntos que puede obtener es `4`, que se convertirá en `1` si se ha mosstrado la última captura.
+
+__Ronda de voz__
+Para las rondas de voz, los puntos se reducen según el tiempo que tarda en responder en lugar de la cantidad de capturas que se han mostrado.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>¿Cómo funciona el cálculo de puntos?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>La tabla de clasificación semanal se restablece en la fecha que se muestra en el comando `/weektop` a medianoche (00:00/12:00 a.m.) en hora UTC.
+
+Usa el estándar ISO-8601 para las semanas del año con el lunes como primer día de la semana.</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>¿Cuándo se reinicia la clasificación semanal?</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Para poder obtener los beneficios, necesitas tener tu **cuenta de Discord vinculada a tu cuenta de Patreon**.
+Cómo hacer esto exactamente [se puede encontrar aquí](https://support.patreon.com/hc/es-es/articles/212052266-Get-my-Discord-role).
+  
+Si **has donado antes de vincular su cuenta de Discord**, puedes intentar presionar [el botón de 'Unirse' aquí](https://www.patreon.com/rinbot?fan_landing=true) una vez más.
+Esto no debería de solicitar otro pago, pero activará el webhook nuevamente, lo que dará como resultado proporcionarte las ventajas automáticamente.
+
+También intentará dar beneficios a cualquiera que no los tenga cada hora, así que espera un poco y los recibirás automáticamente.
+  
+Después de donar, **tendrás que volver a iniciar sesión** en el sitio web de RinBot para poder usar beneficios como boostear un servidor o usar las configuraciones de canales adicionales.  
+</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Me comprometí pero no recibí mis beneficios, ¿qué hago ahora?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Actualmente hay una función llamada "iniciar una ronda cuando el canal está inactivo".
+Esta función se puede activar en la configuración del canal después de iniciar sesión en [el sitio web]({0}/my-servers).
+  
+Para los servidores gratuitos, el tiempo de inactividad se establece en un mínimo de una hora. Esto se puede reducir a un minuto cuando te conviertes en un seguidor.</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>¿Cómo hago para que RinBot comience rondas automáticamente?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>La chica de la foto es una Elin del juego TERA Online.
+Tenía un personaje allí llamado Kururin, que era un Elin místico y se parecía a este.
+  
+Originalmente escribí un bot de Discord que hacía algunas cosas de moderación de Discord sencillitas, solo para probar cosas.
+Cuando me pregunté '¿cómo debería llamarlo?', alguien dijo 'simplemente llámalo RinBot'. Pensé que era divertido, y así quedó.
+  
+El arte fue realizado por momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https: //twitter.com/momoco_haru)) ¡así que todos los créditos del avatar van para él!
+Puedes ver también la [publicación original del dibujo](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>¿Por qué el nombre de 'RinBot' y quién es la chica del avatar?</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord añadió recientemente el sistema de __permisos de comando de barra__... bastante silenciosamente.
+Esto le dio a los servidores los medios para habilitar y deshabilitar los comandos de barra de forma individual para cualquier canal o función que deseen.
+
+Parece que en muchos servidores la configuración predeterminada para esto hizo que los comandos de barra diagonal fueran inaccesibles para los usuarios habituales.
+En __dispositivos móviles__ y versiones anteriores, esto no es completamente compatible y es posible que recibas un mensaje que diga:
+**Esta interacción falló** o **La aplicación no responde**
+
+__Para cambiar estos permisos__
+En Discord, vete a `Configuración del servidor - Integraciones - RinBot` y asegúrate de que las cosas estén configuradas correctamente para tus canales y roles.
+Los dispositivos móviles aún no son compatibles con estas funciones por completo, así que usa tu PC para esto o prueba el cliente web en tu dispositivo.
+
+&gt; Los administradores siempre pueden usar comandos de barra, sin importar qué permisos estén configurados aquí. Así que si ya eres administrador, tu problema es otro.
+
+Si esto no resuelve tus problemas, mira la __pregunta 6__ para saber más causas posibles.</value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Los comandos de barra no funcionan o solo los pueden usar los administradores</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>La dificultad se basa en la popularidad del anime, y puedes elegir entre 5 dificultades:
+1. Fácil
+2. Normal
+3. Difícil
+4. Extremo
+5. Pesadilla
+
+&gt; Desde Fácil (1) hasta Extremo (4), los grupos también contendrán anime de las dificultades anteriores.
+&gt; La dificultad Pesadilla (5) es diferente, ya que solo contiene los animes menos populares disponibles en el bot.
+
+__Cambiando la dificultad__
+Para cambiar la dificultad a `Fácil` para una sola ronda, usa `/sg difficulty:Easy` o `!sg d:1` o `!sg 1`.
+Funciona igual para otras dificultades dentro de otros comandos.
+
+La dificultad aumentará a medida que ganes más puntos, hasta un máximo de Extremo(4).
+Para cambiar esto, puedes usar `/mydifficulty` (si tu servidor no tiene comandos de barra, también puedes usarlo en un MD con RinBot)
+ </value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>¿Qué es la dificultad y cómo la cambio?</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Probablemente se esté reconectando, ya que Discord fuerza una reconexión de shards más o menos __cada hora__. Ten paciencia y vuelve a intentarlo en unos minutos.
+
+Si sigue sin funcionar __después de 15 minutos__, **mira la pregunta 6**.
+
+Si después de eso __sigue__ sin funcionar para ti, solicita ayuda en #help mientras menciona el shard y/o el cluster en el que se encuentra tu servidor.
+Puedes comprobar tu shard en [la página de estado]({0}/status).
+
+&gt; ⚠️ Ten en cuenta que **los sábados entre las 8:00 y las 12:00 UTC** están reservados como una ventana de mantenimiento, por lo que puede haber un tiempo de inactividad no anunciado durante ese tiempo.</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>¿Por qué RinBot aparece desconectado en mi servidor?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Hay dos formas de conseguir esto en este momento.
+
+a. **Usar permisos de Discord**
+Básicamente, debes darle a RinBot el permiso __Ver canal__ en el canal en el que deseas que escuche los comandos.
+Esto se puede hacer simplemente teniendo tus permisos bien configurados en Discord.
+
+__Ejemplos__:
+Deshabilitar `@everyone` __Ver canal__ en todos los canales. Luego crea un rol de "Miembros" que les dé a las personas __Ver canal__ a todos los canales, mientras que le das a RinBot solo __Ver canal__ al canal en el que debe escuchar los comandos.
+
+Alternativamente, crea un rol de "Bots" que no permita el acceso de __Ver canal__ específicamente a todos los canales. Luego, dale a RInBot acceso específico a tu canal elegido.
+
+b. **Usar control de acceso al canal**
+La configuración para esto está disponible después de iniciar sesión en [el sitio web]({0}).
+
+__Pasos a seguir__:
+- Después de iniciar sesión, vete a la parte superior derecha y haz clic en tu nombre, luego ve a __Mis servidores__.
+- Haz clic en el servidor que deseas configurar (tienes que ser __administrador__ o tener el rol de __administrador de servidores__).
+- Busca la pestaña __Canales__ y marca la casilla __Habilitar control de acceso al canal__.
+
+&gt; Con solo esta configuración, RinBot no escuchará comandos en ningún canal, por lo que ahora debemos permitirlo en el canal que deseas
+
+- Haz clic en __Agregar un canal__ y selecciona el canal en el que deseas que RinBot escuche los comandos.
+- Haz clic en __Agregar una regla__, lo que da como resultado una regla de acceso que permite todos los comandos en este canal.
+- Haz clic en __Guardar cambios__ en la parte inferior y ¡listo!</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>¿Cómo hago para que RinBot escuche los comandos en un solo canal?</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Puede haber una serie de razones diferentes por las que tus comandos no funcionen.
+
+a. **Tu prefijo se cambió por otro y lo olvidaste.**
+Puedes usar `@RinBot prefix` para ver y cambiar tu prefijo actual.
+
+Si no puedes usar `@RinBot prefix`, vete e inicia sesión en [el sitio web]({0}).
+Allí también puedes ver y cambiar tu prefijo en la página **Mis servidores** en la esquina superior derecha.
+
+b. **Has cambiado los permisos en tu servidor de tal manera que RinBot ya no puede enviar mensajes o embeds**
+Asegúrate de que RinBot tenga todos los permisos necesarios.
+Estos son: `Leer Mensajes`, `Enviar Mensajes`, `Incrustar Enlaces`, `Adjuntar Archivos` y para los canales de voz `Conectar` y `Hablar`
+&gt; Puedes volver a invitarla para verificar qué permisos se necesitan exactamente.
+
+c. **Estás utilizando __comandos de barra__ y se han configurado permisos de comando para rechazarlos**
+Mira la pregunta 10.
+
+d. **Los controles de acceso pueden estar configurados de manera que no permitan ningún comando**
+Una persona con permisos de administración del servidor necesitaría cambiar los controles de acceso para permitir los comandos si el control de acceso está habilitado.
+La configuración se puede encontrar en [el sitio web]({0}/my-servers).
+
+e. **El shard en el que está tu servidor está inactivo en estos momentos**
+Esto ocurre con poca frecuencia y debería solucionarse automáticamente en un par de minutos.
+Puedes comprobar el estado del shard en el que se encuentra tu servidor en [la página de estado]({0}/status).
+En caso de cualquier mantenimiento importante, también puedes consultar [statuspage.io](https://rinbot.statuspage.io/) para obtener actualizaciones.
+
+f. **Has deshabilitado completamente los comandos de texto en la configuración**
+Si quieres usar comandos de texto, asegúrate de no haber marcado la casilla "Deshabilitar comandos prefijados de legado" en la configuración del servidor en el sitio web.
+Esta opción hará que sólo funcionen los comandos de barra.</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Por defecto, RinBot filtrará una serie de animes.
+Esto es para evitar tener que hacer un canal con restricción de edad (anteriormente NSFW) y, por lo tanto, respetar los términos de servicio de Discord.
+
+Etiquetas de anime AniDB que se filtran:
+- 18 restricted
+- Borderline hentai
+- Nudity (weights &gt;200)
+- Sex (weights &gt;100)
+
+Cualquier cosa clasificada PG-13 o inferior en MAL siempre estará incluida.
+
+Con sólo configurar tu canal para que tenga restricción de edad RinBot cambiará automáticamente al modo NSFW.
+
+Si encuentras una imagen o vídeo NSFW mientras juegas en modo SFW, comunícate conmigo con el nombre del anime para que pueda agregarlo al filtro manualmente. </value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Cada ronda que juegues va a seleccionar un anime aleatorio de un "grupo" de anime que depende de los filtros que uses.
+Cuantos más filtros restrictivos uses, más pequeño será tu grupo de anime.
+Los puntos también se basan libremente en el conteo del grupo de anime, con un grupo de anime de 3000 dando los puntos máximos (normalmente 60).
+
+__Un ejemplo__
+Digamos que tienes una lista de anime con 100 animes (deben de tener al menos 1 episodio visto y que no estén abandonados).
+Alrededor de 20 de esos 100 animes se consideran populares, por lo que pertenecerían a la dificultad fácil.
+Si luego usas `!sg d:1 mal:username`, obtendrías un anime aleatorio de solo 20 animes.
+
+Pero también está el hecho de que RinBot no repite el anime durante al menos una hora.
+Teniendo esto en cuenta, cada ronda que juegues dentro de una hora reduciría esos 20 animes en 1.
+Entonces, después de 20 rondas, terminarás con un grupo de 0. Por lo tanto, RinBot no puede continuar y cancelará la ronda diciendo **La ronda fue cancelada debido a la falta de imágenes.**.
+
+El conteo de grupos de anime también se usa para la tabla de clasificación de tiempo. Dado que sería demasiado fácil para las personas usar `!sg d:1 g:sports` y spamear Haikyuu, he elegido permitir sólo rondas con un mínimo de 1000 en el grupo de anime para esa tabla de clasificación.</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Qué es esto de grupos de anime de la que siempre ando escuchando?</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Si estás usando comandos de barra `/`, esto not. El prefijo de los comandos de barra no se puede cambiar.
+
+El prefijo de un comando es el carácter (o más, de 1 a 5 caracteres como máximo) delante de cada comando.
+Por ejemplo, en `!sg` el prefijo sería `!`.
+Si estableces el prefijo como `!sg`, el comando se convertiría en `!sgsg`, así que ten cuidado con eso.
+Hasta puedes usar emojis como prefijo... (no lo hagas por favor)
+
+Con usar el comando `!prefix` puedes cambiar el prefijo desde Discord.
+Escribe `@RinBot prefix` si te has olvidado por completo de tu prefijo.
+
+También puedes cambiar el prefijo a través del [sitio web]({0}/my-servers). Sigue estos pasos:
+- Inicia sesión con tu cuenta de Discord en la parte superior derecha de la página
+- Clickea en tu nombre en la parte superior derecha y selecciona 'Mis servidores'
+- Busca tu servidor en la lista y clickea en 'Configurar'
+- Actualiza tu prefijo con lo que tú quieras (emojis no, por favor)
+- Presiona el botón de 'Guardar cambios' para terminar</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Puedes comenzar una ronda usando `/sg` .
+Para más comandos, puedes mirar [la lista de comandos]({0}/commands).
+
+&gt; ⚠️ Es posible seguir utilizando los comandos antiguos, como `!sg`, pero esto **no es recomendado**.  
+&gt; Estos comandos con prefijo antiguo están obsoletos y serán eliminados con el tiempo.
+&gt; También las nuevas características podrían sólo estar disponibles para los comandos de barra diagonal.</value>
+  </data>
+</root>

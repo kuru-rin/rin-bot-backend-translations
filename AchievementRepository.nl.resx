@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>1.3</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AchievementCategory_Decade00s" xml:space="preserve">
+		<value>Jaren 00</value>
+  </data>
+  <data name="AchievementCategory_Decade10s" xml:space="preserve">
+		<value>Jaren 10</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
+		<value>Jaren 70 en eerder</value>
+  </data>
+  <data name="AchievementCategory_Decade80s" xml:space="preserve">
+		<value>Jaren 80</value>
+  </data>
+  <data name="AchievementCategory_Decade90s" xml:space="preserve">
+		<value>Jaren 90</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime" xml:space="preserve">
+		<value>Verschillende anime</value>
+  </data>
+  <data name="AchievementCategory_GenreAction" xml:space="preserve">
+		<value>Genre - Actie</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi" xml:space="preserve">
+		<value>Genre - Ecchi</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror" xml:space="preserve">
+		<value>Genre - Horror</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Description" xml:space="preserve">
+    <value>Je bent gewend om de ogen van personages groter te zien dan hun neus. Als ze al een neus hebben.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Title" xml:space="preserve">
+    <value>De eerste stap</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Title" xml:space="preserve">
+    <value>Kwijlend</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Description" xml:space="preserve">
+    <value>Indrukwekkend... zeer indrukwekkend.</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Description" xml:space="preserve">
+    <value>Onthoud: verlovingen zijn heilig!</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Title" xml:space="preserve">
+    <value>Dinosaurus</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Description" xml:space="preserve">
+    <value>Je stampt op de concurrentie!</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Title" xml:space="preserve">
+    <value>Verslaafd</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Description" xml:space="preserve">
+    <value>Verslaving kan natuurlijk niet gemeten worden.</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Description" xml:space="preserve">
+    <value>Je probeerde grenzen te overschrijden, maar faalde.</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Description" xml:space="preserve">
+    <value>Het is niet allemaal pret en plezier... of wel?</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Title" xml:space="preserve">
+    <value>Dorstig naar meer</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Description" xml:space="preserve">
+    <value>Heb je dorst naar meer? Ik ben bang dat dit het laatste niveau was... voor nu.</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
+    <value>Hier is iets anders wat je met je tijd kunt doen.</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
+    <value>Duim omhoog</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Description" xml:space="preserve">
+    <value>Je krijgt een duim omhoog van Haruhi, maar ken je haar eigenlijk wel?</value>
+  </data>
+</root>

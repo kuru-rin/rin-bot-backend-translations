@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Faq_1_Answer" xml:space="preserve">
+	  <value>You can start a round by using `/sg` .
+For some more commands, check out [the command list]({0}/commands).
+
+&gt; ⚠️ It is currently possible to still use the legacy commands, such as `!sg`, but this is **not recommended**.  
+&gt; These legacy prefixed commands are obsolete and will be phased out over time. 
+&gt; Also new features might only become available for the slash commands.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+	  <value>How do I use RinBot?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+	  <value>How do I change the language?</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+	  <value>The `/lang` command can be used to change the language that RinBot speaks.
+
+You can also change the language of anime titles that are guessable and appear in the hints and anime poster at the end of rounds.
+For this please login on the website.
+
+To set English titles you can add a row to the top of main title preferences with content: AniDB, Official Title and English.
+
+&gt; Note that it is an advanced feature that might break RinBot on your server if not configured correctly.</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+	  <value>How do I change the command prefix?</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+	  <value>&gt; If you are using slash commands  `/` , this does not apply to you. Slash commands prefix cannot be changed.
+
+The command prefix is the character (or more, 1 to 5 characters max) in front of every command.
+For example in `!sg` the prefix would be `!`. 
+If you set the prefix to `!sg`, the command would become `!sgsg`, so beware of that.
+You can even use emojis as a prefix... but why would you?
+
+You can simply use the `!prefix` command to change the prefix from within discord.
+Type `@RinBot prefix` if you completely forgot your prefix.
+
+You can also change the prefix through [the website]({0}/my-servers). Please follow these steps:
+- Login using your Discord account on the top-right of the page
+- Click your name on the top-right and select 'My servers'
+- Find your server in the list and click on 'Configure'
+- Update the prefix to whatever you like
+- Press the 'Save changes' button to finish</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+	  <value>What is this anime pool thing I keep hearing about?</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+	  <value>So every round that you play will select a random anime from a "pool" of anime that depends on what filters you use.
+The more restrictive filters you use, the smaller your anime pool becomes.
+Points are also loosely based on the anime pool count, with an anime pool of 3000 giving maximum points (normally 60).
+
+__An example__
+Let's say you have an anime list with 100 anime in it (they need to have at least 1 episode watched and not be dropped).
+About 20 of those 100 anime are considered popular, so would belong in the easy difficulty.
+If you then use `!sg d:1 mal:username` it would grab a random anime from only 20 anime.
+
+Now there is also the fact that RinBot does not repeat anime for at least one hour.
+Taking that into account, every round you play within the hour would reduce that 20 anime by 1.
+So after 20 rounds you will end up with a pool of 0. Then RinBot cannot continue and will cancel the round, saying **The round was cancelled due to missing captures**.
+
+Anime pool count is also used for the time leaderboard. Since it would be too easy for people to use `!sg d:1 g:sports` and spam Haikyuu, I have chosen to only allow rounds with a minimum of 1000 in the anime pool in that leaderboard.</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+	  <value>What is NSFW mode and how do I enable it?</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+	  <value> By default RinBot will filter a number of anime.
+This is to avoid having to make a channel age-restricted (formerly NSFW) and thereby respecting Discord's terms of service.
+
+AniDB anime tags which are filtered:
+- 18 restricted
+- Borderline hentai
+- Nudity (weights &gt;200)
+- Sex (weights &gt;100)
+
+Anything rated PG-13 or below on MAL is always included.
+
+You can simply turn set your channel to be age-restricted and RinBot will automatically switch to NSFW mode.
+
+If you do encounter a NSFW image or video while playing in SFW mode, please contact me with the anime's name so I can add it to the filter manually. </value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+	  <value>None of the commands are working, how can I fix this?</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+	  <value>There can be a number of different reasons why your commands are not working.
+
+a. **Your prefix is changed to something else and you forgot.**  
+You can simply use `@RinBot prefix` to check your current prefix and change it also.
+
+If you cannot use `@RinBot prefix` go and login on [the website]({0}).
+There you can also see and change your prefix in the **My Servers** page in the top-right.
+
+b. **You have changed the permissions in your server in such a way that RinBot cannot send messages or embeds anymore**  
+Be sure that RinBot has all the necessary permissions.
+At this moment these are: `Read Messages`, `Send Messages`, `Embed Links`, `Attach Files` and for voice channels `Connect` and `Speak`
+&gt; You can re-invite her to check which permissions are exactly needed.
+
+c. **You are using __slash commands__ and command permissions have been set up to deny them**  
+See question 10.
+
+d. **Access controls might be set in a way that does not allow any commands**  
+A person with server management permissions would need to change the access controls so that it allows commands if access control is enabled.
+The configuration can be found on [the website]({0}/my-servers).
+
+e. **The shard that your server on is actually down**  
+This happens rarely and should be fixed automatically in a couple of minutes.
+You can check the status of the shard your server is on [the status page]({0}/status).
+In case of any large maintenance, you can also check [the statuspage.io site](https://rinbot.statuspage.io/) for updates.
+ 
+f. **You have disabled text commands completely in the configuration**  
+If you would like to use text commands, make sure you haven't ‎checked the box "Disable legacy prefixed commands" in the server settings on the website.
+This option will make it so only slash commands work.</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+	  <value>How do I make RinBot listen to commands on just a single channel?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+	  <value>There are two ways of accomplishing this at the moment.
+
+a. **Use Discord permissions**
+You basically need to give RinBot only the __View channel__ permission on the channel you want her to listen to commands.
+This can be done by just having your permissions set correctly in Discord.
+
+__Examples__: 
+Disallow `@everyone` __View channel__ to all channels. Then make a "Members" role which gives people __View channel__ to all channels, while giving RinBot only __View channel__ to the channel she should listen to commands in.
+
+Alternatively, make a "Bots" role which disallows __View channel__ access specifically to all channels. Then give RInBot specifically access to a channel of your choice.
+
+b. **Use channel access control**
+Configuration for this is available after logging in on [the website]({0}).
+
+__Steps to follow__:
+- After you login, go to the top right, and click on your name, then go to __My servers__.
+- Click the server you would like to configure (you need to be __administrator__ or have the __server management__ role).
+- Find the __Channels tab__ and check the __Enable channel access control__ box.
+
+&gt; With just this configuration, RinBot will not listen to commands on any channel at all, so now we need to allow it in the channel you want
+
+- Click __Add a channel__ and select the channel you would like RinBot to listen to commands in.
+- Click __Add a rule__, which results in an access rule which allows every command in this channel.
+- Click __Save changes__ at the bottom and you are done!</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+	  <value>Why is RinBot offline in my server?</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+	  <value>It's probably reconnecting, since Discord forces a reconnect of shards around __every hour__. Be patient and try again in a few minutes.
+
+If it's still not working __after 15 minutes__, **check question 6**.
+
+If after that it's __still__ not working for you, please ask for help in #help while mentioning the shard and/or cluster your server is on.
+You can check your shard on [the status page]({0}/status).
+
+&gt; ⚠️ Please note that **saturdays between 8:00-12:00 UTC** is reserved as a maintenance window, so there may be unannounced downtime during that time.</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+	  <value>What is difficulty and how do I change it?</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+	  <value>The difficulty is based on the popularity of the anime, you can choose between 5 difficulties:  
+1. Easy
+2. Normal
+3. Hard
+4. Extreme
+5. Nightmare
+
+&gt; From Easy(1) to Extreme(4) the pools will also contain anime from the previous difficulties. 
+&gt; The Nightmare(5) difficulty is different, this only contains the least popular anime available in the bot.
+
+__Changing difficulty__
+To change difficulty to `Easy` for a single round use `/sg difficulty:Easy` or `!sg d:1` or `!sg 1`.
+It works the same for other difficulties within other commands.
+
+Difficulty will increase while you gain more points, to a maximum of Extreme(4).
+To change this behaviour you can use `/mydifficulty` (if your server does not have slash commands you can also use it in a DM with RinBot)
+ </value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+	  <value>Slash commands are not working or can only be used by administrators</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+	  <value>Discord recently added the __slash command permissions__ system... rather silently.
+This gave servers the means to enable/disable slash commands inidividually for whatever channel or role they want.
+
+It seems on many servers the default settings for this made slash commands inaccessible to regular users.
+On __mobile devices__ and older versions this is not completely supported and you may get a message saying: 
+**This interaction failed** or **The application did not respond**
+
+__To change these permissions__
+In Discord go to `Server Settings - Integrations - RinBot` and make sure things are set up correctly here for your channels and roles. 
+Mobile devices do not yet support these features completely, so please use your PC for this or try the web-client on your device.
+
+&gt; Administrators can always use slash commands, no matter what permissions are set up here. So if you are already administrator, your problem would be something else.
+
+If this does not solve your issues, see __question 6__ for more possible causes.</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+	  <value>Why the name 'RinBot' and who is the girl in the avatar?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+	  <value>The girl in the picture is an Elin from the game TERA Online.  
+I had a character there named Kururin, which was an Elin mystic and looked similar to this.  
+  
+Originally I wrote a discord bot which did some default discord moderation stuff, just to try things out.
+When I asked 'what should I name it', someone said "just call it RinBot". I thought it was funny so the name kinda stuck.  
+  
+The art was done by momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)) so all credits for the avatar go to them!  
+Also check out the [original post of the artwork](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+	  <value>How can I make RinBot start rounds automatically?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+	  <value>Currently there is a feature called "start a round when channel is idle".
+This feature can be activated in the channel configuration after logging in on [the website]({0}/my-servers).  
+  
+For free servers the idle time is set to a minimum of one hour. This can be reduced to one minute when you become a supporter.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+	  <value>I have pledged but did not receive my perks, what now?</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+	  <value>To be able to get the perks you will need to have your **Discord account linked to your Patreon account**.  
+How to do this exactly [can be found here](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+If you **pledged before linking your Discord account** you can try to press [the 'Join' button here](https://www.patreon.com/rinbot?fan_landing=true) once more.  
+This should not ask for another payment, but it will trigger the webhook again which will result in giving you the perks automatically.  
+
+It will also try to give perks to anyone missing them around every hour, so just wait a little and you shall receive them automatically.
+  
+After pledging **you will need to re-login** on the RinBot website in order to use perks like boosting a server, or the extra channel configurations.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+	  <value>When does the weekly leaderboard reset?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+	  <value>Weekly leaderboard resets at the shown date in the `/weektop` command at midnight (00:00 / 12:00 AM) in UTC time.  
+
+It uses the ISO-8601 standard for the weeks of the year with Monday as the first day in the week.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+	  <value>How does the point calculation work?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+	  <value>Point calculation depends entirely on the amount of anime in the pool from which your round is created and the level of the winner.  
+  
+In the most simple case a pool of 3000 anime gives a maximum 60 points, reduced by `1 / numberOfCaptures` for every extra cap that is shown.  
+  
+The pool size depends on your filters. If use your own anime list as filter, which has 90 entries in the Completed  section and 10 in the On-hold section your pool size will be 100.  
+However, after every round you play with this same filter the pool will reduce by 1, since there are no repetitions for at least an hour for rounds that are started by yourself or within the same server.  
+  
+The formula that is being used:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Default `maxPoints` is `60` and `animeMaxPoints` is `3000`.  
+  
+The `animeMultiplier` variable depends on the year the anime was released.  
+- Before the year 2010 : `2`
+- Before the year 2000 : `3`
+- Before the year 1990 : `4`
+- Before the year 1980 : `5`
+
+The minimum amount of points you can get is `4`, which will become `1` if the last cap has been shown.  
+
+__Voice rounds__  
+For voice rounds points are decreased by time you take to respond rather than the number of captures that have been shown.</value>
+  </data>
+</root>
