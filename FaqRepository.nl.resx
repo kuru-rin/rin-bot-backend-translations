@@ -72,4 +72,14 @@ Voor meer commando's, bekijk [de commando lijst]({0}/commands).
   <data name="Faq_2_Question" xml:space="preserve">
     <value>Hoe verander ik de taal?</value>
   </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Het commando `/lang` kan worden gebruikt om de taal die RinBot spreekt te veranderen.
+
+Je kunt ook de taal veranderen van de anime-titels die geraden moeten worden, in de hints en in de anime-poster aan het eind van rondes verschijnen .
+Log hiervoor in op de website.
+
+Om Nederlandse titels in te stellen kun je een rij toevoegen aan de bovenkant van de titelvoorkeuren met inhoud: AniDB, Officiële titel en Nederlands.
+
+&gt; Let op dat dit een geavanceerde functie is die RinBot rare dingen kan laten doen als je het niet juist configureert.</value>
+  </data>
 </root>
