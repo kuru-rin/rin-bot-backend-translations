@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Saya telah berjanji tetapi tidak menerima fasilitas saya, bagaimana sekarang?</value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Perintah garis miring tidak berfungsi atau hanya dapat digunakan oleh administrator</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Anda dapat memulai ronde dengan menggunakan `/sg`.
+Untuk beberapa perintah lainnya, lihat [daftar perintah]({0}/commands).
+
+&gt; ⚠️ Saat ini masih memungkinkan untuk menggunakan perintah lama, seperti `!sg`, tetapi hal ini **tidak disarankan**.  
+&gt; Perintah-perintah lama yang diawali dengan awalan ini sudah usang dan akan dihapuskan seiring berjalannya waktu. 
+&gt; Selain itu, fitur-fitur baru mungkin hanya akan tersedia untuk perintah garis miring.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Bagaimana cara menggunakan RinBot?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Bagaimana cara mengubah bahasa?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Bagaimana cara mengubah awalan perintah?</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Perintah `/lang` dapat digunakan untuk mengubah bahasa yang digunakan RinBot.
+
+Anda juga dapat mengubah bahasa judul anime yang dapat ditebak dan muncul di petunjuk dan poster anime di akhir ronde.
+Untuk melakukan ini, silakan login di situs web.
+
+Untuk mengatur judul bahasa Inggris, Anda dapat menambahkan satu baris di bagian atas preferensi judul utama dengan konten: AniDB, Judul Resmi dan Bahasa Inggris.
+
+&gt; Perhatikan bahwa ini adalah fitur lanjutan yang dapat merusak RinBot di server Anda jika tidak dikonfigurasi dengan benar.</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Jika Anda menggunakan perintah garis miring `/`, hal ini tidak berlaku untuk Anda. Awalan perintah garis miring tidak dapat diubah.
+
+Awalan perintah adalah karakter (atau lebih, maksimal 1 sampai 5 karakter) di depan setiap perintah.
+Sebagai contoh dalam `!sg` awalannya adalah `!`. 
+Jika Anda mengatur awalan menjadi `!sg`, perintah akan menjadi `!sgsg`, jadi berhati-hatilah.
+Anda bahkan dapat menggunakan emoji sebagai awalan... tetapi mengapa Anda harus melakukannya?
+
+Anda cukup menggunakan perintah `!prefix` untuk mengubah awalan dari dalam discord.
+Ketik `@RinBot awalan` jika anda benar-benar lupa awalan anda.
+
+Anda juga dapat mengubah prefix melalui [situs web] ({0}/my-servers). Silakan ikuti langkah-langkah berikut:
+- Login menggunakan akun Discord Anda di kanan atas halaman
+- Klik nama Anda di bagian kanan atas dan pilih 'Server saya'
+- Temukan server Anda dalam daftar dan klik 'Konfigurasi'
+- Perbarui awalan dengan apa pun yang Anda suka
+- Tekan tombol 'Simpan perubahan' untuk menyelesaikannya</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Apa yang dimaksud dengan kolam renang anime yang selalu saya dengar?</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Jadi setiap ronde yang Anda mainkan akan memilih anime secara acak dari "kumpulan" anime yang tergantung pada filter yang Anda gunakan.
+Semakin ketat filter yang Anda gunakan, semakin kecil pool anime Anda.
+Poin juga secara longgar didasarkan pada jumlah kumpulan anime, dengan kumpulan anime sebanyak 3000 memberikan poin maksimum (biasanya 60).
+
+__Contoh__
+Katakanlah Anda memiliki daftar anime dengan 100 anime di dalamnya (mereka harus memiliki setidaknya 1 episode yang telah ditonton dan belum dihapus).
+Sekitar 20 dari 100 anime tersebut dianggap populer, jadi akan termasuk dalam tingkat kesulitan yang mudah.
+Jika Anda menggunakan `!sg d:1 mal:username`, maka Anda akan mendapatkan anime secara acak dari 20 anime tersebut.
+
+Sekarang ada juga fakta bahwa RinBot tidak mengulang anime setidaknya selama satu jam.
+Dengan mempertimbangkan hal tersebut, setiap ronde yang Anda mainkan dalam waktu satu jam akan mengurangi 20 anime tersebut sebanyak 1.
+Jadi setelah 20 ronde, Anda akan mendapatkan pool 0. Kemudian RinBot tidak dapat melanjutkan dan akan membatalkan ronde tersebut, dengan mengatakan **Ronde dibatalkan karena ada tangkapan yang hilang**.
+
+Jumlah pool anime juga digunakan untuk papan peringkat waktu. Karena akan terlalu mudah bagi orang untuk menggunakan `!sg d:1 g:sports` dan mengirim spam ke Haikyuu, saya telah memilih untuk hanya mengizinkan ronde dengan minimal 1000 anime pool di papan peringkat tersebut.</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Apa itu mode NSFW dan bagaimana cara mengaktifkannya?</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Secara default RinBot akan menyaring sejumlah anime.
+Ini untuk menghindari keharusan membuat saluran yang dibatasi usia (sebelumnya NSFW) dan dengan demikian menghormati ketentuan layanan Discord.
+
+Tag anime AniDB yang disaring:
+- 18 dibatasi
+- Hentai yang melewati batas
+- Ketelanjangan (bobot &gt;200)
+- Seks (bobot &gt;100)
+
+Apa pun yang memiliki rating PG-13 atau di bawahnya di MAL selalu disertakan.
+
+Anda cukup mengatur saluran Anda menjadi dibatasi usia dan RinBot akan secara otomatis beralih ke mode NSFW.
+
+Jika Anda menemukan gambar atau video NSFW saat bermain dalam mode SFW, silakan hubungi saya dengan nama anime sehingga saya dapat menambahkannya ke filter secara manual. </value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Tidak ada perintah yang berfungsi, bagaimana cara memperbaikinya?</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Mengapa RinBot offline di server saya?</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Ada beberapa alasan yang berbeda mengapa perintah Anda tidak berfungsi.
+
+a. **Awalan Anda diubah menjadi sesuatu yang lain dan Anda lupa.** 
+Anda cukup menggunakan `@RinBot prefix` untuk memeriksa prefix Anda saat ini dan mengubahnya juga.
+
+Jika Anda tidak dapat menggunakan `@RinBot awalan` pergi dan masuk ke [situs web]({0}).
+Di sana Anda juga dapat melihat dan mengubah prefix Anda di halaman **My Servers** di kanan atas.
+
+b. **Anda telah mengubah izin di server Anda sedemikian rupa sehingga RinBot tidak dapat mengirim pesan atau embed lagi** 
+Pastikan RinBot memiliki semua izin yang diperlukan.
+Pada saat ini adalah: `Baca Pesan`, `Kirim Pesan`, `Sematkan Tautan`, `Lampirkan File` dan untuk saluran suara `Hubungkan` dan `Bicara`
+&gt; Anda dapat mengundangnya kembali untuk memeriksa izin mana yang benar-benar diperlukan.
+
+c. **Anda menggunakan __perintah garis miring__ dan izin perintah telah diatur untuk menolaknya** 
+Lihat pertanyaan 10.
+
+d. **Kontrol akses mungkin telah diatur sedemikian rupa sehingga tidak mengizinkan perintah apa pun** 
+Seseorang yang memiliki hak akses manajemen server perlu mengubah kontrol akses sehingga mengizinkan perintah jika kontrol akses diaktifkan.
+Konfigurasi dapat ditemukan di [situs web]({0}/my-servers).
+
+e. **Shard tempat server Anda sebenarnya sedang down** 
+Hal ini jarang terjadi dan seharusnya diperbaiki secara otomatis dalam beberapa menit.
+Anda dapat memeriksa status shard di mana server Anda berada di [halaman status]({0}/status).
+Jika ada pemeliharaan besar, Anda juga dapat memeriksa [situs statuspage.io](https://rinbot.statuspage.io/) untuk pembaruan.
+ 
+f. **Anda telah menonaktifkan perintah teks sepenuhnya dalam konfigurasi** 
+Jika Anda ingin menggunakan perintah teks, pastikan Anda tidak mencentang kotak "Nonaktifkan perintah awalan lama" dalam pengaturan server di situs web.
+Opsi ini akan membuatnya hanya perintah garis miring yang berfungsi.</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Bagaimana cara membuat RinBot mendengarkan perintah hanya pada satu saluran?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Ada dua cara untuk mencapai hal ini pada saat ini.
+
+a. **Gunakan izin Discord**
+Pada dasarnya Anda hanya perlu memberikan izin __View channel__ kepada RinBot pada saluran yang Anda inginkan untuk mendengarkan perintah.
+Hal ini dapat dilakukan hanya dengan mengatur izin anda dengan benar di Discord.
+
+__Contoh__: 
+Larang `@semua orang` __Lihat saluran__ ke semua saluran. Kemudian buatlah peran "Anggota" yang memberikan orang __Lihat saluran__ ke semua saluran, sementara hanya memberikan RinBot __Lihat saluran__ ke saluran yang harus dia dengarkan perintahnya.
+
+Atau, buatlah peran "Bots" yang melarang akses __Lihat saluran__ secara khusus ke semua saluran. Kemudian berikan RInBot akses khusus ke saluran pilihan Anda.
+
+b. **Gunakan kontrol akses saluran**
+Konfigurasi untuk ini tersedia setelah masuk ke [situs web]({0}).
+
+__Langkah-langkah yang harus diikuti__:
+- Setelah Anda login, pergi ke kanan atas, dan klik pada nama Anda, lalu pergi ke __My servers__.
+- Klik server yang ingin anda konfigurasikan (anda harus menjadi __administrator__ atau memiliki peran __manajemen server__ ).
+- Cari tab __Channels__ dan centang kotak __Aktifkan kontrol akses saluran__.
+
+&gt; Dengan hanya konfigurasi ini, RinBot tidak akan mendengarkan perintah di saluran mana pun, jadi sekarang kita perlu mengizinkannya di saluran yang Anda inginkan
+
+- Klik __Tambahkan saluran__ dan pilih saluran yang Anda inginkan agar RinBot dapat mendengarkan perintah.
+- Klik __Tambahkan aturan__, yang menghasilkan aturan akses yang mengizinkan setiap perintah di saluran ini.
+- Klik __Simpan perubahan__ di bagian bawah dan Anda selesai!</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Kemungkinan sedang menyambung kembali, karena Discord memaksa untuk menyambung kembali pecahan-pecahan di sekitar __setiap jamnya__. Bersabarlah dan coba lagi dalam beberapa menit.
+
+Jika masih belum berhasil __setelah 15 menit__, **periksa pertanyaan 6**.
+
+Jika setelah itu __masih__ tidak berhasil, silakan minta bantuan di #help sambil menyebutkan shard dan/atau cluster tempat server Anda berada.
+Anda dapat memeriksa shard Anda di [halaman status] ({0}/status).
+
+&gt; ⚠️ Harap diperhatikan bahwa **hari Sabtu antara pukul 8:00-12:00 UTC** dicadangkan sebagai waktu pemeliharaan, sehingga mungkin ada waktu henti tanpa pemberitahuan selama waktu tersebut.</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Apa yang dimaksud dengan kesulitan dan bagaimana cara mengubahnya?</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>Tingkat kesulitan didasarkan pada popularitas anime, Anda dapat memilih di antara 5 tingkat kesulitan:  
+1. Mudah
+2. Normal
+3. Sulit
+4. Ekstrim
+5. Mimpi buruk
+
+&gt; Dari Easy(1) hingga Extreme(4), kumpulan anime juga akan berisi anime dari tingkat kesulitan sebelumnya. 
+&gt; Tingkat kesulitan Nightmare(5) berbeda, ini hanya berisi anime yang paling tidak populer yang tersedia di bot.
+
+__Mengubah kesulitan__
+Untuk mengubah kesulitan menjadi `Easy` untuk satu putaran, gunakan `/sg difficulty:Easy` atau `!sg d:1` atau `!sg 1`.
+Cara ini juga berlaku untuk tingkat kesulitan lain di dalam perintah lain.
+
+Tingkat kesulitan akan meningkat ketika Anda mendapatkan lebih banyak poin, hingga maksimum Extreme(4).
+Untuk mengubah perilaku ini, Anda dapat menggunakan `/mydifficulty` (jika server Anda tidak memiliki perintah garis miring, Anda juga dapat menggunakannya dalam DM dengan RinBot)
+ </value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord baru-baru ini menambahkan izin perintah garis miring __sistem__... secara diam-diam.
+Hal ini memberikan server sarana untuk mengaktifkan/menonaktifkan perintah garis miring secara individual untuk saluran atau peran apa pun yang mereka inginkan.
+
+Tampaknya pada banyak server, pengaturan default untuk hal ini membuat perintah garis miring tidak dapat diakses oleh pengguna biasa.
+Pada perangkat seluler ____ dan versi yang lebih lama, hal ini tidak sepenuhnya didukung dan Anda mungkin akan mendapatkan pesan yang mengatakan: 
+**Interaksi ini gagal** atau **Aplikasi tidak merespons**
+
+__Untuk mengubah izin ini__
+Di Discord, buka `Pengaturan Server - Integrasi - RinBot` dan pastikan semuanya telah diatur dengan benar di sini untuk saluran dan peran Anda. 
+Perangkat seluler belum mendukung fitur-fitur ini sepenuhnya, jadi silakan gunakan PC Anda untuk ini atau coba klien web pada perangkat Anda.
+
+&gt; Administrator selalu dapat menggunakan perintah garis miring, apa pun izin yang diatur di sini. Jadi, jika Anda sudah menjadi administrator, masalah Anda adalah hal yang berbeda.
+
+Jika hal ini tidak menyelesaikan masalah Anda, lihat __pertanyaan 6__ untuk kemungkinan penyebab lainnya.</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Bagaimana cara membuat RinBot memulai putaran secara otomatis?</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Mengapa nama 'RinBot' dan siapakah gadis dalam avatar tersebut?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Gadis dalam gambar adalah Elin dari game TERA Online.  
+Saya memiliki karakter di sana bernama Kururin, yang merupakan seorang mistikus Elin dan terlihat mirip dengan ini.  
+  
+Awalnya saya menulis bot discord yang melakukan beberapa hal moderasi discord default, hanya untuk mencoba-coba.
+Ketika saya bertanya 'apa yang harus saya beri nama', seseorang berkata "sebut saja RinBot". Saya pikir itu lucu, jadi nama itu agak melekat.  
+  
+Karya seninya dibuat oleh momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)) sehingga semua kredit untuk avatar ini jatuh ke tangan mereka!  
+Lihat juga [postingan asli karya seni](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Saat ini ada fitur yang disebut "memulai putaran ketika saluran menganggur".
+Fitur ini dapat diaktifkan dalam konfigurasi saluran setelah masuk ke [situs web] ({0}/my-servers).  
+  
+Untuk server gratis, waktu menganggur diatur ke minimum satu jam. Ini dapat dikurangi menjadi satu menit ketika anda menjadi pendukung.</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Untuk bisa mendapatkan fasilitas ini, Anda harus memiliki akun **Discord yang ditautkan ke akun Patreon Anda**.  
+Bagaimana cara melakukan hal ini [dapat ditemukan di sini](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Jika Anda **berjanji sebelum menautkan akun Discord Anda** Anda dapat mencoba menekan [tombol 'Gabung' di sini](https://www.patreon.com/rinbot?fan_landing=true) sekali lagi.  
+Ini tidak akan meminta pembayaran lagi, tetapi akan memicu webhook lagi yang akan memberikan Anda fasilitas secara otomatis.  
+
+Sistem ini juga akan mencoba memberikan fasilitas kepada siapa pun yang melewatkannya setiap jam, jadi tunggu sebentar dan Anda akan menerimanya secara otomatis.
+  
+Setelah berjanji **Anda harus masuk kembali** di situs web RinBot untuk menggunakan fasilitas seperti meningkatkan server, atau konfigurasi saluran tambahan.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Kapan papan peringkat mingguan diatur ulang?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Papan peringkat mingguan diatur ulang pada tanggal yang ditampilkan di perintah `/weektop` pada tengah malam (00:00 / 12:00 AM) dalam waktu UTC.  
+
+Papan peringkat ini menggunakan standar ISO-8601 untuk minggu-minggu dalam setahun dengan hari Senin sebagai hari pertama dalam seminggu.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Bagaimana cara kerja penghitungan poin?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Perhitungan poin sepenuhnya bergantung pada jumlah anime dalam pool tempat ronde Anda dibuat dan level pemenang.  
+  
+Dalam kasus yang paling sederhana, kumpulan 3000 anime memberikan maksimum 60 poin, dikurangi dengan `1 / numberOfCaptures` untuk setiap tambahan cap yang ditampilkan.  
+  
+Ukuran kumpulan tergantung pada filter Anda. Jika menggunakan daftar anime Anda sendiri sebagai filter, yang memiliki 90 entri di bagian Selesai dan 10 di bagian Ditunda, ukuran pool Anda akan menjadi 100.  
+Namun, setelah setiap ronde yang Anda mainkan dengan filter yang sama, pool akan berkurang 1, karena tidak ada pengulangan selama setidaknya satu jam untuk ronde yang dimulai oleh Anda sendiri atau dalam server yang sama.  
+  
+Rumus yang digunakan:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Default `maxPoints` adalah `60` dan `animeMaxPoints` adalah `3000`.  
+  
+Variabel `animeMultiplier` tergantung pada tahun anime tersebut dirilis.  
+- Sebelum tahun 2010 : `2`
+- Sebelum tahun 2000 : `3`
+- Sebelum tahun 1990 : `4`
+- Sebelum tahun 1980 : `5`
+
+Jumlah minimum poin yang bisa Anda dapatkan adalah `4`, yang akan menjadi `1` jika batas terakhir telah ditampilkan.  
+
+__Putaran suara__ 
+Untuk ronde suara, poin berkurang berdasarkan waktu yang Anda gunakan untuk merespons, bukan berdasarkan jumlah tangkapan yang telah ditampilkan.</value>
+  </data>
 </root>
