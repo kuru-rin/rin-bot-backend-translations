@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>コマンドプレフィックスを変更するには？</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; スラッシュコマンド`/` を使用している場合、これは適用されません。スラッシュコマンドの接頭辞は変更できません。
+
+コマンドプレフィックスとは、すべてのコマンドの前にある文字（またはそれ以上、最大1～5文字）のことです。
+例えば`!sg` の場合、接頭辞は`!` となります。 
+プレフィックスを`!sg` に設定すると、コマンドは`!sgsg` になってしまうので注意が必要です。
+絵文字をプレフィックスとして使うこともできる。
+
+`!prefix` コマンドを使えば、discord 内からプレフィックスを変更できます。
+プレフィックスを完全に忘れてしまった場合は`@RinBot prefix` と入力してください。
+
+また、[ウェブサイト]({0}/my-servers)からもプレフィックスを変更できます。以下の手順に従ってください：
+- ページの右上にあるDiscordアカウントを使ってログインしてください。
+- 右上の自分の名前をクリックし、「マイサーバー」を選択します。
+- リストで自分のサーバーを見つけ、'設定'をクリックします。
+- プレフィックスを好きなものに更新する
+- Save changes'ボタンを押して完了です。</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>このアニメのプールは何なんだ？</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>つまり、どのラウンドをプレイしても、使用するフィルターによってアニメの「プール」からランダムにアニメが選ばれる。
+制限の多いフィルターを使えば使うほど、アニメプールは小さくなる。
+ポイントもまた、アニメプールの数に緩やかに基づいており、3000のアニメプールが最大ポイント（通常は60ポイント）を与える。
+
+__例__
+例えば、100のアニメが入ったアニメリストがあるとします（最低1話視聴済みで、脱落していない必要があります）。
+その100個のアニメのうち約20個は人気があると考えられるので、簡単な難易度に属するだろう。
+`!sg d:1 mal:username` を使うと、20のアニメからランダムなアニメが選ばれる。
+
+RinBotは少なくとも1時間はアニメを繰り返さないという事実もある。
+それを考慮すると、1時間以内に1ラウンドをプレイするごとに、20本のアニメが1本ずつ減っていくことになる。
+そうすると、RinBotはラウンドを続けることができなくなり、**The round was cancelled due to missing captures** と言って、ラウンドをキャンセルする。
+
+アニメのプール数はタイムリーダーボードにも使用されます。`!sg d:1 g:sports` を使ってHaikyuuのスパムをするのは簡単すぎるので、私はこのリーダーボードではアニメプールが最低1000のラウンドのみを許可することにしました。</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>NSFWモードとは何ですか？</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> デフォルトでは、RinBotは多くのアニメをフィルタリングします。
+これはチャンネルを年齢制限（以前はNSFW）にすることを避けるためで、それによってDiscordの利用規約を尊重しています。
+
+フィルタリングされるAniDBアニメタグ
+- 18禁
+- 境界線上のHENTAI
+- ヌード（ウェイト&gt;200）
+- セックス (ウエイト &gt; 100)
+
+MALのレーティングがPG-13以下であるものは必ず含まれる。
+
+RinBotは自動的にNSFWモードに切り替わります。
+
+SFWモードで再生中にNSFWの画像や動画に遭遇した場合は、手動でフィルターに追加しますので、アニメ名をご連絡ください。 </value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>どのコマンドも機能しません。</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>コマンドが機能しない理由はさまざまです。
+
+a.**接頭辞が他のものに変更されていて、それを忘れている。** 
+`@RinBot prefix` で現在のプレフィックスを確認し、変更することができます。
+
+`@RinBot prefix` が使えない場合は、[ウェブサイト]({0})にログインしてください。
+右上の**My Servers** ページでプレフィックスを確認し、変更することもできます。
+
+b.**b. RinBotがメッセージやエンベッドを送信できないように、サーバーのパーミッションを変更している** 
+RinBotに必要なパーミッションが全て与えられていることを確認してください。
+現時点では以下のようになっています：`Read Messages`,`Send Messages`,`Embed Links`,`Attach Files` and for voice channels`Connect` and`Speak です。`
+&gt; どのパーミッションが必要かを確認するために、彼女を再度招待することができます。
+
+c.**あなたは__スラッシュコマンド__を使用しており、コマンドのパーミッションはそれらを拒否するように設定されている** 
+質問10を参照。
+
+d.**アクセス制御がコマンドを許可しないように設定されている可能性がある** 
+サーバー管理権限を持つ人は、アクセス制御が有効になっている場合、コマンドを許可するようにアクセス制御を変更する必要があります。
+設定は[ウェブサイト]({0}/my-servers)にある。
+
+e.**e. あなたのサーバーがあるシャードが実際にダウンしている** 
+これはめったに起こらないことで、数分で自動的に修正されるはずです。
+あなたのサーバーがあるシャードのステータスは、[ステータスページ]({0}/status)で確認できます。
+大規模なメンテナンスの場合は、[statuspage.io サイト](https://rinbot.statuspage.io/) で最新情報を確認することもできます。
+ 
+f.**f. 設定** でテキストコマンドを完全に無効にしている。  
+テキストコマンドを使用したい場合は、ウェブサイトのサーバー設定で "Disable legacy prefixed commands "にチェックが入っていないか確認してください。
+このオプションにより、スラッシュコマンドのみが動作するようになります。</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>RinBotに1つのチャンネルのみでコマンドを聞かせるには？</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>今のところ、これを実現する方法は2つある。
+
+a.**Discordのパーミッションを使う**
+基本的には、RinBotにコマンドを聞かせたいチャンネルで、__View channel__ のパーミッションだけを与える必要があります。
+これはDiscordでパーミッションを正しく設定することで可能です。
+
+__例__ ： 
+`@everyone` __View channel__ をすべてのチャンネルに許可しない。それから、"メンバー "ロールを作って、__すべてのチャンネルにチャンネル__ を表示できるようにします。一方、RinBotには__コマンドを聞くべきチャンネルにチャンネル__ を表示できるようにします。
+
+__ あるいは、"Bots "ロールを作って、__すべてのチャンネルへのアクセスを禁止します。そして、RInBotに特定のチャンネルへのアクセス権を与えます。
+
+b.**チャネル・アクセス・コントロールの使用**
+この設定は、[ウェブサイト]({0})でログインした後に利用できます。
+
+__手順__ ：
+- ログイン後、右上の自分の名前をクリックし、__My servers__ に進みます。
+- 設定したいサーバーをクリックします（__管理者__ になるか、__サーバー管理__ ロールを持つ必要があります）。
+-__Channelsタブ__ を見つけ、__Enable channel access control__ ボックスをチェックします。
+
+&gt; この設定だけでは、RinBotはどのチャンネルでもコマンドを聞きません。
+
+-__チャンネルの追加__ をクリックし、RinBot にコマンドを聞かせたいチャンネルを選択します。
+-__Add a rule__ をクリックし、このチャンネルの全てのコマンドを許可するアクセスルールを作成します。
+-__Save changes__ をクリックして完了です！</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>私のサーバーでRinBotがオフラインになっているのはなぜですか？</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>__Discordでは1時間おきに__、シャードの再接続を強制的に行っているため、おそらく再接続しているのだろう。数分後に再接続してみてください。
+
+もし15分経っても__うまくいかない場合は__ 、**質問6** を確認してください。
+
+その後、まだ____ が動作しない場合は、#help でサーバーのシャードやクラスタを明記の上、助けを求めてください。
+シャードは[ステータスページ]({0}/status)で確認できます。
+
+&gt; ⚠️**土曜日8:00-12:00(UTC)** はメンテナンスウィンドウとして予約されています。</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>難易度とは何ですか？</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>難易度はアニメの人気に基づいており、5つの難易度から選ぶことができる：  
+1.簡単
+2.普通
+3.ハード
+4.エクストリーム
+5.悪夢
+
+&gt; イージー(1)からエクストリーム(4)までのプールには、前の難易度のアニメも含まれます。 
+&gt; ナイトメア(5)の難易度は異なり、ボットで利用可能な最も人気のないアニメのみが含まれます。
+
+__難易度の変更__
+難易度を`Easy` に変更するには、`/sg difficulty:Easy` または`!sg d:1` または`!sg 1` を使います。
+他のコマンドで他の難易度に変更する場合も同じです。
+
+難易度はより多くのポイントを獲得する間、最大Extreme(4)まで上昇します。
+この動作を変更するには、`/mydifficulty` を使ってください。（もしあなたのサーバーにスラッシュコマンドがない場合は、RinBotのDMでも使えます。）
+ </value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>スラッシュコマンドが動作しない、または管理者だけが使用できる</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discordは最近、__スラッシュコマンドのパーミッション__ システムを追加した。
+これによって、サーバーは好きなチャンネルやロールで個別にスラッシュコマンドを有効/無効にできるようになりました。
+
+多くのサーバーで、スラッシュコマンドのデフォルト設定は一般ユーザーにはアクセスできないようになっていたようだ。
+__モバイルデバイス__ とそれ以前のバージョンでは、これは完全にサポートされておらず、次のようなメッセージが表示されることがあります： 
+**This interaction failed** or**The application did not respond**
+
+__これらのパーミッションを変更するには、次のようなメッセージが表示されます。__
+Discordで`Server Settings - Integrations - RinBot` にアクセスし、チャンネルとロールが正しく設定されていることを確認してください。 
+モバイルデバイスはまだこれらの機能を完全にサポートしていないので、PCを使用するか、デバイスのウェブクライアントを試してください。
+
+&gt; 管理者は、ここでどのようなパーミッションが設定されていても、常にスラッシュコマンドを使用することができます。ですから、もしあなたがすでに管理者であれば、問題は別のところにあるはずです。
+
+それでも解決しない場合は、__の質問6__ を参照してください。</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>写真の少女は、ゲーム『TERA Online』に登場するエリンだ。  
+そこにクルリンというキャラクターがいて、エリンの神秘家で、これに似ていた。  
+  
+もともとは、いろいろ試すために、デフォルトのディスコード・モデレーションをするディスコード・ボットを書いたんだ。
+名前をどうしようか」と聞いたら、誰かが「RinBotでいいよ」と言った。僕はそれが面白いと思ったから、この名前が定着したんだ。  
+  
+アートはmomocoさん（[pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)）にお願いしました！  
+アートワークの元記事](https://www.pixiv.net/en/artworks/36910527)も見てね。</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>誓約したが、特典を受け取っていない。</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>特典を得るためには、**DiscordアカウントをPatreonアカウント** にリンクさせる必要があります。  
+具体的な方法はこちら](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role)をご覧ください。  
+  
+**もしDiscordアカウント** をリンクする前に誓約した場合は、もう一度[ここにある「参加」ボタン](https://www.patreon.com/rinbot?fan_landing=true)を押してみてください。  
+この場合、再度支払いを要求されることはありませんが、Webhookが再度起動し、特典が自動的に付与されます。  
+
+また、1時間ごとに特典が足りない人に特典を与えようとするので、少し待つだけで自動的に特典を受け取ることができます。
+  
+**を誓約した後、サーバーのブーストや追加チャンネル設定などの特典を使用するには、RinBotのウェブサイトで** に再ログインする必要があります。  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>週間リーダーボードはいつリセットされますか？</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>ウィークリーリーダーボードは、`/weektop` コマンドで指定された日付、UTC時間で午前0時（00:00 / 12:00）にリセットされます。  
+
+週はISO-8601標準を使用し、月曜日を週の初日とします。</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>得点計算はどのように行われるのですか？</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>ポイントの計算は、ラウンドの元となるプールのアニメの量と、勝者のレベルによって決まる。  
+  
+最も単純なケースでは、3000のアニメプールは最大60ポイントを与え、`1 / numberOfCaptures` によって、余分なキャップが表示されるごとに減少します。  
+  
+プールのサイズはフィルターに依存する。自分のアニメリストをフィルターとして使用する場合、Completedセクションに90のエントリーがあり、On-holdセクションに10のエントリーがある場合、プールのサイズは100になります。  
+しかし、この同じフィルターを使ってラウンドするごとに、プールは1ずつ減っていきます。なぜなら、自分自身または同じサーバー内で開始されたラウンドでは、少なくとも1時間は繰り返しがないからです。  
+  
+使用されている計算式  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; デフォルト`maxPoints` is`60` and`animeMaxPoints` is`3000`.  
+  
+`animeMultiplier` 変数はアニメがリリースされた年に依存する。  
+- 2010年以前 :`2`
+- 2000年以前 :`3`
+- 1990年以前 :`4`
+- 1980年以前 :`5`
+
+最低獲得ポイントは`4` で、最後の上限が表示されている場合は`1` となります。  
+
+__ボイスラウンド__ 
+ボイスラウンドのポイントは、表示されたキャプチャーの数ではなく、応答にかかった時間によって減少します。</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>`/lang` コマンドを使用すると、RinBot が話す言語を変更できます。
+
+また、ヒントやラウンド終了時のアニメポスターに表示されるアニメタイトルの言語も変更できます。
+このためには、ウェブサイトからログインしてください。
+
+英語のタイトルを設定するには、メインタイトルの環境設定の一番上に行を追加します：AniDB、公式タイトル、英語。
+
+&gt; これは高度な機能であり、正しく設定されていない場合、サーバー上のRinBotを破壊する可能性があることに注意してください。</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>`/sg` でラウンドを開始できる。
+その他のコマンドについては、[コマンドリスト]({0}/commands)をチェックしてください。
+
+&gt; ⚠️`!sg` のようなレガシーコマンドを使用することも可能ですが、**お勧めしません** 。  
+&gt; これらのレガシーな接頭辞付きコマンドは時代遅れであり、時間の経過とともに廃止されていくでしょう。 
+&gt; また、新機能はスラッシュコマンドでのみ利用可能になるかもしれません。</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>RinBotの使い方は？</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>言語を変更するには？</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>なぜ "RinBot "なのか、そしてアバターの女の子は誰なのか？</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>RinBotが自動的にラウンドを開始するようにするにはどうすればいいですか？</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>現在、「チャンネルがアイドル状態のときにラウンドを開始する」という機能があります。
+この機能は[ウェブサイト]({0}/my-servers)でログインした後、チャンネル設定で有効にできます。  
+  
+無料サーバーの場合、アイドル時間は最低1時間に設定されています。サポーターになると、アイドル時間を1分に短縮できます。</value>
+  </data>
 </root>
