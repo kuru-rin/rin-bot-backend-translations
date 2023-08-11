@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Astfel, în fiecare rundă pe care o joci, vei selecta un anime aleatoriu dintr-un "grup" de anime-uri care depinde de filtrele pe care le folosești.
+Cu cât filtrele pe care le folosești sunt mai restrictive, cu atât mai mică va fi rezerva de anime-uri.
+Punctele se bazează, de asemenea, pe numărul de anime-uri din "pool", un "pool" de 3000 de anime-uri oferind maximum de puncte (în mod normal 60).
+
+__Un exemplu__
+Să spunem că aveți o listă de anime-uri cu 100 de anime-uri în ea (acestea trebuie să aibă cel puțin 1 episod vizionat și să nu fie abandonate).
+Aproximativ 20 din aceste 100 de anime-uri sunt considerate populare, deci ar aparține dificultății ușoare.
+Dacă folosiți `!sg d:1 mal:username`, veți selecta un anime la întâmplare din cele 20 de anime-uri.
+
+Acum mai există și faptul că RinBot nu repetă anime-urile timp de cel puțin o oră.
+Ținând cont de acest lucru, fiecare rundă pe care o jucați în decurs de o oră ar reduce cele 20 de anime-uri cu 1.
+Deci, după 20 de runde, veți ajunge la un pool de 0. Atunci RinBot nu mai poate continua și va anula runda, spunând **Runda a fost anulată din cauza capturilor lipsă**.
+
+Numărătoarea bazinului de anime-uri este, de asemenea, folosită pentru clasamentul timpului. Deoarece ar fi prea ușor pentru oameni să folosească `!sg d:1 g:sports` și să facă spam Haikyuu, am ales să permit doar runde cu un minim de 1000 în anime pool în acel clasament.</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Ce este modul NSFW și cum îl pot activa?</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> În mod implicit, RinBot va filtra un număr de anime.
+Acest lucru este pentru a evita necesitatea de a face un canal cu restricții de vârstă (anterior NSFW) și, astfel, pentru a respecta termenii de serviciu ai Discord.
+
+Etichetele anime din AniDB care sunt filtrate:
+- 18 restricted
+- La limita hentai
+- Nuditate (greutăți &gt;200)
+- Sex (greutăți &gt;100)
+
+Tot ceea ce este clasificat PG-13 sau mai jos pe MAL este întotdeauna inclus.
+
+Puteți pur și simplu să vă setați canalul pentru a fi restricționat în funcție de vârstă, iar RinBot va trece automat la modul NSFW.
+
+Dacă întâlniți o imagine sau un videoclip NSFW în timp ce jucați în modul SFW, vă rog să mă contactați cu numele anime-ului, astfel încât să îl pot adăuga manual la filtru. </value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Niciuna dintre comenzi nu funcționează, cum pot rezolva acest lucru?</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Există o serie de motive diferite pentru care comenzile dvs. nu funcționează.
+
+a. **Prefixul dvs. este schimbat în altceva și ați uitat.** 
+Puteți folosi pur și simplu `@RinBot prefix` pentru a verifica prefixul dvs. curent și pentru a-l schimba și pe acesta.
+
+Dacă nu puteți utiliza `@RinBot prefixul` mergeți și conectați-vă pe [site-ul web]({0}).
+Acolo puteți, de asemenea, să vă vedeți și să vă schimbați prefixul în pagina **My Servers** din dreapta sus.
+
+b. **Ați modificat permisiunile în serverul dvs. în așa fel încât RinBot nu mai poate trimite mesaje sau embed-uri** 
+Asigurați-vă că RinBot are toate permisiunile necesare.
+În acest moment, acestea sunt: `Read Messages`, `Send Messages`, `Embed Links`, `Attach Files` și pentru canalele vocale `Connect` și `Speak`
+&gt; Puteți să o reinvitați pentru a verifica ce permisiuni sunt exact necesare.
+
+c. **Folosiți comenzi __slash__ și permisiunile de comandă au fost configurate pentru a le refuza** 
+Consultați întrebarea 10.
+
+d. **Controalele de acces ar putea fi setate în așa fel încât să nu permită nicio comandă** 
+O persoană cu permisiuni de gestionare a serverului ar trebui să modifice controalele de acces astfel încât să permită comenzile dacă este activat controlul accesului.
+Configurația poate fi găsită pe [site-ul web]({0}/my-servers).
+
+e. **Shard-ul pe care se află serverul dvs. este de fapt indisponibil** 
+Acest lucru se întâmplă rar și ar trebui să fie rezolvat automat în câteva minute.
+Puteți verifica starea shard-ului pe care se află serverul dvs. pe [pagina de stare]({0}/status).
+În cazul unor lucrări de întreținere de amploare, puteți verifica, de asemenea, [site-ul statuspage.io](https://rinbot.statuspage.io/) pentru actualizări.
+ 
+f. **Ați dezactivat complet comenzile text în configurație** 
+Dacă doriți să utilizați comenzi text, asigurați-vă că nu ați bifat căsuța "Disable legacy prefixed commands" (Dezactivați comenzile prefixate moștenite) în setările serverului de pe site.
+Această opțiune va face ca numai comenzile slash să funcționeze.</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Cum pot face RinBot să asculte comenzile pe un singur canal?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>În prezent, există două modalități de a realiza acest lucru.
+
+a. **Utilizați permisiunile Discord**
+Practic, trebuie să îi dați lui RinBot doar permisiunea __Vezi canalul__ pe canalul pe care doriți ca ea să asculte comenzile.
+Acest lucru se poate face doar având permisiunile setate corect în Discord.
+
+__Exemple__: 
+Nu permiteți `@everyone` __Vezi canalul__ la toate canalele. Apoi faceți un rol "Members" care dă oamenilor __Vezi canalul__ pe toate canalele, în timp ce RinBot are doar __Vezi canalul__ pe canalul pe care ar trebui să asculte comenzile.
+
+Alternativ, creați un rol "Bots" care interzice accesul la toate canalele __Vezi canalul__. Apoi, acordați-i lui RInBot acces specific la un canal la alegere.
+
+b. **Utilizați controlul accesului la canale**
+Configurația pentru acest lucru este disponibilă după conectarea pe [site-ul web]({0}).
+
+__Pași de urmat__:
+- După ce vă autentificați, mergeți în dreapta sus și faceți clic pe numele dvs., apoi accesați __Serverele mele__.
+- Faceți clic pe serverul pe care doriți să îl configurați (trebuie să fiți __administrator__ sau să aveți rolul __server management__ ).
+- Găsiți fila __Channels (Canale)__ și bifați căsuța __Enable channel access control (Activare control acces canale)__.
+
+&gt; Doar cu această configurație, RinBot nu va asculta comenzi pe niciun canal, așa că acum trebuie să îi permitem accesul pe canalul pe care îl doriți
+
+- Faceți clic pe __Add a channel__ și selectați canalul pe care doriți ca RinBot să asculte comenzile.
+- Faceți clic pe __Add a rule__, ceea ce are ca rezultat o regulă de acces care permite orice comandă în acest canal.
+- Faceți clic pe __Save changes__ în partea de jos și ați terminat!</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>De ce este RinBot offline în serverul meu?</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Probabil că se reconectează, deoarece Discord forțează o reconectare a shards în jurul __la fiecare oră__. Aveți răbdare și încercați din nou în câteva minute.
+
+Dacă tot nu funcționează __după 15 minute__, **verificați întrebarea 6**.
+
+Dacă și după aceea __încă nu funcționează pentru dumneavoastră__, vă rugăm să cereți ajutor în #help menționând în același timp shard-ul și/sau cluster-ul pe care se află serverul dumneavoastră.
+Puteți verifica shard-ul dvs. pe [pagina de stare]({0}/status).
+
+&gt; ⚠️ Vă rugăm să rețineți că **sâmbăta între 8:00-12:00 UTC** este rezervată ca fereastră de mentenanță, astfel încât este posibil să existe întreruperi neanunțate în această perioadă.</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Ce este dificultatea și cum o pot schimba?</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>Dificultatea se bazează pe popularitatea anime-ului, puteți alege între 5 dificultăți:  
+1. Ușor
+2. Normal
+3. Greu
+4. Extreme
+5. Coșmar
+
+&gt; De la Ușor(1) la Extrem(4), bazinele vor conține, de asemenea, anime-uri din dificultățile anterioare. 
+&gt; Dificultatea Coșmar(5) este diferită, aceasta conține doar cele mai puțin populare anime-uri disponibile în bot.
+
+__Schimbarea dificultății__
+Pentru a schimba dificultatea la `Easy` pentru o singură rundă folosiți `/sg difficulty:Easy` sau `!sg d:1` sau `!sg 1`.
+Funcționează la fel și pentru alte dificultăți în cadrul altor comenzi.
+
+Dificultatea va crește pe măsură ce câștigați mai multe puncte, până la un maxim de Extreme(4).
+Pentru a schimba acest comportament, puteți folosi `/mydifficulty` (dacă serverul dvs. nu are comenzi slash, o puteți folosi și într-un DM cu RinBot).
+ </value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Comenzile Slash nu funcționează sau pot fi folosite doar de administratori</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord a adăugat recent comanda __slash permisiuni__ sistem... destul de silențios.
+Acest lucru a oferit serverelor mijloacele de a activa/dezactiva comenzile slash în mod individual pentru orice canal sau rol pe care îl doresc.
+
+Se pare că pe multe servere, setările implicite pentru acest lucru făceau comenzile slash inaccesibile pentru utilizatorii obișnuiți.
+Pe __dispozitive mobile__ și versiuni mai vechi, acest lucru nu este complet acceptat și este posibil să primiți un mesaj care spune: 
+**Această interacțiune a eșuat** sau **Aplicația nu a răspuns**
+
+__Pentru a modifica aceste permisiuni__
+În Discord, accesați `Server Settings - Integrations - RinBot` și asigurați-vă că lucrurile sunt configurate corect aici pentru canalele și rolurile dvs. 
+Dispozitivele mobile nu suportă încă complet aceste caracteristici, așa că vă rugăm să folosiți PC-ul pentru acest lucru sau să încercați clientul web de pe dispozitivul dvs.
+
+&gt; Administratorii pot folosi întotdeauna comenzi slash, indiferent de ce permisiuni sunt configurate aici. Deci, dacă sunteți deja administrator, problema dvs. ar fi alta.
+
+Dacă acest lucru nu vă rezolvă problemele, consultați __întrebarea 6__ pentru mai multe cauze posibile.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>M-am angajat, dar nu am primit beneficiile mele, ce urmează?</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Pentru a putea beneficia de avantaje, va trebui să aveți contul **Discord conectat la contul Patreon**.  
+Cum se face acest lucru exact [poate fi găsit aici](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Dacă **v-ați angajat înainte de a vă lega contul de Discord** puteți încerca să apăsați [butonul "Join" aici](https://www.patreon.com/rinbot?fan_landing=true) încă o dată.  
+Acest lucru nu ar trebui să ceară o altă plată, dar va declanșa din nou webhook-ul, ceea ce va avea ca rezultat acordarea automată a avantajelor.  
+
+De asemenea, va încerca să ofere perks celor care le lipsesc cam la fiecare oră, așa că așteptați puțin și le veți primi automat.
+  
+După ce v-ați angajat pe **va trebui să vă autentificați din nou** pe site-ul RinBot pentru a putea folosi avantajele, cum ar fi stimularea unui server sau configurațiile suplimentare ale canalelor.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Când se resetează clasamentul săptămânal?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Clasamentul săptămânal se resetează la data indicată în comanda `/weektop` la miezul nopții (00:00 / 12:00 AM) în timpul UTC.  
+
+Se utilizează standardul ISO-8601 pentru săptămânile anului, cu ziua de luni ca primă zi a săptămânii.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Cum funcționează calculul punctelor?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Calcularea punctelor depinde în întregime de cantitatea de anime din pool-ul din care este creată runda ta și de nivelul câștigătorului.  
+  
+În cel mai simplu caz, un pool de 3000 de anime-uri oferă maxim 60 de puncte, reduse cu `1 / numberOfCaptures` pentru fiecare capă suplimentară care este prezentată.  
+  
+Dimensiunea pool-ului depinde de filtrele dvs. Dacă folosiți ca filtru propria listă de anime-uri, care are 90 de intrări în secțiunea Completed și 10 în secțiunea On-hold, dimensiunea piscinei va fi de 100.  
+Cu toate acestea, după fiecare rundă pe care o jucați cu același filtru, piscina se va reduce cu 1, deoarece nu există repetări timp de cel puțin o oră pentru rundele începute de dvs. sau în cadrul aceluiași server.  
+  
+Formula care este folosită:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Default `maxPoints` este `60` și `animeMaxPoints` este `3000`.  
+  
+Variabila `animeMultiplier` depinde de anul în care a fost lansat anime-ul.  
+- Înainte de anul 2010 : `2`
+- Înainte de anul 2000: `3`
+- Înainte de anul 1990: `4`
+- Înainte de anul 1980: `5`
+
+Numărul minim de puncte pe care îl puteți obține este `4`, care va deveni `1` dacă a fost afișat ultimul plafon.  
+
+__Runde vocale__ 
+Pentru rundele vocale, punctele sunt diminuate în funcție de timpul de răspuns și nu de numărul de capturi care au fost afișate.</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Ce e chestia asta cu piscina anime de care tot aud?</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Puteți începe o rundă folosind `/sg`.
+Pentru mai multe comenzi, consultați [lista de comenzi]({0}/commands).
+
+&gt; ⚠️ În prezent, este posibil să mai folosiți în continuare comenzile vechi, cum ar fi `!sg`, dar acest lucru nu este **recomandat**.  
+&gt; Aceste comenzi prefixate moștenite sunt învechite și vor fi eliminate în timp. 
+&gt; De asemenea, este posibil ca noi caracteristici să devină disponibile doar pentru comenzile slash.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Cum se utilizează RinBot?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Cum pot schimba limba?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Cum pot schimba prefixul comenzii?</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Dacă utilizați comenzile slash `/`, acest lucru nu se aplică în cazul dumneavoastră. Prefixul comenzilor slash nu poate fi modificat.
+
+Prefixul comenzii este caracterul (sau mai multe, între 1 și 5 caractere maximum) din fața fiecărei comenzi.
+De exemplu, în `!sg`, prefixul ar fi `!`. 
+Dacă setați prefixul la `!sg`, comanda ar deveni `!sgsg`, așa că aveți grijă la asta.
+Puteți folosi chiar și emoticoane ca prefix... dar de ce ați face-o?
+
+Puteți folosi pur și simplu comanda `!prefix` pentru a schimba prefixul din discordie.
+Tastați `@RinBot prefix` dacă ați uitat complet prefixul.
+
+De asemenea, puteți schimba prefixul prin intermediul [site-ului]({0}/my-servers). Vă rugăm să urmați acești pași:
+- Autentificați-vă folosind contul dvs. de Discord din dreapta sus a paginii
+- Faceți clic pe numele dvs. în partea dreaptă-sus și selectați "Serverele mele
+- Găsiți serverul dvs. în listă și faceți clic pe "Configure" (Configurare)
+- Actualizați prefixul cu ce doriți
+- Apăsați butonul "Save changes" pentru a termina</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>De ce numele "RinBot" și cine este fata din avatar?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Fata din imagine este o Elin din jocul TERA Online.  
+Am avut un personaj acolo numit Kururin, care era un mistic Elin și arăta asemănător cu acesta.  
+  
+Inițial am scris un bot de discord care făcea niște chestii implicite de moderare a discordiei, doar ca să încerc lucruri.
+Când am întrebat "cum ar trebui să-l numesc", cineva a spus "numește-l doar RinBot". Mi s-a părut amuzant, așa că numele a cam rămas așa.  
+  
+Arta a fost făcută de momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)) așa că toate creditele pentru avatar merg la ei!  
+De asemenea, verificați [postarea originală a lucrării](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Cum pot face ca RinBot să pornească rundele automat?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>În prezent, există o caracteristică numită "începe o rundă când canalul este inactiv".
+Această caracteristică poate fi activată în configurația canalului după ce vă autentificați pe [site-ul web]({0}/my-servers).  
+  
+Pentru serverele gratuite, timpul de inactivitate este setat la minimum o oră. Acesta poate fi redus la un minut atunci când deveniți susținător.</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Comanda `/lang` poate fi utilizată pentru a schimba limba în care vorbește RinBot.
+
+De asemenea, puteți schimba limba titlurilor anime care pot fi ghicite și care apar în indicii și în posterul anime de la sfârșitul rundei.
+Pentru aceasta vă rugăm să vă autentificați pe site.
+
+Pentru a seta titlurile în limba engleză, puteți adăuga un rând în partea de sus a preferințelor titlurilor principale cu conținut: AniDB, Titlu oficial și Română.
+
+&gt; Rețineți că este o funcție avansată care ar putea întrerupe RinBot pe serverul dvs. dacă nu este configurată corect.</value>
+  </data>
 </root>
