@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Egy kört a `/sg` segítségével indíthatsz.
+További parancsokért nézd meg [a parancsok listáját]({0}/commands).
+
+&gt; ⚠️ Jelenleg lehetőség van még a régi parancsok használatára, mint például a `!sg`, de ez **nem ajánlott**.  
+&gt; Ezek a régi előtaggal ellátott parancsok elavultak, és idővel kivezetésre kerülnek. 
+&gt; Az is előfordulhat, hogy új funkciók csak a slash parancsokhoz lesznek elérhetőek.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Hogyan használhatom a RinBotot?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Hogyan változtathatom meg a nyelvet?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Hogyan változtathatom meg a parancs előtagját?</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Mi ez az anime medence dolog, amiről folyton hallok?</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Hogyan tudom elérni, hogy a RinBot csak egyetlen csatornán hallgassa a parancsokat?</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Ha a `/` slash parancsokat használod, ez nem vonatkozik rád. A Slash parancsok előtagja nem módosítható.
+
+A parancs előtag az a karakter (vagy több, maximum 1-5 karakter), amely minden parancs előtt áll.
+Például a `!sg` parancsban az előtag `!`. 
+Ha az előtagot `!sg`-re állítaná be, a parancs `!sgsg`-ra változna, tehát erre vigyázzon.
+Még emojikat is használhatsz előtagként... de miért tennéd?
+
+Egyszerűen használhatod a `!prefix` parancsot a prefix megváltoztatásához a discordon belülről.
+Írd be a `@RinBot prefix`, ha teljesen elfelejtetted a prefixet.
+
+A prefixet a [weboldalon] keresztül is megváltoztathatod({0}/my-servers). Kérjük, kövesse ezeket a lépéseket:
+- Jelentkezz be a Discord fiókoddal az oldal jobb felső sarkában.
+- Kattints a nevedre a jobb felső sarokban, és válaszd ki a 'Saját szervereim' opciót.
+- Keresse meg a szerverét a listában, és kattintson a 'Configure' (Konfigurálás) gombra.
+- Frissítsd az előtagot arra, amire szeretnéd
+- A befejezéshez nyomd meg a 'Módosítások mentése' gombot</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Tehát minden fordulóban, amit játszol, egy véletlenszerű anime-t választasz ki egy "pool" anime-ból, ami attól függ, hogy milyen szűrőket használsz.
+Minél szigorúbb szűrőket használsz, annál kisebb lesz az anime-állományod.
+A pontok is lazán az anime pool számán alapulnak, egy 3000-es anime pool maximális pontot ad (általában 60).
+
+__Egy példa__
+Tegyük fel, hogy van egy anime-listád, amelyen 100 anime szerepel (legalább 1 epizódot meg kell nézni, és nem szabad elhagyni őket).
+Ebből a 100 anime közül kb. 20 népszerűnek számít, tehát a könnyű nehézségi fokozatba tartozna.
+Ha ezután a `!sg d:1 mal:username` -t használod, akkor a 20 anime közül csak egy véletlenszerű animét fog kiválasztani.
+
+Most ott van még az a tény, hogy a RinBot nem ismétli az animéket legalább egy órán keresztül.
+Ezt figyelembe véve, minden kör, amit egy órán belül játszol, 1-nel csökkentené ezt a 20 animét.
+Tehát 20 kör után a végén 0 lesz a poolod. Ekkor RinBot nem tudja folytatni, és megszakítja a kört, mondván: **The round was cancelled due to missing captures**.
+
+Az anime-állományt az időbeli ranglistán is használják. Mivel túl könnyű lenne az embereknek használni a `!sg d:1 g:sport` és spam Haikyuu-t, úgy döntöttem, hogy csak olyan köröket engedek meg, amelyekben az anime pool legalább 1000-et tartalmaz, ebben a ranglistában.</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Mi az az NSFW mód és hogyan tudom engedélyezni?</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Alapértelmezés szerint a RinBot számos animét szűr.
+Ez azért van, hogy elkerüljük, hogy egy csatornát korhatár-besorolttá (korábban NSFW) tegyünk, és ezáltal tiszteletben tartsuk a Discord szolgáltatási feltételeit.
+
+AniDB anime címkék, amelyek szűrésre kerülnek:
+- 18 korlátozott
+- Határeset hentai
+- Meztelenség (súlyok &gt;200)
+- Szex (súlyok &gt;100)
+
+Minden, ami a MAL-on PG-13 vagy annál alacsonyabb besorolású, mindig szerepel.
+
+Egyszerűen beállíthatod a csatornádat korhatárosra, és a RinBot automatikusan átvált NSFW módba.
+
+Ha mégis NSFW képet vagy videót találsz, miközben SFW módban játszol, kérlek, írd meg nekem az anime nevét, hogy manuálisan hozzáadhassam a szűrőhöz. </value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Egyik parancs sem működik, hogyan tudom ezt orvosolni?</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Számos különböző oka lehet annak, hogy a parancsok nem működnek.
+
+a. **Az előtagodat megváltoztatták valami másra, és elfelejtetted.** 
+Egyszerűen használhatod a `@RinBot prefix` címet, hogy ellenőrizd az aktuális prefixedet és azt is megváltoztasd.
+
+Ha nem tudja használni a `@RinBot előtagot` menjen és jelentkezzen be [a weboldalon]({0}).
+Ott a **My Servers** oldalon a My Servers oldalon a jobb felső sarokban láthatod és megváltoztathatod a prefixedet.
+
+b. **Úgy változtattad meg a jogosultságokat a szerveredben, hogy a RinBot már nem tud üzeneteket vagy beágyazásokat küldeni** 
+Győződjön meg róla, hogy a RinBot rendelkezik az összes szükséges jogosultsággal.
+Jelenleg ezek a következők: `Üzenetek olvasása`, `Üzenetek küldése`, `Linkek beágyazása`, `Fájlok csatolása` és a hangcsatornák esetében `Csatlakozás` és `Beszélgetés.`
+&gt; Újra meghívhatja őt, hogy ellenőrizze, pontosan mely jogosultságokra van szüksége.
+
+c. **Ön __slash parancsokat__ használ, és a parancsok jogosultságai úgy lettek beállítva, hogy megtagadják őket** 
+Lásd a 10. kérdést.
+
+d. **Lehet, hogy a hozzáférés-szabályozás úgy van beállítva, hogy nem engedélyez semmilyen parancsot** 
+A szerver kezelési jogosultságokkal rendelkező személynek úgy kell megváltoztatnia a hozzáférés-szabályozást, hogy engedélyezze a parancsokat, ha a hozzáférés-szabályozás engedélyezve van.
+A konfiguráció megtalálható [a weboldalon]({0}/my-servers).
+
+e. **A shard, amelyen a szervered van, valójában leállt** 
+Ez ritkán fordul elő, és néhány perc alatt automatikusan meg kell javulnia.
+A szervered shardjának állapotát a [státuszoldalon]({0}/status) ellenőrizheted.
+Nagyobb karbantartás esetén a [statuspage.io oldalon](https://rinbot.statuspage.io/) is ellenőrizheted a frissítéseket.
+ 
+f. **A szöveges parancsokat teljesen letiltotta a** konfigurációban.  
+Ha szöveges parancsokat szeretne használni, győződjön meg róla, hogy nem jelölte be a "Disable legacy prefixed commands" jelölőnégyzetet a szerver beállításaiban a weboldalon.
+Ez az opció azt eredményezi, hogy csak a slash parancsok működnek.</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Jelenleg kétféleképpen lehet ezt megvalósítani.
+
+a. **Discord engedélyek használata**
+Alapvetően csak a __View channel__ engedélyt kell megadnod RinBotnak azon a csatornán, ahol azt szeretnéd, hogy meghallgassa a parancsokat.
+Ezt úgy lehet megtenni, hogy a Discordban csak a jogosultságaidat kell helyesen beállítani.
+
+__Példák__: 
+Tiltsd le a `@everyone` __View channel__ minden csatornára. Ezután készíts egy "Tagok" szerepet, ami megadja az embereknek a __csatorna megtekintését__ minden csatornán, míg RinBotnak csak a __csatorna megtekintését__ azon a csatornán, ahol hallgatnia kell a parancsokat.
+
+Alternatívaként készíts egy "Botok" szerepet, amely megtiltja a ____ csatorna megtekintése hozzáférést kifejezetten az összes csatornához. Ezután adjon az RInBotnak kifejezetten hozzáférést az Ön által kiválasztott csatornához.
+
+b. **Csatorna-hozzáférés-szabályozás használata**
+Az ehhez szükséges konfiguráció a [weboldalon] való bejelentkezés után érhető el ({0}).
+
+__Követendő lépések__:
+- Bejelentkezés után menjen a jobb felső sarokban a nevére, majd kattintson a __A szervereim__.
+- Kattintson arra a szerverre, amelyet konfigurálni szeretne (ehhez __rendszergazdának kell lennie__ vagy rendelkeznie kell a __szervermenedzsment__ szerepkörrel).
+- Keresse meg a __Csatornák lapot__ és jelölje be a __Enable channel access control__ jelölőnégyzetet.
+
+&gt; Csak ezzel a beállítással a RinBot egyáltalán nem fog parancsokat hallgatni semmilyen csatornán, ezért most engedélyeznünk kell a kívánt csatornán.
+
+- Kattintson a __Add a channel__ gombra, és válassza ki azt a csatornát, amelyen szeretné, hogy a RinBot meghallgassa a parancsokat.
+- Kattintson a __Add a rule__ gombra, aminek eredményeképpen egy olyan hozzáférési szabály jön létre, amely minden parancsot engedélyez ezen a csatornán.
+- Kattintson a __Save changes__ alján, és kész!</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Miért offline a RinBot a szerveremen?</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Valószínűleg újrakapcsolódik, mivel a Discord óránként újrakapcsolódásra kényszeríti a szilánkokat __körül__. Légy türelmes, és próbáld meg újra néhány perc múlva.
+
+Ha még mindig nem működik __15 perc után__, **ellenőrizze a 6. kérdést**.
+
+Ha ezek után még mindig ____ nem működik neked, kérj segítséget a #help-ben, miközben megemlíted a shardot és/vagy a klasztert, amin a szervered van.
+A shardodat ellenőrizheted a [státusz oldalon]({0}/status).
+
+&gt; ⚠️ Kérjük, vedd figyelembe, hogy **szombatonként 8:00-12:00 UTC között** karbantartási ablaknak van fenntartva, így ebben az időszakban bejelentés nélküli leállások lehetnek.</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Mi a nehézség, és hogyan változtathatom meg?</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>A nehézség az anime népszerűségén alapul, 5 nehézség közül választhatsz:  
+1. Könnyű
+2. Normál
+3. Nehéz
+4. Extrém
+5. Nightmare
+
+&gt; Easy(1) és Extreme(4) között a medencék az előző nehézségekből is tartalmazni fognak animéket. 
+&gt; A Nightmare(5) nehézség más, ez csak a botban elérhető legkevésbé népszerű animéket tartalmazza.
+
+__Nehézségváltás__
+A nehézség megváltoztatásához `Easy` egyetlen fordulóra használd a `/sg difficulty:Easy` vagy `!sg d:1` vagy `!sg 1`.
+Ugyanígy működik más nehézségekkel is más parancsokon belül.
+
+A nehézség nő, miközben egyre több pontot szerzel, maximum Extreme(4).
+Ennek a viselkedésnek a megváltoztatásához használhatod a `/mydifficulty` (ha a szervered nem rendelkezik slash parancsokkal, akkor a RinBot DM-ben is használhatod).
+ </value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>A Discord nemrég adta hozzá a __slash parancs engedélyek__ rendszert... meglehetősen csendben.
+Ez lehetővé tette a szerverek számára, hogy a slash parancsokat külön-külön engedélyezzék/tiltják, bármilyen csatornára vagy szerepkörre vonatkozóan.
+
+Úgy tűnik, hogy sok szerveren az alapértelmezett beállítások a slash parancsokat elérhetetlenné tették a normál felhasználók számára.
+A __mobileszközökön__ és régebbi verziókon ez nem teljesen támogatott, és a következő üzenetet kaphatod: 
+**Ez az interakció sikertelen** vagy **Az alkalmazás nem válaszolt**
+
+__A jogosultságok megváltoztatásához__
+A Discordban lépjen a `Server Settings - Integrations - RinBot` menüpontba, és ellenőrizze, hogy a dolgok helyesen vannak-e beállítva itt a csatornák és szerepkörök számára. 
+A mobileszközök még nem támogatják teljes mértékben ezeket a funkciókat, ezért kérjük, használd a számítógépedet erre a célra, vagy próbáld ki a webklienst a készülékeden.
+
+&gt; A rendszergazdák mindig használhatják a slash parancsokat, függetlenül attól, hogy milyen jogosultságok vannak itt beállítva. Tehát ha már rendszergazda vagy, akkor a problémád valami mással lehet.
+
+Ha ez nem oldja meg a problémáját, nézze meg a __6. kérdését__ további lehetséges okokért.</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>A képen látható lány egy Elin a TERA Online játékból.  
+Volt ott egy Kururin nevű karakterem, aki egy Elin misztikus volt, és hasonlóan nézett ki.  
+  
+Eredetileg írtam egy discord botot, ami csinált néhány alapértelmezett discord moderációs dolgot, csak hogy kipróbáljam a dolgokat.
+Amikor megkérdeztem, hogy "mi legyen a neve", valaki azt mondta, hogy "csak hívd RinBotnak". Azt gondoltam, hogy ez vicces, így a név megragadt.  
+  
+A művészetet momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)) készítette, így az avatárért minden elismerés nekik jár!  
+Nézzétek meg az [eredeti posztot az alkotásról](https://www.pixiv.net/en/artworks/36910527) is.</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Jelenleg van egy "kör indítása, ha a csatorna üres" nevű funkció.
+Ezt a funkciót a csatorna konfigurációjában lehet aktiválni, miután bejelentkeztél [a weboldalon]({0}/my-servers).  
+  
+Az ingyenes szervereknél az üresjárati idő minimum egy órára van beállítva. Ez egy percre csökkenthető, ha támogatóvá válsz.</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Ahhoz, hogy megkapd a kedvezményeket, a **Discord fiókodat össze kell kapcsolnod a Patreon fiókoddal**.  
+Hogy ezt pontosan hogyan kell megtenni [itt található](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Ha a **felajánlást a Discord-fiókod összekapcsolása előtt tetted meg**, akkor megpróbálhatod még egyszer megnyomni [a 'Csatlakozás' gombot itt](https://www.patreon.com/rinbot?fan_landing=true).  
+Ez nem fog újabb fizetést kérni, de újra beindítja a webhookot, aminek eredményeképpen automatikusan megkapod a perkeket.  
+
+A rendszer óránként megpróbálja megadni a perkeket azoknak is, akik hiányoznak, tehát csak várj egy kicsit, és automatikusan megkapod őket.
+  
+A **felajánlás után újra be kell jelentkezned a** oldalon a RinBot weboldalán, hogy használhasd az olyan perkeket, mint a szerver felturbózása, vagy az extra csatornakonfigurációk.  
+</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>A heti ranglista visszaáll a `/weektop` parancsban megadott időpontban, UTC-idő szerint éjfélkor (00:00 / 12:00).  
+
+Az ISO-8601 szabványt használja az év heteire, hétfővel a hét első napjaként.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Hogyan működik a pontszámítás?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>A pontok kiszámítása teljes mértékben az anime mennyiségétől függ, amelyből a köröd létrejön, valamint a győztes szintjétől.  
+  
+A legegyszerűbb esetben egy 3000 animéből álló pool maximum 60 pontot ad, amit minden egyes plusz sapkával, ami megjelenik, a `1 / numberOfCaptures` csökkent.  
+  
+A medence mérete a szűrőktől függ. Ha szűrőként a saját anime-listádat használod, amely 90 bejegyzést tartalmaz a Befejezett részlegben és 10-et a Várakoztatva részlegben, akkor a medence mérete 100 lesz.  
+Azonban minden egyes forduló után, amit ugyanazzal a szűrővel játszol, a pool 1-gyel csökken, mivel legalább egy órán keresztül nincs ismétlés a saját magad által vagy ugyanazon a szerveren belül indított fordulók esetében.  
+  
+A használt képlet:  
+```
+* animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Alapértelmezett `maxPoints` a `60` és `animeMaxPoints` a `3000`.  
+  
+A `animeMultiplier` változó az anime megjelenési évétől függ.  
+- A 2010-es év előtt : `2`
+- 2000 előtt : `3`
+- 1990 előtt : `4`
+- 1980 előtt : `5`
+
+A minimálisan megszerezhető pontok száma: `4`, amelyből `1` lesz, ha az utolsó sapka már megjelent.  
+
+__Hangos fordulók__ 
+A hangos fordulóknál a pontokat a válaszadásra fordított idő, nem pedig a megjelenített felvételek száma csökkenti.</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>A `/lang` paranccsal megváltoztatható a RinBot által beszélt nyelv.
+
+Megváltoztathatod az anime címek nyelvét is, amelyek kitalálhatók, és megjelennek a tippekben és a körök végén megjelenő anime poszteren.
+Ehhez kérjük, jelentkezz be a weboldalon.
+
+Az angol címek beállításához a főcímbeállítások tetején egy sort adhatsz hozzá a tartalommal: AniDB, Official Title és English.
+
+&gt; Vegye figyelembe, hogy ez egy fejlett funkció, amely a RinBotot tönkreteheti a szerverén, ha nem megfelelően van beállítva.</value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>A Slash parancsok nem működnek, vagy csak rendszergazdák használhatják őket</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Miért a 'RinBot' név, és ki az a lány az avatarban?</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Hogyan tudom elérni, hogy a RinBot automatikusan elindítsa a köröket?</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Jelentkeztem, de nem kaptam meg a juttatásaimat, most mi legyen?</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Mikor áll vissza a heti ranglista?</value>
+  </data>
 </root>
