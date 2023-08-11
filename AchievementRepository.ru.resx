@@ -241,4 +241,85 @@
   <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
     <value>Десятилетия - 70-е и ранее</value>
   </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Title" xml:space="preserve">
+    <value>Рокировка</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Title" xml:space="preserve">
+    <value>Каждая запомненная нота</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Description" xml:space="preserve">
+    <value>Уже по первой ноте можно судить, верно?</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Title" xml:space="preserve">
+    <value>Бесконечный плейлист</value>
+  </data>
+  <data name="AchievementCategory_Decade00s_Description" xml:space="preserve">
+    <value>Угадывание аниме в период между 2000 и 2010 годами будет засчитано в качестве достижения.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs" xml:space="preserve">
+    <value>Отличительные черты аниме</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Description" xml:space="preserve">
+    <value>Времени на перерывы нет. Ритм не остановится в ближайшее время.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Title" xml:space="preserve">
+    <value>Мелодичный матчер</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Description" xml:space="preserve">
+    <value>Закройте глаза и продолжайте слушать. Только не засыпайте.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Title" xml:space="preserve">
+    <value>Почувствуйте себя танцором</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Description" xml:space="preserve">
+    <value>У вас это получается все лучше, так что двигайте телом и трясите им!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Title" xml:space="preserve">
+    <value>Жизнь дает вам лимон</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Title" xml:space="preserve">
+    <value>Ото-но сэкай</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Description" xml:space="preserve">
+    <value>Ваш уровень слушания уже не принадлежит этому миру, продолжайте стремиться к большему!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Description" xml:space="preserve">
+    <value>Ара Ара, твой талант стал лучше. Сделайте перерыв, дальше будет только труднее.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Title" xml:space="preserve">
+    <value>В ритм</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Description" xml:space="preserve">
+    <value>Песнями нужно наслаждаться вместе с другими, они соединяют наш разум и душу.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Description" xml:space="preserve">
+    <value>Вас и ваш плейлист уже невозможно разделить. Нужно ли вообще проверять их в этот момент?</value>
+  </data>
+  <data name="AchievementCategory_Decade10s_Description" xml:space="preserve">
+    <value>Гадание на аниме в период между 2010 и 2020 годами будет засчитано в качестве достижения.</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore_Description" xml:space="preserve">
+    <value>Угадывание аниме, созданных до 1980 года, засчитывается как достижение.</value>
+  </data>
+  <data name="AchievementCategory_Decade80s_Description" xml:space="preserve">
+    <value>Угадывание аниме в период между 1980 и 1990 годами будет засчитано в качестве достижения.</value>
+  </data>
+  <data name="AchievementCategory_Decade90s_Description" xml:space="preserve">
+    <value>Угадывание аниме между 1990 и 2000 годами будет засчитано в качестве достижения.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs_Description" xml:space="preserve">
+    <value>Угадывание любой песни из аниме, которую вы не угадали раньше, засчитывается в качестве достижения. На данный момент в зачет идут только песни из раундов !sga.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime_Description" xml:space="preserve">
+    <value>Отгадывание любого аниме, которое вы не отгадали ранее, засчитывается за это достижение.</value>
+  </data>
+  <data name="AchievementCategory_GenreAction_Description" xml:space="preserve">
+    <value>Угадывание аниме из жанра экшн будет засчитано за это достижение.</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi_Description" xml:space="preserve">
+    <value>Угадывание аниме из жанра экки будет засчитано в качестве достижения.</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror_Description" xml:space="preserve">
+    <value>Угадывание аниме из жанра ужасов будет засчитано за это достижение.</value>
+  </data>
 </root>
