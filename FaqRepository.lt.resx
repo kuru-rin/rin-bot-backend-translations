@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Komanda `/lang` galima pakeisti kalbą, kuria kalba RinBot.
+
+Taip pat galite pakeisti anime pavadinimų, kuriuos galima atspėti ir kurie rodomi užuominose bei anime plakate raundų pabaigoje, kalbą.
+Šiuo tikslu prisijunkite prie svetainės.
+
+Norėdami nustatyti angliškus pavadinimus, galite pridėti eilutę pagrindinių pavadinimų nuostatų viršuje su turiniu: AniDB, Oficialus pavadinimas ir Anglų kalba.
+
+&gt; Atkreipkite dėmesį, kad tai yra išplėstinė funkcija, kuri gali sugadinti RinBot jūsų serveryje, jei nėra tinkamai sukonfigūruota.</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Kas tas anime baseinas, apie kurį nuolat girdžiu?</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Taigi, kiekviename raunde, kurį žaidžiate, iš "baseino" anime bus pasirenkamas atsitiktinis anime, kuris priklauso nuo to, kokius filtrus naudojate.
+Kuo griežtesnius filtrus naudojate, tuo mažesnis anime fondas.
+Taškai taip pat laisvai priklauso nuo anime fondo skaičiaus, o 3000 anime fondas suteikia maksimalų taškų skaičių (paprastai 60).
+
+__Pavyzdys__
+Tarkime, turite anime sąrašą, į kurį įtraukta 100 anime (jie turi turėti bent 1 žiūrėtą epizodą ir nebūti išmesti).
+Maždaug 20 iš tų 100 anime yra laikomi populiariais, todėl priklausytų lengvam sudėtingumo lygiui.
+Jei naudotumėte `!sg d:1 mal:username`, iš 20 anime būtų paimtas atsitiktinis anime.
+
+Dabar dar yra ir tai, kad RinBot nekartoja anime mažiausiai vieną valandą.
+Atsižvelgiant į tai, kiekvienas raundas, kurį žaidžiate per valandą, sumažintų 20 anime 1.
+Taigi po 20 raundų turėsite 0. Tada RinBot negalės tęsti raundo ir jį atšauks, sakydamas **Raundas buvo atšauktas dėl trūkstamų kadrų**.
+
+Anime baseino skaičius taip pat naudojamas laiko lyderių lentelėje. Kadangi žmonėms būtų pernelyg lengva naudoti `!sg d:1 g:sports` ir spaminti Haikyuuu, nusprendžiau šioje lyderių lentelėje leisti tik tuos raundus, kurių anime baseine yra ne mažiau kaip 1000.</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Kas yra NSFW režimas ir kaip jį įjungti?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Nuotraukoje pavaizduota mergina yra Elin iš žaidimo "TERA Online".  
+Ten turėjau veikėją vardu Kururinas, kuris buvo Elin mistikas ir atrodė panašiai kaip ši.  
+  
+Iš pradžių parašiau diskordo botą, kuris atliko kai kuriuos numatytuosius diskordo moderavimo dalykus, tiesiog norėdamas viską išbandyti.
+Kai paklausiau "kaip turėčiau jį pavadinti", kažkas pasakė "tiesiog pavadink jį RinBot". Pagalvojau, kad tai juokinga, todėl pavadinimas tarsi prilipo.  
+  
+Meną sukūrė momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)), todėl visi avataro nuopelnai priklauso jiems!  
+Taip pat žiūrėkite [originalų meno kūrinio įrašą](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Komandos gali neveikti dėl įvairių priežasčių.
+
+a. **Jūsų priešdėlis pakeistas į kitą ir jūs pamiršote.** 
+Galite paprasčiausiai naudoti `@RinBot prefiksą`, kad patikrintumėte savo dabartinį prefiksą ir taip pat jį pakeistumėte.
+
+Jei negalite naudoti `@RinBot prefikso`, eikite ir prisijunkite [svetainėje]({0}).
+Ten taip pat galite pamatyti ir pakeisti savo priešdėlį **Mano serveriai** puslapyje, esančiame viršuje dešinėje.
+
+b. **Pakeitėte savo serverio teises taip, kad "RinBot" nebegali siųsti pranešimų ar įterpti** 
+Įsitikinkite, kad "RinBot" turi visus reikiamus leidimus.
+Šiuo metu jos yra šios: `Skaityti pranešimus`, `Siųsti pranešimus`, `Įterpti nuorodas`, `Pridėti failus` ir balso kanalams `Prisijungti` ir `Kalbėti`
+&gt; Galite dar kartą ją pakviesti, kad patikrintumėte, kokių tiksliai leidimų reikia.
+
+c. **Jūs naudojate __slash komandas__, o komandų leidimai buvo nustatyti taip, kad jos būtų uždraustos** 
+Žr. 10 klausimą.
+
+d. **Prieigos kontrolė gali būti nustatyta taip, kad neleidžia jokių komandų** 
+Asmuo, turintis serverio valdymo teises, turėtų pakeisti prieigos kontrolę taip, kad ji leistų komandas, jei įjungta prieigos kontrolė.
+Konfigūraciją galima rasti [svetainėje]({0}/my-servers).
+
+e. **Skydas, kuriame yra jūsų serveris, iš tikrųjų neveikia** 
+Taip nutinka retai ir turėtų būti sutvarkyta automatiškai per porą minučių.
+Shard'o, kuriame yra jūsų serveris, būseną galite patikrinti [būsenos puslapyje]({0}/status).
+Jei atliekami dideli techninės priežiūros darbai, taip pat galite patikrinti [statuspage.io svetainės](https://rinbot.statuspage.io/) atnaujinimus.
+ 
+f. **Konfigūracijoje visiškai išjungėte tekstines komandas** 
+Jei norite naudoti tekstines komandas, įsitikinkite, kad svetainės serverio nustatymuose nepažymėjote langelio "Disable legacy prefixed commands" (išjungti senąsias priešdėlines komandas).
+Dėl šios parinkties veiks tik brūkšninės komandos.</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Kaip priversti RinBot klausytis komandų tik vienu kanalu?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Šiuo metu yra du būdai, kaip tai padaryti.
+
+a. **Naudokite "Discord" leidimus**
+Iš esmės jums reikia suteikti RinBot tik __Peržiūrėti kanalą__ leidimą tame kanale, kuriame norite, kad ji klausytųsi komandų.
+Tai galima padaryti tiesiog teisingai nustačius leidimus "Discord" programoje.
+
+__Pavyzdžiai__: 
+Uždrausti `@everyone` __Peržiūrėti kanalą__ visiems kanalams. Tada sukurkite "Members" vaidmenį, kuris suteikia žmonėms __Peržiūrėti kanalą__ į visus kanalus, o RinBot suteikia tik __Peržiūrėti kanalą__ į kanalą, kuriame ji turėtų klausytis komandų.
+
+Arba sukurkite "Bots" vaidmenį, kuris neleistų __Peržiūrėti kanalo__ prieigos būtent prie visų kanalų. Tada suteikite "RInBot" konkrečią prieigą prie pasirinkto kanalo.
+
+b. **Naudokite kanalo prieigos valdymą**
+Šią konfigūraciją galima atlikti prisijungus prie [svetainės]({0}).
+
+__Žingsniai, kuriuos reikia atlikti__:
+- Prisijungę eikite į viršutinį dešinįjį langą ir spustelėkite savo vardą, tada eikite į __Mano serveriai__.
+- Spustelėkite serverį, kurį norite konfigūruoti (turite būti __administratorius__ arba turėti __serverių valdymo__ vaidmenį).
+- Raskite skirtuką __Kanalai__ ir pažymėkite langelį __Įjungti kanalų prieigos valdymą__.
+
+&gt; Naudojant tik šią konfigūraciją, RinBot apskritai neklausys komandų jokiame kanale, todėl dabar reikia leisti jį į norimą kanalą
+
+- Spustelėkite __Add a channel (pridėti kanalą)__ ir pasirinkite kanalą, kuriame norite, kad "RinBot" klausytųsi komandų.
+- Spustelėkite __Add a rule__, taip sukursite prieigos taisyklę, kuri leidžia kiekvieną komandą šiame kanale.
+- Paspauskite __apačioje esantį mygtuką Išsaugoti pakeitimus__ ir viskas baigta!</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Kodėl "RinBot" mano serveryje yra neprisijungęs?</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Tikriausiai tai yra pakartotinis prisijungimas, nes Discord priverčia iš naujo sujungti skydus maždaug __kas valandą__. Būkite kantrūs ir pabandykite dar kartą po kelių minučių.
+
+Jei po 15 minučių vis dar nepavyksta ____ , **patikrinkite 6 klausimą**.
+
+Jei ir po to __vis dar__ neveikia, prašykite pagalbos #help, nurodydami, kokiame sharde ir (arba) klasteryje yra jūsų serveris.
+Savo shardą galite patikrinti [būsenos puslapyje]({0}/status).
+
+&gt; ⚠️ Atkreipkite dėmesį, kad **šeštadieniai nuo 8:00 iki 12:00 UTC** yra rezervuoti kaip techninės priežiūros langas, todėl tuo metu gali būti iš anksto nepraneštų prastovų.</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Kas yra sunkumai ir kaip juos pakeisti?</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Kaip padaryti, kad "RinBot" automatiškai pradėtų raundus?</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>Sudėtingumas priklauso nuo anime populiarumo, galite rinktis iš 5 sunkumų:  
+1. Lengvas
+2. Normalus
+3. Sunkus
+4. Ekstremalus
+5. Košmaras
+
+&gt; Nuo Lengvo(1) iki Ekstremalaus(4) sudėtingumo baseinuose taip pat bus ankstesnių sudėtingumų anime. 
+&gt; Košmaras(5) sunkumas yra kitoks, jame yra tik mažiausiai populiarūs anime, kuriuos galima rasti bote.
+
+__Sudėtingumo keitimas__
+Norėdami pakeisti sudėtingumą į `Easy` vienam raundui naudokite `/sg difficulty:Easy` arba `!sg d:1` arba `!sg 1`.
+Taip pat veikia ir kiti sunkumai kitose komandose.
+
+Sunkumas didės, kol gausite daugiau taškų, daugiausia iki Extreme(4).
+Norėdami pakeisti šį elgesį, galite naudoti `/mydifficulty` (jei jūsų serveryje nėra "slash" komandų, taip pat galite jas naudoti DM su RinBot).
+ </value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>"Slash" komandos neveikia arba jas gali naudoti tik administratoriai</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Neseniai "Discord" pridėjo __slash komandų leidimus__ sistema... gana tyliai.
+Tai suteikė serveriams galimybę įjungti / išjungti "slash" komandas individualiai bet kuriam kanalui ar vaidmeniui.
+
+Atrodo, kad daugelyje serverių dėl numatytųjų nustatymų įprastiems naudotojams "slash" komandos buvo neprieinamos.
+ __mobiliuosiuose įrenginiuose__ ir senesnėse versijose tai nėra visiškai palaikoma ir gali būti rodomas pranešimas: 
+**Ši sąveika nepavyko** arba **Programa neatsakė**
+
+__Norėdami pakeisti šias teises__
+"Discord" programoje eikite į `Serverio nustatymai - Integracijos - RinBot` ir įsitikinkite, kad čia viskas teisingai nustatyta jūsų kanalams ir vaidmenims. 
+Mobilieji įrenginiai dar ne visiškai palaiko šias funkcijas, todėl naudokitės kompiuteriu arba išbandykite interneto klientą savo įrenginyje.
+
+&gt; Administratoriai visada gali naudoti brūkšnines komandas, nesvarbu, kokios teisės čia nustatytos. Taigi, jei jau esate administratorius, jūsų problema būtų kita.
+
+Jei tai neišsprendžia jūsų problemų, daugiau galimų priežasčių rasite __6 klausime__.</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Kodėl pavadinimas "RinBot" ir kas yra mergina avatare?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Šiuo metu yra funkcija, vadinama "pradėti raundą, kai kanalas neveikia".
+Šią funkciją galima įjungti kanalo konfigūracijoje prisijungus [svetainėje]({0}/my-servers).  
+  
+Nemokamuose serveriuose tuščiosios eigos laikas nustatytas mažiausiai viena valanda. Jį galima sumažinti iki vienos minutės, kai tampate rėmėju.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Pasižadėjau, bet negavau privilegijų, ką dabar daryti?</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Kad galėtum gauti privilegijas, turėsi turėti **Discord paskyrą, susietą su Patreon paskyra**.  
+Kaip tiksliai tai padaryti [rasite čia] (https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Jei **pažadėjote prieš susiedami savo Discord paskyrą**, galite pabandyti paspausti [mygtuką "Prisijungti" čia](https://www.patreon.com/rinbot?fan_landing=true) dar kartą.  
+Tai neturėtų prašyti dar vieno mokėjimo, tačiau vėl suaktyvins "webhook", dėl kurio privilegijos jums bus suteiktos automatiškai.  
+
+Taip pat maždaug kas valandą bus bandoma suteikti privilegijas visiems, kuriems jų trūksta, todėl tiesiog šiek tiek palaukite ir jas gausite automatiškai.
+  
+Sumokėję **, turėsite iš naujo prisijungti** RinBot svetainėje, kad galėtumėte naudotis privilegijomis, pavyzdžiui, serverio padidinimu arba papildomomis kanalų konfigūracijomis.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Kada iš naujo nustatoma savaitinė lyderių lentelė?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Savaitės lyderių lentelė iš naujo nustatoma komandoje `/weektop` nurodytą datą vidurnaktį (00:00 / 12:00 val.) UTC laiku.  
+
+Metų savaitėms naudojamas ISO-8601 standartas, pagal kurį pirmadienis yra pirmoji savaitės diena.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Kaip apskaičiuojami taškai?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Taškų skaičiavimas priklauso tik nuo anime kiekio fonde, iš kurio sudaromas jūsų raundas, ir nugalėtojo lygio.  
+  
+Paprasčiausiu atveju 3000 anime fondas suteikia ne daugiau kaip 60 taškų, kurie mažinami pagal `1 / numberOfCaptures` už kiekvieną papildomai parodytą dangtelį.  
+  
+Baseino dydis priklauso nuo jūsų filtrų. Jei kaip filtrą naudosite savo anime sąrašą, kuriame yra 90 įrašų skirsnyje "Completed" ir 10 įrašų skirsnyje "On-hold", jūsų fondo dydis bus 100.  
+Tačiau po kiekvieno raundo, kurį žaidžiate su tuo pačiu filtru, fondas sumažės 1, nes bent valandą nebus kartojami raundai, kuriuos pradėjote patys arba tame pačiame serveryje.  
+  
+Naudojama formulė:  
+```
+AnimeMultiplikatorius * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Numatytoji `maxPoints` yra `60` ir `animeMaxPoints` yra `3000`.  
+  
+ `animeMultiplier` kintamasis priklauso nuo anime išleidimo metų.  
+- Iki 2010 m. : `2`
+- Iki 2000 m. : `3`
+- Iki 1990 m.: `4`
+- Iki 1980 m.: `5`
+
+Mažiausias galimas taškų skaičius yra `4`, kuris taps `1`, jei buvo parodyta paskutinė riba.  
+
+__Balso raundai__ 
+Balso turuose taškai mažinami pagal laiką, per kurį atsakote, o ne pagal parodytų gaublių skaičių.</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Rundą galite pradėti naudodami `/sg`.
+Daugiau komandų rasite [komandų sąraše]({0}/commands).
+
+&gt; ⚠️ Šiuo metu dar galima naudoti senąsias komandas, pavyzdžiui, `!sg`, tačiau tai **nerekomenduojama**.  
+&gt; Šios senosios komandos su priešdėliais yra pasenusios ir laikui bėgant jų bus atsisakyta. 
+&gt; Be to, naujos funkcijos gali būti prieinamos tik su pasviruoju brūkšniu pažymėtomis komandomis.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Kaip naudoti RinBot?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Kaip pakeisti kalbą?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Kaip pakeisti komandos priešdėlį?</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Jei naudojate pasvirųjų brūkšnių komandas `/`, tai jums netaikoma. Slash komandų prefikso keisti negalima.
+
+Komandos prefiksas yra ženklas (arba daugiau, ne daugiau kaip 1-5 ženklai), esantis prieš kiekvieną komandą.
+Pavyzdžiui, `!sg` priešdėlis būtų `!`. 
+Jei nustatysite priešdėlį `!sg`, komanda taps `!sgsg`, todėl saugokitės to.
+Kaip priešdėlį galite naudoti net ir emotikonus... bet kodėl turėtumėte tai daryti?
+
+Galite tiesiog naudoti komandą `!prefiksas`, kad pakeistumėte prefiksą iš "Discord".
+Įveskite `@RinBot prefiksą`, jei visiškai pamiršote savo prefiksą.
+
+Taip pat galite keisti priešdėlį per [svetainę]({0}/my-servers). Atlikite šiuos veiksmus:
+- Prisijunkite naudodamiesi savo "Discord" paskyra puslapio viršuje dešinėje.
+- Spustelėkite savo vardą viršutiniame dešiniajame kampe ir pasirinkite "My servers" (Mano serveriai)
+- Sąraše raskite savo serverį ir spustelėkite "Configure" (konfigūruoti)
+- Atnaujinkite priešdėlį į jums patinkantį
+- Paspauskite mygtuką "Išsaugoti pakeitimus", kad baigtumėte</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Pagal numatytuosius nustatymus "RinBot" filtruos anime.
+Taip siekiama išvengti, kad kanalui būtų taikomas amžiaus apribojimas (anksčiau NSFW) ir taip būtų laikomasi "Discord" paslaugų teikimo sąlygų.
+
+AniDB anime žymos, kurios yra filtruojamos:
+- 18 ribojama
+- Ribinis hentai
+- Nuogumas (svoris &gt;200)
+- Seksas (svoris &gt;100)
+
+Viskas, kas MAL įvertinta PG-13 arba žemesniu reitingu, visada įtraukiama.
+
+Galite paprasčiausiai nustatyti, kad jūsų kanalas būtų apribotas pagal amžių, ir "RinBot" automatiškai persijungs į NSFW režimą.
+
+Jei žaisdami SFW režimu susidursite su NSFW paveikslėliu ar vaizdo įrašu, susisiekite su manimi ir nurodykite anime pavadinimą, kad galėčiau rankiniu būdu įtraukti jį į filtrą. </value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Neveikia nė viena komanda, kaip tai ištaisyti?</value>
+  </data>
 </root>
