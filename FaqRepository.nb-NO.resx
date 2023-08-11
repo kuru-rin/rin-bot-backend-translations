@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Som standard vil RinBot filtrere en rekke anime.
+Dette er for å unngå å måtte gjøre en kanal aldersbegrenset (tidligere NSFW) og dermed respektere Discords tjenestevilkår.
+
+AniDB-anime-tagger som filtreres:
+- 18 år begrenset
+- På grensen til hentai
+- Nakenhet (vekter &gt;200)
+- Sex (vekter &gt;100)
+
+Alt som er klassifisert PG-13 eller lavere på MAL er alltid inkludert.
+
+Du kan ganske enkelt sette kanalen din til å være aldersbegrenset, og RinBot vil automatisk bytte til NSFW-modus.
+
+Hvis du støter på et NSFW-bilde eller en NSFW-video mens du spiller i SFW-modus, kan du kontakte meg med animeens navn, slik at jeg kan legge den til i filteret manuelt. </value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Det kan være flere årsaker til at kommandoene dine ikke fungerer.
+
+a. **Prefikset ditt er endret til noe annet, og du har glemt det.** 
+Du kan ganske enkelt bruke `@RinBot prefix` for å sjekke ditt nåværende prefiks og endre det også.
+
+Hvis du ikke kan bruke `@RinBot-prefikset`, kan du logge inn på [nettstedet] ({0}).
+Der kan du også se og endre prefikset ditt på siden **My Servers** øverst til høyre.
+
+b. **Du har endret tillatelsene på serveren din på en slik måte at RinBot ikke lenger kan sende meldinger eller embedder** 
+Kontroller at RinBot har alle nødvendige tillatelser.
+For øyeblikket er disse: `Read Messages`, `Send Messages`, `Embed Links`, `Attach Files` og for talekanaler `Connect` og `Speak.`
+&gt; Du kan invitere henne på nytt for å sjekke hvilke tillatelser som trengs.
+
+c. **Du bruker __skråstrekskommandoer__, og kommandotillatelsene er satt opp til å nekte dem** 
+Se spørsmål 10.
+
+d. **Tilgangskontrollene kan være satt opp på en måte som ikke tillater kommandoer** 
+En person med serveradministrasjonsrettigheter må endre tilgangskontrollene slik at de tillater kommandoer hvis tilgangskontroll er aktivert.
+Konfigurasjonen finner du på [nettstedet]({0}/my-servers).
+
+e. **Sharden som serveren din står på, er faktisk nede** 
+Dette skjer sjelden og bør løses automatisk i løpet av et par minutter.
+Du kan sjekke statusen til serveren din på [statussiden]({0}/status).
+Ved større vedlikeholdsarbeider kan du også sjekke [statuspage.io-siden](https://rinbot.statuspage.io/) for oppdateringer.
+ 
+f. **Du har deaktivert tekstkommandoer fullstendig i konfigurasjonen**. 
+Hvis du ønsker å bruke tekstkommandoer, må du kontrollere at du ikke har krysset av i boksen "Disable legacy prefixed commands" i serverinnstillingene på nettstedet.
+Dette alternativet gjør at bare skråstrek-kommandoer fungerer.</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>For øyeblikket finnes det to måter å gjøre dette på.
+
+a. **Bruk Discord-tillatelser**
+Du må i utgangspunktet bare gi RinBot tillatelsen __View channel__ på kanalen du vil at hun skal lytte til kommandoer.
+Dette kan gjøres ved at du bare har satt tillatelsene dine riktig i Discord.
+
+__Eksempler__: 
+Disallow `@everyone` __Vis kanal__ til alle kanaler. Lag deretter en "Members"-rolle som gir folk __View channel__ til alle kanaler, mens du kun gir RinBot __View channel__ til kanalen hun skal lytte til kommandoer i.
+
+Alternativt kan du lage en "Bots"-rolle som gir __View channel__ tilgang til alle kanaler. Gi deretter RInBot spesifikk tilgang til en kanal etter eget valg.
+
+b. **Bruk kanaltilgangskontroll**
+Konfigurasjon for dette er tilgjengelig etter innlogging på [nettstedet]({0}).
+
+__Fremgangsmåte__:
+- Når du har logget inn, går du øverst til høyre og klikker på navnet ditt, og går deretter til __Mine servere__.
+- Klikk på serveren du vil konfigurere (du må være __administrator__ eller ha rollen __serveradministrasjon__ ).
+- Finn kategorien __Channels__ og merk av i boksen __Enable channel access control__.
+
+&gt; Med bare denne konfigurasjonen vil RinBot ikke lytte til kommandoer på noen kanal i det hele tatt, så nå må vi tillate det i den kanalen du ønsker.
+
+- Klikk på __Legg til en kanal__ og velg kanalen du vil at RinBot skal lytte til kommandoer i.
+- Klikk på __Legg til en regel__, som resulterer i en tilgangsregel som tillater alle kommandoer i denne kanalen.
+- Klikk på __Lagre endringer__ nederst, og du er ferdig!</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Det er sannsynligvis en ny tilkobling, siden Discord tvinger en ny tilkobling av shards rundt __hver time__. Vær tålmodig og prøv igjen om noen minutter.
+
+Hvis det fortsatt ikke fungerer __etter 15 minutter__, **sjekk spørsmål 6**.
+
+Hvis det fortsatt ikke fungerer ____ etter dette, kan du be om hjelp i #help og oppgi hvilken shard og/eller cluster serveren din er på.
+Du kan sjekke din shard på [statussiden]({0}/status).
+
+&gt; ⚠️ Vær oppmerksom på at **lørdager mellom 8:00-12:00 UTC** er reservert som et vedlikeholdsvindu, så det kan forekomme uanmeldt nedetid i dette tidsrommet.</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Hva er vanskelighetsgrad, og hvordan endrer jeg den?</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>Vanskelighetsgraden er basert på animeens popularitet, og du kan velge mellom 5 vanskelighetsgrader:  
+1. Lett
+2. Normal
+3. Vanskelig
+4. Ekstrem
+5. Mareritt
+
+&gt; Fra Easy(1) til Extreme(4) inneholder bassengene også anime fra de foregående vanskelighetsgradene. 
+&gt; Vanskelighetsgraden Nightmare(5) er annerledes, denne inneholder bare de minst populære animeene som er tilgjengelige i boten.
+
+__Endre vanskelighetsgrad__
+Hvis du vil endre vanskelighetsgrad til `Easy` for en enkelt runde, bruker du `/sg difficulty:Easy` eller `!sg d:1` eller `!sg 1`.
+Det samme gjelder for andre vanskelighetsgrader i andre kommandoer.
+
+Vanskelighetsgraden øker etter hvert som du får flere poeng, til maksimalt Extreme(4).
+For å endre denne oppførselen kan du bruke `/mydifficulty` (hvis serveren din ikke har slash-kommandoer, kan du også bruke den i en DM med RinBot).
+ </value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Slash-kommandoer fungerer ikke, eller kan bare brukes av administratorer.</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>For å kunne få fordelene må du ha **Discord-kontoen din koblet til Patreon-kontoen din**.  
+Hvordan du gjør dette [finner du her] (https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Hvis du **pantsatte før du koblet Discord-kontoen din**, kan du prøve å trykke [på "Bli med"-knappen her](https://www.patreon.com/rinbot?fan_landing=true) en gang til.  
+Dette skal ikke be om en ny betaling, men det vil utløse webhooken igjen, noe som vil resultere i at du får fordelene automatisk.  
+
+Den vil også prøve å gi frynsegoder til alle som mangler dem omtrent hver time, så bare vent litt, så får du dem automatisk.
+  
+Etter å ha pantsatt **må du logge inn på** på RinBot-nettstedet for å kunne bruke fordeler som å booste en server eller de ekstra kanalkonfigurasjonene.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Når tilbakestilles den ukentlige topplisten?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Den ukentlige ledertavlen tilbakestilles på datoen som vises i kommandoen `/weektop` ved midnatt (00:00 / 12:00) i UTC-tid.  
+
+Den bruker ISO-8601-standarden for årets uker med mandag som den første dagen i uken.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Hvordan fungerer poengberegningen?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Poengberegningen avhenger helt og holdent av mengden anime i bassenget som runden din er opprettet fra og nivået til vinneren.  
+  
+I det enkleste tilfellet gir en pool på 3000 anime maksimalt 60 poeng, redusert med `1 / numberOfCaptures` for hver ekstra cap som vises.  
+  
+Størrelsen på poolen avhenger av filtrene dine. Hvis du bruker din egen anime-liste som filter, som har 90 oppføringer i Completed-seksjonen og 10 i On-hold-seksjonen, blir poolen 100 poeng.  
+Etter hver runde du spiller med det samme filteret, reduseres imidlertid puljen med 1, siden det ikke er noen gjentakelser på minst en time for runder som startes av deg selv eller på samme server.  
+  
+Formelen som brukes:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Standard `maxPoints` er `60` og `animeMaxPoints` er `3000`.  
+  
+Variabelen `animeMultiplier` avhenger av hvilket år anime ble utgitt.  
+- Før år 2010 : `2`
+- Før år 2000 : `3`
+- Før år 1990 : `4`
+- Før år 1980 : `5`
+
+Minste antall poeng du kan få er `4`, som blir til `1` hvis det siste taket har blitt vist.  
+
+__Stemmerunder__ 
+I talerunder reduseres poengene etter hvor lang tid du bruker på å svare, og ikke etter hvor mange bilder som har blitt vist.</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Du kan starte en runde ved å bruke `/sg`.
+Du finner flere kommandoer i [kommandolisten]({0}/commands).
+
+&gt; ⚠️ Det er for øyeblikket fortsatt mulig å bruke de gamle kommandoene, for eksempel `!sg`, men dette **anbefales ikke**.  
+&gt; Disse eldre kommandoene med prefiks er foreldet og vil bli faset ut over tid. 
+&gt; Det kan også hende at nye funksjoner bare blir tilgjengelige for kommandoer med skråstrek.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Hvordan bruker jeg RinBot?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Hvordan endrer jeg språk?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Hvordan endrer jeg kommandoprefikset?</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Kommandoen `/lang` kan brukes til å endre språket som RinBot snakker.
+
+Du kan også endre språket for anime-titler som kan gjettes og vises i tipsene og anime-plakaten på slutten av rundene.
+For dette må du logge inn på nettstedet.
+
+For å angi engelske titler kan du legge til en rad øverst i hovedtittelinnstillingene med innhold: AniDB, Offisiell tittel og Engelsk.
+
+&gt; Merk at dette er en avansert funksjon som kan ødelegge RinBot på serveren din hvis den ikke er riktig konfigurert.</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Hvis du bruker skråstrekskommandoer `/`, gjelder ikke dette for deg. Skråstrekskommandoers prefiks kan ikke endres.
+
+Kommandoprefikset er tegnet (eller flere, maks. 1 til 5 tegn) foran hver kommando.
+For eksempel i `!sg` vil prefikset være `!`. 
+Hvis du setter prefikset til `!sg`, blir kommandoen `!sgsg`, så pass på.
+Du kan til og med bruke emojis som prefiks... men hvorfor skulle du det?
+
+Du kan ganske enkelt bruke kommandoen `!prefix` for å endre prefikset fra discord.
+Skriv `@RinBot prefix` hvis du helt har glemt prefixet ditt.
+
+Du kan også endre prefikset via [nettstedet]({0}/my-servers). Følg disse trinnene:
+- Logg inn med Discord-kontoen din øverst til høyre på siden.
+- Klikk på navnet ditt øverst til høyre og velg "Mine servere".
+- Finn serveren din i listen og klikk på "Konfigurer".
+- Oppdater prefikset til det du ønsker
+- Trykk på knappen "Lagre endringer" for å fullføre</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Hva er denne anime-pool-greia jeg stadig hører om?</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Hver runde du spiller, velger du en tilfeldig anime fra en "pool" av anime som avhenger av hvilke filtre du bruker.
+Jo mer restriktive filtre du bruker, desto mindre blir anime-poolen din.
+Poengberegningen er også løst basert på antall anime i anime-poolen, og en anime-pool på 3000 gir maksimalt antall poeng (normalt 60).
+
+__Et eksempel__
+La oss si at du har en anime-liste med 100 animeer (de må ha sett minst én episode og ikke være droppet).
+Omtrent 20 av disse 100 animeene regnes som populære, og hører derfor hjemme i den enkle vanskelighetsgraden.
+Hvis du da bruker `!sg d:1 mal:username` vil den velge en tilfeldig anime blant de 20.
+
+Nå er det også det faktum at RinBot ikke gjentar anime i minst en time.
+Hvis du tar hensyn til det, vil hver runde du spiller i løpet av timen redusere de 20 animeene med 1.
+Så etter 20 runder vil du ende opp med en pool på 0. Da kan ikke RinBot fortsette og avbryter runden og sier **Runden ble avbrutt på grunn av manglende fangster**.
+
+Antallet anime-pooler brukes også til tidstabellen. Siden det ville være for enkelt for folk å bruke `!sg d:1 g:sports` og spamme Haikyuu, har jeg valgt å bare tillate runder med minst 1000 i anime-poolen på den ledertavlen.</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Hva er NSFW-modus, og hvordan aktiverer jeg den?</value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Ingen av kommandoene fungerer, hvordan kan jeg fikse dette?</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Hvordan får jeg RinBot til å lytte til kommandoer på bare én kanal?</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Hvorfor er RinBot offline på serveren min?</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord la nylig til __slash-kommandotillatelser__ system... ganske stille.
+Dette ga serverne muligheten til å aktivere/deaktivere skråstrekskommandoer individuelt for den kanalen eller rollen de ønsker.
+
+På mange servere ser det ut til at standardinnstillingene for dette gjorde skråstrekskommandoer utilgjengelige for vanlige brukere.
+På __mobile enheter__ og eldre versjoner støttes ikke dette fullt ut, og du kan få en melding som sier: 
+**Denne interaksjonen mislyktes** eller **Programmet svarte ikke**
+
+__Slik endrer du disse tillatelsene__
+I Discord går du til `Server Settings - Integrations - RinBot` og kontrollerer at alt er satt opp riktig for kanalene og rollene dine. 
+Mobile enheter støtter ennå ikke disse funksjonene fullt ut, så bruk PC-en til dette eller prøv nettklienten på enheten din.
+
+&gt; Administratorer kan alltid bruke skråstrekskommandoer, uansett hvilke tillatelser som er satt opp her. Så hvis du allerede er administrator, er problemet noe annet.
+
+Hvis dette ikke løser problemet, kan du se __spørsmål 6__ for flere mulige årsaker.</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Hvorfor navnet "RinBot" og hvem er jenta i avataren?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Jenta på bildet er en Elin fra spillet TERA Online.  
+Der hadde jeg en figur som het Kururin, som var en Elin-mystiker og lignet på denne.  
+  
+Opprinnelig skrev jeg en discord-bot som gjorde noen standard discord-modereringsgreier, bare for å prøve meg frem.
+Da jeg spurte hva jeg skulle kalle den, var det noen som sa "bare kall den RinBot". Jeg syntes det var morsomt, så navnet ble stående.  
+  
+Tegningene er laget av momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)), så all æren for avataren går til dem!  
+Sjekk også ut [originalinnlegget av kunstverket](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Hvordan kan jeg få RinBot til å starte rundene automatisk?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>For øyeblikket finnes det en funksjon som heter "start en runde når kanalen er inaktiv".
+Denne funksjonen kan aktiveres i kanalkonfigurasjonen etter at du har logget inn på [nettsiden]({0}/my-servers).  
+  
+For gratis servere er inaktivitetstiden satt til minst én time. Dette kan reduseres til ett minutt når du blir supporter.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Jeg har forpliktet meg, men ikke mottatt fordelene mine, hva nå?</value>
+  </data>
 </root>
