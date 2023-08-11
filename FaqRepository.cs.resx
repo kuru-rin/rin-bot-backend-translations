@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Žádný z příkazů nefunguje, jak to mohu opravit?</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Příčiny nefunkčnosti příkazů mohou být různé.
+
+a. **Váš prefix je změněn na něco jiného a vy jste na to zapomněli.** 
+Můžete jednoduše použít `@RinBot prefix` a zkontrolovat svůj aktuální prefix a také ho změnit.
+
+Pokud nemůžete použít prefix `@RinBot`, jděte se přihlásit na [webové stránky]({0}).
+Tam si také můžete prohlédnout a změnit svůj prefix na stránce **Moje servery** vpravo nahoře.
+
+b. **Změnili jste oprávnění na svém serveru tak, že RinBot již nemůže odesílat zprávy nebo vkládat**. 
+Ujistěte se, že má RinBot všechna potřebná oprávnění.
+V tuto chvíli jsou to následující: `Číst zprávy`, `Odesílat zprávy`, `Vkládat odkazy`, `Připojovat soubory` a pro hlasové kanály `Připojit` a `Mluvit.`
+&gt; Můžete ji znovu vyzvat, abyste zkontrolovali, která oprávnění jsou přesně potřeba.
+
+c. **Používáte __příkazy s lomítkem__ a oprávnění k příkazům byla nastavena tak, aby byla zakázána**. 
+Viz otázka č. 10.
+
+d. **Řízení přístupu může být nastaveno tak, že nepovoluje žádné příkazy**. 
+Osoba s oprávněním ke správě serveru by musela změnit řízení přístupu tak, aby povolila příkazy, pokud je řízení přístupu povoleno.
+Konfiguraci lze nalézt na [webové stránce]({0}/my-servers).
+
+e. **Střípek, na kterém je váš server, je ve skutečnosti vypnutý**. 
+Stává se to zřídka a mělo by to být automaticky opraveno během několika minut.
+Stav shardu, na kterém se nachází váš server, můžete zkontrolovat na [stránce se stavem]({0}/status).
+V případě nějaké rozsáhlé údržby můžete také zkontrolovat aktualizace na [stránce statuspage.io](https://rinbot.statuspage.io/).
+ 
+f. **V konfiguraci jste zcela zakázali textové příkazy**. 
+Pokud chcete používat textové příkazy, ujistěte se, že jste v nastavení serveru na webové stránce nezaškrtli políčko "Zakázat starší příkazy s předponou".
+Tato volba způsobí, že budou fungovat pouze příkazy s lomítkem.</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Pravděpodobně jde o opětovné připojení, protože Discord každou hodinu vynucuje opětovné připojení střepů kolem ____ . Buďte trpěliví a zkuste to za pár minut znovu.
+
+Pokud to ani po 15 minutách nefunguje ____ , **zkontrolujte otázku 6**.
+
+Pokud vám ani poté __stále__ nefunguje, požádejte o pomoc v #help a zároveň uveďte shard a/nebo cluster, na kterém se váš server nachází.
+Svůj shard můžete zkontrolovat na [stavové stránce]({0}/status).
+
+&gt; ⚠️ Vezměte prosím na vědomí, že **soboty mezi 8:00-12:00 UTC** jsou vyhrazeny jako okno pro údržbu, takže v této době může dojít k neohlášeným výpadkům.</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>Obtížnost se odvíjí od oblíbenosti anime, můžete si vybrat z 5 obtížností:  
+1. Easy
+2. Normální
+3. Hard
+4. Extrémní
+5. Noční můra
+
+&gt; Od Easy(1) po Extreme(4) budou bazény obsahovat také anime z předchozích obtížností. 
+&gt; Obtížnost Nightmare(5) je jiná, obsahuje pouze nejméně oblíbená anime dostupná v botu.
+
+__Změna obtížnosti__
+Pro změnu obtížnosti na `Easy` pro jedno kolo použijte `/sg obtížnost:Easy` nebo `!sg d:1` nebo `!sg 1`.
+Stejně to funguje i pro ostatní obtížnosti v rámci jiných příkazů.
+
+Obtížnost se bude zvyšovat s přibývajícími body, maximálně na Extreme(4).
+Chcete-li toto chování změnit, můžete použít příkaz `/mydifficulty` (pokud váš server nemá lomítkové příkazy, můžete jej použít i v DM s RinBotem).
+ </value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Proč název "RinBot" a kdo je ta dívka v avataru?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Dívka na obrázku je Elin ze hry TERA Online.  
+Měl jsem tam postavu jménem Kururin, která byla mystická Elin a vypadala podobně jako tato.  
+  
+Původně jsem napsal discord bota, který dělal nějaké výchozí věci na moderování discordu, jen abych si to vyzkoušel.
+Když jsem se zeptal "jak bych ho měl pojmenovat", někdo mi řekl "prostě mu říkej RinBot". Přišlo mi to vtipné, takže se název tak nějak vžil.  
+  
+O výtvarnou stránku se postaral momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)), takže všechny zásluhy za avatar patří jim!  
+Podívejte se také na [původní příspěvek s kresbou](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Jak mohu zařídit, aby RinBot automaticky spouštěl kola?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>V současné době je k dispozici funkce "spustit kolo, když je kanál nečinný".
+Tuto funkci lze aktivovat v konfiguraci kanálu po přihlášení na [webové stránce]({0}/my-servers).  
+  
+U bezplatných serverů je doba nečinnosti nastavena minimálně na jednu hodinu. Když se stanete příznivcem, lze ji zkrátit na jednu minutu.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Přislíbil/a jsem, ale nedostal/a jsem výhody, co teď?</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Abyste mohli získat výhody, musíte mít účet **Discord propojený s účtem Patreon**.  
+Jak to přesně udělat [najdete zde] (https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Pokud jste před propojením svého účtu na Discordu** zaplatili **pled, můžete zkusit stisknout [tlačítko 'Join' zde](https://www.patreon.com/rinbot?fan_landing=true) ještě jednou.  
+To by nemělo vyžadovat další platbu, ale znovu se spustí webhook, který povede k automatickému poskytnutí perků.  
+
+Také se pokusí dát perky všem, kterým chybí, přibližně každou hodinu, takže stačí chvíli počkat a dostanete je automaticky.
+  
+Po zaplacení pledů **se budete muset znovu přihlásit** na webové stránce RinBot, abyste mohli využívat perky, jako je posílení serveru nebo konfigurace kanálů navíc.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Kdy se týdenní žebříček resetuje?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Týdenní žebříček se resetuje k datu uvedenému v příkazu `/weektop` o půlnoci (00:00 / 12:00) v čase UTC.  
+
+Pro týdny v roce se používá standard ISO-8601 s pondělím jako prvním dnem v týdnu.</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Výpočet bodů závisí výhradně na množství anime v poolu, z něhož je kolo vytvořeno, a na úrovni vítěze.  
+  
+V nejjednodušším případě dává pool s 3000 anime maximálně 60 bodů, které se snižují o `1 / numberOfCaptures` za každý další zobrazený uzávěr.  
+  
+Velikost poolu závisí na vašich filtrech. Pokud jako filtr použijete svůj vlastní seznam anime, který má 90 záznamů v sekci Dokončeno a 10 v sekci Na počkání, bude velikost vašeho poolu 100.  
+Po každém kole, které odehrajete s tímto stejným filtrem, se však pool sníží o 1, protože u kol, která jste zahájili sami nebo v rámci stejného serveru, nedochází k žádnému opakování po dobu alespoň jedné hodiny.  
+  
+Vzorec, který se používá:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Výchozí `maxPoints` je `60` a `animeMaxPoints` je `3000`.  
+  
+Proměnná `animeMultiplier` závisí na roce vydání anime.  
+- Před rokem 2010 : `2`
+- Před rokem 2000 : `3`
+- Před rokem 1990 : `4`
+- Před rokem 1980 : `5`
+
+Minimální počet bodů, který můžete získat, je `4`, který se změní na `1`, pokud byl zobrazen poslední limit.  
+
+__Hlasová kola__ 
+U hlasových kol se body snižují podle času, který potřebujete k odpovědi, nikoli podle počtu zobrazených uzávěrek.</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Příkaz `/lang` lze použít ke změně jazyka, kterým RinBot mluví.
+
+Můžete také změnit jazyk názvů anime, které lze uhodnout a které se zobrazují v nápovědách a na plakátu anime na konci kol.
+Za tímto účelem se prosím přihlaste na webové stránky.
+
+Chcete-li nastavit anglické tituly, můžete přidat řádek do horní části hlavních předvoleb titulů s obsahem: AniDB, Oficiální název a Anglický název.
+
+&gt; Upozorňujeme, že se jedná o pokročilou funkci, která může při nesprávném nastavení rozbít RinBot na vašem serveru.</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Kolo můžete zahájit pomocí příkazu `/sg`.
+Další příkazy najdete v [seznamu příkazů]({0}/commands).
+
+&gt; ⚠️ V současné době je stále možné používat starší příkazy, například `!sg`, ale to se **nedoporučuje**.  
+&gt; Tyto starší příkazy s předponou jsou zastaralé a časem budou vyřazeny. 
+&gt; Také nové funkce mohou být dostupné pouze pro příkazy s lomítkem.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Jak mohu RinBot používat?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Jak mohu změnit jazyk?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Jak změním předponu příkazu?</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Pokud používáte příkazy s lomítkem `/`, toto se vás netýká. Prefix lomítkových příkazů nelze změnit.
+
+Prefix příkazu je znak (nebo více znaků, max. 1 až 5 znaků) před každým příkazem.
+Například v příkazu `!sg` by prefix byl `!`. 
+Pokud byste nastavili prefix na `!sg`, příkaz by se stal `!sgsg`, takže pozor na to.
+Jako prefix můžete použít i emotikony... ale proč byste to dělali?
+
+Můžete jednoduše použít příkaz `!prefix` pro změnu prefixu z prostředí discordu.
+Pokud jste svůj prefix úplně zapomněli, zadejte `@RinBot prefix`.
+
+Prefix můžete změnit také prostřednictvím [webové stránky]({0}/my-servers). Postupujte prosím podle následujících kroků:
+- Přihlaste se pomocí svého účtu Discord v pravém horním rohu stránky.
+- Klikněte na své jméno v pravém horním rohu a vyberte možnost "Moje servery".
+- Najděte v seznamu svůj server a klikněte na 'Configure' (Konfigurovat).
+- Aktualizujte předponu na jakoukoli, která se vám líbí
+- Stiskněte tlačítko "Uložit změny" a dokončete</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Co je to za anime bazén, o kterém pořád slyším?</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>V každém kole si tedy vyberete náhodné anime z "fondu" anime, který závisí na tom, jaké filtry použijete.
+Čím přísnější filtry použijete, tím menší bude váš výběr anime.
+Počet bodů se také volně odvíjí od počtu anime v poolu, přičemž anime v poolu o velikosti 3000 dává maximální počet bodů (obvykle 60).
+
+__Příklad__
+Řekněme, že máte seznam anime, ve kterém je 100 anime (musí mít shlédnutou alespoň 1 epizodu a nesmí být vyřazena).
+Asi 20 z těchto 100 anime je považováno za populární, takže by patřilo do lehké obtížnosti.
+Pokud tedy použijete `!sg d:1 mal:username`, chytne se náhodné anime z pouhých 20 anime.
+
+Teď je tu ještě fakt, že RinBot neopakuje anime alespoň jednu hodinu.
+S ohledem na to by každé kolo, které odehrajete během hodiny, snížilo oněch 20 anime o 1.
+Takže po 20 kolech skončíte s fondem 0. Pak RinBot nemůže pokračovat a kolo zruší s hláškou **Kolo bylo zrušeno kvůli chybějícím záběrům**.
+
+Počet anime poolů se používá také pro časový žebříček. Protože by pro lidi bylo příliš snadné používat `!sg d:1 g:sport` a spamovat Haikyuu, rozhodl jsem se v tomto žebříčku povolit pouze kola s minimálním počtem 1000 v anime poolu.</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Co je to režim NSFW a jak ho povolit?</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Ve výchozím nastavení RinBot filtruje řadu anime.
+Je to proto, abychom nemuseli kanál věkově omezovat (dříve NSFW) a respektovali tak podmínky služby Discord.
+
+Značky anime na AniDB, které jsou filtrovány:
+- 18 omezeno
+- Hraniční hentai
+- Nahota (váha &gt;200)
+- Sex (váhy &gt;100)
+
+Vše, co má na MAL hodnocení PG-13 nebo nižší, je vždy zahrnuto.
+
+Můžete jednoduše nastavit, aby byl váš kanál věkově omezený, a RinBot se automaticky přepne do režimu NSFW.
+
+Pokud při přehrávání v režimu SFW narazíte na NSFW obrázek nebo video, napište mi prosím název anime, abych ho mohl do filtru přidat ručně. </value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Jak přiměji robota RinBot poslouchat příkazy pouze na jednom kanálu?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>V současné době existují dva způsoby, jak toho dosáhnout.
+
+a. **Použijte oprávnění Discordu**
+V podstatě musíte dát RinBotovi pouze oprávnění __Zobrazit kanál__ na kanálu, na kterém chcete, aby poslouchal příkazy.
+Toho lze dosáhnout tak, že stačí mít správně nastavená oprávnění v Discordu.
+
+__Příklady:__: 
+Zakázat `@everyone` __Zobrazit kanál__ všem kanálům. Pak vytvořte roli "Members", která lidem __View channel__ povolí přístup ke všem kanálům, zatímco RinBotovi povolí pouze __View channel__ ke kanálu, ve kterém má poslouchat příkazy.
+
+Případně vytvořte roli "Bots", která znemožní __Zobrazit kanál__ přístup konkrétně ke všem kanálům. Pak dejte RInBotovi specificky přístup ke zvolenému kanálu.
+
+b. **Použijte řízení přístupu ke kanálu**
+Konfigurace pro tuto funkci je k dispozici po přihlášení na [webové stránce]({0}).
+
+__Kroky, které je třeba provést:__:
+- Po přihlášení přejděte do pravého horního rohu a klikněte na své jméno, poté přejděte na __Moje servery__.
+- Klikněte na server, který chcete nakonfigurovat (musíte být __administrátor__ nebo mít roli __správa serverů__ ).
+- Najděte kartu __Kanály__ a zaškrtněte políčko __Povolit řízení přístupu ke kanálům__.
+
+&gt; Jen s touto konfigurací nebude RinBot naslouchat příkazům na žádném kanálu, takže nyní je třeba povolit mu v požadovaném kanálu
+
+- Klikněte na __Add a channel__ a vyberte kanál, ve kterém chcete, aby RinBot poslouchal příkazy.
+- Klikněte na __Add a rule__, čímž vznikne pravidlo přístupu, které povolí každý příkaz v tomto kanálu.
+- Klikněte na __Uložit změny__ v dolní části a je hotovo!</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Proč je RinBot na mém serveru offline?</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Co je to obtížnost a jak ji mohu změnit?</value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Příkazy lomítka nefungují nebo je mohou používat pouze správci</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord nedávno přidal příkaz __lomítko oprávnění__ systém... poměrně tiše.
+To dalo serverům možnost povolit/zakázat lomítkové příkazy inidividuálně pro jakýkoli kanál nebo roli, kterou chtějí.
+
+Zdá se, že na mnoha serverech výchozí nastavení této funkce znepřístupňovalo lomítkové příkazy běžným uživatelům.
+Na mobilních zařízeních ____ a starších verzích to není zcela podporováno a může se zobrazit hlášení: 
+**Tato interakce se nezdařila** nebo **Aplikace neodpověděla**
+
+__Chcete-li tato oprávnění změnit.__
+V aplikaci Discord přejděte na `Nastavení serveru - Integrace - RinBot` a ujistěte se, že jsou zde věci pro vaše kanály a role nastaveny správně. 
+Mobilní zařízení zatím tyto funkce zcela nepodporují, takže k tomu prosím použijte počítač nebo zkuste webového klienta na svém zařízení.
+
+&gt; Správci mohou vždy používat příkazy s lomítkem, bez ohledu na to, jaká oprávnění jsou zde nastavena. Pokud tedy již správcem jste, váš problém bude v něčem jiném.
+
+Pokud to vaše problémy nevyřeší, podívejte se na __otázka 6__, kde najdete další možné příčiny.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Jak funguje výpočet bodů?</value>
+  </data>
 </root>
