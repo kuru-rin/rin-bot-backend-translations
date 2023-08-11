@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Så hver runde, du spiller, vil vælge en tilfældig anime fra en "pulje" af anime, der afhænger af, hvilke filtre du bruger.
+Jo mere restriktive filtre du bruger, jo mindre bliver din anime-pulje.
+Pointene er også løst baseret på antallet af animeer i puljen, hvor en anime-pulje på 3000 giver maksimum point (normalt 60).
+
+__Et eksempel__
+Lad os sige, at du har en anime-liste med 100 animeer på (de skal have set mindst 1 episode og må ikke være droppet).
+Omkring 20 af de 100 animeer betragtes som populære, så de ville høre til i den lette sværhedsgrad.
+Hvis du så bruger `!sg d:1 mal:username`, vil den hente en tilfældig anime ud af de 20 animeer.
+
+Nu er der også det faktum, at RinBot ikke gentager anime i mindst en time.
+Når man tager det i betragtning, vil hver runde, du spiller inden for den time, reducere de 20 animeer med 1.
+Så efter 20 runder vil du ende med en pulje på 0. Så kan RinBot ikke fortsætte og vil annullere runden og sige **Runden blev annulleret på grund af manglende fangster**.
+
+Anime-puljetællingen bruges også til tidstavlen. Da det ville være for nemt for folk at bruge `!sg d:1 g:sports` og spamme Haikyuu, har jeg valgt kun at tillade runder med mindst 1000 i anime-puljen på den rangliste.</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Som standard vil RinBot filtrere en række anime.
+Dette er for at undgå at skulle gøre en kanal aldersbegrænset (tidligere NSFW) og dermed respektere Discords servicevilkår.
+
+AniDB-anime-tags, som filtreres:
+- 18 begrænset
+- På grænsen til hentai
+- Nøgenhed (vægte &gt;200)
+- Sex (vægte &gt;100)
+
+Alt, der er klassificeret PG-13 eller lavere på MAL, er altid inkluderet.
+
+Du kan blot indstille din kanal til at være aldersbegrænset, og RinBot vil automatisk skifte til NSFW-tilstand.
+
+Hvis du støder på et NSFW-billede eller en NSFW-video, mens du spiller i SFW-tilstand, bedes du kontakte mig med animeens navn, så jeg kan tilføje den til filteret manuelt. </value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Der kan være en række forskellige årsager til, at dine kommandoer ikke virker.
+
+a. **Dit præfiks er ændret til noget andet, og du har glemt det.** 
+Du kan blot bruge `@RinBot prefix` til at tjekke dit nuværende præfiks og ændre det.
+
+Hvis du ikke kan bruge `@RinBot prefix` skal du logge ind på [hjemmesiden]({0}).
+Der kan du også se og ændre dit præfiks på siden **My Servers** øverst til højre.
+
+b. **Du har ændret tilladelserne på din server på en sådan måde, at RinBot ikke længere kan sende beskeder eller indlejre** 
+Sørg for, at RinBot har alle de nødvendige tilladelser.
+I øjeblikket er disse: `Læs beskeder`, `Send beskeder`, `Indlejr links`, `Vedhæft filer` og for stemmekanaler `Opret forbindelse` og `Tal`
+&gt; Du kan invitere hende igen for at tjekke, hvilke tilladelser der præcist er brug for.
+
+c. **Du bruger __slash-kommandoer__, og kommandotilladelserne er sat op til at nægte dem** 
+Se spørgsmål 10.
+
+d. **Adgangskontrol kan være indstillet på en måde, der ikke tillader nogen kommandoer** 
+En person med serveradministrationstilladelser skal ændre adgangskontrollen, så den tillader kommandoer, hvis adgangskontrollen er aktiveret.
+Konfigurationen kan findes på [hjemmesiden]({0}/my-servers).
+
+e. **Den shard, som din server er på, er faktisk nede** 
+Dette sker sjældent og burde blive rettet automatisk i løbet af et par minutter.
+Du kan tjekke status for den shard, din server er på, på [statussiden]({0}/status).
+I tilfælde af større vedligeholdelse kan du også tjekke [statuspage.io-siden](https://rinbot.statuspage.io/) for opdateringer.
+ 
+f. **Du har deaktiveret tekstkommandoer fuldstændigt i konfigurationen** 
+Hvis du gerne vil bruge tekstkommandoer, skal du sikre dig, at du ikke har afkrydset feltet "Disable legacy prefixed commands" i serverindstillingerne på hjemmesiden.
+Denne indstilling vil gøre, at kun slash-kommandoer virker.</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Hvorfor er RinBot offline på min server?</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Det er sandsynligvis reconnect, da Discord tvinger en reconnect af shards omkring __hver time__. Vær tålmodig og prøv igen om et par minutter.
+
+Hvis det stadig ikke virker __efter 15 minutter__, **tjek spørgsmål 6**.
+
+Hvis det derefter __stadig__ ikke virker for dig, bedes du bede om hjælp i #help, mens du nævner den shard og/eller cluster, din server er på.
+Du kan tjekke din shard på [statussiden]({0}/status).
+
+&gt; ⚠️ Bemærk venligst, at **lørdage mellem 8:00-12:00 UTC** er reserveret som et vedligeholdelsesvindue, så der kan være uanmeldt nedetid i det tidsrum.</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Hvad er sværhedsgrad, og hvordan ændrer jeg den?</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>Sværhedsgraden er baseret på animeens popularitet, og du kan vælge mellem 5 sværhedsgrader:  
+1. Let
+2. Normal
+3. Svær
+4. Ekstrem
+5. Mareridt
+
+&gt; Fra Easy(1) til Extreme(4) vil puljerne også indeholde anime fra de tidligere sværhedsgrader. 
+&gt; Sværhedsgraden Nightmare(5) er anderledes, den indeholder kun de mindst populære animeer, der er tilgængelige i botten.
+
+__Ændring af sværhedsgrad__
+For at ændre sværhedsgraden til `Easy` for en enkelt runde skal du bruge `/sg difficulty:Easy` eller `!sg d:1` eller `!sg 1`.
+Det fungerer på samme måde for andre sværhedsgrader inden for andre kommandoer.
+
+Sværhedsgraden øges, mens du får flere point, til et maksimum på Extreme(4).
+For at ændre denne adfærd kan du bruge `/mydifficulty` (hvis din server ikke har skråstregskommandoer, kan du også bruge den i en DM med RinBot)
+ </value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Pigen på billedet er en Elin fra spillet TERA Online.  
+Der havde jeg en karakter ved navn Kururin, som var en Elin-mystiker og lignede denne.  
+  
+Oprindeligt skrev jeg en discord-bot, som lavede nogle standard discord-moderations-ting, bare for at prøve tingene af.
+Da jeg spurgte, hvad den skulle hedde, var der en, der sagde "bare kald den RinBot". Jeg syntes, det var sjovt, så navnet blev hængende.  
+  
+Billederne er lavet af momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)), så al kredit for avataren går til dem!  
+Tjek også det [originale opslag af kunstværket](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>For at kunne få fordelene skal du have din **Discord-konto linket til din Patreon-konto**.  
+Præcis hvordan du gør det [kan findes her] (https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Hvis du **gav tilsagn, før du linkede din Discord-konto**, kan du prøve at trykke på [knappen 'Deltag' her](https://www.patreon.com/rinbot?fan_landing=true) en gang til.  
+Dette burde ikke bede om endnu en betaling, men det vil udløse webhook igen, hvilket vil resultere i at give dig frynsegoderne automatisk.  
+
+Den vil også forsøge at give frynsegoder til alle, der mangler dem, cirka hver time, så bare vent lidt, og du vil modtage dem automatisk.
+  
+Når du har givet tilsagn til **, skal du logge ind igen på** på RinBot-webstedet for at bruge frynsegoder som at booste en server eller de ekstra kanalkonfigurationer.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Hvornår nulstilles den ugentlige rangliste?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Weekly leaderboard nulstilles på den viste dato i kommandoen `/weektop` ved midnat (00:00 / 12:00 AM) i UTC-tid.  
+
+Den bruger ISO-8601-standarden for årets uger med mandag som den første dag i ugen.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Hvordan fungerer pointberegningen?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Pointberegningen afhænger helt af mængden af anime i den pulje, som din runde er skabt ud fra, og af vinderens niveau.  
+  
+I det mest simple tilfælde giver en pulje på 3000 animeer maksimalt 60 point, reduceret med `1 / numberOfCaptures` for hver ekstra cap, der vises.  
+  
+Puljens størrelse afhænger af dine filtre. Hvis du bruger din egen anime-liste som filter, som har 90 poster i Completed-sektionen og 10 i On-hold-sektionen, vil din puljestørrelse være 100.  
+Men efter hver runde, du spiller med det samme filter, vil puljen blive reduceret med 1, da der ikke er gentagelser i mindst en time for runder, der er startet af dig selv eller på den samme server.  
+  
+Den formel, der bliver brugt:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Standard `maxPoints` er `60` og `animeMaxPoints` er `3000`.  
+  
+Variablen `animeMultiplier` afhænger af det år, animen blev udgivet.  
+- Før år 2010 : `2`
+- Før år 2000 : `3`
+- Før år 1990 : `4`
+- Før år 1980 : `5`
+
+Det mindste antal point, du kan få, er `4`, som bliver til `1`, hvis det sidste loft har været vist.  
+
+__Stemmerunder__ 
+I talerunder reduceres pointene med den tid, det tager at svare, i stedet for antallet af viste captures.</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Kommandoen `/lang` kan bruges til at ændre det sprog, som RinBot taler.
+
+Du kan også ændre sproget for anime-titler, der kan gættes og vises i hints og anime-plakaten i slutningen af runderne.
+For at gøre dette skal du logge ind på hjemmesiden.
+
+For at indstille engelske titler kan du tilføje en række øverst i hovedtitelindstillingerne med indhold: AniDB, Officiel titel og Engelsk.
+
+&gt; Bemærk, at det er en avanceret funktion, der kan ødelægge RinBot på din server, hvis den ikke er konfigureret korrekt.</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Du kan starte en runde ved at bruge `/sg`.
+For flere kommandoer, se [kommandolisten]({0}/commands).
+
+&gt; ⚠️ Det er i øjeblikket stadig muligt at bruge de gamle kommandoer, såsom `!sg`, men det **anbefales ikke**.  
+&gt; Disse ældre præfikserede kommandoer er forældede og vil blive udfaset over tid. 
+&gt; Nye funktioner bliver måske kun tilgængelige for slash-kommandoerne.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Hvordan bruger jeg RinBot?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Hvordan ændrer jeg sproget?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Hvordan ændrer jeg kommandopræfikset?</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Hvis du bruger slash-kommandoer `/`, gælder dette ikke for dig. Slash-kommandoers præfiks kan ikke ændres.
+
+Kommandopræfikset er det tegn (eller flere, maks. 1 til 5 tegn), der står foran hver kommando.
+For eksempel i `!sg` vil præfikset være `!`. 
+Hvis du sætter præfikset til `!sg`, vil kommandoen blive `!sgsg`, så pas på med det.
+Du kan endda bruge emojis som præfiks ... men hvorfor skulle du det?
+
+Du kan bare bruge kommandoen `!prefix` til at ændre præfikset inde fra discord.
+Skriv `@RinBot præfiks` hvis du helt har glemt dit præfiks.
+
+Du kan også ændre præfikset via [hjemmesiden]({0}/my-servers). Følg venligst disse trin:
+- Log ind med din Discord-konto øverst til højre på siden.
+- Klik på dit navn øverst til højre, og vælg 'Mine servere'.
+- Find din server på listen, og klik på 'Konfigurer'.
+- Opdater præfikset til, hvad du vil
+- Tryk på knappen 'Gem ændringer' for at afslutte</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Hvad er det for en anime-pool, jeg hele tiden hører om?</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Hvad er NSFW-tilstand, og hvordan aktiverer jeg den?</value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Ingen af kommandoerne virker, hvordan kan jeg løse det?</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Hvordan får jeg RinBot til kun at lytte til kommandoer på en enkelt kanal?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Der er to måder at gøre det på i øjeblikket.
+
+a. **Brug Discord-tilladelser**
+Du skal dybest set kun give RinBot tilladelsen __View channel__ på den kanal, du vil have hende til at lytte til kommandoer.
+Dette kan gøres ved blot at have dine tilladelser indstillet korrekt i Discord.
+
+__Eksempler__: 
+Disallow `@everyone` __View channel__ til alle kanaler. Lav derefter en "Members"-rolle, som giver folk __View channel__ til alle kanaler, mens du kun giver RinBot __View channel__ til den kanal, hun skal lytte til kommandoer i.
+
+Alternativt kan du lave en "Bots"-rolle, som specifikt forbyder __View channel__ adgang til alle kanaler. Giv derefter RInBot specifik adgang til en kanal efter eget valg.
+
+b. **Brug adgangskontrol til kanaler**
+Konfigurationen til dette er tilgængelig efter login på [hjemmesiden]({0}).
+
+__Fremgangsmåde__:
+- Når du er logget ind, skal du gå til øverst til højre og klikke på dit navn og derefter gå til __Mine servere__.
+- Klik på den server, du gerne vil konfigurere (du skal være __administrator__ eller have rollen __server management__ ).
+- Find fanen __Channels__ og sæt flueben i __Enable channel access control__ boksen.
+
+&gt; Med denne konfiguration vil RinBot slet ikke lytte til kommandoer på nogen kanal, så nu skal vi tillade det i den ønskede kanal.
+
+- Klik på __Add a channel__ og vælg den kanal, du vil have RinBot til at lytte til kommandoer i.
+- Klik på __Tilføj en regel__, som resulterer i en adgangsregel, der tillader alle kommandoer i denne kanal.
+- Klik på __Gem ændringer__ nederst, og du er færdig!</value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Slash-kommandoer virker ikke eller kan kun bruges af administratorer</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord tilføjede for nylig __slash command permissions__ system... ret lydløst.
+Det gav serverne mulighed for at aktivere/deaktivere slash-kommandoer individuelt for den kanal eller rolle, de ønsker.
+
+Det lader til, at standardindstillingerne for dette på mange servere gjorde slash-kommandoer utilgængelige for almindelige brugere.
+På __mobile enheder__ og ældre versioner er dette ikke helt understøttet, og du kan få en besked, der siger: 
+**Denne interaktion mislykkedes** eller **Programmet svarede ikke**
+
+__Sådan ændrer du disse tilladelser__
+I Discord skal du gå til `Server Settings - Integrations - RinBot` og sørge for, at tingene er sat korrekt op her for dine kanaler og roller. 
+Mobile enheder understøtter endnu ikke disse funktioner fuldt ud, så brug venligst din pc til dette eller prøv webklienten på din enhed.
+
+&gt; Administratorer kan altid bruge slash-kommandoer, uanset hvilke tilladelser der er sat op her. Så hvis du allerede er administrator, er dit problem noget andet.
+
+Hvis dette ikke løser dine problemer, kan du se __spørgsmål 6__ for flere mulige årsager.</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Hvorfor navnet 'RinBot', og hvem er pigen i avataren?</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Hvordan kan jeg få RinBot til at starte runderne automatisk?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>I øjeblikket er der en funktion, der hedder "start a round when channel is idle".
+Denne funktion kan aktiveres i kanalkonfigurationen, når du logger ind på [hjemmesiden]({0}/my-servers).  
+  
+For gratis servere er tomgangstiden sat til mindst en time. Dette kan reduceres til et minut, når du bliver supporter.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Jeg har givet tilsagn, men har ikke modtaget mine frynsegoder, hvad nu?</value>
+  </data>
 </root>
