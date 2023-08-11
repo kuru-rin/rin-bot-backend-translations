@@ -241,4 +241,85 @@
   <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
     <value>Tahun 70an dan sebelumnya</value>
   </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Description" xml:space="preserve">
+    <value>Anda sudah bisa mengetahuinya dari nada pertama, bukan?</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Title" xml:space="preserve">
+    <value>Daftar putar tak terbatas</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Description" xml:space="preserve">
+    <value>Anda dan daftar putar Anda tidak dapat dipisahkan lagi. Apakah Anda harus memeriksanya pada saat ini?</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs" xml:space="preserve">
+    <value>Lagu-lagu anime yang berbeda</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Title" xml:space="preserve">
+    <value>Rockin 'it</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Description" xml:space="preserve">
+    <value>Tidak ada waktu untuk istirahat. Ritme tidak akan berhenti dalam waktu dekat.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Title" xml:space="preserve">
+    <value>Pencocokan melodi</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Description" xml:space="preserve">
+    <value>Pejamkan mata Anda dan teruslah mendengarkan. Hanya saja, jangan sampai tertidur.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Title" xml:space="preserve">
+    <value>Merasa seperti menari</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Description" xml:space="preserve">
+    <value>Anda sudah semakin mahir dalam hal ini, jadi gerakkan tubuh Anda dan goyangkan!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Title" xml:space="preserve">
+    <value>Hidup memberi Anda lemon</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Title" xml:space="preserve">
+    <value>Oto no sekai</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Description" xml:space="preserve">
+    <value>Level Anda dalam mendengarkan tidak lagi berada di dunia ini, teruslah berjuang untuk lebih!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Description" xml:space="preserve">
+    <value>Ara Ara, bakatmu telah meningkat. Istirahatlah, ini akan semakin sulit.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Title" xml:space="preserve">
+    <value>Bop mengikuti irama</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Description" xml:space="preserve">
+    <value>Lagu harus dinikmati bersama orang lain, lagu terhubung dengan pikiran dan jiwa kita.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Title" xml:space="preserve">
+    <value>Setiap catatan dihafal</value>
+  </data>
+  <data name="AchievementCategory_Decade00s_Description" xml:space="preserve">
+    <value>Menebak anime antara tahun 2000 dan 2010 akan dihitung dalam pencapaian ini.</value>
+  </data>
+  <data name="AchievementCategory_Decade10s_Description" xml:space="preserve">
+    <value>Menebak anime antara tahun 2010 dan 2020 akan dihitung dalam pencapaian ini.</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore_Description" xml:space="preserve">
+    <value>Menebak anime dari sebelum tahun 1980 akan dihitung dalam pencapaian ini.</value>
+  </data>
+  <data name="AchievementCategory_Decade80s_Description" xml:space="preserve">
+    <value>Menebak anime antara tahun 1980 dan 1990 akan diperhitungkan dalam pencapaian ini.</value>
+  </data>
+  <data name="AchievementCategory_Decade90s_Description" xml:space="preserve">
+    <value>Menebak anime antara tahun 1990 dan 2000 akan dihitung dalam pencapaian ini.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs_Description" xml:space="preserve">
+    <value>Menebak lagu anime apa pun yang belum pernah Anda tebak sebelumnya akan dihitung dalam pencapaian ini. Hanya lagu-lagu dari putaran !sga yang akan dihitung pada saat ini.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime_Description" xml:space="preserve">
+    <value>Menebak anime apa pun yang belum pernah Anda tebak sebelumnya akan dihitung dalam pencapaian ini.</value>
+  </data>
+  <data name="AchievementCategory_GenreAction_Description" xml:space="preserve">
+    <value>Menebak anime dari genre aksi akan diperhitungkan dalam pencapaian ini.</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi_Description" xml:space="preserve">
+    <value>Menebak anime dari genre ecchi akan diperhitungkan dalam pencapaian ini.</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror_Description" xml:space="preserve">
+    <value>Menebak anime dari genre horor akan diperhitungkan dalam pencapaian ini.</value>
+  </data>
 </root>
