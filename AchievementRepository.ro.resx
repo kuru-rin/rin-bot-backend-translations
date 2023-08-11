@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,268 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Achievement_DistinctAnimeSongs_0_Title" xml:space="preserve">
+    <value>Rockin' it</value>
+  </data>
+  <data name="AchievementCategory_Decade00s" xml:space="preserve">
+    <value>Decenii - anii 00</value>
+  </data>
+  <data name="AchievementCategory_Decade10s" xml:space="preserve">
+    <value>Decenii - 10's</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
+    <value>Decenii - anii '70 și înainte</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
+    <value>Iată altceva ce ai putea face cu timpul tău.</value>
+  </data>
+  <data name="Achievement_GenreHorror_1_Title" xml:space="preserve">
+    <value>Hauu~ Omochi kaeri~</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs" xml:space="preserve">
+    <value>Cântece anime distincte</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Description" xml:space="preserve">
+    <value>Nu există timp pentru pauze. Ritmul nu se va opri prea curând.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Title" xml:space="preserve">
+    <value>Melody matcher</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Description" xml:space="preserve">
+    <value>Închideți ochii și continuați să ascultați. Dar nu adormiți.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Title" xml:space="preserve">
+    <value>Fiecare notă memorată</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Title" xml:space="preserve">
+    <value>Simțiți nevoia să dansați</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Description" xml:space="preserve">
+    <value>Devii din ce în ce mai bun la asta, așa că mișcă-ți corpul și scutură-l!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Title" xml:space="preserve">
+    <value>Viața îți dă lămâie</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Title" xml:space="preserve">
+    <value>Oto no sekai</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Description" xml:space="preserve">
+    <value>Nivelul tău de ascultare nu mai are ce căuta în această lume, continuă să tinzi spre mai mult!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Description" xml:space="preserve">
+    <value>Ara Ara, talentul tău s-a îmbunătățit. Ia o pauză, devine din ce în ce mai greu.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Title" xml:space="preserve">
+    <value>Bop la ritm</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Description" xml:space="preserve">
+    <value>Cântecele trebuie să fie savurate împreună cu alții, se conectează cu mintea și sufletul nostru.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Description" xml:space="preserve">
+    <value>Îți dai seama încă de la prima notă, nu?</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Title" xml:space="preserve">
+    <value>Lista de redare infinită</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Description" xml:space="preserve">
+    <value>Tu și lista ta de redare nu mai puteți fi separați. Chiar trebuie să le verificați în acest moment?</value>
+  </data>
+  <data name="AchievementCategory_Decade00s_Description" xml:space="preserve">
+    <value>Ghicitul anime între anii 2000 și 2010 va fi luat în considerare pentru această realizare.</value>
+  </data>
+  <data name="AchievementCategory_Decade80s" xml:space="preserve">
+    <value>Decenii - anii '80</value>
+  </data>
+  <data name="AchievementCategory_Decade90s" xml:space="preserve">
+    <value>Decenii - anii '90</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime" xml:space="preserve">
+    <value>Distinct anime</value>
+  </data>
+  <data name="AchievementCategory_GenreAction" xml:space="preserve">
+    <value>Gen - Acțiune</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi" xml:space="preserve">
+    <value>Gen - Ecchi</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror" xml:space="preserve">
+    <value>Gen - Horror</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Description" xml:space="preserve">
+    <value>Primești un deget de la Haruhi, dar măcar îți amintești de ea?</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
+    <value>Thumbs-up</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Title" xml:space="preserve">
+    <value>Budincă de stivuire</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Description" xml:space="preserve">
+    <value>Îți este sete de mai mult? Mă tem că acesta a fost ultimul nivel... deocamdată.</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Title" xml:space="preserve">
+    <value>Însetat de mai mult</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Description" xml:space="preserve">
+    <value>Nu totul este doar distracție și jocuri... sau este?</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Title" xml:space="preserve">
+    <value>Drooling</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Description" xml:space="preserve">
+    <value>Nu uitați să beți niște Dk Pepper.</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Title" xml:space="preserve">
+    <value>Iubește Dokupe</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Description" xml:space="preserve">
+    <value>Ați încercat să treceți granițele, dar nu ați reușit.</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Title" xml:space="preserve">
+    <value>Dimensiune tripper</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Description" xml:space="preserve">
+    <value>Dependența nu poate fi măsurată, evident.</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Title" xml:space="preserve">
+    <value>Dependent</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Description" xml:space="preserve">
+    <value>Calcă în picioare concurența!</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Title" xml:space="preserve">
+    <value>Dinozaur</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Description" xml:space="preserve">
+    <value>Nu uitați: logodnele sunt sacre!</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Title" xml:space="preserve">
+    <value>Iubind waifu</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Description" xml:space="preserve">
+    <value>Impresionant... foarte impresionant.</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Title" xml:space="preserve">
+    <value>A făcut o impresie</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Description" xml:space="preserve">
+    <value>Mai este un nivel de obținut!</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Title" xml:space="preserve">
+    <value>Nu adormi încă.</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Description" xml:space="preserve">
+    <value>Ai distrus toți dragonii care ți-au stat în cale!</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Title" xml:space="preserve">
+    <value>Sclav dragon!!!</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Description" xml:space="preserve">
+    <value>Felicitări, ați depășit numărul magic. Respiră adânc acum, va fi din ce în ce mai dificil.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Title" xml:space="preserve">
+    <value>Primul pas</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Description" xml:space="preserve">
+    <value>Ești obișnuit să vezi ochii personajelor mai mari decât nasul lor. Dacă au vreun nas.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Title" xml:space="preserve">
+    <value>Ghicitor ocazional</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Description" xml:space="preserve">
+    <value>NU ai căutat niciunul dintre ei, nu-i așa?</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Title" xml:space="preserve">
+    <value>Cititor de gânduri</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Description" xml:space="preserve">
+    <value>Asta e... mult. Poți fi mândru de tine, asta e sigur.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Title" xml:space="preserve">
+    <value>Drepturi de laudă</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Description" xml:space="preserve">
+    <value>Acum faceți o pauză, respirați și întindeți-vă puțin. Nu uitați să nu stați prea aproape de ecran.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Title" xml:space="preserve">
+    <value>O mulțime de timp liber</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Description" xml:space="preserve">
+    <value>Nivelul tău de putere este mult peste cel al celorlalți. Singura cale este în sus.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Title" xml:space="preserve">
+    <value>Nici măcar forma mea finală</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Description" xml:space="preserve">
+    <value>Ar trebui să știți deja ce înseamnă această imagine.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Title" xml:space="preserve">
+    <value>Trebuie să le ghicești pe toate!</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Description" xml:space="preserve">
+    <value>Nu te poți opri din luptă, nu-i așa?</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Title" xml:space="preserve">
+    <value>Maniac de luptă</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Description" xml:space="preserve">
+    <value>Nu ești încă un maestru.</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Title" xml:space="preserve">
+    <value>Cel mai puternic discipol</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Description" xml:space="preserve">
+    <value>Ți-ai folosi chiar și propriul sânge pentru a-ți învinge dușmanii.</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Title" xml:space="preserve">
+    <value>Războinic de sânge</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Description" xml:space="preserve">
+    <value>Să-ți dai seama de culoarea pantalonului este o chestiune de la sine înțeleasă pentru tine.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Title" xml:space="preserve">
+    <value>În ea pentru complot</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Description" xml:space="preserve">
+    <value>Astăzi ați învățat definiția lui shimapan.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Title" xml:space="preserve">
+    <value>Shimapan</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Description" xml:space="preserve">
+    <value>Poți să îți dorești orice vrei!</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Title" xml:space="preserve">
+    <value>Vrei să faci un contract?</value>
+  </data>
+  <data name="Achievement_GenreHorror_1_Description" xml:space="preserve">
+    <value>Vrei să iei câteva acasă cu tine?</value>
+  </data>
+  <data name="AchievementCategory_Decade10s_Description" xml:space="preserve">
+    <value>Ghicitul anime între anii 2010 și 2020 va conta pentru această realizare.</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore_Description" xml:space="preserve">
+    <value>Ghicitul anime-urilor de dinainte de anul 1980 va conta pentru această realizare.</value>
+  </data>
+  <data name="AchievementCategory_Decade80s_Description" xml:space="preserve">
+    <value>Ghicitul anime între anii 1980 și 1990 va fi luat în considerare pentru această realizare.</value>
+  </data>
+  <data name="AchievementCategory_Decade90s_Description" xml:space="preserve">
+    <value>Ghicitul anime între anii 1990 și 2000 va fi luat în considerare pentru această realizare.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs_Description" xml:space="preserve">
+    <value>Ghicitul oricărui cântec anime pe care nu l-ai ghicit până acum va conta pentru această realizare. Doar melodiile din rundele !sga vor conta în acest moment.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime_Description" xml:space="preserve">
+    <value>Ghicitul oricărui anime pe care nu l-ai ghicit înainte va conta pentru această realizare.</value>
+  </data>
+  <data name="AchievementCategory_GenreAction_Description" xml:space="preserve">
+    <value>Ghicitul anime-urilor din genul de acțiune va conta pentru această realizare.</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi_Description" xml:space="preserve">
+    <value>Ghicitul anime-urilor din genul ecchi va conta pentru această realizare.</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror_Description" xml:space="preserve">
+    <value>Ghicitul anime-urilor din genul horror va conta pentru această realizare.</value>
+  </data>
 </root>
