@@ -77,4 +77,257 @@ Poziom trudności będzie wzrastał wraz z otrzymywanymi punktami, maksymalnie d
 Aby zmienić to zachowanie, możesz użyć komendy `/mydifficulty` (jesli twój serwer nie ma aktywnych komend z ukośnikiem, możesz jej użyć również w prywatnej wiadomości do RinBot)
  </value>
   </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Rundę można rozpocząć za pomocą `/sg`.
+Więcej poleceń można znaleźć na [liście poleceń] ({0}/commands).
+
+&gt; ⚠️ Obecnie możliwe jest używanie starszych komend, takich jak `!sg`, ale nie jest to zalecane **** .  
+&gt; Te starsze polecenia z prefiksami są przestarzałe i z czasem zostaną wycofane. 
+&gt; Również nowe funkcje mogą stać się dostępne tylko dla poleceń z ukośnikiem.</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Jeśli używasz poleceń slash `/`, nie dotyczy to Ciebie. Prefiks poleceń slash nie może zostać zmieniony.
+
+Prefiks polecenia to znak (lub więcej, maksymalnie 1 do 5 znaków) przed każdym poleceniem.
+Na przykład w `!sg` prefiksem będzie `!`. 
+Jeśli ustawisz prefiks na `!sg`, polecenie stanie się `!sgsg`, więc uważaj na to.
+Możesz nawet użyć emoji jako prefiksu... ale dlaczego miałbyś to robić?
+
+Możesz po prostu użyć polecenia `!prefix`, aby zmienić prefiks z poziomu discorda.
+Wpisz `@RinBot prefiks` jeśli całkowicie zapomniałeś swojego prefiksu.
+
+Możesz również zmienić prefiks za pośrednictwem [strony internetowej] ({0}/my-servers). Wykonaj następujące kroki:
+- Zaloguj się za pomocą konta Discord w prawym górnym rogu strony.
+- Kliknij swoją nazwę w prawym górnym rogu i wybierz "Moje serwery".
+- Znajdź swój serwer na liście i kliknij "Konfiguruj".
+- Zaktualizuj prefiks na dowolny inny
+- Naciśnij przycisk "Zapisz zmiany", aby zakończyć</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>W każdej rundzie wybierasz losowe anime z "puli" anime, która zależy od użytych filtrów.
+Im bardziej restrykcyjnych filtrów używasz, tym mniejsza staje się twoja pula anime.
+Punkty są również luźno oparte na liczbie anime w puli, z pulą anime 3000 dającą maksymalną liczbę punktów (zwykle 60).
+
+__Przykład__
+Załóżmy, że masz listę anime zawierającą 100 anime (muszą mieć co najmniej 1 obejrzany odcinek i nie mogą zostać porzucone).
+Około 20 z tych 100 anime jest uważanych za popularne, więc należałyby do łatwego poziomu trudności.
+Jeśli następnie użyjesz `!sg d:1 mal:username`, pobierze losowe anime z zaledwie 20 anime.
+
+Jest jeszcze fakt, że RinBot nie powtarza anime przez co najmniej godzinę.
+Biorąc to pod uwagę, każda runda rozegrana w ciągu godziny zmniejszy liczbę 20 anime o 1.
+Tak więc po 20 rundach skończy się na puli 0. Wtedy RinBot nie może kontynuować i anuluje rundę, mówiąc **Runda została anulowana z powodu braku przechwytywania**.
+
+Licznik puli anime jest również używany w tabeli liderów czasowych. Ponieważ zbyt łatwo byłoby ludziom używać `!sg d:1 g:sports` i spamować Haikyuu, zdecydowałem się zezwolić tylko na rundy z minimum 1000 w puli anime w tej tabeli liderów.</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Czym jest tryb NSFW i jak go włączyć?</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Domyślnie RinBot filtruje wiele anime.
+Ma to na celu uniknięcie konieczności tworzenia kanału z ograniczeniami wiekowymi (wcześniej NSFW), a tym samym przestrzeganie warunków korzystania z usługi Discord.
+
+Tagi anime AniDB, które są filtrowane:
+- 18 z ograniczeniami
+- Graniczne hentai
+- Nagość (waga &gt;200)
+- Seks (wagi &gt;100)
+
+Wszystko z oceną PG-13 lub niższą na MAL jest zawsze uwzględniane.
+
+Możesz po prostu ustawić swój kanał jako ograniczony wiekowo, a RinBot automatycznie przełączy się w tryb NSFW.
+
+Jeśli napotkasz obraz lub film NSFW podczas gry w trybie SFW, skontaktuj się ze mną, podając nazwę anime, abym mógł ręcznie dodać je do filtra. </value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Może być wiele różnych powodów, dla których polecenia nie działają.
+
+a. **Twój prefiks został zmieniony na coś innego i zapomniałeś o tym.** 
+Możesz po prostu użyć `@RinBot prefix`, aby sprawdzić swój aktualny prefiks i również go zmienić.
+
+Jeśli nie możesz użyć `@RinBot prefiks` idź i zaloguj się na [stronie internetowej]({0}).
+Tam możesz również zobaczyć i zmienić swój prefiks na stronie **Moje serwery** w prawym górnym rogu.
+
+b. **Zmieniłeś uprawnienia na swoim serwerze w taki sposób, że RinBot nie może już wysyłać wiadomości ani osadzać** 
+Upewnij się, że RinBot ma wszystkie niezbędne uprawnienia.
+W tej chwili są to: `Read Messages`, `Send Messages`, `Embed Links`, `Attach Files` oraz dla kanałów głosowych `Connect` i `Speak`
+&gt; Możesz ponownie zaprosić ją do sprawdzenia, które uprawnienia są dokładnie potrzebne.
+
+c. **Używasz __poleceń z ukośnikiem__, a uprawnienia do poleceń zostały skonfigurowane tak, aby odmówić ich** 
+Zobacz pytanie 10.
+
+d. **Kontrola dostępu może być ustawiona w sposób, który nie zezwala na żadne polecenia** 
+Osoba z uprawnieniami do zarządzania serwerem musiałaby zmienić kontrolę dostępu tak, aby zezwalała na polecenia, jeśli kontrola dostępu jest włączona.
+Konfigurację można znaleźć na [stronie internetowej]({0}/my-servers).
+
+e. **Shard, na którym znajduje się serwer, jest w rzeczywistości wyłączony** 
+Zdarza się to rzadko i powinno zostać naprawione automatycznie w ciągu kilku minut.
+Status shardu, na którym znajduje się serwer, można sprawdzić na [stronie statusu]({0}/status).
+W przypadku dużych prac konserwacyjnych można również sprawdzić [stronę statuspage.io](https://rinbot.statuspage.io/) w celu uzyskania aktualizacji.
+ 
+f. **Polecenia tekstowe zostały całkowicie wyłączone w konfiguracji**. 
+Jeśli chcesz używać poleceń tekstowych, upewnij się, że nie zaznaczyłeś pola "Wyłącz starsze polecenia prefiksowane" w ustawieniach serwera na stronie internetowej.
+Ta opcja spowoduje, że będą działać tylko polecenia z ukośnikiem.</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Jak sprawić, by RinBot słuchał poleceń tylko na jednym kanale?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Obecnie istnieją dwa sposoby na osiągnięcie tego celu.
+
+a. **Użycie uprawnień Discord**
+Zasadniczo musisz nadać RinBotowi tylko uprawnienie __View channel__ na kanale, na którym ma słuchać poleceń.
+Można to zrobić po prostu ustawiając poprawnie uprawnienia w Discordzie.
+
+__Przykłady__: 
+Disallow `@everyone` __View channel__ do wszystkich kanałów. Następnie utwórz rolę "Członkowie", która daje ludziom __Wyświetl kanał__ na wszystkich kanałach, jednocześnie dając RinBotowi tylko __Wyświetl kanał__ na kanale, na którym powinna słuchać poleceń.
+
+Alternatywnie, utwórz rolę "Boty", która zabrania __Wyświetl kanał__ dostępu do wszystkich kanałów. Następnie daj RInBotowi dostęp do wybranego kanału.
+
+b. **Użyj kontroli dostępu do kanału**
+Konfiguracja jest dostępna po zalogowaniu na [stronie internetowej]({0}).
+
+__Kroki do wykonania__:
+- Po zalogowaniu przejdź do prawego górnego rogu i kliknij swoją nazwę, a następnie przejdź do __Moje serwery__.
+- Kliknij serwer, który chcesz skonfigurować (musisz być __administratorem__ lub mieć __zarządzanie serwerem__ rolę).
+- Znajdź kartę __Kanały__ i zaznacz pole __Włącz kontrolę dostępu do kanałów__.
+
+&gt; Przy takiej konfiguracji RinBot nie będzie nasłuchiwał poleceń na żadnym kanale, więc teraz musimy zezwolić mu na dostęp do wybranego kanału.
+
+- Kliknij __Add a channel__ i wybierz kanał, na którym RinBot ma nasłuchiwać poleceń.
+- Kliknij __Dodaj regułę__, co spowoduje utworzenie reguły dostępu, która zezwala na każde polecenie w tym kanale.
+- Kliknij __Zapisz zmiany__ na dole i gotowe!</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Dlaczego RinBot jest offline na moim serwerze?</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Prawdopodobnie łączy się ponownie, ponieważ Discord wymusza ponowne połączenie odłamków około __co godzinę__. Bądź cierpliwy i spróbuj ponownie za kilka minut.
+
+Jeśli nadal nie działa __po 15 minutach__, **sprawdź pytanie 6**.
+
+Jeśli po tym czasie __nadal__ nie działa, poproś o pomoc w #help, podając shard i/lub klaster, na którym znajduje się twój serwer.
+Możesz sprawdzić swój shard na [stronie statusu] ({0}/status).
+
+&gt; ⚠️ Należy pamiętać, że **soboty między 8:00-12:00 UTC** są zarezerwowane jako okno konserwacji, więc w tym czasie mogą wystąpić niezapowiedziane przestoje.</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Czym jest trudność i jak ją zmienić?</value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Polecenia Slash nie działają lub mogą być używane tylko przez administratorów.</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord niedawno dodał uprawnienia do komend slash ____ system... raczej po cichu.
+Dało to serwerom możliwość włączania/wyłączania komend slash indywidualnie dla dowolnego kanału lub roli.
+
+Wygląda na to, że na wielu serwerach domyślne ustawienia sprawiały, że polecenia slash były niedostępne dla zwykłych użytkowników.
+Na urządzeniach mobilnych ____ i starszych wersjach nie jest to w pełni obsługiwane i może pojawić się komunikat: 
+**Ta interakcja nie powiodła się** lub **Aplikacja nie odpowiedziała**
+
+__Aby zmienić te uprawnienia__
+W Discord przejdź do `Ustawienia serwera - Integracje - RinBot` i upewnij się, że wszystko jest poprawnie skonfigurowane dla twoich kanałów i ról. 
+Urządzenia mobilne nie obsługują jeszcze w pełni tych funkcji, więc użyj do tego komputera lub wypróbuj klienta internetowego na swoim urządzeniu.
+
+&gt; Administratorzy mogą zawsze używać poleceń z ukośnikiem, bez względu na to, jakie uprawnienia są tutaj skonfigurowane. Jeśli więc jesteś już administratorem, problem może leżeć w czymś innym.
+
+Jeśli to nie rozwiąże problemu, zobacz __pytanie 6__, aby uzyskać więcej możliwych przyczyn.</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Dziewczyna na zdjęciu to Elin z gry TERA Online.  
+Miałem tam postać o imieniu Kururin, która była mistyczką Elin i wyglądała podobnie do tej.  
+  
+Pierwotnie napisałem bota discorda, który robił kilka domyślnych rzeczy związanych z moderacją discorda, tylko po to, by wypróbować różne rzeczy.
+Kiedy zapytałem "jak powinienem go nazwać", ktoś powiedział "po prostu nazwij go RinBot". Pomyślałem, że to zabawne i tak już zostało.  
+  
+Grafika została wykonana przez momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)), więc wszystkie kredyty za awatar trafiają do nich!  
+Sprawdź również [oryginalny post z grafiką](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Obecnie dostępna jest funkcja "rozpocznij rundę, gdy kanał jest bezczynny".
+Funkcję tę można aktywować w konfiguracji kanału po zalogowaniu się na [stronie internetowej] ({0}/my-servers).  
+  
+Dla darmowych serwerów czas bezczynności jest ustawiony na minimum jedną godzinę. Czas ten może zostać skrócony do jednej minuty, gdy zostaniesz wspierającym.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Złożyłem(-am) zobowiązanie, ale nie otrzymałem(-am) profitów, co teraz?</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Aby móc otrzymać profity, musisz mieć konto Discord **połączone z kontem Patreon**.  
+Jak to dokładnie zrobić [można znaleźć tutaj] (https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Jeśli **zobowiązałeś się przed połączeniem swojego konta Discord**, możesz spróbować nacisnąć [przycisk "Dołącz" tutaj](https://www.patreon.com/rinbot?fan_landing=true) jeszcze raz.  
+Nie powinno to wymagać kolejnej płatności, ale ponownie uruchomi webhook, co spowoduje automatyczne przyznanie profitów.  
+
+Będzie również próbował przyznawać profity wszystkim, którzy ich nie otrzymali, co około godzinę, więc po prostu poczekaj chwilę, a otrzymasz je automatycznie.
+  
+Po złożeniu zobowiązania **będziesz musiał ponownie zalogować się** na stronie RinBot, aby korzystać z profitów, takich jak wzmocnienie serwera lub dodatkowe konfiguracje kanałów.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Kiedy cotygodniowa tabela liderów zostanie zresetowana?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Cotygodniowa tabela liderów resetuje się w dniu wskazanym w poleceniu `/weektop` o północy (00:00 / 12:00 AM) czasu UTC.  
+
+Używa standardu ISO-8601 dla tygodni roku z poniedziałkiem jako pierwszym dniem tygodnia.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Jak działa obliczanie punktów?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Kalkulacja punktów zależy wyłącznie od ilości anime w puli, z której tworzona jest runda oraz poziomu zwycięzcy.  
+  
+W najprostszym przypadku pula 3000 anime daje maksymalnie 60 punktów, pomniejszonych o `1 / numberOfCaptures` za każdy pokazany dodatkowy cap.  
+  
+Wielkość puli zależy od filtrów. Jeśli użyjesz własnej listy anime jako filtra, która ma 90 wpisów w sekcji Ukończone i 10 w sekcji Wstrzymane, wielkość puli wyniesie 100.  
+Jednak po każdej rundzie rozegranej z tym samym filtrem pula zmniejszy się o 1, ponieważ nie ma powtórzeń przez co najmniej godzinę dla rund rozpoczętych przez ciebie lub na tym samym serwerze.  
+  
+Używana formuła:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints.
+```
+&gt; Domyślnie `maxPoints` to `60` i `animeMaxPoints` to `3000`.  
+  
+Zmienna `animeMultiplier` zależy od roku premiery anime.  
+- Przed rokiem 2010: `2`
+- Przed rokiem 2000: `3`
+- Przed rokiem 1990: `4`
+- Przed rokiem 1980: `5`
+
+Minimalna liczba punktów do zdobycia to `4`, która zmieni się w `1`, jeśli ostatni limit został pokazany.  
+
+__Rundy głosowe__ 
+W rundach głosowych punkty są pomniejszane o czas odpowiedzi, a nie o liczbę wyświetlonych przechwyceń.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Jak korzystać z RinBot?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Jak zmienić język?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Jak zmienić prefiks polecenia?</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>O co chodzi z tym basenem anime, o którym ciągle słyszę?</value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Żadne z poleceń nie działa, jak mogę to naprawić?</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Skąd nazwa "RinBot" i kim jest dziewczyna w awatarze?</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Jak mogę sprawić, by RinBot automatycznie rozpoczynał rundy?</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Polecenie `/lang` może być użyte do zmiany języka, którym posługuje się RinBot.
+
+Można również zmienić język tytułów anime, które można odgadnąć i które pojawiają się we wskazówkach i na plakacie anime pod koniec rund.
+W tym celu należy zalogować się na stronie.
+
+Aby ustawić angielskie tytuły, możesz dodać wiersz na górze głównych preferencji tytułu z zawartością: AniDB, Oficjalny tytuł i Angielski.
+
+&gt; Należy pamiętać, że jest to zaawansowana funkcja, która może zepsuć RinBota na serwerze, jeśli nie zostanie poprawnie skonfigurowana.</value>
+  </data>
 </root>
