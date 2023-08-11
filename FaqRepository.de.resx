@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Wenn Sie die Schrägstrichbefehle `/` verwenden, gilt dies nicht für Sie. Das Präfix von Schrägstrichbefehlen kann nicht geändert werden.
+
+Das Befehlspräfix ist das Zeichen (oder mehr, maximal 1 bis 5 Zeichen), das jedem Befehl vorangestellt wird.
+Zum Beispiel in `!sg` wäre das Präfix `!`. 
+Wenn Sie das Präfix auf `!sg` setzen, wird der Befehl zu `!sgsg`, also achten Sie darauf.
+Sie können sogar Emojis als Präfix verwenden... aber warum sollten Sie?
+
+Sie können einfach den Befehl `!prefix` verwenden, um das Präfix von Discord aus zu ändern.
+Gib `@RinBot prefix` ein, wenn du dein Präfix komplett vergessen hast.
+
+Du kannst das Präfix auch über [die Website] ändern ({0}/my-servers). Bitte folgen Sie diesen Schritten:
+- Loggen Sie sich mit Ihrem Discord-Account oben rechts auf der Seite ein
+- Klicken Sie oben rechts auf Ihren Namen und wählen Sie "Meine Server".
+- Suchen Sie Ihren Server in der Liste und klicken Sie auf 'Konfigurieren'.
+- Ändern Sie das Präfix nach Belieben
+- Klicken Sie zum Abschluss auf die Schaltfläche "Änderungen speichern".</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>In jeder Runde, die du spielst, wird also ein zufälliger Anime aus einem "Pool" von Anime ausgewählt, der davon abhängt, welche Filter du verwendest.
+Je restriktiver die Filter sind, desto kleiner wird der Anime-Pool.
+Die Anzahl der Punkte hängt auch von der Anzahl der Anime im Pool ab, wobei ein Anime-Pool von 3000 die maximale Punktzahl ergibt (normalerweise 60).
+
+__Ein Beispiel__
+Nehmen wir an, Sie haben eine Anime-Liste mit 100 Anime darin (sie müssen mindestens eine Folge gesehen haben und dürfen nicht abgesetzt worden sein).
+Etwa 20 dieser 100 Anime gelten als populär, gehören also in den leichten Schwierigkeitsgrad.
+Wenn du dann `!sg d:1 mal:username` verwendest, würde es einen zufälligen Anime von nur 20 Anime auswählen.
+
+Nun kommt noch hinzu, dass RinBot Anime mindestens eine Stunde lang nicht wiederholt.
+Das bedeutet, dass jede Runde, die du innerhalb dieser Stunde spielst, die 20 Anime um 1 reduziert.
+Nach 20 Runden hast du also einen Pool von 0. Dann kann RinBot nicht mehr weitermachen und bricht die Runde mit der Meldung **ab. Die Runde wurde wegen fehlender Fänge abgebrochen**.
+
+Die Anzahl der Anime-Pools wird auch für die Zeitrangliste verwendet. Da es für Leute zu einfach wäre, `!sg d:1 g:sports` zu benutzen und Haikyuu zu spammen, habe ich beschlossen, nur Runden mit einem Minimum von 1000 im Anime-Pool in dieser Rangliste zuzulassen.</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Es kann eine Reihe von Gründen geben, warum Ihre Befehle nicht funktionieren.
+
+a. **Ihr Präfix wurde in etwas anderes geändert und Sie haben es vergessen.** 
+Sie können einfach `@RinBot prefix` verwenden, um Ihr aktuelles Präfix zu überprüfen und es zu ändern.
+
+Wenn Sie `@RinBot-Präfix` nicht verwenden können, loggen Sie sich auf [der Website]({0}) ein.
+Dort können Sie Ihr Präfix auch auf der Seite **My Servers** oben rechts sehen und ändern.
+
+b. **Sie haben die Berechtigungen auf Ihrem Server so geändert, dass RinBot keine Nachrichten oder Einbettungen mehr senden kann** 
+Vergewissern Sie sich, dass RinBot über alle erforderlichen Berechtigungen verfügt.
+In diesem Moment sind dies: `Nachrichten lesen`, `Nachrichten senden`, `Links einbetten`, `Dateien anhängen` und für Sprachkanäle `Verbinden` und `Sprechen`
+&gt; Sie können sie erneut einladen, um zu prüfen, welche Berechtigungen genau benötigt werden.
+
+c. **Sie verwenden __slash-Befehle__ und die Befehlsberechtigungen wurden so eingerichtet, dass sie verweigert werden** 
+Siehe Frage 10.
+
+d. **Die Zugriffskontrolle könnte so eingestellt sein, dass keine Befehle erlaubt sind** 
+Eine Person mit Serververwaltungsrechten müsste die Zugriffskontrollen so ändern, dass sie Befehle zulassen, wenn die Zugriffskontrolle aktiviert ist.
+Die Konfiguration ist auf [der Website]({0}/my-servers) zu finden.
+
+e. **Der Shard, auf dem sich Ihr Server befindet, ist tatsächlich ausgefallen** 
+Dies kommt selten vor und sollte in ein paar Minuten automatisch behoben sein.
+Sie können den Status des Shards, auf dem sich Ihr Server befindet, auf [der Statusseite]({0}/status) überprüfen.
+Im Falle größerer Wartungsarbeiten können Sie auch auf der [statuspage.io Seite](https://rinbot.statuspage.io/) nach Updates suchen.
+ 
+f. **Sie haben die Textbefehle in der Konfiguration** vollständig deaktiviert.  
+Wenn Sie Textbefehle verwenden möchten, vergewissern Sie sich, dass Sie in den Servereinstellungen auf der Website das Kontrollkästchen "Disable legacy prefixed commands" nicht aktiviert haben.
+Diese Option bewirkt, dass nur Schrägstrichbefehle funktionieren.</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Wie bringe ich RinBot dazu, nur auf einem einzigen Kanal auf Befehle zu hören?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Derzeit gibt es zwei Möglichkeiten, dies zu erreichen.
+
+a. **Discord-Berechtigungen verwenden**
+Im Grunde musst du RinBot nur die Berechtigung __View channel__ auf dem Kanal geben, auf dem du möchtest, dass er auf Befehle hört.
+Dazu müssen Sie nur Ihre Berechtigungen in Discord richtig einstellen.
+
+__Beispiele__: 
+Erlaube `@everyone` __Kanal__ auf allen Kanälen zu sehen. Dann erstelle eine "Mitglieder"-Rolle, die den Leuten __View channel__ für alle Kanäle gibt, während sie RinBot nur __View channel__ für den Kanal gibt, in dem sie auf Befehle hören soll.
+
+Alternativ kannst du eine "Bots"-Rolle erstellen, die __View channel__ den Zugang zu allen Kanälen verwehrt. Geben Sie dann RInBot speziell Zugriff auf einen Kanal Ihrer Wahl.
+
+b. **Kanalzugriffskontrolle verwenden**
+Die Konfiguration hierfür ist nach dem Einloggen auf [der Website]({0}) verfügbar.
+
+__Zu befolgende Schritte__:
+- Nachdem Sie sich angemeldet haben, klicken Sie oben rechts auf Ihren Namen und gehen dann zu __Meine Server__.
+- Klicken Sie auf den Server, den Sie konfigurieren möchten (Sie müssen __Administrator__ sein oder die Rolle __Serververwaltung__ haben).
+- Suchen Sie die Registerkarte __Channels__ und aktivieren Sie das Kontrollkästchen __Enable channel access control__.
+
+&gt; Mit dieser Konfiguration hört RinBot auf keinem Kanal auf Befehle, also müssen wir ihn in dem gewünschten Kanal zulassen
+
+- Klicken Sie auf __Add a channel__ und wählen Sie den Kanal aus, in dem RinBot auf Befehle hören soll.
+- Klicken Sie auf __Add a rule__, was zu einer Zugriffsregel führt, die jeden Befehl in diesem Kanal zulässt.
+- Klicken Sie unten auf __Änderungen speichern__ und Sie sind fertig!</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Warum ist RinBot auf meinem Server offline?</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Wahrscheinlich wird die Verbindung wiederhergestellt, denn Discord erzwingt jede Stunde eine neue Verbindung zwischen den Shards auf ____ . Habt Geduld und versucht es in ein paar Minuten noch einmal.
+
+Wenn es nach 15 Minuten immer noch nicht funktioniert ____ , **überprüfe Frage 6**.
+
+Wenn __danach immer noch nicht funktioniert__, fragen Sie bitte in #help um Hilfe und geben Sie dabei den Shard und/oder Cluster an, auf dem sich Ihr Server befindet.
+Sie können Ihren Shard auf [der Statusseite] ({0}/status) überprüfen.
+
+&gt; ⚠️ Bitte beachten Sie, dass **samstags zwischen 8:00-12:00 UTC** als Wartungsfenster reserviert ist, so dass es während dieser Zeit zu unangekündigten Ausfallzeiten kommen kann.</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>Der Schwierigkeitsgrad richtet sich nach der Popularität des Anime, du kannst zwischen 5 Schwierigkeitsgraden wählen:  
+1. Leicht
+2. Normal
+3. Schwer
+4. Extrem
+5. Alptraum
+
+&gt; Von Easy(1) bis Extreme(4) enthalten die Pools auch die Anime der vorherigen Schwierigkeitsgrade. 
+&gt; Der Schwierigkeitsgrad Nightmare(5) ist anders, er enthält nur die am wenigsten beliebten Anime, die im Bot verfügbar sind.
+
+__Ändern der Schwierigkeit__
+Um den Schwierigkeitsgrad `Easy` für eine einzelne Runde zu ändern, benutze `/sg difficulty:Easy` oder `!sg d:1` oder `!sg 1`.
+Das Gleiche gilt für andere Schwierigkeitsgrade innerhalb anderer Befehle.
+
+Der Schwierigkeitsgrad steigt mit zunehmender Punktzahl, bis zu einem Maximum von Extrem(4).
+Um dieses Verhalten zu ändern, kannst du `/mydifficulty` verwenden (wenn dein Server keine Slash-Befehle hat, kannst du sie auch in einem DM mit RinBot verwenden)
+ </value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Slash-Befehle funktionieren nicht oder können nur von Administratoren verwendet werden</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord hat vor kurzem das __Slash-Befehlsberechtigungssystem__ eingeführt... ziemlich unbemerkt.
+Dies gab den Servern die Möglichkeit, Slash-Befehle individuell für jeden Kanal oder jede Rolle zu aktivieren/deaktivieren, die sie wollten.
+
+Es scheint, dass die Standardeinstellungen auf vielen Servern die Slash-Befehle für normale Benutzer unzugänglich machen.
+Auf __mobilen Geräten__ und älteren Versionen wird dies nicht vollständig unterstützt und Sie erhalten möglicherweise eine Meldung: 
+**Diese Interaktion ist fehlgeschlagen** oder **Die Anwendung hat nicht geantwortet**
+
+__Um diese Berechtigungen zu ändern__
+Gehen Sie in Discord zu `Server-Einstellungen - Integrationen - RinBot` und stellen Sie sicher, dass die Dinge hier für Ihre Kanäle und Rollen richtig eingestellt sind. 
+Mobile Geräte unterstützen diese Funktionen noch nicht vollständig, daher verwenden Sie bitte Ihren PC dafür oder versuchen Sie den Web-Client auf Ihrem Gerät.
+
+&gt; Administratoren können immer Schrägstrich-Befehle verwenden, unabhängig davon, welche Berechtigungen hier eingerichtet sind. Wenn Sie also bereits Administrator sind, liegt Ihr Problem woanders.
+
+Wenn dies Ihr Problem nicht löst, finden Sie unter __Frage 6__ weitere mögliche Ursachen.</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Das Mädchen auf dem Bild ist eine Elin aus dem Spiel TERA Online.  
+Ich hatte dort einen Charakter namens Kururin, der ein Elin-Mystiker war und ähnlich aussah wie dieser.  
+  
+Ursprünglich habe ich einen Discord-Bot geschrieben, der einige Standard-Discord-Moderationsaufgaben erledigte, nur um Dinge auszuprobieren.
+Als ich fragte, wie ich ihn nennen sollte, sagte jemand: "Nenn ihn einfach RinBot". Ich fand das witzig, also blieb der Name irgendwie hängen.  
+  
+Die Grafik stammt von momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)), also gehen alle Credits für den Avatar an sie!  
+Schaut euch auch den [Original-Post des Kunstwerks](https://www.pixiv.net/en/artworks/36910527) an.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Ich habe eine Zusage gemacht, aber meine Vergünstigungen nicht erhalten.</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Um die Vergünstigungen zu erhalten, müssen Sie Ihren **Discord-Account mit Ihrem Patreon-Account** verknüpft haben.  
+Wie das genau geht, erfährst du [hier] (https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Wenn du **zugesagt hast, bevor du dein Discord-Konto** verlinkt hast, kannst du versuchen, [hier](https://www.patreon.com/rinbot?fan_landing=true) noch einmal auf die Schaltfläche 'Beitreten' zu drücken.  
+Dies sollte nicht zu einer weiteren Zahlung auffordern, aber es wird den Webhook erneut auslösen, was dazu führt, dass du die Vergünstigungen automatisch erhältst.  
+
+Außerdem werden die Vergünstigungen stündlich an die Spieler verteilt, die sie nicht erhalten haben, also warten Sie einfach ein wenig und Sie werden sie automatisch erhalten.
+  
+Nach der Zusage von **musst du dich erneut auf der RinBot-Website** anmelden, um Vergünstigungen wie das Erhöhen eines Servers oder die zusätzlichen Kanalkonfigurationen nutzen zu können.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Wann wird die wöchentliche Rangliste zurückgesetzt?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Die wöchentliche Rangliste wird zu dem im Befehl `/weektop` angegebenen Datum um Mitternacht (00:00 / 12:00 Uhr) in UTC-Zeit zurückgesetzt.  
+
+Es wird der ISO-8601-Standard für die Wochen des Jahres verwendet, wobei der Montag der erste Tag der Woche ist.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Wie funktioniert die Punktberechnung?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Die Punkteberechnung hängt ausschließlich von der Anzahl der Anime in dem Pool ab, aus dem Ihre Runde gebildet wird, und von der Stufe des Gewinners.  
+  
+Im einfachsten Fall ergibt ein Pool von 3000 Animes maximal 60 Punkte, die für jedes zusätzliche Cap, das gezeigt wird, um `1 / numberOfCaptures` reduziert werden.  
+  
+Die Größe des Pools hängt von Ihren Filtern ab. Wenn Sie Ihre eigene Anime-Liste als Filter verwenden, die 90 Einträge im Abschnitt "Completed" und 10 im Abschnitt "On-hold" enthält, beträgt die Poolgröße 100.  
+Nach jeder Runde, die Sie mit demselben Filter spielen, verringert sich der Pool jedoch um 1, da es bei Runden, die von Ihnen selbst oder innerhalb desselben Servers gestartet werden, mindestens eine Stunde lang keine Wiederholungen gibt.  
+  
+Die Formel, die verwendet wird:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Standard `maxPoints` ist `60` und `animeMaxPoints` ist `3000`.  
+  
+Die Variable `animeMultiplier` hängt von dem Jahr ab, in dem der Anime veröffentlicht wurde.  
+- Vor dem Jahr 2010 : `2`
+- Vor dem Jahr 2000 : `3`
+- Vor dem Jahr 1990 : `4`
+- Vor dem Jahr 1980 : `5`
+
+Die Mindestpunktzahl, die Sie erhalten können, ist `4`, die zu `1` wird, wenn die letzte Obergrenze angezeigt wurde.  
+
+__Gesprächsrunden__ 
+Bei Sprachrunden werden die Punkte durch die Zeit, die Sie für die Antwort benötigen, verringert und nicht durch die Anzahl der gezeigten Captures.</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Der Befehl `/lang` kann verwendet werden, um die Sprache zu ändern, die RinBot spricht.
+
+Sie können auch die Sprache der Anime-Titel ändern, die zu erraten sind und in den Hinweisen und auf dem Anime-Poster am Ende der Runden erscheinen.
+Dazu loggen Sie sich bitte auf der Website ein.
+
+Um englische Titel einzustellen, können Sie eine Zeile am oberen Rand der Haupttitel-Einstellungen mit dem Inhalt hinzufügen: AniDB, Offizieller Titel und Englisch.
+
+&gt; Beachten Sie, dass es sich um eine erweiterte Funktion handelt, die RinBot auf Ihrem Server beschädigen kann, wenn sie nicht korrekt konfiguriert ist.</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Sie können eine Runde starten, indem Sie `/sg` verwenden.
+Weitere Befehle finden Sie in [der Befehlsliste] ({0}/commands).
+
+&gt; ⚠️ Es ist derzeit noch möglich, die alten Befehle zu verwenden, wie `!sg`, aber das ist **nicht empfohlen**.  
+&gt; Diese alten Befehle mit Präfix sind veraltet und werden im Laufe der Zeit abgeschafft. 
+&gt; Neue Funktionen werden möglicherweise nur noch für die Schrägstrich-Befehle verfügbar sein.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Wie verwende ich RinBot?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Wie kann ich die Sprache ändern?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Wie ändere ich das Befehlspräfix?</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Was ist das für ein Anime-Pool, von dem ich immer wieder höre?</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Was ist der NSFW-Modus und wie kann ich ihn aktivieren?</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Standardmäßig filtert RinBot eine Reihe von Anime.
+Dies geschieht, um zu vermeiden, dass ein Kanal mit einer Altersbeschränkung versehen werden muss (früher NSFW) und damit die Nutzungsbedingungen von Discord eingehalten werden.
+
+AniDB Anime-Tags, die gefiltert werden:
+- 18 eingeschränkt
+- Borderline Hentai
+- Nacktheit (Gewichtung &gt;200)
+- Sex (Gewichte &gt;100)
+
+Alles, was auf MAL mit PG-13 oder niedriger eingestuft ist, ist immer enthalten.
+
+Sie können einfach Ihren Kanal auf Altersbeschränkung einstellen und RinBot schaltet automatisch in den NSFW-Modus.
+
+Wenn du auf ein NSFW-Bild oder -Video stößt, während du im SFW-Modus spielst, kontaktiere mich bitte mit dem Namen des Animes, damit ich es manuell zum Filter hinzufügen kann. </value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Keiner der Befehle funktioniert, wie kann ich das beheben?</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Was ist eine Schwierigkeit und wie kann ich sie ändern?</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Warum der Name 'RinBot' und wer ist das Mädchen auf dem Avatar?</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Wie kann ich RinBot dazu bringen, automatisch Runden zu starten?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Derzeit gibt es eine Funktion namens "start a round when channel is idle".
+Diese Funktion kann in der Channel-Konfiguration aktiviert werden, nachdem man sich auf [der Website]({0}/my-servers) eingeloggt hat.  
+  
+Bei freien Servern ist die Leerlaufzeit auf ein Minimum von einer Stunde eingestellt. Diese Zeit kann auf eine Minute reduziert werden, wenn Sie ein Supporter werden.</value>
+  </data>
 </root>
