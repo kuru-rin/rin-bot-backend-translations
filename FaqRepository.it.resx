@@ -238,4 +238,96 @@ Per altri comandi, consultare [la lista dei comandi]({0}/commands).
 &gt; Questi comandi con prefisso legacy sono obsoleti e saranno gradualmente eliminati nel tempo. 
 &gt; Inoltre, nuove funzionalità potrebbero essere disponibili solo per i comandi con slash.</value>
   </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>I comandi Slash non funzionano o possono essere utilizzati solo dagli amministratori.</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord ha recentemente aggiunto il sistema di permessi per i comandi slash ____ ... piuttosto silenziosamente.
+Questo ha dato ai server i mezzi per abilitare/disabilitare i comandi slash in modo individuale per qualsiasi canale o ruolo che desiderano.
+
+Sembra che su molti server le impostazioni predefinite rendessero i comandi slash inaccessibili agli utenti normali.
+Sui dispositivi mobili ____ e sulle versioni precedenti questo non è completamente supportato e si potrebbe ricevere un messaggio che dice: 
+**Questa interazione non è riuscita** o **L'applicazione non ha risposto**
+
+__Per cambiare questi permessi__
+In Discord andate su `Impostazioni del server - Integrazioni - RinBot` e assicuratevi che le cose siano impostate correttamente per i vostri canali e ruoli. 
+I dispositivi mobili non supportano ancora completamente queste funzionalità, quindi si prega di utilizzare il PC per questo o provare il client web sul dispositivo.
+
+&gt; Gli amministratori possono sempre usare i comandi slash, indipendentemente dai permessi impostati qui. Quindi, se siete già amministratori, il problema è un altro.
+
+Se questo non risolve il problema, vedere __domanda 6__ per altre possibili cause.</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Per poter ottenere i vantaggi è necessario che il vostro account **Discord sia collegato al vostro account Patreon**.  
+Come fare esattamente [si può trovare qui](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Se **hai offerto un contributo prima di collegare il tuo account Discord** puoi provare a premere [il pulsante "Partecipa" qui](https://www.patreon.com/rinbot?fan_landing=true) ancora una volta.  
+Questo non dovrebbe richiedere un altro pagamento, ma attiverà di nuovo il webhook che ti darà automaticamente i vantaggi.  
+
+Inoltre, ogni ora cercherà di dare i vantaggi a chiunque ne sia sprovvisto, quindi basta aspettare un po' e li riceverete automaticamente.
+  
+Dopo aver versato **dovrete effettuare nuovamente il login** sul sito web di RinBot per poter utilizzare i vantaggi come il potenziamento di un server o le configurazioni extra dei canali.  
+</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>La classifica settimanale si resetta alla data indicata nel comando `/weektop` a mezzanotte (00:00 / 12:00 AM) nell'ora UTC.  
+
+Utilizza lo standard ISO-8601 per le settimane dell'anno, con il lunedì come primo giorno della settimana.</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Il calcolo dei punti dipende interamente dalla quantità di anime presenti nella piscina da cui viene creato il round e dal livello del vincitore.  
+  
+Nel caso più semplice, un pool di 3000 anime dà un massimo di 60 punti, ridotti da `1 / numberOfCaptures` per ogni tappo extra che viene mostrato.  
+  
+La dimensione del pool dipende dai filtri. Se si usa come filtro la propria lista di anime, che ha 90 voci nella sezione Completed e 10 nella sezione On-hold, la dimensione del pool sarà di 100 punti.  
+Tuttavia, dopo ogni round giocato con questo stesso filtro, la piscina si ridurrà di 1, poiché non ci sono ripetizioni per almeno un'ora per i round iniziati da soli o all'interno dello stesso server.  
+  
+La formula che viene utilizzata:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Default `maxPoints` è `60` e `animeMaxPoints` è `3000`.  
+  
+La variabile `animeMultiplier` dipende dall'anno di uscita dell'anime.  
+- Prima dell'anno 2010 : `2`
+- Prima dell'anno 2000 : `3`
+- Prima dell'anno 1990 : `4`
+- Prima dell'anno 1980 : `5`
+
+La quantità minima di punti che si può ottenere è `4`, che diventerà `1` se è stato mostrato l'ultimo tetto.  
+
+__Giri di voce__ 
+Per i round vocali i punti vengono diminuiti in base al tempo impiegato per rispondere e non al numero di catture mostrate.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Come funziona il calcolo dei punti?</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Perché il nome "RinBot" e chi è la ragazza nell'avatar?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>La ragazza nella foto è una Elin del gioco TERA Online.  
+Avevo un personaggio chiamato Kururin, che era un mistico Elin e aveva un aspetto simile a questo.  
+  
+All'inizio ho scritto un bot per discord che faceva alcune cose di moderazione di discord predefinite, solo per provare le cose.
+Quando ho chiesto "come dovrei chiamarlo", qualcuno ha detto "chiamalo RinBot". Ho pensato che fosse divertente, quindi il nome è rimasto.  
+  
+L'arte è stata realizzata da momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)) quindi tutti i crediti per l'avatar vanno a loro!  
+Date anche un'occhiata al [post originale dell'opera d'arte](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Come posso fare in modo che RinBot avvii automaticamente i turni?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Attualmente esiste una funzione chiamata "avvia un round quando il canale è inattivo".
+Questa funzione può essere attivata nella configurazione del canale dopo aver effettuato il login su [il sito web]({0}/my-servers).  
+  
+Per i server gratuiti il tempo di inattività è impostato su un minimo di un'ora. Questo tempo può essere ridotto a un minuto quando si diventa sostenitori.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Ho sottoscritto una donazione ma non ho ricevuto i miei vantaggi, cosa devo fare?</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Quando si azzera la classifica settimanale?</value>
+  </data>
 </root>
