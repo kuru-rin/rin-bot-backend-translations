@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Voit aloittaa kierroksen käyttämällä `/sg`.
+Lisää komentoja löydät [komentoluettelosta]({0}/commands).
+
+&gt; ⚠️ Tällä hetkellä on vielä mahdollista käyttää vanhoja komentoja, kuten `!sg`, mutta sitä ei **suositella**.  
+&gt; Nämä vanhat etuliitteellä varustetut komennot ovat vanhentuneita, ja ne poistetaan käytöstä ajan myötä. 
+&gt; Myös uusia ominaisuuksia saattaa tulla saataville vain vinoviivakomentoja varten.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Miten käytän RinBotia?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Miten voin vaihtaa kieltä?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Miten muutan komentoesimerkin?</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Jos käytät vinoviivakomentoja `/`, tämä ei koske sinua. Slash-komentojen etuliitettä ei voi muuttaa.
+
+Komennon etuliite on merkki (tai useampi, enintään 1-5 merkkiä) jokaisen komennon edessä.
+Esimerkiksi komennossa `!sg` etuliite olisi `!`. 
+Jos asetat etuliitteen muotoon `!sg`, komennosta tulisi `!sgsg`, joten varo sitä.
+Voit käyttää etuliitteenä jopa hymiöitä... mutta miksi käyttäisit?
+
+Voit yksinkertaisesti käyttää komentoa `!prefix` vaihtaaksesi etuliitteen Discordista käsin.
+Kirjoita `@RinBot etuliite`, jos olet täysin unohtanut etuliitteesi.
+
+Voit myös vaihtaa etuliitteen [verkkosivuston] kautta({0}/my-servers). Seuraa näitä ohjeita:
+- Kirjaudu sisään käyttämällä Discord-tiliäsi sivun oikeassa yläkulmassa olevassa kohdassa
+- Klikkaa nimeäsi oikeassa yläkulmassa ja valitse 'My servers' (Omat palvelimet)
+- Etsi palvelimesi luettelosta ja napsauta 'Configure' (Määritä).
+- Päivitä etuliite haluamaasi muotoon
+- Paina lopuksi 'Tallenna muutokset' -painiketta</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Mikä tämä anime-allasjuttu on, josta olen kuullut?</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Jokaisella pelatulla kierroksella valitaan siis satunnainen anime anime "altaasta", joka riippuu käyttämistäsi suodattimista.
+Mitä rajoittavampia suodattimia käytät, sitä pienemmäksi anime-allas muuttuu.
+Pisteet perustuvat myös löyhästi anime poolin lukumäärään, ja 3000 animen pool antaa maksimipisteet (yleensä 60).
+
+__Esimerkki__
+Oletetaan, että sinulla on anime-lista, jossa on 100 animea (niistä on katsottava vähintään yksi jakso, eikä niitä saa pudottaa).
+Noin 20 noista 100 animesta katsotaan suosituiksi, joten ne kuuluisivat helppoon vaikeusasteeseen.
+Jos sitten käytät `!sg d:1 mal:username` se ottaisi satunnaisen animen vain 20 animen joukosta.
+
+Nyt on myös se tosiasia, että RinBot ei toista animea ainakaan tuntiin.
+Kun tämä otetaan huomioon, jokainen kierros, jonka pelaat tunnin aikana, vähentäisi tuota 20 animea yhdellä.
+Joten 20 kierroksen jälkeen sinulla on lopulta 0. Silloin RinBot ei voi jatkaa ja peruuttaa kierroksen sanomalla **Kierros peruutettiin puuttuvien kaappausten vuoksi**.
+
+Anime-poolin lukumäärää käytetään myös aikatulostaulukossa. Koska ihmisten olisi liian helppoa käyttää `!sg d:1 g:sports` ja roskapostittaa Haikyuu, olen päättänyt sallia vain kierrokset, joiden anime-allas on vähintään 1000, kyseisessä tulostaulukossa.</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Mikä on NSFW-tila ja miten otan sen käyttöön?</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Oletusarvoisesti RinBot suodattaa useita animeja.
+Näin vältetään kanavan tekeminen ikärajoitetuksi (aiemmin NSFW) ja siten Discordin käyttöehtojen kunnioittaminen.
+
+AniDB:n anime-tunnisteet, jotka suodatetaan:
+- 18 rajoitettu
+- Rajalla hentai
+- Alastomuus (painot &gt;200)
+- Seksi (painot &gt;100)
+
+Kaikki MAL:ssa PG-13- tai alle PG-13-luokituksen saaneet elokuvat sisältyvät aina.
+
+Voit yksinkertaisesti asettaa kanavasi ikärajoitetuksi ja RinBot siirtyy automaattisesti NSFW-tilaan.
+
+Jos törmäät NSFW-kuvaan tai -videoon pelatessasi SFW-tilassa, ota minuun yhteyttä ja kerro animen nimi, jotta voin lisätä sen suodattimeen manuaalisesti. </value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Mikään komennoista ei toimi, miten voin korjata tämän?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Tähän on tällä hetkellä kaksi tapaa.
+
+a. **Käytä Discord-oikeuksia**
+Sinun on periaatteessa annettava RinBotille vain __View channel__ -oikeus kanavalla, jolla haluat hänen kuuntelevan komentoja.
+Tämä voidaan tehdä vain asettamalla käyttöoikeudet oikein Discordissa.
+
+__Esimerkkejä__: 
+Disallow `@everyone` __View channel__ kaikkiin kanaviin. Tee sitten "Jäsenet"-rooli, joka antaa ihmisille __Näytä kanava__ kaikkiin kanaviin, mutta antaa RinBotille vain __Näytä kanava__ siihen kanavaan, jossa hänen pitäisi kuunnella komentoja.
+
+Vaihtoehtoisesti voit tehdä "Botit"-roolin, joka estää __Näytä kanava__ -käytön nimenomaan kaikkiin kanaviin. Anna sitten RInBotille nimenomaan pääsy valitsemallesi kanavalle.
+
+b. **Käytä kanavien pääsynvalvontaa**
+Tämän määritys on käytettävissä kirjauduttuasi sisään [verkkosivustolle]({0}).
+
+__Seuraavat vaiheet__:
+- Kun olet kirjautunut sisään, siirry oikeaan yläkulmaan ja napsauta nimeäsi ja siirry sitten osoitteeseen __Omat palvelimet__.
+- Napsauta palvelinta, jonka haluat määrittää (sinun on oltava __järjestelmänvalvoja__ tai sinulla on oltava __palvelimen hallinta__ -rooli).
+- Etsi __Kanavat-välilehti__ ja rastita __Enable channel access control__ -ruutu.
+
+&gt; Pelkästään tällä määrityksellä RinBot ei kuuntele komentoja millään kanavalla, joten nyt se on sallittava haluamallasi kanavalla.
+
+- Napsauta __Add a channel__ ja valitse kanava, jolla haluat RinBotin kuuntelevan komentoja.
+- Napsauta __Add a rule__, jolloin syntyy pääsääntö, joka sallii kaikki komennot tällä kanavalla.
+- Klikkaa __Tallenna muutokset__ alareunassa ja olet valmis!</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Se on luultavasti uudelleen yhdistäminen, koska Discord pakottaa sirpaleet yhdistymään uudelleen noin __tunnin välein__. Ole kärsivällinen ja yritä uudelleen muutaman minuutin kuluttua.
+
+Jos se ei vieläkään toimi __15 minuutin kuluttua__, **tarkista kysymys 6**.
+
+Jos tämän jälkeen __ei vieläkään__ toimi, pyydä apua #help:ssä ja mainitse samalla shard ja/tai klusteri, jossa palvelimesi on.
+Voit tarkistaa shardisi [statussivulta]({0}/status).
+
+&gt; ⚠️ Huomaa, että **lauantaisin klo 8:00-12:00 UTC** on varattu huoltoikkunaksi, joten tuona aikana voi olla ennalta ilmoittamattomia seisokkeja.</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Miten saan RinBotin käynnistämään kierrokset automaattisesti?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Tällä hetkellä käytössä on ominaisuus nimeltä "käynnistä kierros, kun kanava on tyhjänä".
+Tämän ominaisuuden voi aktivoida kanavan asetuksissa kirjauduttuaan sisään [verkkosivustolla]({0}/my-servers).  
+  
+Ilmaisilla palvelimilla tyhjäkäyntiaika on asetettu vähintään yhteen tuntiin. Tämä voidaan pienentää yhteen minuuttiin, kun sinusta tulee tukija.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Olen tehnyt sitoumukseni, mutta en ole saanut etuisuuksia, mitä nyt?</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Saadaksesi etuisuuksia sinun on yhdistettävä **Discord-tilisi Patreon-tiliisi**.  
+Miten tämä tehdään tarkalleen [löytyy täältä](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Jos olet **pantannut ennen Discord-tilisi linkittämistä**, voit yrittää painaa ['Liity' -painiketta tästä](https://www.patreon.com/rinbot?fan_landing=true) vielä kerran.  
+Tämän ei pitäisi pyytää toista maksua, mutta se käynnistää webhookin uudelleen, jonka seurauksena saat etuudet automaattisesti.  
+
+Se yrittää myös antaa etuisuuksia kaikille, jotka niitä kaipaavat, noin tunnin välein, joten odota vain hieman, niin saat ne automaattisesti.
+  
+Kun olet luvannut **, sinun on kirjauduttava uudelleen sisään** RinBot-sivustolle, jotta voit käyttää etuisuuksia, kuten palvelimen vahvistamista tai ylimääräisiä kanavamäärityksiä.  
+</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Viikoittainen pistetaulukko nollautuu komennossa `/weektop` ilmoitettuna päivänä keskiyöllä (00:00 / 12:00 AM) UTC-aikaa.  
+
+Se käyttää ISO-8601-standardia vuoden viikoille ja maanantai on viikon ensimmäinen päivä.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Miten pistelaskenta toimii?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Pisteiden laskeminen riippuu täysin siitä, kuinka paljon animea on altaassa, josta kierroksesi on luotu, ja voittajan tasosta.  
+  
+Yksinkertaisimmassa tapauksessa 3000 animen pooli antaa enintään 60 pistettä, joista vähennetään `1 / numberOfCaptures` jokaisesta ylimääräisestä näytetystä capista.  
+  
+Poolin koko riippuu suodattimista. Jos käytät suodattimena omaa anime-luetteloasi, jossa on 90 merkintää Completed-osiossa ja 10 On-hold-osiossa, poolin koko on 100.  
+Jokaisen kierroksen jälkeen, jonka pelaat tällä samalla suodattimella, pooli pienenee kuitenkin yhdellä, koska itse tai samalla palvelimella aloitettuja kierroksia ei toisteta ainakaan tuntiin.  
+  
+Kaava, jota käytetään:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints.
+```
+&gt; Oletus `maxPoints` on `60` ja `animeMaxPoints` on `3000`.  
+  
+ `animeMultiplier` -muuttuja riippuu animen julkaisuvuodesta.  
+- Ennen vuotta 2010 : `2`
+- Ennen vuotta 2000: `3`
+- Ennen vuotta 1990: `4`
+- Ennen vuotta 1980: `5`
+
+Pienin mahdollinen pistemäärä on `4`, joka muuttuu `1`, jos viimeinen raja on näytetty.  
+
+__Äänikierrokset__ 
+Äänikierroksilla pisteitä vähennetään vastaamiseen kuluvan ajan eikä näytettyjen kaappausten määrän mukaan.</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Komennolla `/lang` voidaan vaihtaa RinBotin puhuma kieli.
+
+Voit myös vaihtaa niiden anime-nimikkeiden kielen, jotka ovat arvattavissa ja jotka näkyvät vihjeissä ja anime-julisteessa kierrosten lopussa.
+Tätä varten kirjaudu sisään verkkosivustolle.
+
+Englanninkielisten otsikoiden asettamista varten voit lisätä rivin pääotsikkoasetusten yläosaan sisällön kanssa: AniDB, Official Title ja English.
+
+&gt; Huomaa, että kyseessä on kehittynyt ominaisuus, joka saattaa rikkoa RinBotin palvelimellasi, jos sitä ei ole määritetty oikein.</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Mikä on vaikeus ja miten voin muuttaa sitä?</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>Vaikeusaste perustuu animen suosioon, voit valita 5 vaikeusasteen välillä:  
+1. Helppo
+2. Normal
+3. Hard
+4. Extreme
+5. Painajainen
+
+&gt; Alkaen vaikeusasteista Easy(1) ja Extreme(4) altaat sisältävät myös animea edellisistä vaikeusasteista. 
+&gt; Vaikeusaste Nightmare(5) on erilainen, se sisältää vain botissa saatavilla olevat vähiten suositut animet.
+
+__Vaikeuden muuttaminen__
+Voit vaihtaa vaikeusasteen `Helppo` yhdeksi kierrokseksi käyttämällä `/sg vaikeusaste:Helppo` tai `!sg d:1` tai `!sg 1`.
+Sama pätee myös muihin vaikeuksiin muissa komennoissa.
+
+Vaikeusaste kasvaa, kun saat lisää pisteitä, maksimissaan Extreme(4).
+Voit muuttaa tätä käyttäytymistä käyttämällä `/mydifficulty` (jos palvelimellasi ei ole slash-komentoja, voit käyttää sitä myös DM:ssä RinBotin kanssa).
+ </value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Slash-komennot eivät toimi tai niitä voivat käyttää vain järjestelmänvalvojat.</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Komentojen toimimattomuuteen voi olla useita eri syitä.
+
+a. **Etuliite on muuttunut joksikin muuksi ja olet unohtanut sen.** 
+Voit yksinkertaisesti käyttää komentoa `@RinBot prefix` tarkistaaksesi nykyisen etuliitteesi ja vaihtaaksesi myös sen.
+
+Jos et voi käyttää `@RinBot-etuliitettä`, mene ja kirjaudu sisään [verkkosivustolle]({0}).
+Siellä voit myös nähdä ja vaihtaa etuliitteesi **Omat palvelimet** -sivulla oikeassa yläkulmassa.
+
+b. **Olet muuttanut palvelimesi käyttöoikeuksia siten, että RinBot ei voi enää lähettää viestejä tai upottaa** 
+Varmista, että RinBotilla on kaikki tarvittavat oikeudet.
+Tällä hetkellä nämä ovat: `Lue viestejä`, `Lähetä viestejä`, `Upota linkkejä`, `Liitä tiedostoja` ja äänikanavien osalta `Yhdistä` ja `Puhu.`
+&gt; Voit kutsua hänet uudelleen tarkistamaan, mitä oikeuksia tarkalleen ottaen tarvitaan.
+
+c. **Käytät __viivakomentoja__ ja komentojen käyttöoikeudet on määritetty kieltämään ne** 
+Katso kysymys 10.
+
+d. **Pääsynvalvonta saattaa olla asetettu siten, että se ei salli mitään komentoja** 
+Henkilön, jolla on palvelimen hallintaoikeudet, olisi muutettava käyttöoikeuksien valvontaa niin, että se sallii komennot, jos käyttöoikeuksien valvonta on käytössä.
+Määritykset löytyvät [verkkosivustolta]({0}/my-servers).
+
+e. **Shard, jossa palvelimesi on, on itse asiassa alhaalla**. 
+Tätä tapahtuu harvoin ja sen pitäisi korjaantua automaattisesti parissa minuutissa.
+Voit tarkistaa sen shardin tilan, jossa palvelimesi on, [tilasivulta]({0}/status).
+Jos kyseessä on suuri huolto, voit myös tarkistaa [statuspage.io-sivustolta](https://rinbot.statuspage.io/) päivitykset.
+ 
+f. **Olet poistanut tekstikomennot kokonaan käytöstä asetuksissa**. 
+Jos haluat käyttää tekstikomentoja, varmista, ettet ole laittanut rastia ruutuun "Disable legacy prefixed commands" (Poista käytöstä vanhat etuliitekomennot) palvelimen asetuksissa sivustolla.
+Tämä vaihtoehto saa aikaan sen, että vain vinoviivakomennot toimivat.</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Miten saan RinBotin kuuntelemaan komentoja vain yhdellä kanavalla?</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Miksi RinBot on offline palvelimellani?</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord lisäsi hiljattain __slash-komennon käyttöoikeudet__ järjestelmään... melko hiljaa.
+Tämä antoi palvelimille mahdollisuuden ottaa käyttöön tai poistaa käytöstä slash-komentoja yksitellen mille tahansa kanavalle tai roolille.
+
+Näyttää siltä, että monilla palvelimilla tämän oletusasetukset tekivät slash-komennot tavallisten käyttäjien ulottumattomiin.
+ __mobiililaitteissa__ ja vanhemmissa versioissa tämä ei ole täysin tuettu ja saatat saada viestin, jossa sanotaan: 
+**Tämä vuorovaikutus epäonnistui** tai **Sovellus ei vastannut**
+
+__Voit muuttaa näitä oikeuksia.__
+Mene Discordissa osoitteeseen `Palvelimen asetukset - Integraatiot - RinBot` ja varmista, että asiat on määritetty täällä oikein kanavillesi ja rooleillesi. 
+Mobiililaitteet eivät vielä tue näitä ominaisuuksia täysin, joten käytä tähän PC:täsi tai kokeile laitteesi web-asiakasta.
+
+&gt; Järjestelmänvalvojat voivat aina käyttää slash-komentoja riippumatta siitä, mitä oikeuksia täällä on määritetty. Jos siis olet jo ylläpitäjä, ongelmasi olisi jotain muuta.
+
+Jos tämä ei ratkaise ongelmaasi, katso lisää mahdollisia syitä osoitteesta __kysymys 6__.</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Miksi nimi on 'RinBot' ja kuka on avatarin tyttö?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Kuvan tyttö on Elin TERA Online -pelistä.  
+Minulla oli siellä hahmo nimeltä Kururin, joka oli Elin-mystikko ja näytti samankaltaiselta kuin tämä.  
+  
+Alun perin kirjoitin discord-botin, joka teki joitain oletusarvoisia discord-moderoinnin juttuja kokeillakseni asioita.
+Kun kysyin, mikä sen nimi olisi, joku sanoi, että "kutsu sitä vain RinBotiksi". Minusta se oli hauska, joten nimi jäi.  
+  
+Taiteen teki momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)), joten kaikki krediitit avatarista menevät heille!  
+Käykää myös katsomassa [alkuperäinen postaus taideteoksesta](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Milloin viikoittainen pistetaulukko nollautuu?</value>
+  </data>
 </root>
