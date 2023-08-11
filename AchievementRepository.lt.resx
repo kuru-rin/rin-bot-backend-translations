@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,268 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AchievementCategory_Decade00s" xml:space="preserve">
+    <value>Dešimtmečiai - 00-ieji</value>
+  </data>
+  <data name="AchievementCategory_Decade10s" xml:space="preserve">
+    <value>Dešimtmečiai - 10 metų</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
+    <value>Dešimtmečiai - 70-ieji ir ankstesni</value>
+  </data>
+  <data name="AchievementCategory_Decade80s" xml:space="preserve">
+    <value>Dešimtmečiai - 80-ieji</value>
+  </data>
+  <data name="AchievementCategory_Decade90s" xml:space="preserve">
+    <value>Dešimtmečiai - 90-ieji</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime" xml:space="preserve">
+    <value>Skirtingi anime</value>
+  </data>
+  <data name="AchievementCategory_GenreAction" xml:space="preserve">
+    <value>Žanras - Veiksmo</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi" xml:space="preserve">
+    <value>Žanras - Ecchi</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror" xml:space="preserve">
+    <value>Žanras - Siaubo</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Description" xml:space="preserve">
+    <value>Haruhi tau pakėlė nykštį, bet ar tu ją prisimeni?</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
+    <value>Nykščiai aukštyn</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
+    <value>Štai dar vienas dalykas, kuriam galėtumėte skirti savo laiką.</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Title" xml:space="preserve">
+    <value>Pudingo krovimas</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Description" xml:space="preserve">
+    <value>Ar trokštate daugiau? Bijau, kad tai buvo paskutinis lygis... kol kas.</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Title" xml:space="preserve">
+    <value>Ištroškę daugiau</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Description" xml:space="preserve">
+    <value>Tai nėra vien tik linksmi žaidimai... ar ne?</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Title" xml:space="preserve">
+    <value>Drooling</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Description" xml:space="preserve">
+    <value>Nepamirškite išgerti "Dk Pepper".</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Title" xml:space="preserve">
+    <value>Myli Dokupe</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Description" xml:space="preserve">
+    <value>Bandėte peržengti ribas, bet nepavyko.</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Title" xml:space="preserve">
+    <value>Išmatavimų triperis</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Description" xml:space="preserve">
+    <value>Akivaizdu, kad priklausomybės negalima išmatuoti.</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Title" xml:space="preserve">
+    <value>Priklausomybė</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Description" xml:space="preserve">
+    <value>Jūs sutrypėte konkurentus!</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Title" xml:space="preserve">
+    <value>Dinozauras</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Description" xml:space="preserve">
+    <value>Atminkite: sužadėtuvės yra šventos!</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Title" xml:space="preserve">
+    <value>Mylinti waifu</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Description" xml:space="preserve">
+    <value>Įspūdinga... labai įspūdinga.</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Title" xml:space="preserve">
+    <value>Padarė įspūdį</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Description" xml:space="preserve">
+    <value>Reikia pasiekti dar vieną lygį!</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Title" xml:space="preserve">
+    <value>Dar neužmikite</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Description" xml:space="preserve">
+    <value>Išnaikinote visus drakonus, kurie stovėjo jūsų kelyje!</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Title" xml:space="preserve">
+    <value>Drakono vergas!!!</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Description" xml:space="preserve">
+    <value>Sveikiname, pasiekėte stebuklingą skaičių. Dabar atsikvėpkite, bus tik dar sunkiau.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Title" xml:space="preserve">
+    <value>Pirmasis žingsnis</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Description" xml:space="preserve">
+    <value>Esate įpratę matyti veikėjo akis didesnes už nosį. Jei jie apskritai turi nosį.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Title" xml:space="preserve">
+    <value>Atsitiktinis spėjikas</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Description" xml:space="preserve">
+    <value>Jūs juk NĖ VIENO iš jų neieškojote, tiesa?</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Title" xml:space="preserve">
+    <value>Minčių skaitytojas</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Description" xml:space="preserve">
+    <value>Tai... daug. Tikrai galite didžiuotis savimi.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Title" xml:space="preserve">
+    <value>Teisė girtis</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Description" xml:space="preserve">
+    <value>Dabar padarykite pauzę, įkvėpkite ir šiek tiek pasitempkite. Nepamirškite nesėdėti per arti ekrano.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Title" xml:space="preserve">
+    <value>Daug laisvo laiko</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Description" xml:space="preserve">
+    <value>Tavo galios lygis gerokai aukštesnis už kitų. Vienintelis kelias - aukštyn.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Title" xml:space="preserve">
+    <value>Net ne mano galutinė forma</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Description" xml:space="preserve">
+    <value>Jau turėtumėte žinoti, ką reiškia šis paveikslėlis.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Title" xml:space="preserve">
+    <value>Reikia atspėti visus!</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Description" xml:space="preserve">
+    <value>Negalite nustoti kovoti, ar ne?</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Title" xml:space="preserve">
+    <value>Mūšio maniakas</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Description" xml:space="preserve">
+    <value>Jūs dar nesate meistras.</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Title" xml:space="preserve">
+    <value>Stipriausias mokinys</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Description" xml:space="preserve">
+    <value>Netgi panaudotumėte savo kraują, kad nugalėtumėte priešus.</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Title" xml:space="preserve">
+    <value>Kraujo karys</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Description" xml:space="preserve">
+    <value>Išsiaiškinti kelnių kostiumo spalvą jums nėra sudėtinga.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Title" xml:space="preserve">
+    <value>Dėl siužeto</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Description" xml:space="preserve">
+    <value>Šiandien sužinojote šimapano apibrėžimą.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Title" xml:space="preserve">
+    <value>Shimapan</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Description" xml:space="preserve">
+    <value>Galite norėti visko, ko tik norite!</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Title" xml:space="preserve">
+    <value>Ar norite sudaryti sutartį?</value>
+  </data>
+  <data name="Achievement_GenreHorror_1_Description" xml:space="preserve">
+    <value>Ar norėtumėte šiek tiek pasiimti namo?</value>
+  </data>
+  <data name="Achievement_GenreHorror_1_Title" xml:space="preserve">
+    <value>Hauu~ Omochi kaeri~</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs" xml:space="preserve">
+    <value>Skirtingos anime dainos</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Title" xml:space="preserve">
+    <value>"Rockin' it</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Description" xml:space="preserve">
+    <value>Nėra laiko pertraukoms. Ritmas artimiausiu metu nesustos.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Title" xml:space="preserve">
+    <value>Melodijų matricos</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Description" xml:space="preserve">
+    <value>Užmerkite akis ir toliau klausykitės. Tik neužmikite.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Title" xml:space="preserve">
+    <value>Norisi šokti</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Description" xml:space="preserve">
+    <value>Jums tai sekasi vis geriau, todėl judinkite kūną ir purtykite jį!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Title" xml:space="preserve">
+    <value>Gyvenimas jums duoda citrinos</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Title" xml:space="preserve">
+    <value>Oto no sekai</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Description" xml:space="preserve">
+    <value>Jūsų klausymosi lygis nebepriklauso šiam pasauliui, toliau siekite daugiau!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Description" xml:space="preserve">
+    <value>Ara Ara, tavo talentas patobulėjo. Padarykite pertrauką, bus tik sunkiau.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Title" xml:space="preserve">
+    <value>Bop į taktą</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Description" xml:space="preserve">
+    <value>Dainomis reikia mėgautis kartu su kitais, jos sujungia mūsų protą ir sielą.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Title" xml:space="preserve">
+    <value>Kiekviena įsiminta pastaba</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Description" xml:space="preserve">
+    <value>Jau iš pirmos natos galite pasakyti, ar ne?</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Title" xml:space="preserve">
+    <value>Begalinis grojaraštis</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Description" xml:space="preserve">
+    <value>Jūsų ir grojaraščio nebegalima atskirti. Ar šiuo metu apskritai reikia juos tikrinti?</value>
+  </data>
+  <data name="AchievementCategory_Decade00s_Description" xml:space="preserve">
+    <value>Į šį pasiekimą bus įskaičiuoti 2000-2010 m. atspėti anime.</value>
+  </data>
+  <data name="AchievementCategory_Decade10s_Description" xml:space="preserve">
+    <value>Į šį pasiekimą bus įskaičiuotas 2010-2020 m. spėjimas anime.</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore_Description" xml:space="preserve">
+    <value>Į šį pasiekimą bus įskaičiuoti iki 1980 m. sukurtų anime spėjimai.</value>
+  </data>
+  <data name="AchievementCategory_Decade80s_Description" xml:space="preserve">
+    <value>Į šį pasiekimą bus įskaičiuoti 1980-1990 m. spėjamieji anime.</value>
+  </data>
+  <data name="AchievementCategory_Decade90s_Description" xml:space="preserve">
+    <value>Į šį pasiekimą bus įskaičiuoti 1990-2000 m. atspėti anime.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs_Description" xml:space="preserve">
+    <value>Į šį pasiekimą bus įskaičiuotas bet kurios anime dainos, kurios anksčiau nenuspėjote, atspėjimas. Šiuo metu įskaitomos tik !sga turų dainos.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime_Description" xml:space="preserve">
+    <value>Į šį pasiekimą bus įskaičiuotas bet kokio anime, kurio anksčiau nenuspėjote, atspėjimas.</value>
+  </data>
+  <data name="AchievementCategory_GenreAction_Description" xml:space="preserve">
+    <value>Už šį pasiekimą bus skaičiuojamas veiksmo žanro anime spėjimas.</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi_Description" xml:space="preserve">
+    <value>Už šį pasiekimą bus skaičiuojama spėjant ecchi žanro anime.</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror_Description" xml:space="preserve">
+    <value>Už šį pasiekimą bus skaičiuojami spėjimai apie siaubo žanro anime.</value>
+  </data>
 </root>
