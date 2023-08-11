@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; 如果使用斜线命令`/` ，则不适用于您。斜线命令的前缀不能更改。
+
+命令前缀是每个命令前面的字符（或更多，最多 1 至 5 个字符）。
+例如，在`!sg` 中，前缀为`!` 。 
+如果将前缀设置为`!sg` ，命令就会变成`!sgsg` ，所以要注意这一点。
+您甚至可以使用表情符号作为前缀......但为什么要这样做呢？
+
+您只需使用`!prefix` 命令即可在 discord 中更改前缀。
+如果你完全忘记了前缀，请输入`@RinBot prefix` 。
+
+您也可以通过 [网站]（{0}/my-servers）更改前缀。请按照以下步骤操作
+- 使用页面右上方的 Discord 帐户登录
+- 单击右上角您的姓名并选择 "我的服务器
+- 在列表中找到您的服务器并点击 "配置
+- 将前缀更新为您喜欢的任何名称
+- 按 "保存更改 "按钮完成</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>因此，每一轮游戏都会从动漫 "池 "中随机选择一部动漫，而动漫 "池 "的大小取决于您使用的筛选器。
+使用的筛选条件越严格，动漫池就越小。
+积分也是松散地基于动漫池的数量，动漫池为 3000，可获得最高积分（通常为 60）。
+
+__举例说明__
+假设您有一个包含 100 部动画片的动画片列表（这些动画片必须至少观看过 1 集，并且没有被放弃）。
+这 100 部动漫中大约有 20 部被认为是热门动漫，因此属于简单难度。
+如果您使用`!sg d:1 mal:username` ，就会从这 20 部动画中随机抓取一部。
+
+此外，RinBot 至少在一小时内不会重复播放动画。
+考虑到这一点，您在一小时内每玩一轮就会将这 20 部动画减少 1 部。
+因此，在 20 轮游戏之后，您的游戏池中的动漫数量将为 0。然后，RinBot 将无法继续游戏，并会取消该轮游戏，提示**由于缺少捕捉器，该轮游戏被取消** 。
+
+动漫池计数也用于时间排行榜。由于人们很容易使用`!sg d:1 g:sports` 和垃圾 Haikyuu，因此我选择在该排行榜中只允许动漫池至少有 1000 的回合。</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> 默认情况下，RinBot 会过滤一些动漫。
+这样做是为了避免将频道设为年龄限制（原为 NSFW），从而尊重 Discord 的服务条款。
+
+被过滤的 AniDB 动画标签：
+- 18 岁以下限制
+- 边缘色情
+- 裸体（权重大于 200）
+- 性（权重大于 100）
+
+任何在 MAL 上被评为 PG-13 级或以下的内容均包括在内。
+
+您只需将频道设置为年龄限制，RinBot 就会自动切换到 NSFW 模式。
+
+如果您在 SFW 模式下遇到 NSFW 图片或视频，请与我联系并告知动画名称，以便我手动将其添加到过滤器中。 </value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>所有命令都不起作用，我该如何解决？</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>目前有两种方法可以做到这一点。
+
+a.**使用 Discord 权限**
+基本上，您只需要在您希望 RinBot 接收指令的频道上授予__View channel__ 权限。
+这只需在 Discord 中正确设置权限即可。
+
+__示例__ ： 
+禁止`@everyone` __查看频道__ 到所有频道。然后创建一个 "成员 "角色，该角色允许__查看频道__ 到所有频道，而只允许 RinBot__查看频道__ 到她应该监听命令的频道。
+
+或者，创建一个 "机器人 "角色，禁止__查看频道__ 访问所有频道。然后让 RInBot 专门访问您选择的频道。
+
+b.**使用频道访问控制**
+登录[网站]({0})后可进行相关配置。
+
+__步骤如下：__ ：
+- 登录后，在右上方点击您的姓名，然后进入__我的服务器__ 。
+- 单击要配置的服务器（您需要是__管理员__ 或具有__服务器管理__ 角色）。
+- 找到__频道选项卡__ 并选中__启用频道访问控制__ 复选框。
+
+&gt; 仅通过此配置，RinBot 根本不会监听任何频道上的命令，因此现在我们需要允许它进入您想要的频道
+
+- 点击__Add a channel__ 并选择希望 RinBot 监听命令的频道。
+- 点击__添加一条规则__ ，这样就会生成一条访问规则，允许该通道中的所有命令。
+- 点击底部的__保存更改__ 即可！</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>为什么我的服务器中的 RinBot 离线？</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>可能是重新连接的问题，因为 Discord 每小时会强制重新连接__左右的碎片__ 。请耐心等待，几分钟后再试一次。
+
+如果 15 分钟后仍无法____ ，**检查问题 6** 。
+
+如果__之后__ 仍然无法正常工作，请在 #help 中寻求帮助，同时提及你的服务器所在的分区和/或群集。
+您可以在[状态页面]（{0}/status）上查看您的分区。
+
+&gt; ⚠️ 请注意，**星期六 8:00-12:00 UTC** 保留为维护窗口，因此在此期间可能会出现未通知的停机。</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>什么是难度，如何改变难度？</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>难度根据动画的受欢迎程度而定，有 5 种难度可供选择：  
+1.简单
+2.普通
+3.难
+4.极限
+5.噩梦
+
+&gt; 从简单（1）到极端（4），池中也会包含之前难度的动画。 
+&gt; 噩梦（5）难度不同，只包含机器人中最不受欢迎的动画。
+
+__更改难度__
+要将单轮游戏的难度改为`Easy` ，请使用`/sg difficulty:Easy` 或`!sg d:1` 或`!sg 1` 。
+其他命令中的其他难度也是如此。
+
+当您获得的分数越多，难度就会越高，最高可达 Extreme(4)。
+要改变这种行为，您可以使用`/mydifficulty` （如果您的服务器没有斜线命令，您也可以在 RinBot 的 DM 中使用该命令）
+ </value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>斜线命令不起作用或只能由管理员使用</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>为什么叫 "RinBot"，头像中的女孩是谁？</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>图片中的女孩是《TERA Online》游戏中的伊琳。  
+我在游戏中扮演过一个名叫库林的角色，她是埃林族的神秘人，长得和这个很像。  
+  
+最初我写了一个 Discord 机器人，它可以做一些默认的 Discord 管理工作，只是为了尝试一下。
+当我问 "我应该给它取什么名字 "时，有人说 "就叫它 RinBot 吧"。我觉得这很有趣，所以就用了这个名字。  
+  
+美术设计由 momoco 完成（[pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru) ），因此头像的所有功劳都归于他们！  
+还可以查看 [作品原帖](https://www.pixiv.net/en/artworks/36910527)。</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>如何让 RinBot 自动启动回合？</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>目前有一项功能叫做 "频道空闲时开始一轮游戏"。
+登录[网站]（{0}/my-servers）后，可在频道配置中激活该功能。  
+  
+对于免费服务器，空闲时间至少设置为一小时。成为支持者后，空闲时间可缩短至一分钟。</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>我已经认捐，但没有收到福利，现在该怎么办？</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>要获得津贴，您需要将**Discord 账户与 Patreon 账户相连** 。  
+具体如何操作 [请点击此处](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role)。  
+  
+如果您在链接您的 Discord 帐户** 之前已认捐**，您可以尝试再按一次 [此处的 "加入 "按钮](https://www.patreon.com/rinbot?fan_landing=true)。  
+这应该不会要求再次付款，但会再次触发网络钩子，从而自动为您提供福利。  
+
+它还会尝试每隔一小时向遗失津贴的人发放津贴，所以只需稍等片刻，您就会自动收到津贴。
+  
+认捐**后，您需要在 RinBot 网站上重新登录** ，才能使用提升服务器或额外频道配置等福利。  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>每周排行榜何时重置？</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>每周排行榜在`/weektop` 命令中显示的日期重置，重置时间为世界协调时午夜（00:00 / 12:00）。  
+
+它采用 ISO-8601 年周数标准，周一为一周的第一天。</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>积分计算是如何进行的？</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>积分的计算完全取决于游戏池中的动漫数量和获胜者的水平。  
+  
+在最简单的情况下，如果动漫池中有 3000 部动漫，则最多可获得 60 分，每多显示一个上限，就会减少`1 / 捕获数量` 。  
+  
+池的大小取决于您的过滤器。如果使用您自己的动漫列表作为过滤器，在已完成部分有 90 个条目，在待定部分有 10 个条目，那么您的池子大小将是 100。  
+但是，在您使用同一过滤器进行每一轮游戏后，游戏池将减少 1，因为在至少一小时内，您自己或同一服务器内开始的游戏都不会重复。  
+  
+计算公式如下  
+```
+动漫倍增器 * 动漫数量 / 动漫最大点数 * 最大点数
+```
+&gt; 默认`maxPoints` 为`60` 和`animeMaxPoints` 为`3000` 。  
+  
+`animeMultiplier` 变量取决于动画的发行年份。  
+- 2010 年之前 :`2`
+- 2000 年之前 :`3`
+- 1990 年之前 :`4`
+- 1980 年之前 :`5`
+
+您可获得的最低分数为`4` ，如果显示了最后一个上限，则分数将变为`1` 。  
+
+__语音回合__ 
+在语音回合中，积分是根据您的回答时间而不是所显示的捕获数量来减少的。</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>`/lang` 命令可用于更改 RinBot 的语言。
+
+您还可以更改可猜测的动漫标题的语言，这些标题会出现在提示和回合结束时的动漫海报中。
+为此请登录网站。
+
+要设置英文标题，您可以在主标题首选项顶部添加一行内容：AniDB、正式标题和英文。
+
+&gt; 请注意，这是一项高级功能，如果配置不当，可能会破坏服务器上的 RinBot。</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>您可以使用`/sg` 开始一轮游戏。
+有关更多命令，请查看 [命令列表]({0}/commands)。
+
+&gt; ⚠️ 目前仍可使用传统命令，如`!sg` ，但不建议使用**** 。  
+&gt; 这些传统的前缀命令已经过时，将逐渐被淘汰。 
+&gt; 此外，新功能可能只适用于斜线命令。</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>如何使用 RinBot？</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>如何更改语言？</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>如何更改命令前缀？</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>我一直听说的动漫游泳池是怎么回事？</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>什么是 NSFW 模式，如何启用？</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>您的命令失效可能有多种原因。
+
+a.**您的前缀已更改为其他内容，而您忘记了。** 
+您可以使用`@RinBot prefix` 来检查当前的前缀并进行更改。
+
+如果您无法使用`@RinBot prefix` ，请登录[网站]({0})。
+您还可以在**我的服务器** 页面右上方查看并更改您的前缀。
+
+b.**您更改了服务器的权限，导致 RinBot 无法再发送信息或嵌入** 。  
+确保 RinBot 拥有所有必要的权限。
+目前这些权限是`读取信息`,`发送信息`,`嵌入链接`,`附加文件` 以及语音频道`连接` 和`说话`
+&gt; 您可以重新邀请她，以检查到底需要哪些权限。
+
+c.**您正在使用__斜线命令__，而命令权限已设置为拒绝使用** 。  
+参见问题 10。
+
+d.**访问控制的设置可能不允许任何命令** 
+拥有服务器管理权限的人员需要更改访问控制，以便在启用访问控制的情况下允许使用命令。
+配置可在［网站］({0}/my-servers)上找到。
+
+e.**您的服务器所在的分区实际上已经宕机** 
+这种情况很少发生，几分钟后就会自动修复。
+您可以在[状态页面]（{0}/status）上查看服务器所在分区的状态。
+如果有任何大型维护，您也可以查看[the statuspage.io site]( https://rinbot.statuspage.io/) 获取更新。
+ 
+f.**您已在配置中完全禁用文本命令** 
+如果您想使用文本命令，请确保您没有在网站的服务器设置中勾选 "禁用传统前缀命令 "复选框。
+该选项将使斜线命令不起作用。</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>如何让 RinBot 只听单通道命令？</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord 最近悄无声息地添加了__斜线命令权限__ 系统。
+这使得服务器可以针对任何频道或角色单独启用/禁用斜线命令。
+
+似乎在许多服务器上，默认设置会导致普通用户无法使用斜线命令。
+在__移动设备__ 和旧版本上，这并不完全受支持，您可能会收到这样一条信息："此交互失败 或 "： 
+**此交互失败** 或**应用程序未响应**
+
+__要更改这些权限__
+在 Discord 中进入`服务器设置 - 集成 - RinBot` ，确保您的频道和角色设置正确。 
+移动设备尚不完全支持这些功能，因此请使用 PC 或尝试使用设备上的网络客户端。
+
+&gt; 管理员始终可以使用斜线命令，无论此处设置了何种权限。因此，如果您已经是管理员，那么您的问题可能出在其他方面。
+
+如果这还不能解决您的问题，请参阅__问题 6__ 了解更多可能的原因。</value>
+  </data>
 </root>
