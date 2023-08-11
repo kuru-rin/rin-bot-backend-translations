@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Eğer `/` slash komutlarını kullanıyorsanız, bu sizin için geçerli değildir. Slash komutlarının öneki değiştirilemez.
+
+Komut öneki, her komutun önündeki karakterdir (veya daha fazlası, maksimum 1 ila 5 karakter).
+Örneğin `!sg` komutunda önek `!` olacaktır. 
+Öneki `!sg` olarak ayarlarsanız, komut `!sgsg` olur, bu yüzden buna dikkat edin.
+Önek olarak emojileri bile kullanabilirsiniz... ama neden kullanasınız ki?
+
+Ön eki discord içinden değiştirmek için `!prefix` komutunu kullanabilirsiniz.
+Önekinizi tamamen unuttuysanız `@RinBot önek` yazın.
+
+Ön eki [web sitesi] üzerinden de değiştirebilirsiniz({0}/my-servers). Lütfen aşağıdaki adımları izleyin:
+- Sayfanın sağ üst köşesindeki Discord hesabınızı kullanarak giriş yapın
+- Sağ üstteki adınıza tıklayın ve 'Sunucularım'ı seçin
+- Listeden sunucunuzu bulun ve 'Yapılandır'a tıklayın
+- Öneki istediğiniz şekilde güncelleyin
+- Bitirmek için 'Değişiklikleri kaydet' düğmesine basın</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Sürekli duyduğum şu anime havuzu olayı nedir?</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Yani oynadığınız her tur, kullandığınız filtrelere bağlı olan bir anime "havuzundan" rastgele bir anime seçecektir.
+Ne kadar kısıtlayıcı filtreler kullanırsanız, anime havuzunuz o kadar küçülür.
+Puanlar da gevşek bir şekilde anime havuzu sayısına dayanır, 3000'lik bir anime havuzu maksimum puan verir (normalde 60).
+
+__Bir örnek__
+Diyelim ki içinde 100 anime olan bir anime listeniz var (en az 1 bölüm izlenmiş olmaları ve bırakılmamış olmaları gerekiyor).
+Bu 100 animenin yaklaşık 20'si popüler olarak kabul edilir, bu nedenle kolay zorluğa ait olacaktır.
+Daha sonra `!sg d:1 mal:username` kullanırsanız, yalnızca 20 anime arasından rastgele bir anime alır.
+
+Şimdi, RinBot'un en az bir saat boyunca anime tekrar etmediği gerçeği de var.
+Bunu hesaba katarsak, bir saat içinde oynadığınız her tur bu 20 animeyi 1 azaltacaktır.
+Yani 20 turdan sonra 0'lık bir havuza sahip olacaksınız. O zaman RinBot devam edemez ve turu iptal ederek **eksik yakalamalar nedeniyle tur iptal edildi** diyecektir.
+
+Anime havuzu sayısı zaman liderlik tablosu için de kullanılır. İnsanların `!sg d:1 g:sports` adresini kullanması ve Haikyuu'yu spamlaması çok kolay olacağından, bu liderlik tablosunda yalnızca anime havuzunda en az 1000 olan turlara izin vermeyi seçtim.</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>NSFW modu nedir ve nasıl etkinleştirebilirim?</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Varsayılan olarak RinBot bir dizi animeyi filtreleyecektir.
+Bu, bir kanalı yaş kısıtlamalı (eski adıyla NSFW) yapmak zorunda kalmamak ve böylece Discord'un hizmet şartlarına saygı duymak içindir.
+
+Filtrelenen AniDB anime etiketleri:
+- 18 kısıtlanmış
+- Sınırda hentai
+- Çıplaklık (ağırlık &gt;200)
+- Cinsiyet (ağırlık &gt;100)
+
+MAL'da PG-13 veya altında derecelendirilen her şey her zaman dahildir.
+
+Kanalınızı yaş sınırlaması olacak şekilde ayarlayabilirsiniz ve RinBot otomatik olarak NSFW moduna geçecektir.
+
+SFW modunda oynarken müstehcen bir resim veya video ile karşılaşırsanız, lütfen animenin adıyla benimle iletişime geçin, böylece filtreye manuel olarak ekleyebilirim. </value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Komutların hiçbiri çalışmıyor, bunu nasıl düzeltebilirim?</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Komutlarınızın çalışmamasının birkaç farklı nedeni olabilir.
+
+a. **Ön ekiniz başka bir şeyle değiştirildi ve siz unuttunuz.** 
+Mevcut önekinizi kontrol etmek ve değiştirmek için `@RinBot prefix` adresini kullanabilirsiniz.
+
+ `@RinBot önekini kullanamıyorsanız` adresine gidin ve [web sitesine] ({0}) giriş yapın.
+Orada ayrıca sağ üstteki **Sunucularım** sayfasında önekinizi görebilir ve değiştirebilirsiniz.
+
+b. **Sunucunuzdaki izinleri, RinBot'un artık mesaj gönderemeyeceği veya yerleştiremeyeceği şekilde değiştirdiniz** 
+RinBot'un gerekli tüm izinlere sahip olduğundan emin olun.
+Şu anda bunlar şunlardır: `Mesaj Okuma`, `Mesaj Gönderme`, `Bağlantı Ekleme`, `Dosya Ekleme` ve ses kanalları için `Bağlanma` ve `Konuşma`
+&gt; Tam olarak hangi izinlerin gerekli olduğunu kontrol etmek için onu yeniden davet edebilirsiniz.
+
+c. **Eğik çizgi komutları__ kullanıyorsunuz ve komut izinleri bunları reddedecek şekilde ayarlanmış** 
+10. soruya bakınız.
+
+d. **Erişim kontrolleri herhangi bir komuta izin vermeyecek şekilde ayarlanmış olabilir** 
+Sunucu yönetim izinlerine sahip bir kişinin erişim kontrollerini değiştirmesi gerekir, böylece erişim kontrolü etkinleştirilirse komutlara izin verir.
+Yapılandırma [web sitesinde] bulunabilir({0}/my-servers).
+
+e. **Sunucunuzun üzerinde bulunduğu shard aslında kapalı** 
+Bu nadiren olur ve birkaç dakika içinde otomatik olarak düzeltilmelidir.
+Sunucunuzun bulunduğu shard'ın durumunu [durum sayfası]({0}/status) üzerinden kontrol edebilirsiniz.
+Herhangi bir büyük bakım durumunda, güncellemeler için [statuspage.io sitesini](https://rinbot.statuspage.io/) de kontrol edebilirsiniz.
+ 
+f. **Yapılandırmada metin komutlarını tamamen devre dışı bıraktınız** 
+Metin komutlarını kullanmak istiyorsanız, web sitesindeki sunucu ayarlarında "Eski önekli komutları devre dışı bırak" kutusunu işaretlemediğinizden emin olun.
+Bu seçenek sadece eğik çizgi komutlarının çalışmasını sağlayacaktır.</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>RinBot'un sadece tek bir kanaldaki komutları dinlemesini nasıl sağlarım?</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Şu anda bunu gerçekleştirmenin iki yolu var.
+
+a. **Discord izinlerini kullanın**
+Temel olarak RinBot'a komutları dinlemesini istediğiniz kanalda yalnızca __View channel__ iznini vermeniz gerekir.
+Bu, Discord'da izinlerinizin doğru şekilde ayarlanmasıyla yapılabilir.
+
+__Örnekler__: 
+ `@heryone` __View channel__ kanalını tüm kanallara izin vermeyin. Ardından, insanlara __View channel__ kanalını tüm kanallara verirken, RinBot'a yalnızca komutları dinlemesi gereken kanala __View channel__ veren bir "Üyeler" rolü oluşturun.
+
+Alternatif olarak, __View kanalının__ özellikle tüm kanallara erişimine izin vermeyen bir "Botlar" rolü oluşturun. Ardından RInBot'a özellikle seçtiğiniz bir kanala erişim izni verin.
+
+b. **Kanal erişim kontrolünü kullanın**
+Bunun için yapılandırma [web sitesinde] oturum açtıktan sonra kullanılabilir ({0}).
+
+__İzlenecek adımlar__:
+- Giriş yaptıktan sonra, sağ üst tarafa gidin ve adınıza tıklayın, ardından __Sunucularım__ bölümüne gidin.
+- Yapılandırmak istediğiniz sunucuya tıklayın ( __yöneticisi__ olmanız veya __sunucu yönetimi__ rolüne sahip olmanız gerekir).
+- __Kanallar sekmesini__ bulun ve __Kanal erişim kontrolünü etkinleştir__ kutusunu işaretleyin.
+
+&gt; Sadece bu yapılandırmayla, RinBot hiçbir kanaldaki komutları dinlemeyecektir, bu yüzden şimdi istediğiniz kanalda izin vermemiz gerekiyor
+
+- __Kanal ekle__ öğesine tıklayın ve RinBot'un komutları dinlemesini istediğiniz kanalı seçin.
+- __Kural ekle__ seçeneğine tıklayın, bu kanaldaki her komuta izin veren bir erişim kuralı ile sonuçlanır.
+- En alttaki __Değişiklikleri kaydet__ seçeneğine tıklayın ve işiniz bitti!</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>RinBot sunucumda neden çevrimdışı?</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Muhtemelen yeniden bağlanıyor, çünkü Discord her saat __civarında parçaların yeniden bağlanmasını zorluyor__. Sabırlı olun ve birkaç dakika içinde tekrar deneyin.
+
+Eğer 15 dakika sonra __hala çalışmıyorsa__, **6. soruyu kontrol edin**.
+
+Bundan sonra __hala__ sizin için çalışmıyorsa, lütfen sunucunuzun bulunduğu shard ve/veya cluster'ı belirterek #help'te yardım isteyin.
+Shard'ınızı [durum sayfasından] kontrol edebilirsiniz ({0}/status).
+
+&gt; ⚠️ Lütfen **cumartesi günleri 8:00-12:00 UTC arasında** bir bakım penceresi olarak ayrıldığını unutmayın, bu nedenle bu süre zarfında habersiz kesinti olabilir.</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Zorluk nedir ve bunu nasıl değiştirebilirim?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Resimdeki kız TERA Online oyunundan bir Elin.  
+Orada bir Elin mistiği olan ve buna benzeyen Kururin adında bir karakterim vardı.  
+  
+Başlangıçta sadece bir şeyler denemek için bazı varsayılan discord moderasyon işleri yapan bir discord botu yazdım.
+"Adını ne koyayım?" diye sorduğumda birisi "RinBot olsun" dedi. Komik olduğunu düşündüm, bu yüzden isim biraz yapıştı.  
+  
+Sanat momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)) tarafından yapıldı, bu yüzden avatar için tüm krediler onlara gidiyor!  
+Ayrıca [sanat eserinin orijinal gönderisine] (https://www.pixiv.net/en/artworks/36910527) de göz atın.</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>RinBot'un turları otomatik olarak başlatmasını nasıl sağlayabilirim?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Şu anda "kanal boştayken bir tur başlat" adlı bir özellik var.
+Bu özellik [web sitesinde] oturum açtıktan sonra kanal yapılandırmasında etkinleştirilebilir ({0}/my-servers).  
+  
+Ücretsiz sunucular için boşta kalma süresi en az bir saat olarak ayarlanmıştır. Destekçi olduğunuzda bu süre bir dakikaya indirilebilir.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Taahhütte bulundum ancak avantajlarımı alamadım, şimdi ne olacak?</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Avantajlardan yararlanabilmek için **Discord hesabınızın Patreon hesabınıza bağlı olması gerekir**.  
+Bunun tam olarak nasıl yapılacağı [burada bulunabilir](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Discord hesabınızı bağlamadan önce **rehin verdiyseniz** [buradaki 'Katıl' düğmesine] (https://www.patreon.com/rinbot?fan_landing=true) bir kez daha basmayı deneyebilirsiniz.  
+Bu, başka bir ödeme istememelidir, ancak web kancasını tekrar tetikleyecek ve bu da size avantajların otomatik olarak verilmesiyle sonuçlanacaktır.  
+
+Ayrıca her saat başı eksik olanlara avantajlar vermeye çalışacaktır, bu yüzden biraz bekleyin ve otomatik olarak alacaksınız.
+  
+ **adresinde taahhütte bulunduktan sonra, bir sunucuyu güçlendirmek veya ekstra kanal yapılandırmaları gibi avantajları kullanmak için RinBot web sitesinde** adresinde yeniden oturum açmanız gerekecektir.  
+</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Haftalık lider tablosu `/weektop` komutunda gösterilen tarihte UTC saatiyle gece yarısı (00:00 / 12:00 AM) sıfırlanır.  
+
+Pazartesi haftanın ilk günü olmak üzere yılın haftaları için ISO-8601 standardını kullanır.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Puan hesaplaması nasıl işliyor?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Puan hesaplaması tamamen turunuzun oluşturulduğu havuzdaki anime miktarına ve kazananın seviyesine bağlıdır.  
+  
+En basit durumda, 3000 anime havuzu maksimum 60 puan verir ve gösterilen her ekstra başlık için `1 / numberOfCaptures` ile azaltılır.  
+  
+Havuz boyutu filtrelerinize bağlıdır. Filtre olarak kendi anime listenizi kullanırsanız, Tamamlandı bölümünde 90 ve Beklemede bölümünde 10 giriş varsa, havuz boyutunuz 100 olacaktır.  
+Ancak, aynı filtreyle oynadığınız her turdan sonra havuz 1 azalacaktır, çünkü kendiniz tarafından veya aynı sunucu içinde başlatılan turlar için en az bir saat boyunca tekrar yoktur.  
+  
+Kullanılan formül:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Varsayılan `maxPoints` ` 60` ve `animeMaxPoints` ` 3000`.  
+  
+ `animeMultiplier` değişkeni animenin yayınlandığı yıla bağlıdır.  
+- 2010 yılından önce : `2`
+- 2000 yılından önce : `3`
+- 1990 yılından önce : `4`
+- 1980 yılından önce : `5`
+
+Alabileceğiniz minimum puan miktarı `4` olup, son sınır gösterilmişse `1` olacaktır.  
+
+__Ses turları__ 
+Sesli turlarda puanlar, gösterilen yakalama sayısından ziyade yanıt vermek için harcadığınız süreye göre azalır.</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>`/sg` kullanarak bir tur başlatabilirsiniz.
+Daha fazla komut için [komut listesine] ({0}/commands) göz atın.
+
+&gt; ⚠️ Şu anda `!sg` gibi eski komutları kullanmaya devam etmek mümkündür, ancak bu **tavsiye edilmez**.  
+&gt; Bu eski ön ekli komutlar artık kullanılmamaktadır ve zaman içinde aşamalı olarak kaldırılacaktır. 
+&gt; Ayrıca yeni özellikler yalnızca eğik çizgi komutları için kullanılabilir hale gelebilir.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>RinBot'u nasıl kullanırım?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Dili nasıl değiştirebilirim?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Komut önekini nasıl değiştirebilirim?</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>RinBot'un konuştuğu dili değiştirmek için `/lang` komutu kullanılabilir.
+
+Ayrıca tahmin edilebilir olan ve turların sonundaki ipuçlarında ve anime posterinde görünen anime başlıklarının dilini de değiştirebilirsiniz.
+Bunun için lütfen web sitesine giriş yapın.
+
+İngilizce başlıkları ayarlamak için ana başlık tercihlerinin en üstüne içerikle birlikte bir satır ekleyebilirsiniz: AniDB, Resmi Başlık ve İngilizce.
+
+&gt; Bunun gelişmiş bir özellik olduğunu ve doğru yapılandırılmadığı takdirde sunucunuzdaki RinBot'u bozabileceğini unutmayın.</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>Zorluk, animenin popülaritesine dayanmaktadır, 5 zorluk arasından seçim yapabilirsiniz:  
+1. Kolay
+2. Normal
+3. Sert
+4. Aşırı
+5. Kabus
+
+&gt; Easy(1)'den Extreme(4)'e kadar havuzlar önceki zorluklardan da anime içerecektir. 
+&gt; Kabus(5) zorluğu farklıdır, bu sadece botta bulunan en az popüler animeyi içerir.
+
+__Zorluk derecesinin değiştirilmesi__
+Zorluğu tek bir tur için `Easy` olarak değiştirmek için `/sg difficulty:Easy` veya `!sg d:1` veya `!sg 1` kullanın.
+Diğer komutlar içindeki diğer zorluklar için de aynı şekilde çalışır.
+
+Daha fazla puan kazandıkça zorluk artacaktır, maksimum Extreme(4)'e kadar.
+Bu davranışı değiştirmek için `/mydifficulty` adresini kullanabilirsiniz (sunucunuzda slash komutları yoksa RinBot ile bir DM'de de kullanabilirsiniz)
+ </value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Slash komutları çalışmıyor veya yalnızca yöneticiler tarafından kullanılabiliyor</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord kısa süre önce __slash komut izinleri__ sistemini ekledi... oldukça sessiz bir şekilde.
+Bu, sunuculara istedikleri kanal veya rol için slash komutlarını ayrı ayrı etkinleştirmek / devre dışı bırakmak için araçlar sağladı.
+
+Görünüşe göre birçok sunucuda bunun için varsayılan ayarlar slash komutlarını normal kullanıcılar için erişilemez hale getirdi.
+ __mobil cihazlarda__ ve daha eski sürümlerde bu tam olarak desteklenmez ve şöyle bir mesaj alabilirsiniz: 
+**Bu etkileşim başarısız oldu** veya **Uygulama yanıt vermedi**
+
+__Bu izinleri değiştirmek için__
+Discord'da `Sunucu Ayarları - Entegrasyonlar - RinBot` adresine gidin ve burada kanallarınız ve rolleriniz için her şeyin doğru ayarlandığından emin olun. 
+Mobil cihazlar henüz bu özellikleri tam olarak desteklememektedir, bu nedenle lütfen bunun için bilgisayarınızı kullanın veya cihazınızdaki web istemcisini deneyin.
+
+&gt; Burada hangi izinler ayarlanmış olursa olsun, yöneticiler her zaman slash komutlarını kullanabilir. Yani zaten yönetici iseniz, sorununuz başka bir şey olabilir.
+
+Bu sorunlarınızı çözmezse, daha fazla olası neden için __soru 6__ adresine bakın.</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Neden 'RinBot' ismi ve avatardaki kız kim?</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Haftalık liderlik tablosu ne zaman sıfırlanıyor?</value>
+  </data>
 </root>
