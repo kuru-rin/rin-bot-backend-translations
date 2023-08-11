@@ -82,4 +82,252 @@ Om Nederlandse titels in te stellen kun je een rij toevoegen aan de bovenkant va
 
 &gt; Let op dat dit een geavanceerde functie is die RinBot rare dingen kan laten doen als je het niet juist configureert.</value>
   </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Als je slash-commando's `/` gebruikt, is dit niet op jou van toepassing. De prefix van slashopdrachten kan niet worden gewijzigd.
+
+De opdrachtvoorvoegsel is het teken (of meer, maximaal 1 tot 5 tekens) voor elke opdracht.
+Bijvoorbeeld in `!sg` zou de prefix `!` zijn. 
+Als je de prefix instelt op `!sg`, wordt de opdracht `!sgsg`, dus pas daarmee op.
+Je kunt zelfs emoji's als voorvoegsel gebruiken... maar waarom zou je?
+
+Je kunt gewoon het commando `!prefix` gebruiken om het voorvoegsel vanuit discord te wijzigen.
+Typ `@RinBot prefix` als je je prefix helemaal vergeten bent.
+
+Je kunt de prefix ook wijzigen via [de website]({0}/my-servers). Volg deze stappen:
+- Log in met je Discord account rechtsboven op de pagina
+- Klik rechtsboven op je naam en selecteer 'Mijn servers'.
+- Zoek je server in de lijst en klik op 'Configureer'.
+- Verander de prefix in wat je maar wilt
+- Druk op de knop 'Wijzigingen opslaan' om te voltooien</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Dus elke ronde die je speelt selecteert een willekeurig anime uit een "pool" van anime die afhangt van de filters die je gebruikt.
+Hoe meer restrictieve filters je gebruikt, hoe kleiner je anime-pool wordt.
+Punten zijn ook losjes gebaseerd op het aantal anime, met een anime pool van 3000 die maximale punten oplevert (normaal 60).
+
+__Een voorbeeld__
+Laten we zeggen dat je een anime-lijst hebt met 100 anime erin (ze moeten minstens 1 aflevering bekeken hebben en niet afgehaakt zijn).
+Ongeveer 20 van die 100 anime worden als populair beschouwd en horen dus thuis in de makkelijke moeilijkheidsgraad.
+Als je dan `!sg d:1 mal:username` gebruikt, zou het een willekeurige anime uit slechts 20 anime pakken.
+
+Nu is er ook nog het feit dat RinBot minstens een uur lang geen anime herhaalt.
+Als je daar rekening mee houdt, zou elke ronde die je binnen een uur speelt die 20 anime met 1 verminderen.
+Dus na 20 rondes eindig je met een pool van 0. Dan kan RinBot niet verder en annuleert de ronde met de melding **De ronde is geannuleerd wegens ontbrekende captures**.
+
+Anime pool count wordt ook gebruikt voor het tijd leaderboard. Omdat het te makkelijk zou zijn voor mensen om `!sg d:1 g:sports` te gebruiken en Haikyuu te spammen, heb ik ervoor gekozen om alleen rondes toe te staan met een minimum van 1000 in de anime pool in dat leaderboard.</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Standaard filtert RinBot een aantal anime.
+Dit is om te voorkomen dat je een kanaal leeftijdsbeperkt (voorheen NSFW) moet maken en zo de servicevoorwaarden van Discord te respecteren.
+
+AniDB anime tags die gefilterd worden:
+- 18 beperkt
+- Borderline hentai
+- Naaktheid (gewicht &gt;200)
+- Sex (gewicht &gt;100)
+
+Alles met een classificatie PG-13 of lager op MAL is altijd inbegrepen.
+
+Je kunt gewoon je kanaal instellen op leeftijdsbeperking en RinBot schakelt automatisch over naar de NSFW-modus.
+
+Als je een NSFW-afbeelding of -video tegenkomt terwijl je in de SFW-modus speelt, neem dan contact met me op met de naam van de anime zodat ik deze handmatig aan de filter kan toevoegen. </value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Er zijn momenteel twee manieren om dit te doen.
+
+a. **Discord rechten gebruiken**
+In principe moet je RinBot alleen de toestemming __Bekijk kanaal__ geven op het kanaal waar je wilt dat ze naar commando's luistert.
+Dit kan gedaan worden door je rechten goed in te stellen in Discord.
+
+__Voorbeelden__: 
+Verbied `@iedereen` __Bekijk kanaal__ voor alle kanalen. Maak dan een "Members" rol die mensen __Bekijk kanaal__ geeft voor alle kanalen, terwijl je RinBot alleen __Bekijk kanaal__ geeft voor het kanaal waarin ze naar commando's moet luisteren.
+
+Je kunt ook een rol "Bots" maken die __Bekijk kanaal__ specifiek geen toegang geeft tot alle kanalen. Geef RInBot dan specifiek toegang tot een kanaal naar keuze.
+
+b. **Gebruik kanaal toegangscontrole**
+De configuratie hiervoor is beschikbaar na het inloggen op [de website]({0}).
+
+__Te volgen stappen__:
+- Nadat je bent ingelogd, ga je naar rechtsboven en klik je op je naam, ga dan naar __Mijn servers__.
+- Klik op de server die je wilt configureren (je moet __administrator__ zijn of de __server management__ rol hebben).
+- Ga naar het tabblad __Kanalen__ en vink het vakje __Toegangsbeheer voor kanalen inschakelen__ aan.
+
+&gt; Met alleen deze configuratie zal RinBot op geen enkel kanaal naar commando's luisteren, dus nu moeten we het toestaan in het kanaal dat je wilt.
+
+- Klik op __Een kanaal toevoegen__ en selecteer het kanaal waarin RinBot naar commando's moet luisteren.
+- Klik op __Voeg een regel toe__, wat resulteert in een toegangsregel die elke opdracht in dit kanaal toestaat.
+- Klik onderaan op __Wijzigingen opslaan__ en je bent klaar!</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Het is waarschijnlijk aan het herverbinden, aangezien Discord elk uur rond __een herverbinding van shards forceert__. Wees geduldig en probeer het over een paar minuten opnieuw.
+
+Als het na 15 minuten nog steeds niet werkt ____ , **controleer vraag 6**.
+
+Als het __daarna nog steeds__ niet werkt, vraag dan om hulp in #help onder vermelding van de shard en/of cluster waar je server op staat.
+Je kunt je shard controleren op [de statuspagina]({0}/status).
+
+&gt; ⚠️ Houd er rekening mee dat **zaterdag tussen 8:00-12:00 UTC** is gereserveerd als onderhoudsvenster, dus er kan onaangekondigde downtime zijn gedurende die tijd.</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>De moeilijkheidsgraad is gebaseerd op de populariteit van de anime, je kunt kiezen uit 5 moeilijkheidsgraden:  
+1. Gemakkelijk
+2. Normaal
+3. Moeilijk
+4. Extreem
+5. Nachtmerrie
+
+&gt; Van Easy(1) tot Extreme(4) bevatten de pools ook anime van de vorige moeilijkheidsgraden. 
+&gt; De moeilijkheid Nightmare(5) is anders, deze bevat alleen de minst populaire anime die beschikbaar is in de bot.
+
+__Moeilijkheid veranderen__
+Om de moeilijkheid te veranderen naar `Easy` voor een enkele ronde gebruikt u `/sg difficulty:Easy` of `!sg d:1` of `!sg 1`.
+Het werkt hetzelfde voor andere moeilijkheidsgraden binnen andere commando's.
+
+Moeilijkheid zal toenemen als je meer punten krijgt, tot een maximum van Extreem(4).
+Om dit gedrag te veranderen kun je `/mydifficulty` gebruiken (als jouw server geen slash commando's heeft kun je het ook gebruiken in een DM met RinBot)
+ </value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord heeft onlangs het systeem __slash command permissions__ toegevoegd... nogal geruisloos.
+Dit gaf servers de mogelijkheid om slash-commando's individueel in of uit te schakelen voor elk kanaal of rol die ze willen.
+
+Het lijkt erop dat op veel servers de standaardinstellingen hiervoor slash commando's ontoegankelijk maakten voor gewone gebruikers.
+Op __mobiele apparaten__ en oudere versies wordt dit niet volledig ondersteund en kun je een bericht krijgen met de tekst: 
+**Deze interactie is mislukt** of **De applicatie heeft niet gereageerd**
+
+__Om deze rechten te wijzigen__
+Ga in Discord naar `Serverinstellingen - Integraties - RinBot` en zorg ervoor dat alles hier correct is ingesteld voor je kanalen en rollen. 
+Mobiele apparaten ondersteunen deze functies nog niet volledig, dus gebruik hiervoor je PC of probeer de web-client op je apparaat.
+
+&gt; Beheerders kunnen altijd slash commando's gebruiken, ongeacht welke rechten hier zijn ingesteld. Dus als je al beheerder bent, is je probleem iets anders.
+
+Als dit uw problemen niet oplost, zie __vraag 6__ voor meer mogelijke oorzaken.</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Waarom de naam 'RinBot' en wie is het meisje in de avatar?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Het meisje op de foto is Elin uit het spel TERA Online.  
+Ik had daar een personage met de naam Kururin, dat een Elin mysticus was en er ongeveer zo uitzag.  
+  
+Oorspronkelijk schreef ik een discord bot die wat standaard discord moderatie dingen deed, gewoon om dingen uit te proberen.
+Toen ik vroeg 'hoe moet ik het noemen', zei iemand "noem het gewoon RinBot". Ik vond het grappig, dus de naam is blijven hangen.  
+  
+De art is gemaakt door momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)) dus alle credits voor de avatar gaan naar hen!  
+Bekijk ook de [originele post van het kunstwerk](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Hoe kan ik RinBot automatisch rondes laten starten?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Op dit moment is er een functie genaamd "start een ronde wanneer kanaal inactief is".
+Deze functie kan worden geactiveerd in de kanaalconfiguratie na het inloggen op [de website] ({0}/mijn-servers).  
+  
+Voor gratis servers is de idle tijd ingesteld op minimaal een uur. Dit kan teruggebracht worden naar een minuut als je supporter wordt.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Ik heb toegezegd maar heb mijn extraatjes niet ontvangen, wat nu?</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Om de extraatjes te kunnen krijgen moet je je **Discord account gekoppeld hebben aan je Patreon account**.  
+Hoe je dit precies doet [kun je hier vinden](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Als je **een toezegging hebt gedaan voordat je je Discord-account** hebt gekoppeld, kun je proberen om nogmaals op [de knop 'Deelnemen' hier](https://www.patreon.com/rinbot?fan_landing=true) te drukken.  
+Dit zou niet om nog een betaling moeten vragen, maar het zal de webhook opnieuw activeren waardoor je de perks automatisch krijgt.  
+
+Het zal ook elk uur proberen perks te geven aan iedereen die ze mist, dus wacht gewoon even en je zult ze automatisch ontvangen.
+  
+Na het pledgen van **moet je opnieuw inloggen op** op de RinBot website om gebruik te kunnen maken van perks zoals het boosten van een server of de extra kanaalconfiguraties.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Wanneer wordt het wekelijkse klassement gereset?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Het wekelijkse leaderboard wordt gereset op de getoonde datum in het commando `/weektop` om middernacht (00:00 / 12:00 AM) in UTC-tijd.  
+
+Het gebruikt de ISO-8601 standaard voor de weken van het jaar met maandag als de eerste dag in de week.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Hoe werkt de puntenberekening?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Het berekenen van punten hangt volledig af van de hoeveelheid anime in de pool waaruit je ronde is ontstaan en het niveau van de winnaar.  
+  
+In het eenvoudigste geval geeft een pool van 3000 anime maximaal 60 punten, verminderd met `1 / numberOfCaptures` voor elke extra cap die wordt getoond.  
+  
+De grootte van de pool hangt af van je filters. Als je je eigen anime-lijst als filter gebruikt, met 90 items in de sectie Voltooid en 10 in de sectie Wachtend, dan is je poolgrootte 100.  
+Na elke ronde die je speelt met dezelfde filter wordt de pool echter met 1 verkleind, omdat er minstens een uur lang geen herhalingen zijn voor rondes die door jezelf of binnen dezelfde server zijn gestart.  
+  
+De formule die wordt gebruikt:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Standaard `maxPoints` is `60` en `animeMaxPoints` is `3000`.  
+  
+De variabele `animeMultiplier` hangt af van het jaar waarin de anime is uitgebracht.  
+- Voor het jaar 2010: `2`
+- Voor het jaar 2000 : `3`
+- Voor het jaar 1990 : `4`
+- Voor het jaar 1980 : `5`
+
+Het minimum aantal punten dat je kunt krijgen is `4`, wat `1` wordt als de laatste cap is getoond.  
+
+__Stemrondes__ 
+Bij stemrondes worden de punten verminderd met de tijd die je nodig hebt om te reageren en niet met het aantal captures dat is getoond.</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Hoe verander ik de opdrachtprefix?</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Wat is dat anime zwembad waar ik steeds over hoor?</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Wat is de NSFW-modus en hoe schakel ik deze in?</value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Geen van de opdrachten werkt, hoe kan ik dit oplossen?</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Er kunnen verschillende redenen zijn waarom je commando's niet werken.
+
+a. **Uw prefix is veranderd in iets anders en u bent het vergeten.** 
+U kunt eenvoudig `@RinBot prefix` gebruiken om uw huidige prefix te controleren en deze ook te wijzigen.
+
+Als u `@RinBot prefix` niet kunt gebruiken, kunt u inloggen op [de website]({0}).
+Daar kun je ook je prefix zien en wijzigen op de pagina **My Servers** rechtsboven.
+
+b. **Je hebt de rechten in je server zo veranderd dat RinBot geen berichten of embeds meer kan versturen** 
+Zorg ervoor dat RinBot alle benodigde rechten heeft.
+Op dit moment zijn dat: `Berichten lezen`, `Berichten verzenden`, `Koppelingen insluiten`, `Bestanden bijvoegen` en voor spraakkanalen `Verbinding maken` en `Spreken.`
+&gt; Je kunt haar opnieuw uitnodigen om te controleren welke rechten precies nodig zijn.
+
+c. **Je gebruikt __slash commando's__ en de machtigingen voor commando's zijn ingesteld om ze te weigeren** 
+Zie vraag 10.
+
+d. **Toegangsbeheer kan zo zijn ingesteld dat commando's niet zijn toegestaan** 
+Iemand met rechten voor serverbeheer moet de toegangscontrole wijzigen zodat opdrachten worden toegestaan als toegangscontrole is ingeschakeld.
+De configuratie kan worden gevonden op [de website]({0}/mijn-servers).
+
+e. **De shard waar je server op staat is eigenlijk down** 
+Dit gebeurt zelden en zou binnen een paar minuten automatisch hersteld moeten zijn.
+Je kunt de status van de shard waarop je server staat controleren op [de statuspagina]({0}/status).
+In het geval van groot onderhoud kun je ook [de statuspage.io site](https://rinbot.statuspage.io/) controleren op updates.
+ 
+f. **Je hebt tekstcommando's volledig uitgeschakeld in de configuratie** 
+Als je tekstcommando's wilt gebruiken, zorg er dan voor dat je het vakje "Legacy prefixed commands uitschakelen" niet hebt aangevinkt in de serverinstellingen op de website.
+Deze optie zorgt ervoor dat alleen slash-commando's werken.</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Hoe laat ik RinBot luisteren naar commando's op slechts één kanaal?</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Waarom is RinBot offline op mijn server?</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Wat is moeilijkheid en hoe verander ik het?</value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Slash-commando's werken niet of kunnen alleen door beheerders worden gebruikt</value>
+  </data>
 </root>
