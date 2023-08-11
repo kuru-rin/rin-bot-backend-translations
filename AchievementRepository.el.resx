@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,268 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AchievementCategory_Decade00s_Description" xml:space="preserve">
+    <value>Η μαντεψιά anime μεταξύ των ετών 2000 και 2010 θα μετρήσει για αυτό το επίτευγμα.</value>
+  </data>
+  <data name="AchievementCategory_Decade10s_Description" xml:space="preserve">
+    <value>Η μαντεψιά anime μεταξύ των ετών 2010 και 2020 θα μετρήσει για το επίτευγμα αυτό.</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore_Description" xml:space="preserve">
+    <value>Η μαντεψιά για anime πριν από το 1980 θα μετρήσει για αυτό το επίτευγμα.</value>
+  </data>
+  <data name="AchievementCategory_Decade80s_Description" xml:space="preserve">
+    <value>Τα anime που μαντεύουν μεταξύ των ετών 1980 και 1990 θα μετρήσουν για αυτό το επίτευγμα.</value>
+  </data>
+  <data name="AchievementCategory_Decade90s_Description" xml:space="preserve">
+    <value>Η μαντεψιά anime μεταξύ των ετών 1990 και 2000 θα μετρήσει για αυτό το επίτευγμα.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime_Description" xml:space="preserve">
+    <value>Το να μαντέψετε οποιοδήποτε anime που δεν έχετε μαντέψει πριν, θα μετρήσει για αυτό το επίτευγμα.</value>
+  </data>
+  <data name="AchievementCategory_Decade00s" xml:space="preserve">
+    <value>Δεκαετίες - 00's</value>
+  </data>
+  <data name="AchievementCategory_Decade10s" xml:space="preserve">
+    <value>Δεκαετίες - 10</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
+    <value>Δεκαετίες - δεκαετία του 70 και πριν</value>
+  </data>
+  <data name="AchievementCategory_Decade80s" xml:space="preserve">
+    <value>Δεκαετίες - 80's</value>
+  </data>
+  <data name="AchievementCategory_Decade90s" xml:space="preserve">
+    <value>Δεκαετίες - 90's</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime" xml:space="preserve">
+    <value>Διακριτά anime</value>
+  </data>
+  <data name="AchievementCategory_GenreAction" xml:space="preserve">
+    <value>Είδος μουσικής - Δράση</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi" xml:space="preserve">
+    <value>Είδος μουσικής - Ecchi</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror" xml:space="preserve">
+    <value>Είδος μουσικής - Τρόμος</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Description" xml:space="preserve">
+    <value>Παίρνετε ένα μπράβο από τη Χαρούχι, αλλά τη θυμάστε καν;</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
+    <value>Thumbs-up</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
+    <value>Να κάτι άλλο που θα μπορούσατε να κάνετε με το χρόνο σας.</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Title" xml:space="preserve">
+    <value>Πουτίγκα στοίβαξης</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Description" xml:space="preserve">
+    <value>Διψάτε για περισσότερα; Φοβάμαι ότι αυτό ήταν το τελευταίο επίπεδο... προς το παρόν.</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Title" xml:space="preserve">
+    <value>Διψάω για περισσότερα</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Description" xml:space="preserve">
+    <value>Δεν είναι όλα διασκέδαση και παιχνίδια... ή μήπως είναι;</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Title" xml:space="preserve">
+    <value>Σάλια</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Description" xml:space="preserve">
+    <value>Μην ξεχάσετε να πιείτε λίγο Dk Pepper.</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Title" xml:space="preserve">
+    <value>Αγαπάει Dokupe</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Description" xml:space="preserve">
+    <value>Προσπαθήσατε να ξεπεράσετε τα όρια, αλλά αποτύχατε.</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Title" xml:space="preserve">
+    <value>Ταξιδιώτης διαστάσεων</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Description" xml:space="preserve">
+    <value>Ο εθισμός δεν μπορεί να μετρηθεί, προφανώς.</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Title" xml:space="preserve">
+    <value>Εθισμένος</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Description" xml:space="preserve">
+    <value>Πατάτε τον ανταγωνισμό!</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Title" xml:space="preserve">
+    <value>Δεινόσαυρος</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Description" xml:space="preserve">
+    <value>Να θυμάστε: οι αρραβώνες είναι ιεροί!</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Title" xml:space="preserve">
+    <value>Αγαπώντας waifu</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Description" xml:space="preserve">
+    <value>Εντυπωσιακό... πολύ εντυπωσιακό.</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Title" xml:space="preserve">
+    <value>Έκανε εντύπωση</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Description" xml:space="preserve">
+    <value>Υπάρχει ένα ακόμη επίπεδο που πρέπει να αποκτήσετε!</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Title" xml:space="preserve">
+    <value>Μην κοιμηθείτε ακόμα</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Description" xml:space="preserve">
+    <value>Εξαφανίσατε όλους τους δράκους που στάθηκαν στο δρόμο σας!</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Title" xml:space="preserve">
+    <value>Σκλάβος του δράκου!!!</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Description" xml:space="preserve">
+    <value>Συγχαρητήρια, σπάσατε τον μαγικό αριθμό. Πάρτε μια ανάσα τώρα, θα γίνει πιο δύσκολο.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Title" xml:space="preserve">
+    <value>Το πρώτο βήμα</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Description" xml:space="preserve">
+    <value>Έχετε συνηθίσει να βλέπετε τα μάτια των χαρακτήρων μεγαλύτερα από τη μύτη τους. Αν έχουν μύτη.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Title" xml:space="preserve">
+    <value>Περιστασιακός μάντης</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Description" xml:space="preserve">
+    <value>ΔΕΝ ψάξατε κανένα από αυτά, σωστά;</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Title" xml:space="preserve">
+    <value>Αναγνώστης μυαλού</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Description" xml:space="preserve">
+    <value>Αυτό είναι... πολύ. Μπορείς να είσαι περήφανος για τον εαυτό σου, αυτό είναι σίγουρο.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Title" xml:space="preserve">
+    <value>Δικαιώματα καυχησιολογίας</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Description" xml:space="preserve">
+    <value>Τώρα κάντε μια παύση, πάρτε μια ανάσα και τεντωθείτε λίγο. Θυμηθείτε να μην κάθεστε πολύ κοντά στην οθόνη.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Title" xml:space="preserve">
+    <value>Πολύς ελεύθερος χρόνος</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Description" xml:space="preserve">
+    <value>Το επίπεδο δύναμής σας είναι πολύ πάνω από το επίπεδο των άλλων. Ο μόνος δρόμος είναι προς τα πάνω.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Title" xml:space="preserve">
+    <value>Ούτε καν η τελική μου μορφή</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Description" xml:space="preserve">
+    <value>Θα πρέπει ήδη να ξέρετε τι σημαίνει αυτή η εικόνα.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Title" xml:space="preserve">
+    <value>Πρέπει να τα μαντέψεις όλα!</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Description" xml:space="preserve">
+    <value>Δεν μπορείς να σταματήσεις να αγωνίζεσαι, έτσι δεν είναι;</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Title" xml:space="preserve">
+    <value>Μανιακός της μάχης</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Description" xml:space="preserve">
+    <value>Δεν είσαι ακόμα δάσκαλος.</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Title" xml:space="preserve">
+    <value>Ισχυρότερος μαθητής</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Description" xml:space="preserve">
+    <value>Θα χρησιμοποιούσατε ακόμη και το ίδιο σας το αίμα για να νικήσετε τους εχθρούς σας.</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Title" xml:space="preserve">
+    <value>Πολεμιστής του αίματος</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Description" xml:space="preserve">
+    <value>Η επιλογή του χρώματος του παντελονιού είναι εύκολη υπόθεση για εσάς.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Title" xml:space="preserve">
+    <value>Για την πλοκή</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Description" xml:space="preserve">
+    <value>Σήμερα μάθατε τον ορισμό του shimapan.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Title" xml:space="preserve">
+    <value>Shimapan</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Description" xml:space="preserve">
+    <value>Μπορείτε να ευχηθείτε ό,τι θέλετε!</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Title" xml:space="preserve">
+    <value>Θέλεις να κάνεις συμβόλαιο;</value>
+  </data>
+  <data name="Achievement_GenreHorror_1_Description" xml:space="preserve">
+    <value>Θα θέλατε να πάρετε μερικά μαζί σας στο σπίτι;</value>
+  </data>
+  <data name="Achievement_GenreHorror_1_Title" xml:space="preserve">
+    <value>Hauu~ Omochi kaeri~</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs" xml:space="preserve">
+    <value>Ξεχωριστά τραγούδια anime</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Title" xml:space="preserve">
+    <value>Rockin' it</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Description" xml:space="preserve">
+    <value>Δεν υπάρχει χρόνος για διαλείμματα. Ο ρυθμός δεν θα σταματήσει σύντομα.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Title" xml:space="preserve">
+    <value>Melody matcher</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Description" xml:space="preserve">
+    <value>Κλείστε τα μάτια σας και συνεχίστε να ακούτε. Απλά μην αποκοιμηθείτε.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Title" xml:space="preserve">
+    <value>Νιώθω σαν να χορεύω</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Description" xml:space="preserve">
+    <value>Γίνεστε όλο και καλύτεροι σε αυτό, οπότε κουνήστε το σώμα σας και κουνηθείτε!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Title" xml:space="preserve">
+    <value>Η ζωή σου δίνει λεμόνι</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Title" xml:space="preserve">
+    <value>Oto no sekai</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Description" xml:space="preserve">
+    <value>Το επίπεδο της ακρόασής σας δεν ανήκει πια σε αυτόν τον κόσμο, συνεχίστε να προσπαθείτε για περισσότερα!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Description" xml:space="preserve">
+    <value>Ara Ara, το ταλέντο σου έχει βελτιωθεί. Κάνε ένα διάλειμμα, θα γίνει όλο και πιο δύσκολο.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Title" xml:space="preserve">
+    <value>Bop στο ρυθμό</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Description" xml:space="preserve">
+    <value>Τα τραγούδια πρέπει να τα απολαμβάνουμε μαζί με άλλους, συνδέουν το μυαλό και την ψυχή μας.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Title" xml:space="preserve">
+    <value>Κάθε σημείωση απομνημονεύεται</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Description" xml:space="preserve">
+    <value>Το καταλαβαίνετε ήδη από την πρώτη νότα, σωστά;</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Title" xml:space="preserve">
+    <value>Άπειρη λίστα αναπαραγωγής</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Description" xml:space="preserve">
+    <value>Εσείς και η λίστα αναπαραγωγής σας δεν μπορείτε πλέον να χωριστείτε. Είναι απαραίτητο να τα ελέγξετε σε αυτό το σημείο;</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs_Description" xml:space="preserve">
+    <value>Το να μαντέψετε οποιοδήποτε τραγούδι anime που δεν έχετε μαντέψει πριν, θα μετρήσει για αυτό το επίτευγμα. Μόνο τραγούδια από γύρους !sga θα μετρήσουν αυτή τη στιγμή.</value>
+  </data>
+  <data name="AchievementCategory_GenreAction_Description" xml:space="preserve">
+    <value>Το να μαντεύετε anime από το είδος της δράσης θα μετρήσει για αυτό το επίτευγμα.</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi_Description" xml:space="preserve">
+    <value>Το να μαντεύετε anime από το είδος ecchi θα μετρήσει για αυτό το επίτευγμα.</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror_Description" xml:space="preserve">
+    <value>Το να μαντεύετε anime από το είδος του τρόμου θα μετρήσει για αυτό το επίτευγμα.</value>
+  </data>
 </root>
