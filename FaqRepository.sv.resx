@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,276 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Om du använder snedstreckskommandon `/`, gäller detta inte dig. Prefixet för snedstreckskommandon kan inte ändras.
+
+Kommandoprefixet är tecknet (eller fler, max 1 till 5 tecken) framför varje kommando.
+Till exempel i `!sg` skulle prefixet vara `!`. 
+Om du ställer in prefixet till `!sg`, skulle kommandot bli `!sgsg`, så var försiktig med det.
+Du kan även använda emojis som prefix... men varför skulle du göra det?
+
+Du kan helt enkelt använda kommandot `!prefix` för att ändra prefixet från discord.
+Skriv `@RinBot prefix` om du helt har glömt ditt prefix.
+
+Du kan också ändra prefixet via [webbplatsen]({0}/my-servers). Vänligen följ dessa steg:
+- Logga in med ditt Discord-konto längst upp till höger på sidan
+- Klicka på ditt namn längst upp till höger och välj "Mina servrar
+- Hitta din server i listan och klicka på "Konfigurera
+- Uppdatera prefixet till vad du vill
+- Tryck på knappen "Spara ändringar" för att avsluta</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Så varje runda som du spelar kommer att välja en slumpmässig anime från en "pool" av anime som beror på vilka filter du använder.
+Ju mer restriktiva filter du använder, desto mindre blir din anime-pool.
+Poängen är också löst baserade på antalet anime-pooler, med en anime-pool på 3000 som ger maximala poäng (normalt 60).
+
+__Ett exempel__
+Låt oss säga att du har en anime-lista med 100 anime i den (de måste ha minst 1 avsnitt tittat på och inte tappas).
+Ungefär 20 av dessa 100 anime anses vara populära, så de skulle höra hemma i den lätta svårighetsgraden.
+Om du sedan använder `!sg d:1 mal:användarnamn` skulle det ta en slumpmässig anime från endast 20 anime.
+
+Nu finns det också det faktum att RinBot inte upprepar anime i minst en timme.
+Med hänsyn till detta skulle varje runda du spelar inom timmen minska den 20 anime med 1.
+Så efter 20 rundor kommer du att sluta med en pool på 0. Då kan RinBot inte fortsätta och kommer att avbryta rundan och säga **Rundan avbröts på grund av saknade fångster**.
+
+Anime pool count används också för tidsledartavlan. Eftersom det skulle vara för lätt för folk att använda `!sg d:1 g:sports` och spamma Haikyuu, har jag valt att bara tillåta rundor med ett minimum av 1000 i anime-poolen i den topplistan.</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Som standard kommer RinBot att filtrera ett antal anime.
+Detta är för att undvika att behöva göra en kanal åldersbegränsad (tidigare NSFW) och därmed respektera Discords användarvillkor.
+
+AniDB anime-taggar som filtreras:
+- 18 begränsad
+- Gränsöverskridande hentai
+- Nakenhet (vikter &gt;200)
+- Sex (vikter &gt;100)
+
+Allt som är klassat PG-13 eller lägre på MAL är alltid inkluderat.
+
+Du kan helt enkelt ställa in din kanal för att vara åldersbegränsad och RinBot kommer automatiskt att växla till NSFW-läge.
+
+Om du stöter på en NSFW-bild eller video när du spelar i SFW-läge, vänligen kontakta mig med animens namn så att jag kan lägga till den i filtret manuellt. </value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Kommandot `/lang` kan användas för att ändra det språk som RinBot talar.
+
+Du kan också ändra språket för anime-titlar som kan gissas och som visas i tips- och animeaffischen i slutet av omgångarna.
+För detta vänligen logga in på webbplatsen.
+
+För att ställa in engelska titlar kan du lägga till en rad högst upp i huvudtitelinställningarna med innehåll: AniDB, Officiell titel och Engelska.
+
+&gt; Observera att detta är en avancerad funktion som kan störa RinBot på din server om den inte konfigureras korrekt.</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Det kan finnas ett antal olika orsaker till att dina kommandon inte fungerar.
+
+a. **Ditt prefix har ändrats till något annat och du har glömt bort det.** 
+Du kan helt enkelt använda `@RinBot prefix` för att kontrollera ditt nuvarande prefix och ändra det också.
+
+Om du inte kan använda `@RinBot prefix` gå och logga in på [webbplatsen]({0}).
+Där kan du också se och ändra ditt prefix i **Mina servrar** sidan i övre högra hörnet.
+
+b. **Du har ändrat behörigheterna på din server på ett sådant sätt att RinBot inte längre kan skicka meddelanden eller inbäddningar** 
+Se till att RinBot har alla nödvändiga behörigheter.
+För närvarande är dessa: `Läs meddelanden`, `Skicka meddelanden`, `Bädda in länkar`, `Bifoga filer` och för röstkanaler `Anslut` och `Tala`
+&gt; Du kan bjuda in henne igen för att kontrollera exakt vilka behörigheter som behövs.
+
+c. **Du använder __kommandon med snedstreck__ och kommandorättigheter har ställts in för att neka dem** 
+Se fråga 10.
+
+d. **Åtkomstkontrollerna kan vara inställda på ett sätt som inte tillåter några kommandon** 
+En person med serverhanteringsbehörighet skulle behöva ändra åtkomstkontrollerna så att kommandon tillåts om åtkomstkontroll är aktiverad.
+Konfigurationen finns på [webbplatsen]({0}/my-servers).
+
+e. **Sharden som din server finns på är faktiskt nere** 
+Detta händer sällan och bör åtgärdas automatiskt inom ett par minuter.
+Du kan kontrollera statusen för den shard som din server finns på [statussidan]({0}/status).
+Vid större underhåll kan du också kontrollera [statuspage.io-webbplatsen](https://rinbot.statuspage.io/) för uppdateringar.
+ 
+f. **Du har inaktiverat textkommandon helt i konfigurationen** 
+Om du vill använda textkommandon, se till att du inte har markerat rutan "Disable legacy prefixed commands" i serverinställningarna på webbplatsen.
+Detta alternativ gör att endast slash-kommandon fungerar.</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Det finns för närvarande två sätt att åstadkomma detta.
+
+a. **Använd Discord behörigheter**
+Du behöver i princip att ge RinBot bara __Visa kanal__ tillstånd på kanalen du vill att hon ska lyssna på kommandon.
+Detta kan göras genom att bara ha dina behörigheter korrekt inställda i Discord.
+
+__Exempel__: 
+Disallow `@everyone` __Visa kanal__ till alla kanaler. Gör sedan en "Members" roll som ger människor __Visa kanal__ till alla kanaler, samtidigt som RinBot bara __Visa kanal__ till den kanal hon ska lyssna på kommandon i.
+
+Alternativt, skapa en "Bots" roll som förbjuder __Visa kanal__ tillgång specifikt till alla kanaler. Ge sedan RInBot specifikt tillgång till en kanal som du väljer.
+
+b. **Använd åtkomstkontroll för kanaler**
+Konfigurationen för detta är tillgänglig efter inloggning på [webbplatsen]({0}).
+
+__Steg att följa__:
+- När du har loggat in går du längst upp till höger och klickar på ditt namn och går sedan till __Mina servrar__.
+- Klicka på den server du vill konfigurera (du måste vara __administratör__ eller ha rollen __serverhantering__ ).
+- Leta reda på fliken __Kanaler__ och markera rutan __Aktivera åtkomstkontroll för kanaler__.
+
+&gt; Med bara denna konfiguration kommer RinBot inte att lyssna på kommandon på någon kanal alls, så nu måste vi tillåta det i den kanal du vill ha
+
+- Klicka på __Lägg till en kanal__ och välj den kanal som du vill att RinBot ska lyssna på kommandon i.
+- Klicka på __Lägg till en regel__, vilket resulterar i en åtkomstregel som tillåter alla kommandon i den här kanalen.
+- Klicka på __Spara ändringar__ längst ner och du är klar!</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Det är förmodligen en återanslutning, eftersom Discord tvingar fram en återanslutning av shards runt __varje timme__. Ha tålamod och försök igen om några minuter.
+
+Om det fortfarande inte fungerar __efter 15 minuter__, **kontrollera fråga 6**.
+
+Om __fortfarande inte fungerar__ ber du om hjälp i #help medan du nämner sharden och/eller klustret som din server finns på.
+Du kan kontrollera din shard på [statussidan]({0}/status).
+
+&gt; ⚠️ Observera att **lördagar mellan 8:00-12:00 UTC** är reserverat som ett underhållsfönster, så det kan förekomma oannonserad nedtid under den tiden.</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>Svårighetsgraden baseras på animens popularitet, du kan välja mellan 5 svårighetsgrader:  
+1. Lätt
+2. Normal
+3. Svår
+4. Extrem
+5. Mardröm
+
+&gt; Från Easy(1) till Extreme(4) kommer poolerna också att innehålla anime från de tidigare svårighetsgraderna. 
+&gt; Svårigheten Nightmare(5) är annorlunda, den innehåller bara den minst populära anime som finns tillgänglig i botten.
+
+__Ändra svårighetsgrad__
+För att ändra svårighetsgraden till `Easy` för en enda omgång, använd `/sg difficulty:Easy` eller `!sg d:1` eller `!sg 1`.
+Det fungerar på samma sätt för andra svårigheter inom andra kommandon.
+
+Svårighetsgraden ökar i takt med att du får fler poäng, till maximalt Extreme(4).
+För att ändra detta beteende kan du använda `/mydifficulty` (om din server inte har slash-kommandon kan du också använda det i en DM med RinBot)
+ </value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Kommandon med snedstreck fungerar inte eller kan endast användas av administratörer</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord lade nyligen till __slash command permissions__ system... ganska tyst.
+Detta gav servrarna möjlighet att aktivera/inaktivera slash-kommandon individuellt för vilken kanal eller roll de vill.
+
+Det verkar som om standardinställningarna för detta på många servrar gjorde snedstreckskommandon oåtkomliga för vanliga användare.
+På __mobila enheter__ och äldre versioner stöds detta inte helt och du kan få ett meddelande som säger: 
+**Denna interaktion misslyckades** eller **Programmet svarade inte**
+
+__Så här ändrar du dessa behörigheter__
+Gå till `Server Settings - Integrations - RinBot` i Discord och se till att allt är korrekt inställt här för dina kanaler och roller. 
+Mobila enheter stöder ännu inte dessa funktioner fullt ut, så använd din dator för detta eller prova webbklienten på din enhet.
+
+&gt; Administratörer kan alltid använda snedstreckskommandon, oavsett vilka behörigheter som har ställts in här. Så om du redan är administratör är ditt problem något annat.
+
+Om detta inte löser dina problem, se __fråga 6__ för fler möjliga orsaker.</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>För att kunna få förmånerna måste du ha ditt **Discord-konto länkat till ditt Patreon-konto**.  
+Hur du gör detta exakt [kan hittas här] (https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Om du **lovade innan du länkade ditt Discord-konto** kan du försöka trycka på [knappen "Gå med" här](https://www.patreon.com/rinbot?fan_landing=true) en gång till.  
+Detta bör inte be om en annan betalning, men det kommer att utlösa webhook igen vilket kommer att resultera i att ge dig förmånerna automatiskt.  
+
+Den kommer också att försöka ge förmåner till alla som saknar dem ungefär varje timme, så vänta bara lite så kommer du att få dem automatiskt.
+  
+Efter att ha lovat **måste du logga in igen** på RinBot-webbplatsen för att kunna använda förmåner som att öka en server eller de extra kanalkonfigurationerna.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>När nollställs den veckovisa topplistan?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Weekly leaderboard återställs vid det datum som visas i kommandot `/weektop` vid midnatt (00:00 / 12:00 AM) i UTC-tid.  
+
+Den använder ISO-8601-standarden för årets veckor med måndag som den första dagen i veckan.</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Hur fungerar poängberäkningen?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Poängberäkningen beror helt på mängden anime i poolen från vilken din runda skapas och vinnarens nivå.  
+  
+I det enklaste fallet ger en pool på 3000 anime maximalt 60 poäng, reducerat med `1 / numberOfCaptures` för varje extra cap som visas.  
+  
+Poolens storlek beror på dina filter. Om du använder din egen anime-lista som filter, som har 90 poster i avsnittet Completed och 10 i avsnittet On-hold, blir poolstorleken 100.  
+Men efter varje runda du spelar med samma filter kommer poolen att minska med 1, eftersom det inte finns några upprepningar på minst en timme för rundor som startas av dig själv eller inom samma server.  
+  
+Formeln som används:  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Standard `maxPoints` är `60` och `animeMaxPoints` är `3000`.  
+  
+Variabeln `animeMultiplier` beror på vilket år animen släpptes.  
+- Före år 2010 : `2`
+- Före år 2000 : `3`
+- Före år 1990 : `4`
+- Före år 1980 : `5`
+
+Det minsta antal poäng du kan få är `4`, som kommer att bli `1` om det sista taket har visats.  
+
+__Röstningsrundor__ 
+För röstrundor minskas poängen med den tid det tar för dig att svara snarare än antalet captures som har visats.</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Du kan starta en runda genom att använda `/sg`.
+För fler kommandon, se [kommandolistan]({0}/kommandon).
+
+&gt; ⚠️ Det är för närvarande möjligt att fortfarande använda de äldre kommandona, t.ex. `!sg`, men detta rekommenderas inte **** .  
+&gt; Dessa äldre prefixkommandon är föråldrade och kommer att fasas ut med tiden. 
+&gt; Det kan också hända att nya funktioner endast blir tillgängliga för snedstreckskommandon.</value>
+  </data>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Hur använder jag RinBot?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Hur ändrar jag språket?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Hur ändrar jag kommandoprefixet?</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Vad är det här med anime-pooler som jag hör talas om hela tiden?</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Vad är NSFW-läge och hur aktiverar jag det?</value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Inga av kommandona fungerar, hur kan jag åtgärda detta?</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Hur får jag RinBot att lyssna på kommandon på bara en enda kanal?</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Varför är RinBot offline på min server?</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Vad är svårigheter och hur ändrar jag dem?</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Varför namnet "RinBot" och vem är flickan i avataren?</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Flickan på bilden är en Elin från spelet TERA Online.  
+Jag hade en karaktär där som hette Kururin, som var en Elin-mystiker och såg ut ungefär som den här.  
+  
+Ursprungligen skrev jag en discord bot som gjorde några standard discord moderation grejer, bara för att prova saker.
+När jag frågade "vad ska jag kalla den", sa någon "kalla den bara RinBot". Jag tyckte det var roligt så namnet fastnade.  
+  
+Konsten gjordes av momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)) så alla krediter för avataren går till dem!  
+Kolla också in [originalinlägget av konstverket](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Hur kan jag få RinBot att starta rundorna automatiskt?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>För närvarande finns det en funktion som heter "starta en runda när kanalen är inaktiv".
+Denna funktion kan aktiveras i kanalkonfigurationen efter inloggning på [webbplatsen]({0}/my-servers).  
+  
+För gratis servrar är tomgångstiden satt till ett minimum av en timme. Detta kan minskas till en minut när du blir en supporter.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Jag har lovat att betala men inte fått mina förmåner, vad gör jag nu?</value>
+  </data>
 </root>
