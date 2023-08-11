@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,268 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AchievementCategory_Decade00s" xml:space="preserve">
+    <value>Årtier - 00'erne</value>
+  </data>
+  <data name="AchievementCategory_Decade10s" xml:space="preserve">
+    <value>Årtier - 10'ere</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
+    <value>Årtier - 70'erne og før</value>
+  </data>
+  <data name="AchievementCategory_Decade80s" xml:space="preserve">
+    <value>Årtier - 80'erne</value>
+  </data>
+  <data name="AchievementCategory_Decade90s" xml:space="preserve">
+    <value>Årtier - 90'erne</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime" xml:space="preserve">
+    <value>Særpræget anime</value>
+  </data>
+  <data name="AchievementCategory_GenreAction" xml:space="preserve">
+    <value>Genre - Action</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi" xml:space="preserve">
+    <value>Genre - Ecchi</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror" xml:space="preserve">
+    <value>Genre - Gyser</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Title" xml:space="preserve">
+    <value>En masse fritid</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Description" xml:space="preserve">
+    <value>Dit kraftniveau er langt over andres. Den eneste vej er op.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Title" xml:space="preserve">
+    <value>Ikke engang min endelige form</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Description" xml:space="preserve">
+    <value>Du burde allerede vide, hvad det billede betyder.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Title" xml:space="preserve">
+    <value>Du skal gætte dem alle!</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Description" xml:space="preserve">
+    <value>Du kan ikke holde op med at slås, vel?</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Title" xml:space="preserve">
+    <value>Kampgalning</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Description" xml:space="preserve">
+    <value>Du er ikke en mester endnu.</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Title" xml:space="preserve">
+    <value>Den stærkeste discipel</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Description" xml:space="preserve">
+    <value>Du ville endda bruge dit eget blod til at besejre dine fjender.</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Title" xml:space="preserve">
+    <value>Blodets kriger</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Title" xml:space="preserve">
+    <value>I det for plottet</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs" xml:space="preserve">
+    <value>Distinkte anime-sange</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Description" xml:space="preserve">
+    <value>Der er ikke tid til pauser. Rytmen stopper ikke lige med det samme.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Title" xml:space="preserve">
+    <value>Melodi matcher</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Description" xml:space="preserve">
+    <value>Luk øjnene, og lyt videre. Du må bare ikke falde i søvn.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Title" xml:space="preserve">
+    <value>Lyst til at danse</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Description" xml:space="preserve">
+    <value>Du bliver bedre til det her, så bevæg din krop og ryst den!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Title" xml:space="preserve">
+    <value>Livet giver dig citron</value>
+  </data>
+  <data name="AchievementCategory_Decade00s_Description" xml:space="preserve">
+    <value>At gætte anime mellem år 2000 og 2010 vil tælle med i denne præstation.</value>
+  </data>
+  <data name="AchievementCategory_Decade10s_Description" xml:space="preserve">
+    <value>At gætte anime mellem år 2010 og 2020 vil tælle med i denne præstation.</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore_Description" xml:space="preserve">
+    <value>At gætte anime fra før 1980 vil tælle med i denne præstation.</value>
+  </data>
+  <data name="AchievementCategory_Decade80s_Description" xml:space="preserve">
+    <value>At gætte anime mellem 1980 og 1990 vil tælle med i denne præstation.</value>
+  </data>
+  <data name="AchievementCategory_Decade90s_Description" xml:space="preserve">
+    <value>At gætte anime mellem år 1990 og 2000 vil tælle med i denne præstation.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime_Description" xml:space="preserve">
+    <value>At gætte en anime, som du ikke har gættet før, tæller med i denne præstation.</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Description" xml:space="preserve">
+    <value>Du får en tommelfinger op fra Haruhi, men kan du overhovedet huske hende?</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
+    <value>Tommelfinger op</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
+    <value>Her er noget andet, du kan bruge din tid på.</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Title" xml:space="preserve">
+    <value>Opstabling af budding</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Description" xml:space="preserve">
+    <value>Tørster du efter mere? Jeg er bange for, at dette var det sidste niveau ... for nu.</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Title" xml:space="preserve">
+    <value>Tørstig efter mere</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Description" xml:space="preserve">
+    <value>Det er ikke kun sjov og ballade ... eller er det?</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Title" xml:space="preserve">
+    <value>Savler</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Description" xml:space="preserve">
+    <value>Glem ikke at drikke noget Dk Pepper.</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Title" xml:space="preserve">
+    <value>Elsker Dokupe</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Description" xml:space="preserve">
+    <value>Du forsøgte at krydse grænser, men det mislykkedes.</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Title" xml:space="preserve">
+    <value>Dimension tripper</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Description" xml:space="preserve">
+    <value>Afhængighed kan naturligvis ikke måles.</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Title" xml:space="preserve">
+    <value>Afhængig</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Description" xml:space="preserve">
+    <value>Du tramper på konkurrenterne!</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Title" xml:space="preserve">
+    <value>Dinosaur</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Description" xml:space="preserve">
+    <value>Husk: Forlovelser er hellige!</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Title" xml:space="preserve">
+    <value>Kærlig waifu</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Description" xml:space="preserve">
+    <value>Imponerende... meget imponerende.</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Title" xml:space="preserve">
+    <value>Gjorde indtryk</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Description" xml:space="preserve">
+    <value>Der er et niveau mere at opnå!</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Title" xml:space="preserve">
+    <value>Du må ikke falde i søvn endnu</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Description" xml:space="preserve">
+    <value>Du udslettede alle de drager, der stod i vejen for dig!</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Title" xml:space="preserve">
+    <value>Drageslave!!!</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Description" xml:space="preserve">
+    <value>Tillykke, du har brudt det magiske tal. Tag en dyb indånding nu, det bliver kun sværere.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Title" xml:space="preserve">
+    <value>Det første skridt</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Description" xml:space="preserve">
+    <value>Du er vant til at se figurernes øjne større end deres næse. Hvis de overhovedet har en næse.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Title" xml:space="preserve">
+    <value>Tilfældig gætter</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Description" xml:space="preserve">
+    <value>Du har IKKE slået nogen af dem op, vel?</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Title" xml:space="preserve">
+    <value>Tankelæser</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Description" xml:space="preserve">
+    <value>Det er... meget. Du kan være stolt af dig selv, det er helt sikkert.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Title" xml:space="preserve">
+    <value>Ret til at prale</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Description" xml:space="preserve">
+    <value>Hold nu en pause, træk vejret og stræk dig lidt. Husk ikke at sidde for tæt på skærmen.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Description" xml:space="preserve">
+    <value>At finde ud af farven på buksedragten er en no-brainer for dig.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Description" xml:space="preserve">
+    <value>I dag har du lært definitionen af shimapan.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Title" xml:space="preserve">
+    <value>Shimapan</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Description" xml:space="preserve">
+    <value>Du kan ønske dig, hvad du vil!</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Title" xml:space="preserve">
+    <value>Vil du lave en kontrakt?</value>
+  </data>
+  <data name="Achievement_GenreHorror_1_Description" xml:space="preserve">
+    <value>Har du lyst til at tage lidt med hjem?</value>
+  </data>
+  <data name="Achievement_GenreHorror_1_Title" xml:space="preserve">
+    <value>Hauu~ Omochi kaeri~</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Title" xml:space="preserve">
+    <value>Det rocker</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Title" xml:space="preserve">
+    <value>Oto no sekai</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Description" xml:space="preserve">
+    <value>Dit niveau af lytning hører ikke til i denne verden længere, fortsæt med at stræbe efter mere!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Description" xml:space="preserve">
+    <value>Ara Ara, dit talent er blevet bedre. Tag en pause, det bliver kun sværere.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Title" xml:space="preserve">
+    <value>Bop til rytmen</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Description" xml:space="preserve">
+    <value>Sange er til for at blive nydt sammen med andre, det forbinder vores sind og sjæl.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Title" xml:space="preserve">
+    <value>Hver tone lært udenad</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Description" xml:space="preserve">
+    <value>Du kan allerede høre det fra den første tone, ikke?</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Title" xml:space="preserve">
+    <value>Uendelig playliste</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Description" xml:space="preserve">
+    <value>Du og din playliste kan ikke længere skilles ad. Behøver du overhovedet at tjekke dem på dette tidspunkt?</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs_Description" xml:space="preserve">
+    <value>At gætte en anime-sang, som du ikke har gættet før, vil tælle med i denne præstation. I øjeblikket tæller kun sange fra !sga-runder.</value>
+  </data>
+  <data name="AchievementCategory_GenreAction_Description" xml:space="preserve">
+    <value>At gætte anime fra actiongenren vil tælle med i denne præstation.</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi_Description" xml:space="preserve">
+    <value>At gætte anime fra ecchi-genren vil tælle med i denne præstation.</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror_Description" xml:space="preserve">
+    <value>At gætte anime fra gysergenren vil tælle med i denne præstation.</value>
+  </data>
 </root>
