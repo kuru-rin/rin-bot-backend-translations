@@ -146,4 +146,188 @@ Vous pouvez simplement configurer votre canal pour qu'il est une restriction d'�
 
 Si vous rencontrez une image ou une vidéo NSFW lors d'une partie en mode SFW, veuillez me conctacter avec le nom de l'anime afin que je puisse l'ajouter manuellement au filtre. </value>
   </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>C'est quoi ce truc de piscine animée dont j'entends parler ?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Le classement hebdomadaire est réinitialisé à la date indiquée dans la commande `/weektop` à minuit (00:00 / 12:00 AM) en heure UTC.  
+
+Il utilise la norme ISO-8601 pour les semaines de l'année, le lundi étant le premier jour de la semaine.</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Ainsi, chaque tour que vous jouez sélectionne un anime aléatoirement à partir d'un "pool" d'anime qui dépend des filtres que vous utilisez.
+Plus vous utilisez de filtres restrictifs, plus votre pool d'anime est réduit.
+Les points sont également basés sur le nombre d'animes dans la réserve, une réserve de 3000 animes donnant le maximum de points (normalement 60).
+
+__Un exemple__
+Supposons que vous ayez une liste d'anime avec 100 anime dans celle-ci (ils doivent avoir au moins 1 épisode regardé et ne pas être abandonnés).
+Environ 20 de ces 100 animes sont considérés comme populaires, et appartiennent donc à la difficulté facile.
+Si vous utilisez `!sg d:1 mal:username`, cela prendra un anime au hasard parmi les 20 anime.
+
+Maintenant, il y a aussi le fait que RinBot ne répète pas les anime pendant au moins une heure.
+En prenant cela en compte, chaque tour que vous jouez dans l'heure réduirait ces 20 anime de 1.
+Ainsi, après 20 tours, vous vous retrouverez avec un pool de 0. RinBot ne peut alors plus continuer et annulera le tour en disant **Le tour a été annulé en raison de captures manquantes**.
+
+Le décompte du pool d'anime est également utilisé pour le classement des temps. Comme il serait trop facile pour les gens d'utiliser `!sg d:1 g:sports` et de spammer Haikyuu, j'ai choisi de n'autoriser que les rounds avec un minimum de 1000 dans le pool d'anime dans ce classement.</value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Il peut y avoir plusieurs raisons pour lesquelles vos commandes ne fonctionnent pas.
+
+a. **Votre préfixe a été remplacé par quelque chose d'autre et vous l'avez oublié.** 
+Vous pouvez simplement utiliser `@RinBot prefix` pour vérifier votre préfixe actuel et le changer également.
+
+Si vous ne pouvez pas utiliser `@RinBot préfixe`, allez vous connecter sur [le site web] ({0}).
+Là, vous pouvez également voir et changer votre préfixe dans la page **My Servers** en haut à droite.
+
+b. **Vous avez modifié les permissions de votre serveur de telle sorte que RinBot ne peut plus envoyer de messages ou d'embeds** 
+Assurez-vous que RinBot dispose de toutes les autorisations nécessaires.
+En ce moment, ces permissions sont les suivantes : `Lire les messages`, `Envoyer des messages`, `Intégrer des liens`, `Joindre des fichiers` et pour les canaux vocaux `Connecter` et `Parler`
+&gt; Vous pouvez la réinviter pour vérifier quelles autorisations sont exactement nécessaires.
+
+c. **Vous utilisez des commandes __slash__ et les permissions de commande ont été configurées pour les refuser** 
+Voir la question 10.
+
+d. **Les contrôles d'accès peuvent être définis de manière à n'autoriser aucune commande** 
+Une personne disposant de droits de gestion du serveur devrait modifier les contrôles d'accès de manière à autoriser les commandes si le contrôle d'accès est activé.
+La configuration peut être trouvée sur [le site web] ({0}/my-servers).
+
+e. **Le shard sur lequel se trouve votre serveur est en fait hors service** 
+Cela arrive rarement et devrait être résolu automatiquement en quelques minutes.
+Vous pouvez vérifier l'état de l'unité de stockage sur laquelle se trouve votre serveur sur [la page d'état] ({0}/status).
+En cas de maintenance importante, vous pouvez également consulter [le site statuspage.io](https://rinbot.statuspage.io/) pour les mises à jour.
+ 
+f. **Vous avez complètement désactivé les commandes textuelles dans la configuration** 
+Si vous souhaitez utiliser des commandes textuelles, assurez-vous que vous n'avez pas coché la case "Disable legacy prefixed commands" (désactiver les commandes préfixées héritées) dans les paramètres du serveur sur le site web.
+Cette option fera en sorte que seules les commandes de type "slash" fonctionneront.</value>
+  </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Il existe actuellement deux façons d'y parvenir.
+
+a. **Utiliser les permissions Discord**
+Vous devez donner à RinBot uniquement la permission __View channel__ sur le canal où vous voulez qu'il écoute les commandes.
+Cela peut être fait en réglant correctement vos permissions dans Discord.
+
+__Exemples__: 
+Disallow `@everyone` __View channel__ à tous les canaux. Ensuite, créez un rôle "Members" qui donne aux gens __View channel__ à tous les canaux, tout en donnant à RinBot seulement __View channel__ au canal dans lequel elle doit écouter les commandes.
+
+Vous pouvez également créer un rôle "Bots" qui interdit à __View channel__ l'accès à tous les canaux. Ensuite, donnez à RInBot un accès spécifique à un canal de votre choix.
+
+b. **Utiliser le contrôle d'accès aux canaux**
+La configuration est disponible après s'être connecté sur [le site web] ({0}).
+
+__Marche à suivre__:
+- Après vous être connecté, allez en haut à droite et cliquez sur votre nom, puis allez sur __My servers__.
+- Cliquez sur le serveur que vous souhaitez configurer (vous devez être __administrateur__ ou avoir le rôle __server management__ ).
+- Trouvez l'onglet __Channels__ et cochez la case __Enable channel access control__.
+
+&gt; Avec cette configuration, RinBot n'écoutera pas les commandes sur aucun canal, nous devons donc maintenant l'autoriser dans le canal que vous souhaitez.
+
+- Cliquez sur __Add a channel__ et sélectionnez le canal dans lequel vous souhaitez que RinBot écoute les commandes.
+- Cliquez sur __Add a rule__, ce qui donne une règle d'accès qui autorise toutes les commandes dans ce canal.
+- Cliquez sur __Save changes__ en bas de la page et vous avez terminé !</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Il s'agit probablement d'une reconnexion, puisque Discord force une reconnexion des shards autour de __toutes les heures__. Soyez patient et réessayez dans quelques minutes.
+
+Si cela ne fonctionne toujours pas __après 15 minutes__, **vérifiez la question 6**.
+
+Si après cela __ne fonctionne toujours pas__, demandez de l'aide dans #help en mentionnant le shard et/ou le cluster sur lequel se trouve votre serveur.
+Vous pouvez vérifier votre shard sur [la page d'état] ({0}/status).
+
+&gt; ⚠️ Veuillez noter que **les samedis entre 8:00-12:00 UTC** est réservé comme fenêtre de maintenance, il peut donc y avoir des temps d'arrêt non annoncés pendant cette période.</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Le calcul des points dépend entièrement de la quantité d'anime dans le pool à partir duquel votre tour est créé et du niveau du gagnant.  
+  
+Dans le cas le plus simple, un pool de 3000 anime donne un maximum de 60 points, réduits de `1 / numberOfCaptures` pour chaque cap supplémentaire qui est montré.  
+  
+La taille du pool dépend de vos filtres. Si vous utilisez votre propre liste d'anime comme filtre, avec 90 entrées dans la section Completed et 10 dans la section On-hold, la taille du pool sera de 100.  
+Cependant, après chaque round que vous jouez avec ce même filtre, la taille du pool diminuera de 1, puisqu'il n'y a pas de répétition pendant au moins une heure pour les rounds qui sont commencés par vous-même ou dans le même serveur.  
+  
+La formule utilisée est la suivante  
+```
+animeMultiplier * animeCount / animeMaxPoints * maxPoints
+```
+&gt; Par défaut `maxPoints` est `60` et `animeMaxPoints` est `3000`.  
+  
+La variable `animeMultiplier` dépend de l'année de sortie de l'anime.  
+- Avant l'année 2010 : `2`
+- Avant l'année 2000 : `3`
+- Avant l'année 1990 : `4`
+- Avant l'année 1980 : `5`
+
+Le nombre minimum de points que vous pouvez obtenir est `4`, qui deviendra `1` si le dernier plafond a été atteint.  
+
+__Concours vocaux__ 
+Pour les épreuves vocales, les points sont diminués en fonction du temps que vous mettez à répondre plutôt que du nombre de captures qui ont été montrées.</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>La difficulté est basée sur la popularité de l'anime, vous pouvez choisir entre 5 difficultés :  
+1. Facile
+2. Normal
+3. Difficile
+4. Extrême
+5. Cauchemar
+
+&gt; De Easy(1) à Extreme(4), les pools contiendront également les anime des difficultés précédentes. 
+&gt; La difficulté Nightmare(5) est différente, elle ne contient que les anime les moins populaires disponibles dans le bot.
+
+__Changement de difficulté__
+Pour changer la difficulté en `Easy` pour un seul tour, utilisez `/sg difficulty:Easy` ou `!sg d:1` ou `!sg 1`.
+Il en va de même pour les autres difficultés dans les autres commandes.
+
+La difficulté augmente au fur et à mesure que vous gagnez des points, jusqu'à un maximum de Extreme(4).
+Pour changer ce comportement, vous pouvez utiliser `/mydifficulty` (si votre serveur ne dispose pas de commandes slash, vous pouvez également l'utiliser dans un DM avec RinBot).
+ </value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord a récemment ajouté les permissions de la commande slash __au système__... plutôt silencieusement.
+Cela a donné aux serveurs les moyens d'activer/désactiver les commandes slash individuellement pour n'importe quel canal ou rôle qu'ils souhaitent.
+
+Il semble que sur de nombreux serveurs, les paramètres par défaut de ce système rendent les commandes slash inaccessibles aux utilisateurs ordinaires.
+Sur les appareils mobiles ____ et les versions antérieures, cette fonction n'est pas entièrement prise en charge et vous pouvez recevoir un message disant : "This interaction failed or " : 
+**Cette interaction a échoué** ou **L'application n'a pas répondu**
+
+__Pour modifier ces permissions__
+Dans Discord, allez sur `Server Settings - Integrations - RinBot` et assurez-vous que les choses sont correctement configurées pour vos canaux et vos rôles. 
+Les appareils mobiles ne supportent pas encore complètement ces fonctionnalités, veuillez donc utiliser votre PC pour cela ou essayez le client web sur votre appareil.
+
+&gt; Les administrateurs peuvent toujours utiliser les commandes slash, quelles que soient les permissions définies ici. Si vous êtes déjà administrateur, votre problème est donc différent.
+
+Si cela ne résout pas votre problème, consultez __question 6__ pour d'autres causes possibles.</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>La fille sur la photo est une Elin du jeu TERA Online.  
+J'y avais un personnage nommé Kururin, qui était un mystique Elin et qui ressemblait à cette fille.  
+  
+A l'origine, j'ai écrit un bot de discord qui faisait des trucs de modération de discord par défaut, juste pour essayer des choses.
+Quand j'ai demandé comment je devais l'appeler, quelqu'un m'a dit "appelle-le RinBot". J'ai trouvé ça drôle et le nom est resté.  
+  
+L'illustration a été réalisée par momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)) donc tous les crédits pour l'avatar leur reviennent !  
+Jetez aussi un coup d'œil au [post original de l'œuvre d'art](https://www.pixiv.net/en/artworks/36910527).</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Actuellement, il existe une fonction appelée "démarrer un tour lorsque le canal est inactif".
+Cette fonction peut être activée dans la configuration du canal après s'être connecté sur [le site web] ({0}/my-servers).  
+  
+Pour les serveurs gratuits, le temps d'inactivité est fixé à un minimum d'une heure. Cette durée peut être ramenée à une minute si vous devenez un supporter.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>J'ai fait une promesse de don mais je n'ai pas reçu mes avantages, que faire ?</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Pour pouvoir bénéficier des avantages, vous devez avoir votre compte Discord **lié à votre compte Patreon**.  
+La marche à suivre exacte [peut être trouvée ici] (https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Si vous avez fait une promesse de don à **avant de relier votre compte Discord à**, vous pouvez essayer d'appuyer sur [le bouton 'Rejoindre' ici](https://www.patreon.com/rinbot?fan_landing=true) une fois de plus.  
+Cela ne devrait pas vous demander un autre paiement, mais cela déclenchera à nouveau le webhook qui vous donnera automatiquement les avantages.  
+
+Il essaiera également de donner des avantages à tous ceux qui en manquent environ toutes les heures, alors attendez un peu et vous les recevrez automatiquement.
+  
+Après avoir fait une promesse de don à **, vous devrez vous reconnecter à** sur le site web de RinBot afin d'utiliser les avantages tels que le boost d'un serveur ou les configurations de canaux supplémentaires.  
+</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Quand le classement hebdomadaire est-il réinitialisé ?</value>
+  </data>
 </root>
