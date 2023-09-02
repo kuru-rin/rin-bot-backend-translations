@@ -140,7 +140,7 @@
     <value>アニメソング別</value>
   </data>
   <data name="Achievement_GenreHorror_1_Title" xml:space="preserve">
-    <value>ハウ～オモチカエリ～</value>
+    <value>はう～お持ち帰りぃ～</value>
   </data>
   <data name="Achievement_GenreHorror_1_Description" xml:space="preserve">
     <value>家に持ち帰りますか？</value>
@@ -284,16 +284,16 @@
     <value>より多くをしたいですか？ これが最後のレベルだったのではないかと心配しています。.. 今のところ。</value>
   </data>
   <data name="Achievement_Decade00s_1_Title" xml:space="preserve">
-    <value>スタッキングプリン</value>
+    <value>プリンタワー</value>
   </data>
   <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
-    <value>ここにあなたがあなたの時間とすることができる何か他のものがある。</value>
+    <value>時間があったらこんな事もできます。</value>
   </data>
   <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
     <value>親指アップ</value>
   </data>
   <data name="Achievement_Decade00s_0_Description" xml:space="preserve">
-    <value>あなたはハルヒから親指アップを取得しますが、あなたも彼女を覚えていますか？</value>
+    <value>あなたはハルヒから親指アップをもらいましたが、彼女を覚えていますか？</value>
   </data>
   <data name="AchievementCategory_GenreHorror" xml:space="preserve">
     <value>ジャンル - ホラー</value>
@@ -305,7 +305,7 @@
     <value>ジャンル - アクション</value>
   </data>
   <data name="AchievementCategory_DistinctAnime" xml:space="preserve">
-    <value>個性的なアニメ</value>
+    <value>異なりアニメ数</value>
   </data>
   <data name="AchievementCategory_Decade90s" xml:space="preserve">
     <value>十年 - 90年代</value>
