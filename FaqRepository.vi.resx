@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,123 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Faq_1_Question" xml:space="preserve">
+    <value>Tôi sử dụng RinBot như thế nào?</value>
+  </data>
+  <data name="Faq_2_Question" xml:space="preserve">
+    <value>Làm thế nào để đổi ngôn ngữ?</value>
+  </data>
+  <data name="Faq_3_Question" xml:space="preserve">
+    <value>Làm thế nào để thay đổi tiền ngữ lệnh?</value>
+  </data>
+  <data name="Faq_4_Question" xml:space="preserve">
+    <value>Tổ hợp anime là cái gì?</value>
+  </data>
+  <data name="Faq_5_Question" xml:space="preserve">
+    <value>Chế độ NSFW là gì và làm sao để tôi kích hoạt nó?</value>
+  </data>
+  <data name="Faq_6_Question" xml:space="preserve">
+    <value>Tất cả các lệnh đều không hoạt động, làm thế nào để tôi sửa lỗi này?</value>
+  </data>
+  <data name="Faq_7_Question" xml:space="preserve">
+    <value>Làm sao để tôi làm cho RinBot chỉ nhận lệnh từ một kênh duy nhất?</value>
+  </data>
+  <data name="Faq_1_Answer" xml:space="preserve">
+    <value>Bạn có thể bắt đầu một vòng với lệnh `/sg`.
+Để xem các lệnh khác, xem [danh sách lệnh]({0}/commands).
+
+&gt; ⚠️ Hiện tại vẫn có thể sử dụng các lệnh cũ, như `!sg`, nhưng các lệnh này **không khuyến khích sử dụng**.
+&gt; Các lệnh cũ này ít được sử dụng và sẽ được thay thế theo thời gian. 
+&gt; Có một số các tính năng khác có thể sẽ chỉ có hiệu lực cho các lệnh gạch chéo.</value>
+  </data>
+  <data name="Faq_2_Answer" xml:space="preserve">
+    <value>Lệnh `/lang` sử dụng để thay đổi ngôn ngữ.
+
+Bạn có thể đổi ngôn ngữ của tên anime đoán được và hiển thị ở các gợi ý cũng như hình ảnh ở cuối các vòng đoán.
+Để thực hiện hành động này, vui lòng đăng nhập trên trang web.
+
+Để chuyển sang tên tiếng Anh, bạn có thể thêm một hàng trên cài đặt tên anime chính với nội dung: AniDB, tên chính thức, và tiếng Anh.
+
+&gt; Lưu ý rằng đây là tính năng nâng cao và có khả năng làm cho RinBot hoạt động không đúng trong server của bạn nếu không cài đặt đúng cách.</value>
+  </data>
+  <data name="Faq_3_Answer" xml:space="preserve">
+    <value>&gt; Nếu bạn đang dùng lệnh gạch chéo  `/`, phần này không áp dụng với bạn. Tiền ngữ lệnh của lệnh gạch chéo không thể thay đổi.
+
+Tiền ngữ lệnh là các kí tự (từ 1 đến 5 kí tự tối đa) trước tất cả các lệnh cũ.
+Ví dụ, trong lệnh `!sg`, tiền ngữ lệnh sẽ là `!`.
+Nếu bạn đặt tiền ngữ lệnh là `!sg`, lệnh hợp lệ sẽ chuyển thành `!sgsg`, nên hãy lưu ý.
+Bạn có thể sử dụng emoji làm tiền ngữ lệnh, nhưng không khuyến khích.
+
+Bạn có thể sử dụng lệnh `!prefix` để đổi tiền ngữ lệnh trong Discord.
+Gõ `@RinBot prefix` nếu bạn đã quên tiền ngữ lệnh.
+
+Bạn cũng có thể đổi tiền ngữ lẹnh qua [trang web]({0}/my-servers). Vui lòng làm theo các bước:
+- Đăng nhập bằng tài khoản Discord ở góc trên bên phải của trang
+- Ấn vào tên của bạn ở góc trên bên phải và chọn 'Server của tôi'
+- Tìm server của bạn trong danh sách và ấn nút 'Cài đặt'
+- Đổi tiền ngữ lệnh sang chuỗi kí tự mà bạn mong muốn
+- Ấn nút 'Lưu thay đổi' để hoàn tất</value>
+  </data>
+  <data name="Faq_4_Answer" xml:space="preserve">
+    <value>Mỗi vòng mà bạn chơi sẽ chọn một anime ngẫu nhiên trong một "tổ hợp" các anime dựa vào các bộ lọc mà bạn sử dụng.
+Bộ lọc càng hạn chế thì tổ hợp anime càng nhỏ.
+Cơ chế tính điểm cũng gián tiếp dựa trên tổ hợp anime, với tổ hợp anime có số lượng 3000 được tính điểm tối đa (bình thường là 60 điểm).
+
+__Ví dụ__
+Thí dụ, bạn có danh sách anime với 100 bộ anime trong đó (phải có ít nhất 1 tập đã xem và không bỏ xem).
+Khoảng 20 trong số 100 bộ anime đó được coi là nổi tiếng, và sẽ thuộc cấp độ khó là dễ.
+Nếu sau đó bạn sử dụng lệnh `!sg d:1 mal:username`, nó sẽ chọn ra 1 bộ anime ngẫu nhiên từ 20 bộ anime trước.
+
+Còn một điều nữa là RinBot không lặp lại cùng một bộ anime trong vòng ít nhất 1 giờ.
+Mỗi vòng bạn chơi trong khoảng thời gian 1 giờ đó sẽ giảm số 20 bộ anime đó là 1.
+Sau 20 vòng, bạn sẽ còn lại tổ hợp anime là 0. Sau đó thì RinBot sẽ không thể tiếp tục và sẽ hủy vòng, với lỗi **Vòng đã bị hủy do thiếu tư liệu**.
+
+Số lượng bộ anime trong tổ hợp anime cũng được sử dụng để tính điểm bảng xếp hạng thời gian đoán. Vì quá dễ để người chơi dùng `!sg d:1 g:sports` và spam Haikyuu, chỉ các tổ hợp anime với số lượng hơn 1000 bộ anime được tính điểm trên bảng xếp hạng.</value>
+  </data>
+  <data name="Faq_5_Answer" xml:space="preserve">
+    <value> Theo mặc định, RinBot sẽ lọc một số bộ anime.
+Điều này nhằm tránh phải cái đặt một kênh sang chế độ giới hạn độ tuổi (NSFW) và tuân thủ các Điều khoản dịch vụ của Discord.
+
+Các thẻ anime AniDB được lọc:
+- Trên 18 tuổi
+- Nội dung hentai
+- Khỏa thân (&gt;200)
+- Hoạt động tình dục (&gt;100)
+
+Các bộ anime được đánh giá PG-13 hoặc dưới trên MAL sẽ không bị lọc.
+
+Bạn có thể cài đặt một kênh sang chế độ giới hạn độ tuổi và RinBot sẽ tự động chuyển sang chế độ NSFW.
+
+Nếu bạn thấy hình ảnh hoặc video NSFW khi chơi ở chế độ SFW, vui lòng liên hệ tôi với tên anime để tôi thêm anime đó vào bộ lọc. </value>
+  </data>
+  <data name="Faq_6_Answer" xml:space="preserve">
+    <value>Có thể có nhiều nguyên do tại sao các lệnh không hoạt động.
+
+a. **Tiền ngữ lệnh đã được đổi sang kí tự khác và bạn đã quên.**  
+Bạn có thể dùng `@RinBot prefix` để kiểm tra và thay đổi tiền ngữ lệnh.
+
+Nếu bạn không thể sử dụng `@RinBot prefix`, hãy đăng nhập trên [trang web]({0}).
+Trên trang, bạn có thể thấy và thay đổi tiền ngữ lệnh trong trang **Server của tôi** ở góc trên bên phải.
+
+b. **Bạn đã đổi cài đặt quyền hạn trong server của bạn mà RinBot không thể gửi tin nhắn hoặc tin nhúng nữa**  
+Hãy chắc chắn rằng RinBot có tất cả các quyền hạn cần thiết.
+Hiện tại, các quyền cần thiết là: `Đọc tin nhắn`, `Gửi tin nhắn`, `Nhúng liên kết`, `Gửi file`, và cho các kênh thoại, `Kết nối` và `Nói`
+&gt; Bạn có thể mời lại RinBot vào server để kiểm tra các quyền hạn cần thiết.
+
+c. **Bạn đang sử dụng __lệnh gạch chéo__ và quyền sử dụng lệnh gạch chéo đã được cài đặt để chặn các lệnh này**  
+Xem câu hỏi 10.
+
+d. **Các quyền hạn sử dụng có thể bị thay đổi sang chế độ chặn tất cả các lệnh**  
+Một người với quyền hạn quản lý server sẽ cần thay đổi quyền sử dụng để cho phép các lệnh nếu chết độ hạn chế quyền sử dụng được bật.
+Các cài đặt có thể thay đổi được trên [trang web]({0}).
+
+e. **Máy chủ mà server của bạn hoạt động trên đang offline.**  
+Điều này hiếm khi xảy ra và sẽ được khắc phục tự động trong một vài phút.
+Bạn có thể kiểm tra trạng thái các máy chủ trong [danh sách máy chủ]({0}/status).
+Trong trường hợp bảo trì diện rộng, bạn cũng có thể xem trang [statuspage.io](https://rinbot.statuspage.io/) để cập nhật.
+
+f. **Bạn đã tắt các câu lệnh dựa trên tiền ngữ lệnh trong phần cái đặt** 
+Nếu bạn muốn sử dụng câu lệnh cũ, hãy kiểm tra rằng bạn chưa chọn ô "Tắt các câu lệnh cũ dựa trên tiền ngữ lệnh" trong cài đặt server trên trang web.
+Ô này có tác dụng chặn tất cả các câu lệnh cũ sử dụng tiền ngữ lệnh và chỉ cho phép lệnh gạch chéo hoạt động.</value>
+  </data>
 </root>
