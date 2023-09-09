@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AchievementCategory_Decade00s" xml:space="preserve">
+    <value>Thập kỉ - 00</value>
+  </data>
+  <data name="AchievementCategory_Decade10s" xml:space="preserve">
+    <value>Thập kỉ - 10</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
+    <value>Thập kỉ - 70 và trước đó</value>
+  </data>
+  <data name="AchievementCategory_Decade80s" xml:space="preserve">
+    <value>Thập kỉ - 80</value>
+  </data>
+  <data name="AchievementCategory_Decade90s" xml:space="preserve">
+    <value>Thập kỉ - 90</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime" xml:space="preserve">
+    <value>Anime phân biệt</value>
+  </data>
+  <data name="AchievementCategory_GenreAction" xml:space="preserve">
+    <value>Thể loại - Hành động</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi" xml:space="preserve">
+    <value>Thể loại - Ecchi</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror" xml:space="preserve">
+    <value>Thể loại - Kinh dị</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Description" xml:space="preserve">
+    <value>Bạn được Haruhi đồng ý, nhưng bạn có nhớ cô ấy không?</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
+    <value>Tán thành</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
+    <value>Đây là hoạt động khác mà bạn có thể làm với thời gian của mình.</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Title" xml:space="preserve">
+    <value>Chồng bánh pudding</value>
+  </data>
 </root>
