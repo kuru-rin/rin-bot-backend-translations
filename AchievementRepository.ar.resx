@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xsd:schema xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" id="root">
     <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
@@ -58,4 +58,268 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
+    <value>العقود - السبعينيات وما قبلها</value>
+  </data>
+  <data name="AchievementCategory_Decade90s" xml:space="preserve">
+    <value>العقود - التسعينيات</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime" xml:space="preserve">
+    <value>الأنيمي المميز</value>
+  </data>
+  <data name="AchievementCategory_GenreAction" xml:space="preserve">
+    <value>النوع - أكشن</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi" xml:space="preserve">
+    <value>النوع - إيتشي</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror" xml:space="preserve">
+    <value>النوع - رعب</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Description" xml:space="preserve">
+    <value>لقد حصلت على إبهام من هاروهي، ولكن هل تتذكرها أصلاً؟</value>
+  </data>
+  <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
+    <value>إبهام لأعلى</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
+    <value>إليك شيئاً آخر يمكنك القيام به في وقتك.</value>
+  </data>
+  <data name="Achievement_Decade00s_1_Title" xml:space="preserve">
+    <value>حلوى البودينغ المتراصة</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Description" xml:space="preserve">
+    <value>هل أنت متعطش للمزيد؟ أخشى أن هذا هو المستوى الأخير... في الوقت الحالي.</value>
+  </data>
+  <data name="Achievement_Decade00s_2_Title" xml:space="preserve">
+    <value>متعطش للمزيد</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Description" xml:space="preserve">
+    <value>ليس الأمر كله متعة وألعاب... أم أنه كذلك؟</value>
+  </data>
+  <data name="Achievement_Decade10s_0_Title" xml:space="preserve">
+    <value>سيلان اللعاب</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Description" xml:space="preserve">
+    <value>لا تنسى أن تشرب بعضاً من فلفل دي كيه.</value>
+  </data>
+  <data name="Achievement_Decade10s_1_Title" xml:space="preserve">
+    <value>يحب دوكوبي</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Description" xml:space="preserve">
+    <value>لقد حاولت تجاوز الحدود، لكنك فشلت.</value>
+  </data>
+  <data name="Achievement_Decade10s_2_Title" xml:space="preserve">
+    <value>متعثر الأبعاد</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Description" xml:space="preserve">
+    <value>من الواضح أن الإدمان لا يمكن قياسه.</value>
+  </data>
+  <data name="Achievement_Decade10s_3_Title" xml:space="preserve">
+    <value>مدمن</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Description" xml:space="preserve">
+    <value>أنت تدوس على المنافسين!</value>
+  </data>
+  <data name="Achievement_Decade70sAndBefore_0_Title" xml:space="preserve">
+    <value>ديناصور</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Description" xml:space="preserve">
+    <value>تذكر: الخطوبة مقدسة!</value>
+  </data>
+  <data name="Achievement_Decade80s_0_Title" xml:space="preserve">
+    <value>حب وايفو</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Description" xml:space="preserve">
+    <value>مثير للإعجاب... مثير للإعجاب للغاية.</value>
+  </data>
+  <data name="Achievement_Decade90s_0_Title" xml:space="preserve">
+    <value>ترك انطباعًا</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Description" xml:space="preserve">
+    <value>هناك مستوى آخر يجب الحصول عليه!</value>
+  </data>
+  <data name="Achievement_Decade90s_1_Title" xml:space="preserve">
+    <value>لا تنام بعد</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Description" xml:space="preserve">
+    <value>لقد قضيت على جميع التنانين التي وقفت في طريقك!</value>
+  </data>
+  <data name="Achievement_Decade90s_2_Title" xml:space="preserve">
+    <value>عبد التنين!!!</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Description" xml:space="preserve">
+    <value>تهانينا، لقد حطمت الرقم السحري. التقط أنفاسك الآن، سيصبح الأمر أكثر صعوبة.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_0_Title" xml:space="preserve">
+    <value>الخطوة الأولى</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Description" xml:space="preserve">
+    <value>أنت معتاد على رؤية عيون الشخصيات أكبر من أنوفهم. إذا كان لديهم أنف.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_1_Title" xml:space="preserve">
+    <value>مخمن عادي</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Description" xml:space="preserve">
+    <value>أنت لم تبحث عن أي منها، أليس كذلك؟</value>
+  </data>
+  <data name="Achievement_DistinctAnime_2_Title" xml:space="preserve">
+    <value>قارئ الأفكار</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Description" xml:space="preserve">
+    <value>هذا... كثير. يمكنك أن تفخر بنفسك، هذا أمر مؤكد.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_3_Title" xml:space="preserve">
+    <value>حقوق التباهي والتفاخر</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Description" xml:space="preserve">
+    <value>توقف الآن، خذ نفساً عميقاً وتمدد قليلاً. تذكر ألا تجلس قريباً جداً من الشاشة.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_4_Title" xml:space="preserve">
+    <value>الكثير من وقت الفراغ</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Description" xml:space="preserve">
+    <value>أنت لست سيداً بعد.</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Description" xml:space="preserve">
+    <value>حتى أنك ستستخدم دمك لهزيمة أعدائك.</value>
+  </data>
+  <data name="Achievement_GenreAction_2_Title" xml:space="preserve">
+    <value>محارب الدم</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Description" xml:space="preserve">
+    <value>معرفة لون البنطلون لا يحتاج إلى تفكير.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_0_Title" xml:space="preserve">
+    <value>في ذلك من أجل المؤامرة</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Description" xml:space="preserve">
+    <value>لقد تعلمت اليوم تعريف الشيمابان.</value>
+  </data>
+  <data name="Achievement_GenreEcchi_1_Title" xml:space="preserve">
+    <value>شيمابان</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Description" xml:space="preserve">
+    <value>يمكنك أن تتمنى ما تشاء!</value>
+  </data>
+  <data name="Achievement_GenreHorror_0_Title" xml:space="preserve">
+    <value>هل تريد إبرام عقد؟</value>
+  </data>
+  <data name="Achievement_GenreHorror_1_Description" xml:space="preserve">
+    <value>هل ترغب في أخذ بعض منها معك إلى المنزل؟</value>
+  </data>
+  <data name="Achievement_GenreHorror_1_Title" xml:space="preserve">
+    <value>هاوو~ أوموتشي كايري~</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Description" xml:space="preserve">
+    <value>أغمض عينيك واستمر في الاستماع. فقط لا تنام.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Title" xml:space="preserve">
+    <value>اشعر بالرغبة في الرقص</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_2_Description" xml:space="preserve">
+    <value>أنت تتحسنين في هذا الأمر، لذا حركي جسمك وهزّيه!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Title" xml:space="preserve">
+    <value>الحياة تمنحك الحياة الليمون</value>
+  </data>
+  <data name="AchievementCategory_Decade90s_Description" xml:space="preserve">
+    <value>سيتم احتساب تخمين الرسوم المتحركة بين عامي 1990 و2000 ضمن هذا الإنجاز.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs_Description" xml:space="preserve">
+    <value>سيتم احتساب تخمين أي أغنية أنيمي لم تخمنها من قبل في هذا الإنجاز. سيتم احتساب الأغاني من جولات !sga فقط في هذه اللحظة.</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnime_Description" xml:space="preserve">
+    <value>تخمين أي أنمي لم تخمنه من قبل سيُحتسب في هذا الإنجاز.</value>
+  </data>
+  <data name="AchievementCategory_GenreAction_Description" xml:space="preserve">
+    <value>سيتم احتساب تخمين الرسوم المتحركة من نوع الأكشن في هذا الإنجاز.</value>
+  </data>
+  <data name="AchievementCategory_GenreEcchi_Description" xml:space="preserve">
+    <value>سيُحتسب تخمين الأنمي من نوع الإيتشي في هذا الإنجاز.</value>
+  </data>
+  <data name="AchievementCategory_GenreHorror_Description" xml:space="preserve">
+    <value>سيُحتسب تخمين الأنيمي من نوع الرعب في هذا الإنجاز.</value>
+  </data>
+  <data name="AchievementCategory_Decade00s" xml:space="preserve">
+    <value>العقود - 00</value>
+  </data>
+  <data name="AchievementCategory_Decade10s" xml:space="preserve">
+    <value>العقود - 10</value>
+  </data>
+  <data name="AchievementCategory_Decade80s" xml:space="preserve">
+    <value>العقود - الثمانينات</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Description" xml:space="preserve">
+    <value>مستوى قوتك أعلى بكثير من الآخرين. الطريق الوحيد هو الأعلى.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_5_Title" xml:space="preserve">
+    <value>ولا حتى شكلي النهائي</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Description" xml:space="preserve">
+    <value>يجب أن تعرف بالفعل ما تعنيه هذه الصورة.</value>
+  </data>
+  <data name="Achievement_DistinctAnime_6_Title" xml:space="preserve">
+    <value>عليك تخمينها كلها!</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Description" xml:space="preserve">
+    <value>لا يمكنك التوقف عن القتال، أليس كذلك؟</value>
+  </data>
+  <data name="Achievement_GenreAction_0_Title" xml:space="preserve">
+    <value>مهووس المعارك</value>
+  </data>
+  <data name="Achievement_GenreAction_1_Title" xml:space="preserve">
+    <value>التلميذ الأقوى</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Description" xml:space="preserve">
+    <value>لم يعد بالإمكان الفصل بينك وبين قائمة التشغيل الخاصة بك. هل يجب عليك حتى التحقق منها في هذه المرحلة؟</value>
+  </data>
+  <data name="AchievementCategory_DistinctAnimeSongs" xml:space="preserve">
+    <value>أغاني الأنيمي المميزة</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Title" xml:space="preserve">
+    <value>الروكين</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_0_Description" xml:space="preserve">
+    <value>لا وقت للاستراحة. لن يتوقف الإيقاع في أي وقت قريب.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_1_Title" xml:space="preserve">
+    <value>مطابقة الألحان</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Title" xml:space="preserve">
+    <value>أوتو نو سيكاي</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_3_Description" xml:space="preserve">
+    <value>إن مستوى استماعك لا ينتمي إلى هذا العالم بعد الآن، استمر في السعي نحو المزيد!</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_4_Description" xml:space="preserve">
+    <value>آرا آرا، لقد تحسنت موهبتك. خذ قسطاً من الراحة، فالأمر يزداد صعوبة.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Title" xml:space="preserve">
+    <value>البوب على الإيقاع</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_5_Description" xml:space="preserve">
+    <value>الأغاني يجب أن نستمتع بها مع الآخرين، فهي ترتبط بعقلنا وروحنا.</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Title" xml:space="preserve">
+    <value>كل نغمة محفوظة</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_6_Description" xml:space="preserve">
+    <value>يمكنك بالفعل معرفة ذلك من النغمة الأولى، أليس كذلك؟</value>
+  </data>
+  <data name="Achievement_DistinctAnimeSongs_7_Title" xml:space="preserve">
+    <value>قائمة التشغيل اللانهائية</value>
+  </data>
+  <data name="AchievementCategory_Decade00s_Description" xml:space="preserve">
+    <value>سيتم احتساب تخمين الرسوم المتحركة بين عامي 2000 و2010 ضمن هذا الإنجاز.</value>
+  </data>
+  <data name="AchievementCategory_Decade10s_Description" xml:space="preserve">
+    <value>سيُحتسب تخمين الأنمي بين عامي 2010 و2020 ضمن هذا الإنجاز.</value>
+  </data>
+  <data name="AchievementCategory_Decade70sAndBefore_Description" xml:space="preserve">
+    <value>سيتم احتساب تخمين الرسوم المتحركة من قبل عام 1980 في هذا الإنجاز.</value>
+  </data>
+  <data name="AchievementCategory_Decade80s_Description" xml:space="preserve">
+    <value>سيتم احتساب تخمين الرسوم المتحركة بين عامي 1980 و1990 ضمن هذا الإنجاز.</value>
+  </data>
 </root>
