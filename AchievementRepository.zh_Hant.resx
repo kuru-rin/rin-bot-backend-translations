@@ -71,13 +71,13 @@
     <value>恐龍</value>
   </data>
   <data name="AchievementCategory_GenreEcchi" xml:space="preserve">
-    <value>分類 - 色情</value>
+    <value>類型 - 工口</value>
   </data>
   <data name="AchievementCategory_GenreAction" xml:space="preserve">
-    <value>分類 - 動作</value>
+    <value>類型 - 動作</value>
   </data>
   <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
-    <value>70年代及之前（~1979）</value>
+    <value>70年代及以前（~1979）</value>
   </data>
   <data name="AchievementCategory_Decade90s" xml:space="preserve">
     <value>90年代（1990~1999）</value>
@@ -95,13 +95,13 @@
     <value>渴望更多</value>
   </data>
   <data name="Achievement_Decade00s_2_Description" xml:space="preserve">
-    <value>你還渴望更多嗎？恐怕這是最難的等級...至少目前為止</value>
+    <value>你還渴望更多嗎？這恐怕是最後一關了…至少目前為止。</value>
   </data>
   <data name="Achievement_Decade00s_1_Title" xml:space="preserve">
-    <value>堆疊布丁</value>
+    <value>疊布丁</value>
   </data>
   <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
-    <value>這是其他你可以在你的休閒時間做的</value>
+    <value>這是另一件你可以花時間做的事。</value>
   </data>
   <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
     <value>讚</value>
@@ -110,10 +110,10 @@
     <value>你獲得了來自涼宮春日的讚，但你還記得她是誰嗎？</value>
   </data>
   <data name="AchievementCategory_GenreHorror" xml:space="preserve">
-    <value>分類 - 恐怖</value>
+    <value>類型 - 恐怖</value>
   </data>
   <data name="AchievementCategory_DistinctAnime" xml:space="preserve">
-    <value>独特的动漫</value>
+    <value>不同的動畫</value>
   </data>
   <data name="Achievement_Decade10s_0_Description" xml:space="preserve">
     <value>这并不全是乐趣和游戏......或者是这样？</value>
@@ -191,135 +191,135 @@
     <value>你的实力远超他人。唯一的出路就是向上。</value>
   </data>
   <data name="Achievement_DistinctAnime_5_Title" xml:space="preserve">
-    <value>甚至不是我的最终形态</value>
+    <value>甚至不是我的最終形態</value>
   </data>
   <data name="Achievement_DistinctAnime_6_Description" xml:space="preserve">
     <value>你应该已经知道这幅画意味着什么。</value>
   </data>
   <data name="Achievement_DistinctAnime_6_Title" xml:space="preserve">
-    <value>全部猜出来</value>
+    <value>全部猜出來！</value>
   </data>
   <data name="Achievement_GenreAction_0_Description" xml:space="preserve">
-    <value>不能停止战斗，对吗？</value>
+    <value>不能停止戰鬥，對嗎？</value>
   </data>
   <data name="Achievement_GenreAction_0_Title" xml:space="preserve">
-    <value>战斗狂人</value>
+    <value>戰鬥狂</value>
   </data>
   <data name="Achievement_GenreAction_1_Description" xml:space="preserve">
-    <value>你还不是大师。</value>
+    <value>你還不是大師。</value>
   </data>
   <data name="Achievement_GenreAction_1_Title" xml:space="preserve">
-    <value>最强的弟子</value>
+    <value>最強弟子</value>
   </data>
   <data name="Achievement_GenreAction_2_Description" xml:space="preserve">
-    <value>你甚至会用自己的鲜血来打败敌人。</value>
+    <value>你甚至願意用自己的血來擊敗敵人。</value>
   </data>
   <data name="Achievement_GenreAction_2_Title" xml:space="preserve">
-    <value>鲜血勇士</value>
+    <value>浴血戰士</value>
   </data>
   <data name="Achievement_GenreEcchi_0_Description" xml:space="preserve">
-    <value>要想知道裤装的颜色，对你来说不费吹灰之力。</value>
+    <value>想知道胖次的顏色，對你來說不費吹灰之力。</value>
   </data>
   <data name="Achievement_GenreEcchi_0_Title" xml:space="preserve">
-    <value>为了情节</value>
+    <value>我是來看劇情的</value>
   </data>
   <data name="Achievement_GenreEcchi_1_Description" xml:space="preserve">
-    <value>今天你们学会了 Shimapan 的定义。</value>
+    <value>現在你知道藍白碗是什麼了。</value>
   </data>
   <data name="Achievement_GenreEcchi_1_Title" xml:space="preserve">
-    <value>岛板</value>
+    <value>藍白碗</value>
   </data>
   <data name="Achievement_GenreHorror_0_Description" xml:space="preserve">
-    <value>你可以许下任何愿望！</value>
+    <value>我可以幫你實現任何願望喔！</value>
   </data>
   <data name="Achievement_GenreHorror_0_Title" xml:space="preserve">
-    <value>你想签合同吗？</value>
+    <value>可以跟我簽下契約嗎？</value>
   </data>
   <data name="Achievement_GenreHorror_1_Description" xml:space="preserve">
-    <value>您想带一些回家吗？</value>
+    <value>龍宮禮奈把你帶回了家。</value>
   </data>
   <data name="Achievement_GenreHorror_1_Title" xml:space="preserve">
-    <value>Hauu~ Omochi kaeri~</value>
+    <value>好可愛～ 我要把你帶回家～</value>
   </data>
   <data name="AchievementCategory_DistinctAnimeSongs" xml:space="preserve">
-    <value>独特的动漫歌曲</value>
+    <value>不同的動畫歌曲</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_0_Title" xml:space="preserve">
-    <value>摇滚</value>
+    <value>燃燒的搖滾魂</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_0_Description" xml:space="preserve">
-    <value>没有时间休息。节奏不会很快停止。</value>
+    <value>沒時間休息，節奏可不會等你！</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_1_Title" xml:space="preserve">
-    <value>旋律匹配器</value>
+    <value>歌曲識別器</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_1_Description" xml:space="preserve">
-    <value>闭上眼睛，继续听。只是不要睡着。</value>
+    <value>閉上眼睛，繼續聽。只是不要睡著。</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_2_Title" xml:space="preserve">
     <value>想跳舞</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_2_Description" xml:space="preserve">
-    <value>你的技术越来越好了，动动你的身体，摇一摇！</value>
+    <value>你的技術越來越好了，動動你的身體，搖一搖！</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_4_Title" xml:space="preserve">
-    <value>生活给你柠檬</value>
+    <value>當人生給你檸檬</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_3_Title" xml:space="preserve">
-    <value>大藤之海</value>
+    <value>音の世界</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_3_Description" xml:space="preserve">
-    <value>你的聆听水平已经不属于这个世界，请继续努力！</value>
+    <value>你的聽力已經超越這個世界的範疇，繼續努力，爭取更高的境界！</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_4_Description" xml:space="preserve">
-    <value>阿拉阿拉，你的天赋提高了。休息一下吧，只会越来越难。</value>
+    <value>啊啦啊啦，你的天賦提高了呢。休息一下吧，之後只會越來越難。</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_5_Title" xml:space="preserve">
-    <value>跟着节拍跳</value>
+    <value>跟著節拍起舞</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_5_Description" xml:space="preserve">
-    <value>歌曲应该与他人一起欣赏，它能与我们的思想和灵魂相通。</value>
+    <value>歌曲應該與他人一同欣賞，它能與我們的思想和靈魂相通。</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_6_Title" xml:space="preserve">
-    <value>记住的每个音符</value>
+    <value>記住每個音符</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_6_Description" xml:space="preserve">
-    <value>从第一个音符就能听出来，对吗？</value>
+    <value>從第一個音符就聽得出來了，對嗎？</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_7_Title" xml:space="preserve">
-    <value>无限播放列表</value>
+    <value>無限播放列表</value>
   </data>
   <data name="Achievement_DistinctAnimeSongs_7_Description" xml:space="preserve">
-    <value>你和你的播放列表再也分不开了。这时候你还需要检查它们吗？</value>
+    <value>你和你的播放列表已經融為一體。你還有需要查看它們嗎？</value>
   </data>
   <data name="AchievementCategory_Decade00s_Description" xml:space="preserve">
-    <value>2000 年至 2010 年期间的动漫竞猜活动将计入这一成绩。</value>
+    <value>答對年份介於 2000 年和 2010 年之間的作品將計入此成就。</value>
   </data>
   <data name="AchievementCategory_Decade10s_Description" xml:space="preserve">
-    <value>2010 年至 2020 年期间的动漫竞猜活动将计入这一成就。</value>
+    <value>答對年份介於 2010 年和 2020 年之間的作品將計入此成就。</value>
   </data>
   <data name="AchievementCategory_Decade70sAndBefore_Description" xml:space="preserve">
-    <value>猜测 1980 年以前的动画片也可计入此成就。</value>
+    <value>答對年份在 1980 年以前的作品將計入此成就。</value>
   </data>
   <data name="AchievementCategory_Decade80s_Description" xml:space="preserve">
-    <value>1980 年至 1990 年之间的动漫竞猜活动将计入这一成绩。</value>
+    <value>答對年份介於 1980 年和 1990 年之間的作品將計入此成就。</value>
   </data>
   <data name="AchievementCategory_Decade90s_Description" xml:space="preserve">
-    <value>1990 年至 2000 年期间的动漫竞猜活动将计入这一成绩。</value>
+    <value>答對年份介於 1990 年和 2000 年之間的作品將計入此成就。</value>
   </data>
   <data name="AchievementCategory_DistinctAnimeSongs_Description" xml:space="preserve">
-    <value>猜中任何您之前未猜中的动漫歌曲都将计入此成就。目前只有 !sga 循环赛中的歌曲才算数。</value>
+    <value>答對任何不重複動畫歌曲都將計入此成就。目前只有 !sga 題目的歌曲列入計算。</value>
   </data>
   <data name="AchievementCategory_DistinctAnime_Description" xml:space="preserve">
-    <value>猜中任何您之前没有猜中的动画都将计入此成就。</value>
+    <value>答對任何不重複的作品都將計入此成就。</value>
   </data>
   <data name="AchievementCategory_GenreAction_Description" xml:space="preserve">
-    <value>猜动作类型的动漫也可计入此成就。</value>
+    <value>答對的動作類動畫將計入此成就。</value>
   </data>
   <data name="AchievementCategory_GenreEcchi_Description" xml:space="preserve">
-    <value>猜猜看 "糜烂 "类型的动画片也能获得此项成就。</value>
+    <value>答對的工口類動畫將計入此成就。</value>
   </data>
   <data name="AchievementCategory_GenreHorror_Description" xml:space="preserve">
-    <value>猜测恐怖类型的动漫也可计入此成就。</value>
+    <value>答對的恐怖類動畫將計入此成就。</value>
   </data>
 </root>
