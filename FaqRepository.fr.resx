@@ -134,7 +134,7 @@ Pour plus de commandes, regardez la [liste de commandes]({0}/commands).
     <value> Par défaut, Rinbot filtrera un certain nombre d'animes.
 C'est afin d'éviter d'avoir à créer un canal avec une restriction d'âge (anciennement NSFW) et d'ainsi respecter les conditions d'utilisations de Discord.
 
-Les tags AniDB qui sont filtrés :
+Les tags AniDB filtrés sont :
 - Restreint -18
 - Borderline hentai
 - Nudité (weights &gt;200)
@@ -144,7 +144,7 @@ Tout ce qui est classé PG-13 ou moins sur MAL est toujours inclus.
 
 Vous pouvez simplement configurer votre canal pour qu'il est une restriction d'âge, et Rinbot passera automatiquement en mode NSFW.
 
-Si vous rencontrez une image ou une vidéo NSFW lors d'une partie en mode SFW, veuillez me conctacter avec le nom de l'anime afin que je puisse l'ajouter manuellement au filtre. </value>
+Si vous rencontrez une image ou une vidéo NSFW lors d'une partie en mode SFW, veuillez me contacter avec le nom de l'anime afin que je puisse l'ajouter manuellement au filtre. </value>
   </data>
   <data name="Faq_4_Question" xml:space="preserve">
     <value>C'est quoi ce truc de piscine animée dont j'entends parler ?</value>
