@@ -206,40 +206,40 @@
     <value>Pudding empilé</value>
   </data>
   <data name="Achievement_Decade00s_1_Description" xml:space="preserve">
-    <value>Voici quelque chose d'autre que tu pourrais faire avec ton temps.</value>
+    <value>Voilà une autre façon d'occuper ton temps.</value>
   </data>
   <data name="Achievement_Decade00s_0_Title" xml:space="preserve">
     <value>Pouces en l'air</value>
   </data>
   <data name="Achievement_Decade00s_0_Description" xml:space="preserve">
-    <value>Tu as le pouce levé par Haruhi, mais te souviens-tu seulement d'elle ?</value>
+    <value>Tu reçois un pouce levé de Haruhi, mais est-ce que tu te souviens seulement d'elle ?</value>
   </data>
   <data name="AchievementCategory_GenreHorror" xml:space="preserve">
-    <value>Genre - Horreur</value>
+    <value>Genre : Horreur</value>
   </data>
   <data name="AchievementCategory_GenreEcchi" xml:space="preserve">
-    <value>Genre - Ecchi</value>
+    <value>Genre : Ecchi</value>
   </data>
   <data name="AchievementCategory_GenreAction" xml:space="preserve">
-    <value>Genre - Action</value>
+    <value>Genre : Action</value>
   </data>
   <data name="AchievementCategory_DistinctAnime" xml:space="preserve">
     <value>Animes distincts</value>
   </data>
   <data name="AchievementCategory_Decade90s" xml:space="preserve">
-    <value>Décennies - années 90</value>
+    <value>Décennies : Années 90</value>
   </data>
   <data name="AchievementCategory_Decade80s" xml:space="preserve">
-    <value>Décennies - années 80</value>
+    <value>Décennies : Années 80</value>
   </data>
   <data name="AchievementCategory_Decade70sAndBefore" xml:space="preserve">
-    <value>Décennies - années 70 et avant</value>
+    <value>Décennies : Années 70 et antérieur</value>
   </data>
   <data name="AchievementCategory_Decade10s" xml:space="preserve">
-    <value>Décennies - années 10</value>
+    <value>Décennies : Années 2010</value>
   </data>
   <data name="AchievementCategory_Decade00s" xml:space="preserve">
-    <value>Décennies - années 00</value>
+    <value>Décennies : Années 2000</value>
   </data>
   <data name="AchievementCategory_GenreHorror_Description" xml:space="preserve">
     <value>Deviner anime du genre horreur comptera pour cette réalisation.</value>
