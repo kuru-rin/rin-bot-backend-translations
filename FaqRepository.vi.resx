@@ -177,4 +177,151 @@ f. **Bạn đã tắt các câu lệnh dựa trên tiền ngữ lệnh trong ph�
 Nếu bạn muốn sử dụng câu lệnh cũ, hãy kiểm tra rằng bạn chưa chọn ô "Tắt các câu lệnh cũ dựa trên tiền ngữ lệnh" trong cài đặt server trên trang web.
 Ô này có tác dụng chặn tất cả các câu lệnh cũ sử dụng tiền ngữ lệnh và chỉ cho phép lệnh gạch chéo hoạt động.</value>
   </data>
+  <data name="Faq_7_Answer" xml:space="preserve">
+    <value>Hiện tại có hai cách để thực hiện điều này.
+
+a. **Sử dụng quyền truy cập Discord**
+Bạn cần cấp cho RinBot quyền " __" và "View channel"__ trên kênh mà bạn muốn RinBot nhận lệnh.
+Điều này có thể thực hiện bằng cách thiết lập quyền truy cập đúng cách trong Discord.
+
+__Ví dụ__: 
+Tắt quyền `@everyone` __View channel__ cho tất cả các kênh. Sau đó tạo vai trò "Members" cho phép người dùng __View channel__ truy cập tất cả các kênh, trong khi chỉ cấp cho RinBot quyền __View channel__ cho kênh mà cô ấy cần nghe lệnh.
+
+Hoặc tạo vai trò "Bots" tắt quyền __View channel__ truy cập cho tất cả các kênh. Sau đó cấp quyền truy cập cụ thể cho RinBot vào kênh bạn chọn.
+
+b. **Sử dụng kiểm soát truy cập kênh**
+Cấu hình cho điều này có sẵn sau khi đăng nhập vào [trang web]({0}).
+
+__Các bước thực hiện__:
+- Sau khi đăng nhập, nhấp vào tên của cậu ở góc trên bên phải, sau đó đi đến __Máy chủ của tôi__.
+- Nhấp vào máy chủ cậu muốn cấu hình (cậu cần là quản trị viên ____ hoặc có vai trò quản lý máy chủ ____ ).
+- Tìm tab __Kênh__ và đánh dấu vào ô __Bật kiểm soát truy cập kênh__.
+
+&amp;gt; Với cấu hình này, RinBot sẽ không nhận lệnh từ bất kỳ kênh nào, vì vậy bây giờ cậu cần cho phép nó trong kênh mà cậu muốn.
+
+- Nhấp vào " __" (Thêm kênh)__ và chọn kênh mà cậu muốn RinBot nhận lệnh.
+- Nhấp vào " __" (Thêm quy tắc)__, điều này sẽ tạo ra một quy tắc truy cập cho phép mọi lệnh trong kênh này.
+- Nhấp vào " __" (Lưu thay đổi)__ ở phía dưới và hoàn tất!</value>
+  </data>
+  <data name="Faq_10_Answer" xml:space="preserve">
+    <value>Discord gần đây đã thêm quyền kiểm soát lệnh slash " __"__ một cách khá im lặng.  
+Điều này cho phép các máy chủ kích hoạt hoặc vô hiệu hóa các lệnh slash một cách riêng lẻ cho bất kỳ kênh hoặc vai trò nào mà họ muốn.  
+
+Trên nhiều máy chủ, cài đặt mặc định cho tính năng này đã khiến các lệnh slash trở nên không thể truy cập đối với người dùng thông thường.
+ ____ Trên các thiết bị di động  và các phiên bản cũ hơn, tính năng này chưa được hỗ trợ đầy đủ và cậu có thể nhận được thông báo:  ** This interaction failed** or **The application did not respond**
+
+__Để thay đổi các quyền này__ 
+Trong Discord, hãy truy cập `Cài đặt máy chủ - Tích hợp - RinBot` và đảm bảo các thiết lập ở đây cho các kênh và vai trò của cậu là chính xác. 
+Các thiết bị di động hiện chưa hỗ trợ đầy đủ các tính năng này, vì vậy hãy sử dụng máy tính cá nhân (PC) hoặc thử trình duyệt web trên thiết bị của cậu.
+
+&amp;gt; Quản trị viên luôn có thể sử dụng lệnh gạch chéo (slash commands), bất kể quyền truy cập được thiết lập như thế nào ở đây. Vì vậy, nếu cậu đã là quản trị viên, vấn đề của cậu có thể nằm ở chỗ khác.
+
+Nếu điều này không giải quyết được vấn đề của cậu, hãy xem __câu hỏi 6__ để biết thêm các nguyên nhân có thể khác.</value>
+  </data>
+  <data name="Faq_11_Question" xml:space="preserve">
+    <value>Tại sao lại đặt tên là 'RinBot' và cô gái trong avatar là ai?</value>
+  </data>
+  <data name="Faq_12_Question" xml:space="preserve">
+    <value>Làm thế nào để tớ có thể khiến RinBot tự động bắt đầu các vòng chơi?</value>
+  </data>
+  <data name="Faq_12_Answer" xml:space="preserve">
+    <value>Hiện tại có một tính năng gọi là "bắt đầu vòng chơi khi kênh không hoạt động".  
+Tính năng này có thể được kích hoạt trong phần cấu hình kênh sau khi đăng nhập vào [trang web]({0}/my-servers).  
+  
+Đối với các máy chủ miễn phí, thời gian không hoạt động được đặt tối thiểu là một giờ. Thời gian này có thể được giảm xuống còn một phút khi cậu trở thành người ủng hộ.</value>
+  </data>
+  <data name="Faq_13_Question" xml:space="preserve">
+    <value>Tớ đã cam kết nhưng chưa nhận được phần thưởng của mình, bây giờ phải làm sao?</value>
+  </data>
+  <data name="Faq_14_Question" xml:space="preserve">
+    <value>Bảng xếp hạng hàng tuần sẽ được reset vào lúc nào?</value>
+  </data>
+  <data name="Faq_14_Answer" xml:space="preserve">
+    <value>Bảng xếp hạng hàng tuần được đặt lại vào ngày được hiển thị trong lệnh ` `` và `/weektop` `` ` vào lúc nửa đêm (00:00 / 12:00 AM) theo giờ UTC.
+
+Nó sử dụng tiêu chuẩn ISO-8601 cho các tuần trong năm, với thứ Hai là ngày đầu tiên của tuần.</value>
+  </data>
+  <data name="Faq_8_Question" xml:space="preserve">
+    <value>Tại sao RinBot lại không hoạt động trên máy chủ của tớ?</value>
+  </data>
+  <data name="Faq_8_Answer" xml:space="preserve">
+    <value>Có thể nó đang kết nối lại, vì Discord buộc phải kết nối lại các shard xung quanh __mỗi giờ__. Hãy kiên nhẫn và thử lại sau vài phút.
+
+Nếu vẫn không hoạt động __sau 15 phút__, **hãy kiểm tra câu hỏi 6**.
+
+Nếu sau đó nó vẫn __không hoạt động__ cho cậu, vui lòng yêu cầu trợ giúp trong #help và đề cập đến shard và/hoặc cluster mà máy chủ của cậu đang sử dụng.
+Cậu có thể kiểm tra shard của mình trên [trang trạng thái]({0}/status).
+
+&amp;gt; ⚠️ Lưu ý rằng **vào các ngày thứ Bảy từ 8:00-12:00 UTC** được dành làm khung thời gian bảo trì, do đó có thể xảy ra thời gian ngừng hoạt động không thông báo trong khoảng thời gian đó.</value>
+  </data>
+  <data name="Faq_9_Question" xml:space="preserve">
+    <value>Khó khăn là gì và làm thế nào để thay đổi nó?</value>
+  </data>
+  <data name="Faq_9_Answer" xml:space="preserve">
+    <value>Độ khó dựa trên độ phổ biến của anime, cậu có thể chọn giữa 5 mức độ khó:  
+1. Dễ
+2. Bình thường
+3. Khó
+4. Cực khó
+5. Ác mộng
+
+&amp;gt; Từ Dễ (1) đến Cực khó (4), các bộ anime trong danh sách sẽ bao gồm cả những bộ từ các mức độ khó trước đó. 
+&amp;gt; Mức độ Ác mộng (5) là khác biệt, chỉ bao gồm những bộ anime ít phổ biến nhất có sẵn trong bot.
+
+__Thay đổi mức độ khó__
+Để thay đổi mức độ khó sang `Easy` cho một vòng chơi, sử dụng `/sg difficulty:Easy` hoặc `!sg d:1` hoặc `!sg 1`.
+Cách thức hoạt động tương tự cho các mức độ khó khác trong các lệnh khác.
+
+Mức độ khó sẽ tăng lên khi cậu kiếm được nhiều điểm hơn, tối đa là Extreme(4).
+Để thay đổi hành vi này, cậu có thể sử dụng `/mydifficulty` (nếu máy chủ của cậu không hỗ trợ lệnh gạch chéo, cậu cũng có thể sử dụng nó trong tin nhắn riêng tư với RinBot)
+ </value>
+  </data>
+  <data name="Faq_10_Question" xml:space="preserve">
+    <value>Các lệnh Slash không hoạt động hoặc chỉ có thể được sử dụng bởi các quản trị viên.</value>
+  </data>
+  <data name="Faq_11_Answer" xml:space="preserve">
+    <value>Cô gái trong hình là một nhân vật Elin từ trò chơi TERA Online.  
+Tớ có một nhân vật trong game tên là Kururin, là một Elin mystic và trông tương tự như vậy.  
+  
+Ban đầu tớ đã viết một bot Discord để thực hiện một số tác vụ điều hành Discord cơ bản, chỉ để thử nghiệm.
+Khi tớ hỏi "nên đặt tên cho nó là gì", ai đó đề nghị "hãy gọi nó là RinBot". Tớ thấy cái tên đó hài hước nên nó đã được giữ lại.  
+  
+Hình ảnh được vẽ bởi momoco ([pixiv](https://www.pixiv.net/en/users/1113943), [tumblr](https://momocoharu.tumblr.com/), [twitter](https://twitter.com/momoco_haru)), vì vậy tất cả tín dụng cho avatar đều thuộc về họ!  
+Cũng hãy xem bài đăng gốc của tác phẩm nghệ thuật tại [https://www.pixiv.net/en/artworks/36910527].</value>
+  </data>
+  <data name="Faq_13_Answer" xml:space="preserve">
+    <value>Để có thể nhận được các ưu đãi, cậu cần liên kết tài khoản Discord của mình **với tài khoản Patreon**.  
+Cách thực hiện chi tiết [có thể tìm thấy tại đây](https://support.patreon.com/hc/en-us/articles/212052266-Get-my-Discord-role).  
+  
+Nếu cậu đã đăng ký **trước khi liên kết tài khoản Discord**, cậu có thể thử nhấn [nút 'Join' tại đây](https://www.patreon.com/rinbot?fan_landing=true) một lần nữa.  
+Điều này sẽ không yêu cầu thanh toán thêm, nhưng sẽ kích hoạt lại webhook, từ đó tự động cấp quyền lợi cho cậu.  
+
+Nó cũng sẽ cố gắng cấp quyền lợi cho bất kỳ ai thiếu chúng khoảng mỗi giờ, vì vậy hãy chờ một chút và cậu sẽ nhận được chúng tự động.  
+
+Sau khi cam kết **, cậu sẽ cần đăng nhập lại** trên trang web RinBot để sử dụng các quyền lợi như tăng cường máy chủ hoặc cấu hình kênh bổ sung.  
+</value>
+  </data>
+  <data name="Faq_15_Question" xml:space="preserve">
+    <value>Cách tính điểm hoạt động như thế nào?</value>
+  </data>
+  <data name="Faq_15_Answer" xml:space="preserve">
+    <value>Cách tính điểm hoàn toàn phụ thuộc vào số lượng anime trong danh sách mà vòng thi của cậu được tạo ra và cấp độ của người chiến thắng.  
+  
+Trong trường hợp đơn giản nhất, một danh sách gồm 3000 anime sẽ cho tối đa 60 điểm, giảm đi `1 / numberOfCaptures` cho mỗi lần hiển thị thêm.  
+  
+Kích thước bộ sưu tập phụ thuộc vào bộ lọc của cậu. Nếu cậu sử dụng danh sách anime của riêng mình làm bộ lọc, với 90 mục trong phần "Hoàn thành" và 10 mục trong phần "Đang chờ", kích thước bộ sưu tập của cậu sẽ là 100.  
+Tuy nhiên, sau mỗi vòng chơi với bộ lọc này, kích thước bộ sưu tập sẽ giảm 1, vì không có sự trùng lặp trong ít nhất một giờ đối với các vòng do chính cậu khởi tạo hoặc trong cùng một máy chủ.  
+  
+ `Công thức được sử dụng:  ```  
+animeMultiplier * animeCount / animeMaxPoints * maxPoints  ```  
+&amp;gt; Mặc định `maxPoints` là `60` và `animeMaxPoints` là `3000`.  
+  
+Biến animeMultiplier` phụ thuộc vào năm anime được phát hành.  
+- Trước năm 2010 : `2`
+- Trước năm 2000: `3`- Trước năm 1990: `4`- Trước năm 1980: `5`
+Số điểm tối thiểu cậu có thể nhận được là `4`, sẽ trở thành `1` nếu nắp cuối cùng đã được hiển thị.  
+
+__Vòng thi giọng nói__ 
+Trong vòng thi giọng nói, số điểm sẽ giảm theo thời gian cậu mất để trả lời thay vì số lượng nắp đã được hiển thị.</value>
+  </data>
 </root>
